@@ -31,8 +31,6 @@ yarn
 
 <p>4. switch to another branch to start your work.</p>
 
-<h2>🍰 Contribution Guidelines:</h2>
-
   
   
 <h2>💻 Built with</h2>
