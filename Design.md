@@ -14,6 +14,10 @@
 
 # CONTRIBUTIONS
 
-## name:
+## name: clem
 
-## Description
+## Description: i design a new footer for the homepage
+
+#name:
+
+## description
