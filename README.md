@@ -18,7 +18,7 @@ Here're some of the project's best features:
 <p>2. clone the repo</p>
 
 ```
-git clone  && cd
+git clone your forked url && cd dir
 ```
 
 <p>3. install dependencies</p>
@@ -28,6 +28,16 @@ yarn
 ```
 
 <p>4. switch to another branch to start your work.</p>
+
+```
+git checkout -b your-branch-name
+```
+
+<p>5. start development</p>
+
+```
+yarn dev
+```
 
 <h2>💻 Built with</h2>
 
