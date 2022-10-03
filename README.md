@@ -12,10 +12,11 @@ Here're some of the project's best features:
 - Users who are interested in an item can buy from the seller.
 - Users can chat up the item seller.
 - It is P2P platform no payment is processed.
-
-<h2>Link to figma design<h2>
+<h2>Link to figma design && User Flow<h2>
   
-<a href="https://www.figma.com/file/cK9hICwy4Tcs7Nw2mXh0Aj/I4G-Open-Source?node-id=2%3A686">Figma Design link</a>
+<a href="https://www.figma.com/file/cK9hICwy4Tcs7Nw2mXh0Aj/I4G-Open-Source?node-id=2%3A686" target="_blank">Figma Design link</a>
+
+ <a href="https://docs.google.com/document/d/1oHGzqxiLVKEQIqG4-rfzH9SYnIv6cKozLW1FLvubLcU/edit?usp=sharing" target="_blank">Userflow</a> 
   
 <h2>🛠️ Installation Steps:</h2>
 
