@@ -13,6 +13,10 @@ Here're some of the project's best features:
 - Users can chat up the item seller.
 - It is P2P platform no payment is processed.
 
+<h2>Link to figma design<h2>
+  
+<a href="https://www.figma.com/file/cK9hICwy4Tcs7Nw2mXh0Aj/I4G-Open-Source?node-id=2%3A686">Figma Design link</a>
+  
 <h2>🛠️ Installation Steps:</h2>
 
 <p>2. clone the repo</p>
