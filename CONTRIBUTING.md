@@ -43,7 +43,7 @@ Click `issues` in the repository to see the reported issues.
 
 - Describe the issue and include steps to reproduce it if it is a bug.
 - If you are able and want to fix this, fork the repository on GitHub
-**See [Issue Template](./issue_template.md) for a formatted way of submmiting an issue.**
+- **See [Issue Template](./issue_template.md) for a formatted way of submmiting an issue.**
 
 ## Submit Changes
 
