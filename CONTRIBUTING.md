@@ -2,9 +2,10 @@
 
 <img src="./images/I4G-OPENSOURCE-IMAGE.jpg">
 
-Please make sure to read the relevant section before making your contribution! It will make it a lot easier for the maintainers to make the most of it and smooth out the experience for all involved. 🚀
-
 ## Contributing to the project
+
+<p style="text-indent: 5em;">Please make sure to read the relevant section before making your contribution! It will make it a lot easier for the maintainers to make the most of it and smooth out the experience for all involved. 🚀</p>
+
 **Table of Contents**
 
 - [Introduction](#introduction)
