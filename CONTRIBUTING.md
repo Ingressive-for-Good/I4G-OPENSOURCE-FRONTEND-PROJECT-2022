@@ -4,7 +4,7 @@
 
 ## Contributing to the project
 
-Please make sure to read the relevant section before making your contribution! It will make it a lot easier for the maintainers to make the most of it and smooth out the experience for all involved. 🚀
+Please make sure to read the relevant section before making your contributions, it will make it a lot easier for maintainers to make the most of it and smooth out the experience for everyone involved. 🚀
 
 **Table of Contents**
 
