@@ -1,6 +1,6 @@
-<h1 text-align="center">I4G OPEN-SOURCE FRONTEND PROJECT 2022 🔥</h1>
+# I4G OPEN-SOURCE FRONTEND PROJECT 2022 🔥
 
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fingressive.org%2Fi4g-community-challenge%2F&psig=AOvVaw2m6qSyNJNJKaqKY_mluG_J&ust=1664970409292000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCMjZwaPAxvoCFQAAAAAdAAAAABAD">
+<img src="./images/I4G-OPENSOURCE-IMAGE.jpg">
 
 Please make sure to read the relevant section before making your contribution! It will make it a lot easier for the maintainers to make the most of it and smooth out the experience for all involved. 🚀
 
