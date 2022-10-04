@@ -33,7 +33,7 @@ HacktoberFest is back again!. Much appreciation for your desire to participate i
 - You need a [GitHub](https://www.github.com) account
 - You need a local "fork" of this Github repo.
 - Clone the repository to your local machine.
-- Submit an [issue](https://github.com/Ingressive-for-Good/I4G-OPENSOURCE-FRONTEND-PROJECT-2022/issues) ticket for your issue if there is no one yet.
+- Submit an [issue](https://github.com/Ingressive-for-Good/I4G-OPENSOURCE-FRONTEND-PROJECT-2022/issues) ticket if there is none yet.
 
 ## Working with Issues
 
