@@ -52,6 +52,7 @@ Technologies used in the project:
 - Tailwind CSS
 - NodeJS
 
-<h2>🛠️ Contributions</h2>
-Information about contributing to this project can be found in the contribution guide
-[Contribute](https://github.com/scarnation/I4G-OPENSOURCE-FRONTEND-PROJECT-2022/blob/develop/CONTRIBUTING.md)
+<h2>🛠️ Contributions </h2>
+
+Information about contributing to this project can be found in the [CONTRIBUTING](https://github.com/Ingressive-for-Good/I4G-OPENSOURCE-FRONTEND-PROJECT-2022/blob/develop/CONTRIBUTING.md) guide
+
