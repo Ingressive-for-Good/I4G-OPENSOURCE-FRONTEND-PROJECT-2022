@@ -1,4 +1,4 @@
-<h1 align="center">I4G OPEN-SOURCE FRONTEND PROJECT 2022 🔥</h1>
+# I4G OPEN-SOURCE FRONTEND PROJECT 2022 🔥
 
 <img src="./images/I4G-OPENSOURCE-IMAGE.jpg">
 
@@ -19,7 +19,7 @@ Please make sure to read the relevant section before making your contributions, 
 
 ## Introduction
 
-HacktoberFest is back again!. Much appreciation for your desire to participate in the I4G OpenSource. Frontend project. See the [table of conte(#contributing-to-the-project) for different ways to help and details about how this project handles them!📝
+HacktoberFest is back again!. Much appreciation for your desire to participate in the I4G OpenSource. Frontend project. See the [table of content](#contributing-to-the-project) for different ways to help and details about how this project handles them!📝
 
 ## Intended audience
 - Project contributors
