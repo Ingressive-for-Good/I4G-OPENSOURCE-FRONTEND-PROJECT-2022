@@ -1,4 +1,4 @@
-# I4G OPEN-SOURCE FRONTEND PROJECT 2022 🔥
+## I4G OPEN-SOURCE FRONTEND PROJECT 2022 🔥
 
 <img src="./images/I4G-OPENSOURCE-IMAGE.jpg">
 
@@ -17,9 +17,11 @@ Please make sure to read the relevant section before making your contributions, 
 - [Code of Conduct](#code-of-conduct)
 - [Licensing](#licensing)
 
+
 ## Introduction
 
 HacktoberFest is back again!. Much appreciation for your desire to participate in the I4G OpenSource. Frontend project. See the [table of content](#contributing-to-the-project) for different ways to help and details about how this project handles them!📝
+
 
 ## Intended audience
 - Project contributors
@@ -28,6 +30,7 @@ HacktoberFest is back again!. Much appreciation for your desire to participate i
 - Issue reporters
 - Improvement reporters
 
+
 ## How to contribute
 
 - You need a [GitHub](https://www.github.com) account
@@ -35,15 +38,18 @@ HacktoberFest is back again!. Much appreciation for your desire to participate i
 - Clone the repository to your local machine.
 - Submit an [issue](https://github.com/Ingressive-for-Good/I4G-OPENSOURCE-FRONTEND-PROJECT-2022/issues) ticket if there is none yet.
 
+
 ## Working with Issues
 
 Click `issues` in the repository to see the reported issues.
+
 
 ## Submitting an Issue
 
 - Describe the issue and include steps to reproduce it if it is a bug.
 - If you are able and want to fix this, fork the repository on GitHub
 - **See [Issue Template](./issue_template.md) for a formatted way of submmiting an issue.**
+
 
 ## Submit Changes
 
@@ -64,10 +70,13 @@ Click `issues` in the repository to see the reported issues.
 
 - Kindly check the [code_of_conduct.md](./code_of_conduct.md) for a complete detailed information.
 
+
 ## Communication
 
 - Twitter: [Ingressive for Good](https://twitter.com/Ingressive4Good)
 - Telegram: [I4G OPEN SOURCE CHALLENGE 2022 CONTRIBUTORS](https://t.me/+pL8u3OvU-ss3MTk0)
 
+
 ## Licensing
+
 The I4G frontend 2022 project is an open source and under public licensing. Let's all Contribute!😃
