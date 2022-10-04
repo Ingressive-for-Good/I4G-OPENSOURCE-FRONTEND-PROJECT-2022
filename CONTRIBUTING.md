@@ -1,4 +1,4 @@
-<h1 text-align="center">I4G OPEN-SOURCE FRONTEND PROJECT 2022 🔥</h1>
+<h1 align="center">I4G OPEN-SOURCE FRONTEND PROJECT 2022 🔥</h1>
 
 <img src="./images/I4G-OPENSOURCE-IMAGE.jpg">
 
