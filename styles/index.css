@@ -1,3 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: Cabinet Grotesk, Campton;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-bold text-neutral-900;
+  }
+
+  h1 {
+    font-size: 64px;
+    line-height: 80px;
+  }
+
+  h2 {
+    font-size: 45px;
+    line-height: 56px;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    @apply text-neutral-800 mb-3 py-3 border-2 rounded-lg border-neutral-500 px-4 focus:outline-none focus:border-neutral-700 placeholder:text-neutral-700;
+  }
+
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    @apply border-2 border-neutral-500 p-2 rounded-md;
+  }
+}
