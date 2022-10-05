@@ -14,6 +14,12 @@
 
 # CONTRIBUTIONS
 
-## name:
+## name: Nnadiukwu Chidiebere Oscar 
 
-## Description
+## Description: Users dashboard Upload Screen (Two screens)
+###Observations/Changes 
+-In this section, these are the following:
+The corrct and up-to-date section which is clickable has been merged into one click to contain pop up info on why it is necessary to keep to correct product description and the cons of failing to do so 
+the up-to-date section would also remind users of the need to constantly flag products as unavailable or sold inorder to improve consistent trust and reliability of the platform 
+Failure of sticking to the company policy of trust would lead to getting products flagged by users and suspension/deletion by admin from the platform 
+also attached a scroll bar to remind the developers of a screen being scrollable with a fixed side navigation 
