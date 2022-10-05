@@ -1,7 +1,21 @@
 import React from "react";
 
 function App() {
-  return <h1 className="text-3xl font-bold text-red-600">I4G Hackfest project assigned to cybergeni!</h1>;
+  return (
+    <div>
+      <header></header>
+      <main>
+        {/* hero section */}
+        <section>
+          <h1>
+            Buy, Sell & Swap Quality Items for techies - 
+            <span>all in one place</span>
+          </h1>
+        </section>
+      </main>
+      {/* <footer></footer> */}
+    </div>
+  );
 }
 
 export default App;
