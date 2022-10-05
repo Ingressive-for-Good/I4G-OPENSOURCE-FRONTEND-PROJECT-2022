@@ -35,3 +35,9 @@ Using a mobile first approach users who make changes to their profile are requir
 The key primary button on the page might also lead to users having mislead interactions with  the delete button as based on UX laws of similarity they would automatically group the button at the end of the form to the form 
 The button also being the only highlighted button seems to encourage an action which doesn’t aid the core functionality of the screen
 -----Main Goal -- Improved UX
+
+## Name: Nnadiukwu Chidiebere Oscar 
+
+## Description:
+### Observations/Changes 
+-----Main Goal --
