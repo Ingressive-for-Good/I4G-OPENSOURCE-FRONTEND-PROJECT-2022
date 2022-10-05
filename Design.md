@@ -17,7 +17,7 @@
 ## name: Nnadiukwu Chidiebere Oscar 
 
 ## Description: Users dashboard Upload Screen (Two screens)
-###Observations/Changes 
+### Observations/Changes 
 -In this section, these are the following:
 The corrct and up-to-date section which is clickable has been merged into one click to contain pop up info on why it is necessary to keep to correct product description and the cons of failing to do so 
 the up-to-date section would also remind users of the need to constantly flag products as unavailable or sold inorder to improve consistent trust and reliability of the platform 
