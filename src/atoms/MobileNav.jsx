@@ -50,7 +50,7 @@ function SlideInNav({onClick}) {
         <h2 className="font-medium font-campton text-error-500">Log Out</h2>
       </div>
     </aside>
-    <div className="w-1/2 h-screen fixed right-0 top-0 bg-neutral-900 opacity-40" onClick={onClick}></div>
+    <div className="w-screen h-screen fixed right-0 top-0 bg-neutral-900 opacity-40" onClick={onClick}></div>
     </>
   );
 }
