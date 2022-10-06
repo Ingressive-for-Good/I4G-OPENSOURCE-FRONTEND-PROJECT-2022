@@ -79,7 +79,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        'default': ['"Cabinet Grotesk"', '"Segoe UI"', 'sans-serif', ],
+        'cabinetGrotesk': ['"Cabinet Grotesk"', '"Segoe UI"', 'sans-serif', ],
+        'campton': ['Campton', '"Segoe UI"', 'sans-serif', ],
       },
     },
   },
