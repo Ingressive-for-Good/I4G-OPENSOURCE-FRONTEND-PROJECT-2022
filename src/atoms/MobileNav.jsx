@@ -1,10 +1,8 @@
 import menu from "../images/menu.svg";
 
-// function MobileNav (){
-//   return<></>
-// }
+// this component has not been developed
 
-function DropDown() {
+function MobileNav() {
   return (
     <button type="button" className="cursor-pointer">
       <img src={menu} alt="menu icon" />
@@ -12,4 +10,4 @@ function DropDown() {
   );
 }
 
-export default DropDown;
+export default MobileNav;

@@ -11,7 +11,7 @@ import techmart from "../images/techmart.svg";
 import SideNav from "../atoms/SideNav";
 import Avatar from "../atoms/Avatar";
 import Notification from "../atoms/Notification";
-import DropDown from "../atoms/Dropdown";
+import MobileNav from "../atoms/MobileNav";
 
 // FAQ Questions and Answers in a list
 const info = [
@@ -80,7 +80,7 @@ function Help() {
       <div className="mx-5 flex-1 mt-12 font-cabinetGrotesk text-neutral-900 md:mx-10 xl:mr-16 xl:ml-10">
         <div className="flex justify-between xl:hidden items-center">
           <img src={techmart} alt="techmart logo" />
-          <DropDown />
+          <MobileNav />
         </div>
         <div className="hidden xl:mt-2 xl:flex justify-between items-center">
           <div className="mt-4 md:mt-8 xl:mt-2">
