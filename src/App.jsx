@@ -1,7 +1,8 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter} from "react-router-dom";
 import Routes from "../routes";
 import PhoneNumberVerification from "./pages/PhoneNumberVerification";
+
 
 function App() {
   return (
