@@ -10,7 +10,7 @@ const categories = [
 ]
 export default function Input() {
   return (
-    <form className='flex flex-col my-[40px]'>
+    <form className='font-campton flex flex-col my-[40px]'>
       <div className='flex md:flex-row flex-col gap-[40px]'>
         <div className='w-full flex flex-col gap-[26px]'>
           <label>
