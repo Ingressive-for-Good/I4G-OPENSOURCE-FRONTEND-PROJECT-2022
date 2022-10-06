@@ -1,7 +1,10 @@
 import React from "react";
+import PhoneNumberVerification from "./pages/PhoneNumberVerification";
 
 function App() {
-  return <h1 className="text-3xl font-bold text-red-600">Hello world!</h1>;
+  return (
+    <PhoneNumberVerification/>
+  )
 }
 
 export default App;
