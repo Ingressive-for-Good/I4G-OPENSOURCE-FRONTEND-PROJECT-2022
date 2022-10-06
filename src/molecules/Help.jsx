@@ -45,7 +45,7 @@ function QnA({ question, answer }) {
   return (
     <div>
       <div
-        className="font-poppins flex justify-between px-4 pb-6 pt-6 border-b border-neutral-300 cursor-pointer"
+        className="font-campton flex justify-between px-4 pb-6 pt-6 border-b border-neutral-300 cursor-pointer"
         onClick={() => {
           setIsOpen(!isOpen);
         }}
@@ -67,7 +67,7 @@ function QnA({ question, answer }) {
         </button>
       </div>
       {isOpen && (
-        <p className="font-poppins p-4 md:pr-5 md:text-lg">{answer}</p>
+        <p className="font-campton p-4 md:pr-5 md:text-lg">{answer}</p>
       )}
     </div>
   );
@@ -75,15 +75,15 @@ function QnA({ question, answer }) {
 
 function Help() {
   return (
-    <div className="font-cabinet lg:flex">
+    <div className="font-cabinetGrotesk xl:flex">
       <SideNav />
-      <div className="mx-5 flex-1 mt-12 font-cabinet text-neutral-900 md:mx-10 lg:mr-16 lg:ml-10">
-        <div className="flex justify-between lg:hidden items-center">
+      <div className="mx-5 flex-1 mt-12 font-cabinetGrotesk text-neutral-900 md:mx-10 xl:mr-16 xl:ml-10">
+        <div className="flex justify-between xl:hidden items-center">
           <img src={techmart} alt="techmart logo" />
           <DropDown />
         </div>
-        <div className="hidden lg:mt-2 lg:flex justify-between items-center">
-          <div className="mt-4 md:mt-8 lg:mt-2">
+        <div className="hidden xl:mt-2 xl:flex justify-between items-center">
+          <div className="mt-4 md:mt-8 xl:mt-2">
             <h2 className="font-medium md:text-xl">Hey Nora👋🏾</h2>
             <h2 className="text-xl font-bold md:text-2xl">
               How can we help you?
@@ -92,7 +92,7 @@ function Help() {
           <div>
             <div className="flex items-start gap-6 relative">
               <input
-                className="font-poppins text-sm placeholder:text-sm placeholder:text-neutral-600 border rounded-lg border-neutral-500 mt-0.5 h-12 px-3.5 pl-8"
+                className="font-campton text-sm placeholder:text-sm placeholder:text-neutral-600 border rounded-lg border-neutral-500 mt-0.5 h-12 px-3.5 pl-8"
                 type="text"
                 placeholder="Search for Gadgets"
               />
@@ -118,7 +118,7 @@ function Help() {
           />
         </div>
 
-        <main className="mt-4 border rounded-lg border-neutral-300 lg:mr-4">
+        <main className="mt-4 border rounded-lg border-neutral-300 xl:mr-4">
           {info.map((item, i) => (
             <QnA key={i} question={item.question} answer={item.answer} />
           ))}
@@ -128,11 +128,11 @@ function Help() {
           <h2 className="font-bold text-neutral-900 text-2xl">
             Still have a question?
           </h2>
-          <p className="font-poppins md:text-lg text-neutral-700 mt-2">
+          <p className="font-campton md:text-lg text-neutral-700 mt-2">
             Can&apos;t find the answer you are looking for? Don&apos;t fret, we
             are here to help you. Kindly fill the form below;
           </p>
-          <p className="font-poppins md:text-lg text-neutral-700 mt-4">
+          <p className="font-campton md:text-lg text-neutral-700 mt-4">
             Do you have a complaint? Fill this{" "}
             <a className="text-secondary-500 font-semibold" href="/#">
               form

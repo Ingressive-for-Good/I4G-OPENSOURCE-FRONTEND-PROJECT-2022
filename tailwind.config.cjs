@@ -8,11 +8,6 @@ module.exports = {
         "cabinet": ['Cabinet Grotesk', "sans-serif"],
         "poppins": ['Poppins', "sans-serif"],
       },
-      screens:{
-        "sm": "375px",
-        "md":"744px",
-        "lg":"1440px",
-      },
       colors: {
         primary: {
           50: "#E7E9F8",
