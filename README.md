@@ -8,7 +8,7 @@
 
 Here're some of the project's best features:
 
-- Users can put up their item for sell.
+- Users can put up their item for sale.
 - Users who are interested in an item can buy from the seller.
 - Users can chat up the item seller.
 - It is P2P platform no payment is processed.
