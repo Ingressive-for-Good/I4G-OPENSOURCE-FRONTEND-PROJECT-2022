@@ -6,16 +6,14 @@ import dashboard from "../images/dashboard.svg"
 import techmart from "../images/techmart.svg";
 import logOut from "../images/logOut.svg";
 
-// this component is not fully functional
-
-function Icon ({img, bg, text, textColor, imgStyle}){
-    return(
-        <div className={`flex py-4 pr-8 pl-12 my-4 gap-2 text-neutral-500 items-center bg-${bg}`} >
-            <img src={img} style={imgStyle} className={"w-6"} />
-            <h2 className={`{"font-medium font-campton  text-${textColor}`}>{text}</h2>
-        </div>
-    )
-}
+  function Icon ({img, bg, text, textColor, imgStyle}){
+      return(
+          <div className={`flex py-4 pr-8 pl-12 my-4 gap-2 text-neutral-500 items-center bg-${bg}`} >
+              <img src={img} style={imgStyle} className={"w-6"} />
+              <h2 className={`{"font-medium font-campton  text-${textColor}`}>{text}</h2>
+          </div>
+      )
+  }
 
 function SideNav() {
     return (
