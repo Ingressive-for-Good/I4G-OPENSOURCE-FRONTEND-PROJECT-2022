@@ -27,7 +27,8 @@
     "redux": "^4.2.0",
     "styled-components": "^5.3.5",
     "tailwindcss": "^3.1.8",
-    "twin.macro": "^2.8.2"
+    "twin.macro": "^2.8.2",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

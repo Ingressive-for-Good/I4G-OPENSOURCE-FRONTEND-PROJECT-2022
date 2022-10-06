@@ -1,13 +1,15 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import AddNewProductPage1 from "./AddNewProduct/pageOne/AddNewProductPage1";
+import { BrowserRouter} from "react-router-dom";
+import Routes from "../routes";
+import PhoneNumberVerification from "./pages/PhoneNumberVerification";
+
 
 function App() {
-  return(
+  return (
     <BrowserRouter>
-      <AddNewProductPage1/>
+      <PhoneNumberVerification />
     </BrowserRouter>
-  )
+  );
 }
 
 export default App;

@@ -90,6 +90,7 @@ export default function Input() {
                 placeholder='placeholder'
               />
           </label>
+          {/* For the first page */}
           <label className='relative'>
               <p className='pb-[7px]'>Product Images <span className='text-error-500'>*</span></p>
               <div
