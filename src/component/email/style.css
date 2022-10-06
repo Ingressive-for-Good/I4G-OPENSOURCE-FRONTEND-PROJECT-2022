@@ -1,0 +1,17 @@
+.bg-accent1 {
+  height: 100vh;
+  background-color: #e7e9f8;
+}
+
+.bg-accent2{
+    background-color: #FAFAFB;
+}
+
+.container,
+.grid {
+  width: 100%;
+}
+
+.txt-color{
+    color: #717591;
+}

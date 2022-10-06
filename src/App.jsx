@@ -1,7 +1,8 @@
 import React from "react";
+import EmailVerify from "./component/email/EmailVerify";
 
 function App() {
-  return <h1 className="text-3xl font-bold text-red-600">Hello world!</h1>;
+  return <EmailVerify />;
 }
 
 export default App;
