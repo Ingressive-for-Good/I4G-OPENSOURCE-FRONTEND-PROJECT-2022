@@ -1,15 +1,12 @@
 import React from "react";
-import { BrowserRouter, Route, Routes} from "react-router-dom";
-import PhoneNumberVerification from "./pages/PhoneNumberVerification";
-import AddNewProductPage1 from './AddNewProduct/pageOne/AddNewProductPage1'
+import { BrowserRouter} from "react-router-dom";
+import Routes from "../routes";
+
 
 function App() {
   return (
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<AddNewProductPage1/>}/>
-      <Route path="/" element={<PhoneNumberVerification />}/>
-    </Routes>
+      <Routes/>
     </BrowserRouter>
   );
 }
