@@ -46,8 +46,12 @@ function Routes() {
         path="/"
         element={
           <>
+          {/* Add the link to your page here */}
             <h1 className="text-3xl font-bold text-red-600">Home</h1>
             <Link to="/support">Help and Support</Link>
+            <Link to="/products">Add new product</Link>
+            <Link to="/verification">Phone number verification</Link>
+
           </>
         }
       />
