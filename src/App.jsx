@@ -1,10 +1,13 @@
 import React from "react";
-import PhoneNumberVerification from "./pages/PhoneNumberVerification";
+import { BrowserRouter } from "react-router-dom";
+import Routes from "../routes";
 
 function App() {
   return (
-    <PhoneNumberVerification/>
-  )
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+  );
 }
 
 export default App;
