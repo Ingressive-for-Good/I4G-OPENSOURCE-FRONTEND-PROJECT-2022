@@ -8,7 +8,6 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path="/addproduct" element={<AddNewProductPage1/>}/>
-      <Route path="/" element={<PhoneNumberVerification />}/>
     </Routes>
     </BrowserRouter>
   );
