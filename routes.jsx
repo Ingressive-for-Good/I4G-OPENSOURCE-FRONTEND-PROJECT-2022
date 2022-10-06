@@ -1,6 +1,8 @@
 import React from "react";
 import { Route, Routes as Switch } from "react-router-dom";
 
+import Home from "/src/molecules/Home";
+
 // Routes Component Containing Routes For All Base Pages.
 
 function Routes() {
@@ -40,7 +42,7 @@ function Routes() {
       />
       <Route
         path="/"
-        element={<h1 className="text-3xl font-bold text-red-600">Home</h1>}
+        element={<Home />}
       />
     </Switch>
   );
