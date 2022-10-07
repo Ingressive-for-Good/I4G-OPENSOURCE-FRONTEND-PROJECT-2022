@@ -1,6 +1,8 @@
 import React from "react";
 import { Route, Routes as Switch, Link } from "react-router-dom";
 import Help from "./src/molecules/Help";
+import AddNewProductPage1 from './src/AddNewProduct/pageOne/AddNewProductPage1'
+import PhoneNumberVerification from "./src/pages/PhoneNumberVerification";
 
 import Home from "/src/molecules/Home";
 
@@ -19,7 +21,7 @@ function Routes() {
       />
       <Route
         path="/products"
-        element={<h1 className="text-3xl font-bold text-red-600">Products</h1>}
+        element={<AddNewProductPage1/>}
       />
       <Route
         path="/wishlist"
@@ -38,9 +40,22 @@ function Routes() {
         path="/profile"
         element={<h1 className="text-3xl font-bold text-red-600">Profile</h1>}
       />
+       <Route
+        path="/verification"
+        element={<PhoneNumberVerification/>}
+      />
       <Route
         path="/"
-        element={<Home />}
+        element={
+          <div className="flex flex-col gap-[30px]">
+          {/* Add the link to your page here */}
+           <Home />
+            <Link to="/support">Help and Support</Link>
+            <Link to="/products">Add new product</Link>
+            <Link to="/verification">Phone number verification</Link>
+
+          </div>
+        }
       />
     </Switch>
   );
