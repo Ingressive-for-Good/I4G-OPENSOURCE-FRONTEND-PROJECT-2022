@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily:{
+        "cabinet": ['Cabinet Grotesk', "sans-serif"],
+        "poppins": ['Poppins', "sans-serif"],
+      },
       colors: {
         primary: {
           50: "#E7E9F8",
@@ -76,6 +81,10 @@ module.exports = {
           800: "#7F7904",
           900: "#645F03",
         },
+      },
+      fontFamily: {
+        'cabinetGrotesk': ['"Cabinet Grotesk"', '"Segoe UI"', 'sans-serif', ],
+        'campton': ['Campton', '"Segoe UI"', 'sans-serif', ],
       },
     },
   },
