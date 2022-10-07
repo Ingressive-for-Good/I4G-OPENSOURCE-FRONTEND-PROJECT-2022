@@ -19,6 +19,8 @@ function App() {
               <Link to="/email-verification">
                 Visit Email Verification Page
               </Link>
+              <br />
+              <Link to="/login">Login</Link>
             </>
           }
         />
