@@ -1,8 +1,7 @@
 import React from "react";
-import Login from "./Components/Login";
 
 import EmailVerify from "./component/email/EmailVerify";
-
+import AddNewProductPage1 from "./AddNewProduct/pageOne/AddNewProductPage1";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
@@ -19,10 +18,11 @@ function App() {
               <Link to="/email-verification">
                 Visit Email Verification Page
               </Link>
+              <br />
+              <Link to="/products">Add new product</Link>
             </>
           }
         />
-        <Route path="/login" element={<Login />} />
         <Route
           path="/email-verification"
           element={
@@ -31,6 +31,7 @@ function App() {
             </>
           }
         />
+        <Route path="/products" element={<AddNewProductPage1 />} />
       </Routes>
     </BrowserRouter>
   );
