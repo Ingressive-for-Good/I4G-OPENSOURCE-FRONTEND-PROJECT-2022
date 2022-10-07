@@ -12,6 +12,14 @@
 <body>
     <div class="sidebar">
         <h3>tech<span>mart</span></h3>
+        <svg class="menu-icon" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect opacity="0.5" x="0.458333" y="0.458333" width="49.0833" height="49.0833" rx="12.375" stroke="#0F27BD"
+                stroke-width="0.916667" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.9795 25.0002C16.9795 24.6205 17.2873 24.3127 17.667 24.3127L32.3333 24.3127C32.713 24.3127 33.0208 24.6205 33.0208 25.0002C33.0208 25.3799 32.713 25.6877 32.3333 25.6877H17.667C17.2873 25.6877 16.9795 25.3799 16.9795 25.0002ZM19.989 31.4168C19.989 31.0371 20.2968 30.7293 20.6765 30.7293L32.3337 30.7293C32.7134 30.7293 33.0212 31.0371 33.0212 31.4168C33.0212 31.7965 32.7134 32.1043 32.3337 32.1043L20.6765 32.1043C20.2968 32.1043 19.989 31.7965 19.989 31.4168ZM25.2037 18.5835C25.2037 18.2038 25.5115 17.896 25.8912 17.896L32.3337 17.896C32.7134 17.896 33.0212 18.2038 33.0212 18.5835C33.0212 18.9632 32.7134 19.271 32.3337 19.271L25.8912 19.271C25.5115 19.271 25.2037 18.9632 25.2037 18.5835Z"
+                fill="#0F27BD" />
+        </svg>
+
 
         <p class="menu">MENU</p>
         <div>
@@ -115,7 +123,9 @@
             <p>Hey Nora<br>
                 <span>Read & Send Messages</span>
             </p>
-            <input placeholder="Search" type="search">
+            <label class="search">
+                <input placeholder="Search" type="search">
+            </label>
             <div class="circle">
                 <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -139,7 +149,7 @@
                 <div class="message-sections">
                     <img src="avatar3.png">
                     <div>
-                        <span>Ayomide Gadgets</span>
+                        <span class="name">Ayomide Gadgets</span>
                         <span>10:24AM</span>
                         <p>
                             <svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -211,8 +221,8 @@
                     Ayomide Gadgets
                 </div>
 
-                <hr>
-                <span>Today</span>
+                
+                <p class="hr-lines">Today</p>
 
                 <div class="sender-message">
                     Lorem Ipsum is a dummy text sed erat sapien sapien quis tincidunt suspendisse. Sedaquat lacus, orci sed tortor ipsum
@@ -236,6 +246,10 @@
                     <span>Message not delivered</span>
                     <span>Retry</span>
                 </div>
+
+                <label>
+                    <input class="message-bar" placeholder="Type a message and press enter to send">
+                </label>
             </div>
         </div>
     </div>
