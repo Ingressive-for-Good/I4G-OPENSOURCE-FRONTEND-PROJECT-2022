@@ -1,9 +1,10 @@
 import React from "react";
 
 function App() {
-    const shoot = () => {
+    const toggleMenu = () => {
         var nav = document.getElementById("nav");
         var body = document.getElementById("body");
+        // var navItems = document.querySelectorAll("nav a")
         body.style.overflowY = "hidden";
         nav.classList.toggle("hidden");
     }
@@ -15,17 +16,17 @@ function App() {
           tech<span className="text-secondary-500">mart</span>
         </h1>
         <div className="border-primary-500 border rounded-xl p-3 lg:hidden">
-          <img className="" onClick={shoot} id="hamburger" src="src/images/menu-icon.svg" alt="" />
+          <img className="" onClick={toggleMenu} id="hamburger" src="src/images/menu-icon.svg" alt="" />
         </div>
         <nav
           id="nav"
           className="h-screen lg:h-fit w-screen lg:w-fit flex hidden absolute lg:relative z-100 top-0 lg:top-unset left-0 lg:left-unset bg-white lg:bg-transparent lg:flex flex-col lg:flex-row space-y-8 lg:space-y-0 justify-center items-center lg:space-x-5 text-neutral-700"
         >
-          <img className="lg:hidden absolute top-12 right-16" onClick={shoot} id="hamburger" src="src/images/close-icon.png" alt="" />
+          <img className="lg:hidden absolute top-12 right-16" onClick={toggleMenu} id="hamburger" src="src/images/close-icon.png" alt="" />
           <a href="">Home</a>
-          <a href="">How it Works</a>
-          <a href="">Market Place</a>
-          <a href="">Contact Us</a>
+          <a href="#howitworks">How it Works</a>
+          <a href="#marketplace">Market Place</a>
+          <a href="#contactUs">Contact Us</a>
           <div className="mx-4 space-x-4">
             <a className="text-primary-500 font-medium" href="">
               Log In
@@ -144,7 +145,7 @@ function App() {
         </section>
 
         {/* buy an item */}
-        <section className="w-fit mx-auto px-6 py-3 rounded-lg my-5 text-center">
+        <section id="howitworks" className="w-fit mx-auto px-6 py-3 rounded-lg my-5 text-center">
           <h1 className="font-cabinetGrotesk text-2xl font-semibold">
             <span className="text-secondary-500">Buy Items</span> in 3 Easy
             Steps
@@ -250,7 +251,7 @@ function App() {
         </section>
 
         {/* products */}
-        <section className="w-5/6 mx-auto">
+        <section id="marketplace" className="w-5/6 mx-auto">
           <h1 className="text-center text-xl font-semibold font-cabinetGrotesk">
             Popular Products
           </h1>
@@ -328,7 +329,7 @@ function App() {
         </section>
 
         {/* newsletter subscription*/}
-        <section className="bg-primary-500 p-6 w-5/6 mx-auto my-16 rounded-lg">
+        <section id="contactUs" className="bg-primary-500 p-6 w-5/6 mx-auto my-16 rounded-lg">
           <h1 className="text-center text-white text-3xl font-semibold font-cabinetGrotesk">
             Subscribe for Updates
           </h1>
