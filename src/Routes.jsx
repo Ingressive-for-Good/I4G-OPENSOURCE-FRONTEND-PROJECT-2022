@@ -1,15 +1,19 @@
 import React from "react";
 import { Route, Routes as Switch, Link } from "react-router-dom";
-import Help from "./src/molecules/Help";
-
+import Help from "./molecules/Help";
+import LandingPage from "./pages/LandingPage";
+import EmailVerify from "./component/email/EmailVerify";
 // Routes Component Containing Routes For All Base Pages.
-
 function Routes() {
   return (
     <Switch>
       <Route
         path="/dashboard"
         element={<h1 className="text-3xl font-bold text-red-600">Dashboard</h1>}
+      />
+      <Route
+      path="/email-verification"
+      element={<EmailVerify />}
       />
       <Route
         path="/messages"
@@ -38,12 +42,7 @@ function Routes() {
       />
       <Route
         path="/"
-        element={
-          <>
-            <h1 className="text-3xl font-bold text-red-600">Home</h1>
-            <Link to="/support">Help and Support</Link>
-          </>
-        }
+        element={<LandingPage />}
       />
     </Switch>
   );
