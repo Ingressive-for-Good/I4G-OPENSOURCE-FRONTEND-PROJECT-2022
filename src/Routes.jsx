@@ -5,6 +5,7 @@ import LandingPage from "./pages/LandingPage";
 import DashboardPage from "./pages/DashboardPage";
 import EmailVerify from "./component/email/EmailVerify";
 import PhoneNumberVerification from './pages/PhoneNumberVerification';
+import AddNewProductPage1 from './AddNewProduct/pageOne/AddNewProductPage1';
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -28,7 +29,7 @@ function Routes() {
       />
       <Route
         path="/products"
-        element={<h1 className="text-3xl font-bold text-red-600">Products</h1>}
+        element={<AddNewProductPage1/>}
       />
       <Route
         path="/wishlist"
@@ -46,6 +47,10 @@ function Routes() {
       <Route
         path="/profile"
         element={<h1 className="text-3xl font-bold text-red-600">Profile</h1>}
+      />
+       <Route
+        path="/verification"
+        element={<PhoneNumberVerification/>}
       />
       <Route
         path="/"
