@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        cabinet: ["Cabinet Grotesk", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
       colors: {
         primary: {
           50: "#E7E9F8",
@@ -81,6 +86,6 @@ module.exports = {
         "checked-image": "url('/src/assets/Tick.png')",
       },
     },
+    plugins: [],
   },
-  plugins: [],
 };
