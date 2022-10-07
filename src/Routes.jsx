@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes as Switch, Link } from "react-router-dom";
+import { Route, Routes as Switch } from "react-router-dom";
 import Help from "./molecules/Help";
 import LandingPage from "./pages/LandingPage";
 import DashboardPage from "./pages/DashboardPage";
