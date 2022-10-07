@@ -96,6 +96,9 @@ body {
   }
 }
 @media only screen and (min-width: 1101px) {
+  .menu-icon {
+    display: none;
+  }
   .sidebar {
     float: left;
     background: #E7E9F8;
