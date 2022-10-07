@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.side{
+    height: calc(100vh - theme(spacing.12))
+}
+.tab{
+    width: calc(100vw - theme(width.80))
+}
+@font-face {
+    font-family: "CabinetGrotesk";
+    src: url("../public/fonts/CabinetGrotesk-Regular.otf");
+}
+@font-face {
+    font-family: "Campton";
+    src: url("../public/fonts/Campton-LightDEMO.otf");
+}

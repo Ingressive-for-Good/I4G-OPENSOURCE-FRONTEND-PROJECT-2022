@@ -77,6 +77,10 @@ module.exports = {
           900: "#645F03",
         },
       },
+      fontFamily:{
+        grotesk: ['CabinetGrotesk', 'regular'],
+        campton: ['Campton', 'regular']
+      }
     },
   },
   plugins: [],
