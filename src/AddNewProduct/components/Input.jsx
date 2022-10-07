@@ -33,7 +33,7 @@ export default function Input() {
           <label>
             <p className='pb-[7px]'>Product name <span className='text-error-500'>*</span></p>
             <input
-              className='p-[16px] border border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[100%]' 
+              className='p-[16px]  border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[100%]' 
               type="text" 
               placeholder='placeholder'
             />
@@ -41,7 +41,7 @@ export default function Input() {
           <label>
             <p className='pb-[7px]'>Product prize <span className='text-error-500'>*</span></p>
             <input
-              className='p-[16px] border border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[100%]' 
+              className='p-[16px]  border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[100%]' 
               type="text" 
               placeholder='placeholder'
             />
@@ -85,7 +85,7 @@ export default function Input() {
           <label>
               <p className='pb-[7px]'>Product Description <span className='text-error-500'>*</span></p>
               <textarea
-                className='p-[16px] h-[121px] border border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[100%]' 
+                className='p-[16px] h-[121px]  border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[100%]' 
                 type="text" 
                 placeholder='placeholder'
               />
@@ -95,7 +95,7 @@ export default function Input() {
               <p className='pb-[7px]'>Product Images <span className='text-error-500'>*</span></p>
               <div
                 disabled
-                className=' flex flex-col justify-center items-center gap-[8px] p-[16px] h-[202px] border border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[100%] text-[14px]' 
+                className=' flex flex-col justify-center items-center gap-[8px] p-[16px] h-[202px]  border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[100%] text-[14px]' 
                 type="text" 
               >
                 <img src={Upload} alt="upload" />

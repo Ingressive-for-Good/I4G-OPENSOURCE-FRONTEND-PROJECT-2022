@@ -1,6 +1,7 @@
 import React from "react";
 import EmailVerify from "./component/email/EmailVerify";
 import AddNewProductPage1 from './AddNewProduct/pageOne/AddNewProductPage1'
+import WishlistDeleteItem from "./Wishlist-SD/components/pages/WishlistDeleteItem"
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
               <Link to="/email-verification">Visit Email Verification Page</Link>
               <br />
               <Link to="/products">Add new product</Link>
+              <br />
+              <Link to="/wishlist">Delete Item From Wishlist</Link>
 
             </>
           }
@@ -32,6 +35,11 @@ function App() {
         <Route
         path="/products"
         element={<AddNewProductPage1/>}
+        />
+
+        <Route
+        path="/wishlist"
+        element={<WishlistDeleteItem />}
         />
       </Routes>
     </BrowserRouter>

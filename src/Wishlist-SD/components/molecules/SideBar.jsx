@@ -16,7 +16,7 @@ export default function SideBar() {
           <li className='pl-[50px] py-[19.5px]'>
             <NavLink className='flex flex-row gap-[10px]' to='#'>
               <img src={dashboardIcon} alt="" />
-              <span>
+              <span className="font-medium text-neutral-500">
                 Dashboard
               </span>
             </NavLink>
@@ -24,23 +24,23 @@ export default function SideBar() {
           <li className='pl-[50px] py-[19.5px]'>
             <NavLink className='flex flex-row gap-[10px]' to='#'>
               <img src={chatIcon} alt="" />
-              <span>
+              <span className="font-medium text-neutral-500">
                 Messages
-              </span>
-            </NavLink>
-          </li>
-          <li className='pl-[50px] py-[19.5px] bg-white'>
-            <NavLink className='flex flex-row gap-[10px]' to='#'>
-              <img src={productIcon} alt="" />
-              <span className='text-primary-500'>
-                Products
               </span>
             </NavLink>
           </li>
           <li className='pl-[50px] py-[19.5px]'>
             <NavLink className='flex flex-row gap-[10px]' to='#'>
+              <img src={productIcon} alt="" />
+              <span className="font-medium text-neutral-500">
+                Products
+              </span>
+            </NavLink>
+          </li>
+          <li className='pl-[50px] py-[19.5px] bg-white'>
+            <NavLink className='flex flex-row gap-[10px]' to='#'>
               <img src={wishlistIcon} alt="" />
-              <span>
+              <span className='text-primary-500 font-semibold'>
                 Wishlist
               </span>
             </NavLink>
@@ -48,7 +48,7 @@ export default function SideBar() {
           <li className='pl-[50px] py-[19.5px]'>
             <NavLink className='flex flex-row gap-[10px]' to='#'>
               <img src={helpIcon} alt="" />
-              <span>
+              <span className="font-medium text-neutral-500">
                 Help & Support
               </span>
               </NavLink>
@@ -57,7 +57,7 @@ export default function SideBar() {
         <div className='pl-[50px]'>
           <Link className='flex flex-row gap-[10px]' to='#'>
             <img src={logoutIcon} alt="logouticon" />
-            <span>Logout</span>
+            <span className="font-medium text-neutral-500">Logout</span>
           </Link>
         </div>
       </div>
