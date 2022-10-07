@@ -1,6 +1,5 @@
 @tailwind base;
 @tailwind components;
-<<<<<<< HEAD
 @tailwind utilities;
 
 @layer base {
@@ -63,6 +62,4 @@
     @apply border-2 border-neutral-500 font-medium text-[16px] text-neutral-900 p-2 rounded-[4px] checked:bg-primary-500 checked:border-primary-500 checked:bg-checked-image bg-no-repeat bg-center;
   }
 }
-=======
 @tailwind utilities;
->>>>>>> 704c3572d34115c28ffd025c54739fe157279cd8
