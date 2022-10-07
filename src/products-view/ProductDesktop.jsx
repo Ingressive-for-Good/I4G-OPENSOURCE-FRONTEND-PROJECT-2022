@@ -1,7 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
 import Img1 from '../assets/element-4.png'
-import Img2 from '../assets/chat.png'
+import Img2 from '../assets/Chat.png';
 import Img3 from '../assets/box.png'
 import Img4 from '../assets/vector1.png'
 import Img5 from '../assets/_.png'
