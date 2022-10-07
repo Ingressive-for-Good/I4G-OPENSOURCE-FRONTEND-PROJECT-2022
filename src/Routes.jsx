@@ -28,14 +28,9 @@ function Routes() {
         element={<h1 className="text-3xl font-bold text-red-600">Messages</h1>}
       />
       <Route
-        path="/products"
-        element={<AddNewProductPage1/>}
-      />
-      <Route
         path="/wishlist"
         element={<h1 className="text-3xl font-bold text-red-600">Wishlist</h1>}
       />
-
       <Route path="/support" element={<Help />} />
 
       <Route
@@ -55,6 +50,10 @@ function Routes() {
       <Route
         path="/"
         element={<LandingPage />}
+      />  
+      <Route
+      path="/products"
+      element={<AddNewProductPage1/>}
       />
     </Switch>
   );
