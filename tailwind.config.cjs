@@ -77,6 +77,9 @@ module.exports = {
           900: "#645F03",
         },
       },
+      backgroundImage: {
+        "checked-image": "url('/src/assets/Tick.png')",
+      },
     },
   },
   plugins: [],
