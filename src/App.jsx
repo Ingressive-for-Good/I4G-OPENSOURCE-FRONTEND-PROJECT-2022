@@ -1,7 +1,6 @@
 import React from "react";
-
 import EmailVerify from "./component/email/EmailVerify";
-
+import AddNewProductPage1 from './AddNewProduct/pageOne/AddNewProductPage1'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
@@ -16,6 +15,9 @@ function App() {
               <Link to="/support">Help and Support</Link>
               <br />
               <Link to="/email-verification">Visit Email Verification Page</Link>
+              <br />
+              <Link to="/products">Add new product</Link>
+
             </>
           }
         />
@@ -26,6 +28,10 @@ function App() {
               <EmailVerify />
             </>
           }
+        />
+        <Route
+        path="/products"
+        element={<AddNewProductPage1/>}
         />
       </Routes>
     </BrowserRouter>
