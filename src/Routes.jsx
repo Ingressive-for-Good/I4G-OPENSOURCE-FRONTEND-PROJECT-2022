@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes as Switch, Link } from "react-router-dom";
 import Help from "./molecules/Help";
 import LandingPage from "./pages/LandingPage";
+import DashboardPage from "./pages/DashboardPage";
 import EmailVerify from "./component/email/EmailVerify";
 import PhoneNumberVerification from './pages/PhoneNumberVerification';
 
@@ -11,7 +12,7 @@ function Routes() {
     <Switch>
       <Route
         path="/dashboard"
-        element={<h1 className="text-3xl font-bold text-red-600">Dashboard</h1>}
+        element={<DashboardPage />}
       />
       <Route
       path="/email-verification"
