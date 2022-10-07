@@ -1,5 +1,5 @@
 import React from "react";
-import Products from "./products-view/Products";
+import ViewProducts from "./products-view/Products";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
@@ -15,23 +15,21 @@ function App() {
               <br />
               <Link to="/email-verification">Visit Email Verification Page</Link>
               <br />
-              <Link to="/products">Add new product</Link>
+              <Link to="/products">Add new product</Link><br />
+              <Link to="/view-products">View products</Link>
 
             </>
           }
         />
         <Route
-          path="/email-verification"
+          path="/view-products"
           element={
             <>
-              <EmailVerify />
+              <ViewProducts />
             </>
           }
         />
-        <Route
-        path="/products"
-        element={<AddNewProductPage1/>}
-        />
+       
       </Routes>
     </BrowserRouter>
   );

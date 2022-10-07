@@ -4,7 +4,7 @@ import ProductMobile from './ProductMobile';
 import {useState, useEffect} from 'react'
 
 
-const Products = () => {
+const ViewProducts = () => {
 
     const [mobileText, setMoblieText] = useState(getWindow())
     // const [isEmpty, setIsEmpty] = useState(true)
@@ -31,7 +31,7 @@ const Products = () => {
     
 
   return (
-    <div>
+    <div className='mx-4 lg:mx-6 xl:mx-0'>
         {mobileText ? (<ProductMobile mobileText={mobileText}/>) :
             (<ProductDesktop/>)
         }
@@ -39,4 +39,4 @@ const Products = () => {
   )
 }
 
-export default Products
+export default ViewProducts
