@@ -1,7 +1,23 @@
+import { info } from "autoprefixer";
 import React from "react";
+import Hero from "./hero";
+import Delete from "./delete";
+import Sidebar from "./sidebar";
+import Modal from "./modal";
 
 function App() {
-  return <h1 className="text-3xl font-bold text-red-600">Hello world!</h1>;
+  return (
+    <div className="relative h-screen">
+      <Modal />
+      <div className="py-8 px-5 w-screen md:py-10 md:px-14 lg:flex lg:gap-8 relative lg:pl-0 lg:pt-0 lg:pr-10">
+        <Sidebar />
+        <div>
+          <Hero />
+          <Delete />
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default App;

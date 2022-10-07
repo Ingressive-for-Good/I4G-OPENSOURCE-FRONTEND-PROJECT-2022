@@ -7,14 +7,17 @@ import appTheme from "../styles/app-theme";
 import GlobalStyle from "../styles/global-style";
 import "../styles/index.css";
 import store from "../utils/services/store";
+import { Context } from "./context";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <GlobalStyle />
     <ThemeProvider theme={appTheme}>
       <Provider store={store}>
-        <App />
+        <Context>
+          <App />
+        </Context>
       </Provider>
     </ThemeProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
 );

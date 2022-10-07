@@ -3,6 +3,22 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      height: {
+        944: "42rem",
+      },
+      fontSize: {
+        small: ["14px", "17px"],
+        p: ["16px", "20px"],
+        h4: ["21px", "26px"],
+        button: ["18px, 24px"],
+        mdP: ["20px", "25px"],
+        mdH4: ["28px", "35px"],
+      },
+      fontFamily: {
+        cabinet: ["Cabinet Grotesk", "sans-serif"],
+        lato: ["Lato", "sans-sarif"],
+        Campton: ["Campton", "sans-serif"],
+      },
       colors: {
         primary: {
           50: "#E7E9F8",
