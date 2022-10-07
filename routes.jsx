@@ -1,5 +1,6 @@
 import React from "react";
-import { Route, Routes as Switch } from "react-router-dom";
+import { Route, Routes as Switch, Link } from "react-router-dom";
+import Help from "./src/molecules/Help";
 
 // Routes Component Containing Routes For All Base Pages.
 
@@ -22,12 +23,9 @@ function Routes() {
         path="/wishlist"
         element={<h1 className="text-3xl font-bold text-red-600">Wishlist</h1>}
       />
-      <Route
-        path="/support"
-        element={
-          <h1 className="text-3xl font-bold text-red-600">Help & Support</h1>
-        }
-      />
+
+      <Route path="/support" element={<Help />} />
+
       <Route
         path="/notifications"
         element={
@@ -40,7 +38,12 @@ function Routes() {
       />
       <Route
         path="/"
-        element={<h1 className="text-3xl font-bold text-red-600">Home</h1>}
+        element={
+          <>
+            <h1 className="text-3xl font-bold text-red-600">Home</h1>
+            <Link to="/support">Help and Support</Link>
+          </>
+        }
       />
     </Switch>
   );
