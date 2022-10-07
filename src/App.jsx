@@ -15,7 +15,7 @@ function App() {
               <h1 className="text-3xl font-bold text-red-600">Home</h1>
               <Link to="/support">Help and Support</Link>
               <br />
-              <Link to="/email-verification">Visit Email EmailVerify Page</Link>
+              <Link to="/email-verification">Visit Email Verification Page</Link>
             </>
           }
         />
