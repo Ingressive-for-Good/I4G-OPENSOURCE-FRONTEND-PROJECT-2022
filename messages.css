@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  font-family: "Cabinet Grotesk", sans-serif;
+  padding: 0;
+}
+
+body {
+  height: 1024px;
+}
+
+.sidebar {
+  float: left;
+  background: #E7E9F8;
+  color: #A1A4B6;
+  height: 70%;
+  width: 24vw;
+}
+.sidebar h3 {
+  font-size: 32px;
+  color: #0F27BD;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 700;
+}
+.sidebar h3 span {
+  color: #F17105;
+}
+.sidebar .menu {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 50px 0 20px 20%;
+  color: #0F27BD;
+}
+.sidebar div {
+  margin: 0 0 40px 20%;
+  font-size: 18px;
+}
+.sidebar div svg {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.sidebar div:hover {
+  cursor: pointer;
+}
+.sidebar .messages {
+  background: white;
+  padding: 18px 0 18px 15%;
+  margin-left: 0;
+  color: #0F27BD;
+}
+.sidebar .logout {
+  color: red;
+  font-weight: 550;
+  font-size: 15px;
+  text-align: center;
+  margin: 100px;
+}
+.sidebar .logout svg {
+  vertical-align: middle;
+}
+.sidebar .logout:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.main {
+  float: right;
+  width: 70vw;
+}
+.main .nav-right {
+  vertical-align: middle;
+  margin-top: 50px;
+}
+.main .nav-right p {
+  display: inline-block;
+  margin: 0 20% 0 1vw;
+  font-size: 20px;
+  font-weight: 500;
+  vertical-align: middle;
+}
+.main .nav-right p span {
+  font-weight: 700;
+  font-size: 23px;
+}
+.main .nav-right input {
+  width: 20vw;
+  height: 32px;
+  background: #FAFAFB;
+  vertical-align: middle;
+  border: 1.2px solid #A1A4B6;
+  border-radius: 8px;
+  padding: 2px 8px;
+}
+.main .nav-right .circle {
+  background: #E7E9F8;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.main .nav-right .circle svg {
+  margin: 7px auto;
+}
+.main .main-info {
+  display: block;
+  width: 63vw;
+  height: 90vh;
+  margin: 40px 0%;
+  border-radius: 8px;
+  border: 1px solid #A1A4B6;
+}
+.main .main-info .left {
+  float: left;
+  height: 100%;
+  width: 39.5%;
+  border-right: 2px solid #A1A4B6;
+}
+.main .main-info .left .head {
+  height: 70px;
+  border-bottom: 1px solid #A1A4B6;
+  text-align: center;
+  line-height: 70px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.main .main-info .left .message-sections, .main .main-info .left .message-sections2 {
+  height: 75px;
+  border: none;
+  border-bottom: 1.2px solid #A1A4B6;
+}
+.main .main-info .left .message-sections img, .main .main-info .left .message-sections2 img {
+  vertical-align: middle;
+  margin: 10px 0% 0 15px;
+}
+.main .main-info .left .message-sections div, .main .main-info .left .message-sections2 div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+.main .main-info .left .message-sections div :nth-child(1), .main .main-info .left .message-sections2 div :nth-child(1) {
+  font-size: 18px;
+  font-weight: 500;
+}
+.main .main-info .left .message-sections div :nth-child(2), .main .main-info .left .message-sections2 div :nth-child(2) {
+  font-size: 14px;
+  margin-left: 1vw;
+}
+.main .main-info .left .message-sections div svg, .main .main-info .left .message-sections2 div svg {
+  width: 12px;
+  height: 12px;
+}
+.main .main-info .left .message-sections div :nth-child(4), .main .main-info .left .message-sections2 div :nth-child(4) {
+  font-size: 15px;
+}
+.main .main-info .left .message-sections2 {
+  background: #E7E9F8;
+  border-right: 3px solid #0F27BD;
+}
+.main .main-info .right {
+  float: right;
+  background: #E7E9F8;
+  width: 60%;
+  height: 100%;
+}
+.main .main-info .right .head {
+  height: 70px;
+  border-bottom: 1px solid #A1A4B6;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 70px;
+}
+.main .main-info .right .head img {
+  width: 45px;
+  height: 45px;
+  text-align: left;
+  margin-left: 30px;
+  vertical-align: middle;
+  line-height: 50px;
+}
+.main .main-info .right hr {
+  margin: 10px 0 0 0;
+}
+.main .main-info .right .sender-message {
+  height: contain;
+  margin: 15px 0 15px 3%;
+  width: 50%;
+  background: white;
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 8px 8px 8px 0px;
+}
+.main .main-info .right .my-message {
+  height: contain;
+  background: #0F27BD;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px 8px 0px 8px;
+  padding: 8px;
+  width: 45%;
+  margin: 12px 4% 0 48%;
+}
+.main .main-info .right .error {
+  margin: 12px 4% 0 50%;
+  color: #0F27BD;
+  font-size: 14px;
+  font-weight: 550;
+}
+.main .main-info .right .error svg {
+  vertical-align: middle;
+  margin-right: 3px;
+}
+.main .main-info .right .error :nth-child(2) {
+  color: red;
+  margin-right: 4%;
+}/*# sourceMappingURL=messages.css.map */
