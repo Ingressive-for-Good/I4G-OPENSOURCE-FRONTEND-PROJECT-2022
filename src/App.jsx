@@ -15,6 +15,9 @@ function App() {
               <Link to="/support">Help and Support</Link>
               <br />
               <Link to="/email-verification">Visit Email Verification Page</Link>
+              <br />
+              <Link to="/products">Add new product</Link>
+
             </>
           }
         />
