@@ -11,6 +11,7 @@ import keyboard from "../images/product-keyboard.png"
 import controller from "../images/product-controller.png"
 import cartIcon from "../images/cart-icon.svg"
 import profileImg from "../images/landingpage__client-profile-img.svg"
+import p2p from "../images/landingpage__p2p.svg"
 
 function App() {
     const toggleMenu = () => {
@@ -131,7 +132,7 @@ function App() {
             <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto">
               <img
                 className="mx-auto"
-                src="src/images/landingpage__p2p.svg"
+                src={p2p}
                 alt=""
               />
               <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
