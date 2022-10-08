@@ -8,6 +8,106 @@ body {
     //overflow-x: hidden;
     height: 900px;
 }
+
+@media only screen and (max-width: 1099px) {
+    body{
+        background: white;
+    }
+    .sidebar{
+        p, div, a{
+            display: none;
+        }
+        h3{
+            font-size: 32px;
+            color: #0F27BD;
+            margin: 50px 0 0 10vw;
+            font-weight: 700;
+            display: inline-block;        
+            span {
+                color: #F17105;
+            }
+        }
+        .menu-icon{
+            float: right;
+            margin: 50px 12vw 0 0;
+        }
+    }
+    .main{
+        .nav-right{
+            p{
+                display: inline-block;
+                margin: 50px 20% 0 10vw;
+                font-size: 20px;
+                font-weight: 500;
+                
+                span{
+                    font-weight: 600;
+                    font-size: 25px;
+                }
+            }
+            .circle, .search{
+                display: none;
+            }
+        }
+
+        h3{
+            margin: 10px 0 0 10vw;
+        }
+
+        .main-info{
+            width: 80vw;
+            display: block;
+            //height: 90vh;
+            margin: 40px auto 0 auto;
+            border-radius: 8px;
+            border: 1px solid #A1A4B6;
+            div{
+                height: 9vh;
+                //width: 100%;
+                border: none;
+                border-bottom: 1.2px solid #A1A4B6;
+                padding: 0 40px 0 25px;
+                p{
+                    //line-height: 55px;
+                    margin-top: 18px;
+                }
+                svg{
+                    //vertical-align: middle;
+                    line-height: 55px;
+                    float: right;
+                    display: block;
+                    //margin: -3vw 0 0 0;
+                    //padding: 20px 0;
+                }
+            }
+            .sections1 svg{
+                padding: 0vw 0 0 0;
+            }
+            .sections2{
+                height: 50%;
+                p{
+                    line-height: normal;
+                    vertical-align: middle;
+                }
+            }
+            .sections4{
+                border: none;
+            }
+        }
+        .footer{
+            h4, p{
+                margin: 4vw 8.5vw 15px 8vw;
+            }
+            a{
+                text-decoration: none;
+                color: #F17105;
+            }
+        }
+    }
+}
+
+
+//Laptop View
 @media only screen and (min-width: 1101px) {
     .menu-icon{
         display: none;
@@ -121,7 +221,7 @@ body {
                 }
             }
         }
-         h3{
+        h3{
             margin: 30px 0 0 1vw;
         }
 
@@ -172,6 +272,10 @@ body {
                 font-size: 18px;
                 color: #4B4E61;
                 line-height: 25px;
+                a{
+                    color: #F17105;
+                    text-decoration: none;
+                }
             }
         }
     }

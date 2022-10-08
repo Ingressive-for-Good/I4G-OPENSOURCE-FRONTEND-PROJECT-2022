@@ -8,6 +8,85 @@ body {
   height: 900px;
 }
 
+@media only screen and (max-width: 1099px) {
+  body {
+    background: white;
+  }
+  .sidebar p, .sidebar div, .sidebar a {
+    display: none;
+  }
+  .sidebar h3 {
+    font-size: 32px;
+    color: #0F27BD;
+    margin: 50px 0 0 10vw;
+    font-weight: 700;
+    display: inline-block;
+  }
+  .sidebar h3 span {
+    color: #F17105;
+  }
+  .sidebar .menu-icon {
+    float: right;
+    margin: 50px 12vw 0 0;
+  }
+  .main .nav-right p {
+    display: inline-block;
+    margin: 50px 20% 0 10vw;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .main .nav-right p span {
+    font-weight: 600;
+    font-size: 25px;
+  }
+  .main .nav-right .circle, .main .nav-right .search {
+    display: none;
+  }
+  .main h3 {
+    margin: 10px 0 0 10vw;
+  }
+  .main .main-info {
+    width: 80vw;
+    display: block;
+    margin: 40px auto 0 auto;
+    border-radius: 8px;
+    border: 1px solid #A1A4B6;
+  }
+  .main .main-info div {
+    height: 9vh;
+    border: none;
+    border-bottom: 1.2px solid #A1A4B6;
+    padding: 0 40px 0 25px;
+  }
+  .main .main-info div p {
+    margin-top: 18px;
+  }
+  .main .main-info div svg {
+    line-height: 55px;
+    float: right;
+    display: block;
+  }
+  .main .main-info .sections1 svg {
+    padding: 0vw 0 0 0;
+  }
+  .main .main-info .sections2 {
+    height: 50%;
+  }
+  .main .main-info .sections2 p {
+    line-height: normal;
+    vertical-align: middle;
+  }
+  .main .main-info .sections4 {
+    border: none;
+  }
+  .main .footer h4, .main .footer p {
+    margin: 4vw 8.5vw 15px 8vw;
+  }
+  .main .footer a {
+    text-decoration: none;
+    color: #F17105;
+  }
+}
 @media only screen and (min-width: 1101px) {
   .menu-icon {
     display: none;
@@ -165,5 +244,9 @@ body {
     font-size: 18px;
     color: #4B4E61;
     line-height: 25px;
+  }
+  .main .footer p a {
+    color: #F17105;
+    text-decoration: none;
   }
 }/*# sourceMappingURL=support.css.map */
