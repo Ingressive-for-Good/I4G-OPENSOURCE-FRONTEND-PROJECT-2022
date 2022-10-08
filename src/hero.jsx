@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../public/images/logo.png";
-import vector from "../public/images/bar.pageOne";
+import vector from "../public/images/bar.png";
 import ipad from "../public/images/ipad.png";
 
 import notification from "../public/images/notification.png";
