@@ -1,5 +1,5 @@
 import Select from 'react-select'
-import Upload from '../icons/UploadMedia.svg'
+import DragNDrop from './DragNDrop'
 
 // Options for each select input goes here. Create more and replace
 const categories = [
@@ -91,18 +91,7 @@ export default function Input() {
               />
           </label>
           {/* For the first page */}
-          <label className='relative'>
-              <p className='pb-[7px]'>Product Images <span className='text-error-500'>*</span></p>
-              <div
-                disabled
-                className=' flex flex-col justify-center items-center gap-[8px] p-[16px] h-[202px] border border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[100%] text-[14px]' 
-                type="text" 
-              >
-                <img src={Upload} alt="upload" />
-                <p>Drag and drop or <span className='text-primary-500 cursor-pointer'>Select</span> file from computer</p>
-                <p>Max. 3 Images (in jpeg or png format only)</p>
-              </div>
-          </label>
+          <DragNDrop/>
         </div>
       </div>
       <button className='p-[18px] border border-primary-500 bg-primary-500 text-white hover:text-primary-500 hover:bg-white md:w-[40%] w-full mx-auto mt-[80px] rounded-[8px] transition duration-200'>Upload Now</button>
