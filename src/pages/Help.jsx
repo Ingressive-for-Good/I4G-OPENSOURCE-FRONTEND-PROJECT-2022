@@ -6,7 +6,6 @@ import chevronDown from "../images/chevronDown.svg";
 import defaultAvatar from "../images/avatar.svg";
 
 import search from "../images/search-icon.svg";
-import martZ from "../images/martZ.svg";
 import techmart from "../images/techmart.svg";
 import SideNav from "../atoms/SideNav";
 import Avatar from "../atoms/Avatar";

@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes as Switch } from "react-router-dom";
-import Help from "./molecules/Help";
+import Help from "./pages/Help";
 import LandingPage from "./pages/LandingPage";
 import DashboardPage from "./pages/DashboardPage";
 import EmailVerify from "./component/email/EmailVerify";
