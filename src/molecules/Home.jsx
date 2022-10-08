@@ -1,5 +1,17 @@
 import React from "react";
 
+import menuIcon from "../images/menu-icon.svg";
+import wavyArrow from "../images/landingpage__wavy-arrow.svg"
+import wavyUnderline from "../images/landingpage__wavy-underline.svg"
+import bestQuality from "../images/landingpage__best-quality.svg"
+import meetnconnect from "../images/landingpage__meetnconnect.svg"
+import support from "../images/landingpage__support.svg"
+import wavyDashed from "../images/landingpage__wavy-dashed.svg"
+import keyboard from "../images/product-keyboard.png"
+import controller from "../images/product-controller.png"
+import cartIcon from "../images/cart-icon.svg"
+import profileImg from "../images/landingpage__client-profile-img.svg"
+
 function App() {
     const toggleMenu = () => {
         var nav = document.getElementById("nav");
@@ -10,13 +22,14 @@ function App() {
     }
   return (
     <div id="body" className="text-neutral-900 font-campton">
+      
       {/* header and navigation */}
       <header className="relative bg-primary-50 px-8 py-9 flex items-center justify-between">
         <h1 className="font-cabinetGrotesk text-primary-500 font-bold text-2xl">
           tech<span className="text-secondary-500">mart</span>
         </h1>
         <div className="border-primary-500 border rounded-xl p-3 lg:hidden">
-          <img className="" onClick={toggleMenu} id="hamburger" src="src/images/menu-icon.svg" alt="" />
+          <img className="" onClick={toggleMenu} id="hamburger" src={menuIcon} alt="" />
         </div>
         <nav
           id="nav"
@@ -41,6 +54,7 @@ function App() {
         </nav>
       </header>
       <main>
+        
         {/* hero section */}
         <section className="px-[10%] py-4 text-center bg-primary-50">
           <h1 className="font-cabinetGrotesk font-bold text-3xl sm:text-4xl lg:text-5xl my-3 sm:max-w-md md:max-w-lg sm:mx-auto">
@@ -65,7 +79,7 @@ function App() {
               </a>
               <img
                 className="mx-auto"
-                src="src/images/landingpage__wavy-arrow.svg"
+                src={wavyArrow}
                 alt=""
               />
             </div>
@@ -79,7 +93,7 @@ function App() {
           </h1>
           <img
             className="mx-auto mb-8"
-            src="src/images/landingpage__wavy-underline.svg"
+            src={wavyUnderline}
             alt=""
           />
           <p className="text-neutral-700">
@@ -91,7 +105,7 @@ function App() {
             <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto">
               <img
                 className="mx-auto"
-                src="src/images/landingpage__best-quality.svg"
+                src={bestQuality}
                 alt=""
               />
               <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
@@ -104,7 +118,7 @@ function App() {
             <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto">
               <img
                 className="mx-auto"
-                src="src/images/landingpage__meetnconnect.svg"
+                src={meetnconnect}
                 alt=""
               />
               <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
@@ -130,7 +144,7 @@ function App() {
             <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto w-full">
               <img
                 className="mx-auto"
-                src="src/images/landingpage__support.svg"
+                src={support}
                 alt=""
               />
               <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
@@ -167,7 +181,7 @@ function App() {
             </div>
             <img
               className="lg:rotate-90 mx-auto"
-              src="src/images/landingpage__wavy-dashed.svg"
+              src={wavyDashed}
               alt=""
             />
             <div className="max-w-xs mx-auto lg:mx-8">
@@ -180,7 +194,7 @@ function App() {
             </div>
             <img
               className="lg:rotate-90 mx-auto"
-              src="src/images/landingpage__wavy-dashed.svg"
+              src={wavyDashed}
               alt=""
             />
             <div className="max-w-xs mx-auto lg:ml-8">
@@ -220,7 +234,7 @@ function App() {
             </div>
             <img
               className="lg:rotate-90 mx-auto lg:mr-8"
-              src="src/images/landingpage__wavy-dashed.svg"
+              src={wavyDashed}
               alt=""
             />
             <div className="max-w-xs mx-auto">
@@ -233,7 +247,7 @@ function App() {
             </div>
             <img
               className="lg:rotate-90 mx-auto lg:mx-8"
-              src="src/images/landingpage__wavy-dashed.svg"
+              src={wavyDashed}
               alt=""
             />
             <div className="max-w-xs mx-auto">
@@ -257,7 +271,7 @@ function App() {
           </h1>
           <img
             className="mx-auto mb-4"
-            src="src/images/landingpage__wavy-underline.svg"
+            src={wavyUnderline}
             alt=""
           />
           <p className="text-neutral-700 text-center my-5">
@@ -267,7 +281,7 @@ function App() {
           {/* product list */}
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <div className=" bg-neutral-50 w-fit mx-auto">
-              <img src="src/images/product-keyboard.png" alt="" />
+              <img src={keyboard} alt="" />
               <div className="border-x-2 border-b-2 border-neutral-300 rounded-b-lg flex flex-row justify-between items-center px-6 py-5">
                 <div>
                   <h5 className="text-neutral-700 font-medium">
@@ -277,11 +291,11 @@ function App() {
                     &#8358;25,000.00
                   </h3>
                 </div>
-                <img src="src/images/cart-icon.svg" alt="" />
+                <img src={cartIcon} alt="" />
               </div>
             </div>
             <div className="bg-neutral-50 w-fit mx-auto">
-              <img src="src/images/product-controller.png" alt="" />
+            <img src={controller} alt="" />
               <div className="border-x-2 border-b-2 border-neutral-300 rounded-b-lg flex flex-row justify-between items-center px-6 py-5">
                 <div>
                   <h5 className="text-neutral-700 font-medium">
@@ -291,11 +305,11 @@ function App() {
                     &#8358;100,000.00
                   </h3>
                 </div>
-                <img src="src/images/cart-icon.svg" alt="" />
+                <img src={cartIcon} alt="" />
               </div>
             </div>
             <div className="bg-neutral-50 w-fit mx-auto">
-              <img src="src/images/product-controller.png" alt="" />
+              <img src={controller} alt="" />
               <div className="border-x-2 border-b-2 border-neutral-300 rounded-b-lg flex flex-row justify-between items-center px-6 py-5">
                 <div>
                   <h5 className="text-neutral-700 font-medium">
@@ -305,11 +319,11 @@ function App() {
                     &#8358;100,000.00
                   </h3>
                 </div>
-                <img src="src/images/cart-icon.svg" alt="" />
+                <img src={cartIcon} alt="" />
               </div>
             </div>
             <div className="bg-neutral-50 w-fit mx-auto">
-              <img src="src/images/product-keyboard.png" alt="" />
+            <img src={keyboard} alt="" />
               <div className="border-x-2 border-b-2 border-neutral-300 rounded-b-lg flex flex-row justify-between items-center px-6 py-5">
                 <div>
                   <h5 className="text-neutral-700 font-medium">
@@ -319,7 +333,7 @@ function App() {
                     &#8358;25,000.00
                   </h3>
                 </div>
-                <img src="src/images/cart-icon.svg" alt="" />
+                <img src={cartIcon} alt="" />
               </div>
             </div>
           </div>
@@ -335,7 +349,7 @@ function App() {
           </h1>
           <img
             className="mx-auto mb-4"
-            src="src/images/landingpage__wavy-underline.svg"
+            src= {wavyUnderline}
             alt=""
           />
           <p className="text-white text-center my-5">
@@ -368,7 +382,7 @@ function App() {
           </h1>
           <img
             className="mx-auto"
-            src="src/images/landingpage__wavy-underline.svg"
+            src={wavyUnderline}
             alt=""
           />
           <p className="text-center my-3">
@@ -381,7 +395,7 @@ function App() {
             <div className="bg-primary-50 rounded-lg p-7">
               <img
                 className="mx-auto my-4"
-                src="src/images/landingpage__client-profile-img.svg"
+                src={profileImg}
                 alt=""
               />
               <p className="text-neutral-900 text-center leading-relaxed">
@@ -396,7 +410,7 @@ function App() {
             <div className="bg-primary-50 rounded-lg p-7">
               <img
                 className="mx-auto my-4"
-                src="src/images/landingpage__client-profile-img.svg"
+                src={profileImg}
                 alt=""
               />
               <p className="text-neutral-900 text-center leading-relaxed">
@@ -411,7 +425,7 @@ function App() {
             <div className="bg-primary-50 rounded-lg p-7">
               <img
                 className="mx-auto my-4"
-                src="src/images/landingpage__client-profile-img.svg"
+                src={profileImg}
                 alt=""
               />
               <p className="text-neutral-900 text-center leading-relaxed">
@@ -426,7 +440,7 @@ function App() {
             <div className="bg-primary-50 rounded-lg p-7">
               <img
                 className="mx-auto my-4"
-                src="src/images/landingpage__client-profile-img.svg"
+                src={profileImg}
                 alt=""
               />
               <p className="text-neutral-900 text-center leading-relaxed">
