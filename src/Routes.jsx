@@ -4,25 +4,16 @@ import Help from "./molecules/Help";
 import LandingPage from "./pages/LandingPage";
 import DashboardPage from "./pages/DashboardPage";
 import EmailVerify from "./component/email/EmailVerify";
-import PhoneNumberVerification from './pages/PhoneNumberVerification';
-import AddNewProductPage1 from './AddNewProduct/pageOne/AddNewProductPage1';
+import PhoneNumberVerification from "./pages/PhoneNumberVerification";
+import AddNewProductPage1 from "./AddNewProduct/pageOne/AddNewProductPage1";
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
   return (
     <Switch>
-      <Route
-        path="/dashboard"
-        element={<DashboardPage />}
-      />
-      <Route
-      path="/email-verification"
-      element={<EmailVerify />}
-      />
-      <Route
-        path="/phone-verification"
-        element={<PhoneNumberVerification/>}
-      />
+      <Route path="/dashboard" element={<DashboardPage />} />
+      <Route path="/email-verification" element={<EmailVerify />} />
+      <Route path="/phone-verification" element={<PhoneNumberVerification />} />
       <Route
         path="/messages"
         element={<h1 className="text-3xl font-bold text-red-600">Messages</h1>}
@@ -43,18 +34,9 @@ function Routes() {
         path="/profile"
         element={<h1 className="text-3xl font-bold text-red-600">Profile</h1>}
       />
-       <Route
-        path="/verification"
-        element={<PhoneNumberVerification/>}
-      />
-      <Route
-        path="/"
-        element={<LandingPage />}
-      />  
-      <Route
-      path="/products"
-      element={<AddNewProductPage1/>}
-      />
+      <Route path="/verification" element={<PhoneNumberVerification />} />
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/products" element={<AddNewProductPage1 />} />
     </Switch>
   );
 }
