@@ -14,10 +14,11 @@ module.exports = {
         mdP: ["20px", "25px"],
         mdH4: ["28px", "35px"],
       },
+
       fontFamily: {
-        cabinet: ["Cabinet Grotesk", "sans-serif"],
+        cabinetGrotesk: ['"Cabinet Grotesk"', '"Segoe UI"', "sans-serif"],
+        campton: ["Campton", '"Segoe UI"', "sans-serif"],
         lato: ["Lato", "sans-sarif"],
-        Campton: ["Campton", "sans-serif"],
       },
       colors: {
         primary: {
