@@ -1,11 +1,9 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      height: {
-        944: "42rem",
-      },
       fontSize: {
         small: ["14px", "17px"],
         p: ["16px", "20px"],
@@ -15,11 +13,8 @@ module.exports = {
         mdH4: ["28px", "35px"],
       },
 
-      fontFamily: {
-        cabinetGrotesk: ['"Cabinet Grotesk"', '"Segoe UI"', "sans-serif"],
-        campton: ["Campton", '"Segoe UI"', "sans-serif"],
-        lato: ["Lato", "sans-sarif"],
-      },
+      backgroundColor: { "black-t-50": "rgba(0,0,0,0.5)" },
+
       colors: {
         primary: {
           50: "#E7E9F8",
@@ -93,6 +88,11 @@ module.exports = {
           800: "#7F7904",
           900: "#645F03",
         },
+      },
+      fontFamily: {
+        cabinetGrotesk: ['"Cabinet Grotesk"', '"Segoe UI"', "sans-serif"],
+        campton: ["Campton", '"Segoe UI"', "sans-serif"],
+        lato: ["Lato", "sans-sarif"],
       },
     },
   },

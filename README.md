@@ -8,7 +8,7 @@
 
 Here're some of the project's best features:
 
-- Users can put up their item for sell.
+- Users can put up their item for sale.
 - Users who are interested in an item can buy from the seller.
 - Users can chat up the item seller.
 - It is P2P platform no payment is processed.
@@ -52,6 +52,7 @@ Technologies used in the project:
 - Tailwind CSS
 - NodeJS
 
-<h2>🛠️ Contributions</h2>
-Information about contributing to this project can be found in the contribution guide
-[Contribute](https://github.com/scarnation/I4G-OPENSOURCE-FRONTEND-PROJECT-2022/blob/develop/CONTRIBUTING.md)
+<h2>🛠️ Contributions </h2>
+
+Information about contributing to this project can be found in the [CONTRIBUTING](https://github.com/Ingressive-for-Good/I4G-OPENSOURCE-FRONTEND-PROJECT-2022/blob/develop/CONTRIBUTING.md) guide
+
