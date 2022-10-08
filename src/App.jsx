@@ -1,6 +1,7 @@
 import React from "react";
 import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
 import WishlistViewProducts from "./pages/WishlistViewProducts";
+import AddNewProductPage1 from './AddNewProduct/pageOne/AddNewProductPage1';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 function App() {
@@ -20,6 +21,10 @@ function App() {
           } exact></Route>
           <Route path="/wishlist" element={<WishlistViewProducts />}></Route>
           <Route  path="/add-to-wishlist" element={<EmptyWishlistViewProducts />}></Route>
+          <Route
+            path="/products"
+            element={<AddNewProductPage1/>}
+            />
           </Routes>
         </Router>
       </>
