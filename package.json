@@ -44,9 +44,5 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "postcss": "^8.4.16",
     "vite": "^3.1.0"
-  },
-  "main": "index.js",
-  "repository": "https://github.com/pragmaticAweds/I4G-OPENSOURCE-FRONTEND-PROJECT-2022.git",
-  "author": "Abdul-Afiz <jimohafeez738@gmail.com>",
-  "license": "MIT"
+  }
 }
