@@ -15,7 +15,7 @@ const EmailVerify = () => {
           </div>
           <div className="w-606px p-12 pl-20 bg-accent1">
             <div className="logo mt-2 mb-28">
-              <img src={logo} alt="logo" />
+              <img src={logo} alt="logo" />   
             </div>
             <div className="girl-img">
               <img className="w-96" src={girlSvg} alt="" />
