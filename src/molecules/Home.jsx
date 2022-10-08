@@ -67,7 +67,7 @@ function App() {
             swap items that they are not in use of, it also create an avenue for
             them to connect with other creatives around world.
           </p>
-          <div className="sm:w-fit sm:mx-auto sm:flex sm:justify-center md:my-8">
+          <div className="sm:w-fit sm:mx-auto sm:flex sm:justify-center sm:items-center md:my-8">
             <button className="font-cabinetGrotesk bg-primary-500 text-white px-5 py-4 rounded-lg sm:h-fit">
               Create an account
             </button>

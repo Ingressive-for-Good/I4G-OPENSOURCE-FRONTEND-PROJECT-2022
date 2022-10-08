@@ -1,7 +1,8 @@
 import React from "react";
-<<<<<<< HEAD
 import EmailVerify from "./component/email/EmailVerify";
 import Home from "./molecules/Home";
+import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
+import WishlistViewProducts from "./pages/WishlistViewProducts";
 import AddNewProductPage1 from './AddNewProduct/pageOne/AddNewProductPage1'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
@@ -35,20 +36,7 @@ function App() {
         path="/products"
         element={<AddNewProductPage1/>}
         />
-      </Routes>
-    </BrowserRouter>
-=======
-import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
-import WishlistViewProducts from "./pages/WishlistViewProducts";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-
-function App() {
-  return (
-    <div>
-      <>
-        <Router>
-          <Routes>
-          <Route 
+        <Route 
             path="/" 
             element={
               <div className="p-6">
@@ -59,11 +47,8 @@ function App() {
           } exact></Route>
           <Route path="/wishlist" element={<WishlistViewProducts />}></Route>
           <Route  path="/add-to-wishlist" element={<EmptyWishlistViewProducts />}></Route>
-          </Routes>
-        </Router>
-      </>
-    </div>
->>>>>>> 5eae52f6b0095879487128286edc095e555d3120
+      </Routes>
+    </BrowserRouter>
   );
 }
 

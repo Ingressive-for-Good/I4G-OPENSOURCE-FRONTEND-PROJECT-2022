@@ -51,7 +51,6 @@ function Routes() {
       />
       <Route
         path="/"
-<<<<<<< HEAD:routes.jsx
         element={
           <div className="flex flex-col gap-[30px]">
           {/* Add the link to your page here */}
@@ -62,13 +61,10 @@ function Routes() {
 
           </div>
         }
-=======
-        element={<LandingPage />}
       />  
       <Route
       path="/products"
       element={<AddNewProductPage1/>}
->>>>>>> 5eae52f6b0095879487128286edc095e555d3120:src/Routes.jsx
       />
     </Switch>
   );
