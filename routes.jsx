@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, Routes as Switch } from "react-router-dom";
-import Help from "./molecules/Help";
+import Help from "./src/molecules/Help";
 import LandingPage from "./pages/LandingPage";
 import DashboardPage from "./pages/DashboardPage";
-import EmailVerify from "./component/email/EmailVerify";
-import PhoneNumberVerification from "./pages/PhoneNumberVerification";
-import AddNewProductPage1 from "./AddNewProduct/pageOne/AddNewProductPage1";
+import EmailVerify from "./src/component/email/EmailVerify";
+import PhoneNumberVerification from "./src/pages/PhoneNumberVerification";
+import AddNewProductPage1 from "./src/AddNewProduct/pageOne/AddNewProductPage1";
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
