@@ -4,6 +4,7 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+
     fontSize: {
         small: ["14px", "17px"],
         p: ["16px", "20px"],
@@ -11,6 +12,12 @@ module.exports = {
         button: ["18px, 24px"],
         mdP: ["20px", "25px"],
         mdH4: ["28px", "35px"],
+
+      backgroundColor: {'black-t-50': 'rgba(0,0,0,0.5)'},
+      fontFamily:{
+        "cabinet": ['Cabinet Grotesk', "sans-serif"],
+        "poppins": ['Poppins', "sans-serif"],
+
       },
    
       colors: {

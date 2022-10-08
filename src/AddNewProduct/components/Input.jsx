@@ -1,4 +1,4 @@
-import Select from 'react-select'
+// import Select from 'react-select'
 import Upload from '../icons/UploadMedia.svg'
 
 // Options for each select input goes here. Create more and replace
@@ -15,7 +15,7 @@ export default function Input() {
         <div className='w-full flex flex-col gap-[26px]'>
           <label>
             <p className='pb-[7px]'>Product Category <span className='text-error-500'>*</span></p>
-            <Select
+            {/* <Select
               styles={{
                 control: (provided) => ({
                   ...provided,
@@ -28,7 +28,7 @@ export default function Input() {
               className='py-[12px] border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[100%]'
               placeholder={<span>Select a Product Category</span>}
               options={categories}
-            />
+            /> */}
           </label>
           <label>
             <p className='pb-[7px]'>Product name <span className='text-error-500'>*</span></p>
@@ -48,7 +48,7 @@ export default function Input() {
           </label>
           <label>
             <p className='pb-[7px]'>Is the product available for swapping?<span className='text-error-500'>*</span></p>
-            <Select
+            {/* <Select
               styles={{
                 control: (provided) => ({
                   ...provided,
@@ -61,11 +61,11 @@ export default function Input() {
               className='py-[12px] border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[100%]'
               placeholder={<span>placeholder</span>}
               options={categories}
-            />
+            /> */}
           </label>
           <label>
             <p className='pb-[7px]'>Product Condition <span className='text-error-500'>*</span></p>
-            <Select
+            {/* <Select
               styles={{
                 control: (provided) => ({
                   ...provided,
@@ -78,7 +78,7 @@ export default function Input() {
               className='py-[12px] border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[100%]'
               placeholder={<span>placeholder</span>}
               options={categories}
-            />
+            /> */}
           </label>
         </div>
         <div className='w-full flex flex-col gap-[26px]'>
