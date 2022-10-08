@@ -14,6 +14,30 @@
 
 # CONTRIBUTIONS
 
-## name:
+## Name: Nnadiukwu Chidiebere Oscar 
 
-## Description
+## Description: Users dashboard Upload Screen (Two screens-Responsive)
+### Observations/Changes 
+-In this section, these are the following:
+The corrct and up-to-date section which is clickable has been merged into one click to contain pop up info on why it is necessary to keep to correct product description and the cons of failing to do so.
+The up-to-date section would also remind users of the need to constantly flag products as unavailable or sold inorder to improve consistent trust and reliability of the platform. 
+Failure of sticking to the company policy of trust would lead to getting products flagged by users and suspension/deletion by admin from the platform 
+also attached a scroll bar to remind the developers of a screen being scrollable with a fixed side navigation. 
+-----Main Goal -- Improved UX
+
+## Name: Nnadiukwu Chidiebere Oscar 
+
+## Description: Users dashboard Edit and View Profile Screen (One screen-Responsive)
+### Observations/Changes 
+-In this section, these are the following:
+The View and Edit page has a primary button highlighted which has a delete action and also found at the buttom of the screen 
+Using a mobile first approach users who make changes to their profile are required to always scroll to the top of the screen before exiting the page and this affects the user experience 
+The key primary button on the page might also lead to users having mislead interactions with  the delete button as based on UX laws of similarity they would automatically group the button at the end of the form to the form 
+The button also being the only highlighted button seems to encourage an action which doesn’t aid the core functionality of the screen
+-----Main Goal -- Improved UX
+
+## Name: Nnadiukwu Chidiebere Oscar 
+
+## Description:
+### Observations/Changes 
+-----Main Goal --
