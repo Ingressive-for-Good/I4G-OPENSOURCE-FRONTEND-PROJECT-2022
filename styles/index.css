@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: "CabinetGrotesk";
+    src: url("../public/fonts/CabinetGrotesk-Regular.otf");
+}
+@font-face {
+    font-family: "Campton";
+    src: url("../public/fonts/Campton-LightDEMO.otf");
+}
