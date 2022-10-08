@@ -21,8 +21,12 @@
     "espree": "^9.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
+    "react-dropzone": "^14.2.2",
+=======
+    "react-router-dom": "^6.3.0",
+>>>>>>> 8ca7d791817a478f1497f545fad2cd4bd11ff92e
     "react-redux": "^8.0.4",
-    "react-router-dom": "^6.4.2",
     "react-select": "^5.4.0",
     "redux": "^4.2.0",
     "styled-components": "^5.3.5",
