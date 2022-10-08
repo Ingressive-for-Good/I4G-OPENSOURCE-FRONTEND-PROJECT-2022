@@ -5,7 +5,7 @@ export default function PhoneNumberVerificationSuccessUI() {
     <div className='bg-black/25 w-screen h-screen flex items-center justify-center'>
       <div className='bg-neutral-50 mx-[20px] md:mx-[77px] lg:mx-[425px] flex flex-col items-center px-2 md:px-10 py-[40px] rounded-[8px]'>
         {/* text */}
-        <h1 className='text-[22px] md:text-[30px] leading-[27.28px] md:leading-[37.2px] text-success-500 font-bold font-cabinetGrotesk '>Verification Successful!!!</h1>
+        <h1 className='text-[22px] md:text-[30px] leading-[27.28px] md:leading-[37.2px] text-success-500 font-bold font- font-cabinetGrotesk '>Verification Successful!!!</h1>
         {/* Emoji */}
         <img className='w-[144px] md:w-[188px] h-[142px] md:h-[186px] my-[24px]' src="images/45.png" alt="" />
         {/* Text */}
