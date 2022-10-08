@@ -1,5 +1,10 @@
+import React from "react";
+import Footer from "../component/footer/Footer";
+
 const LandingPage = () => (
-    <div> This is landing page </div>
-)
+  <div>
+    <Footer />
+  </div>
+);
 
 export default LandingPage;
