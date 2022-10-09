@@ -5,6 +5,7 @@ import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
 import WishlistViewProducts from "./pages/WishlistViewProducts";
 import AddNewProductPage1 from './AddNewProduct/pageOne/AddNewProductPage1'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Kyc from "./component/kyc-page/Kyc";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
               <Link to="/email-verification">Visit Email Verification Page</Link>
               <br />
               <Link to="/products">Add new product</Link>
+              <Link to="/kyc">Kyc Page</Link>
 
             </>
           }
@@ -33,6 +35,15 @@ function App() {
             </>
           }
         />
+        <Route
+          path="/kyc"
+          element={
+            <>
+              <Kyc />
+            </>
+          }
+        />
+        
         <Route
         path="/products"
         element={<AddNewProductPage1/>}
