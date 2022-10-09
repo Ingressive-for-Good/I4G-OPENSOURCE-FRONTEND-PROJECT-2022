@@ -6,6 +6,7 @@ import WishlistViewProducts from "./pages/WishlistViewProducts";
 import AddNewProductPage1 from './AddNewProduct/pageOne/AddNewProductPage1'
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
+
 function App() {
   return (
     <BrowserRouter>
