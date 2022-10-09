@@ -8,9 +8,16 @@ const categories = [
   { value: 'option-3', label: 'Option 3' },
   { value: 'option-4', label: 'Option 4' },
 ]
-export default function Input() {
+
+export default function Input({handleClick}) {
+  
+  // Function handles form submission
+  const handleSubmit = (e) =>{
+    e.preventDefault()
+    handleClick()
+  }
   return (
-    <form className='font-campton flex flex-col my-[40px]'>
+    <form onSubmit={handleSubmit} className='font-campton flex flex-col my-[40px]'>
       <div className='flex md:flex-row flex-col gap-[40px]'>
         <div className='w-full flex flex-col gap-[26px]'>
           <label>
