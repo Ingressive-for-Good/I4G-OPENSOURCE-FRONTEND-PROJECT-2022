@@ -10,16 +10,27 @@ import LandingPage from "./pages/LandingPage";
 import DashboardPage from "./pages/DashboardPage";
 import EmailVerify from "./component/email/EmailVerify";
 
+
+
 import Home from "/src/molecules/Home";
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
   return (
     <Switch>
-      <Route path="/dashboard" element={<DashboardPage />} />
-      <Route path="/email-verification" element={<EmailVerify />} />
+      <Route
+        path="/dashboard"
+        element={<DashboardPage />}
+      />
+      <Route
+      path="/email-verification"
+      element={<EmailVerify />}
+      />
       <Route path="/products" element={<AddNewProductPage1 />} />
-      <Route path="/phone-verification" element={<PhoneNumberVerification />} />
+      <Route
+        path="/phone-verification"
+        element={<PhoneNumberVerification/>}
+      />
       <Route
         path="/messages"
         element={<h1 className="text-3xl font-bold text-red-600">Messages</h1>}
@@ -55,8 +66,12 @@ function Routes() {
             <Link to="/login">Login</Link>
           </div>
         }
+      />  
+      <Route
+      path="/products"
+      element={<AddNewProductPage1/>}
+
       />
-      <Route path="/products" element={<AddNewProductPage1 />} />
     </Switch>
   );
 }
