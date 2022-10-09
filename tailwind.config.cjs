@@ -89,12 +89,16 @@ module.exports = {
           900: "#645F03",
         },
       },
+
       fontFamily: {
         cabinetGrotesk: ['"Cabinet Grotesk"', '"Segoe UI"', "sans-serif"],
         campton: ["Campton", '"Segoe UI"', "sans-serif"],
         lato: ["Lato", "sans-sarif"],
       },
+      backgroundImage: {
+        "checked-image": "url('/src/assets/Tick.png')",
+      },
     },
+    plugins: [],
   },
-  plugins: [],
 };
