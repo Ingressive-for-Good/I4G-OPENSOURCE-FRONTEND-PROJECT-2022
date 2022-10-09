@@ -1,15 +1,42 @@
 import React from "react";
+import EmailVerify from "./component/email/EmailVerify";
+import Home from "./molecules/Home";
 import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
 import WishlistViewProducts from "./pages/WishlistViewProducts";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import AddNewProductPage1 from './AddNewProduct/pageOne/AddNewProductPage1'
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <>
-        <Router>
-          <Routes>
-          <Route 
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+              <Link to="/support">Help and Support</Link>
+              <br />
+              <Link to="/email-verification">Visit Email Verification Page</Link>
+              <br />
+              <Link to="/products">Add new product</Link>
+
+            </>
+          }
+        />
+        <Route
+          path="/email-verification"
+          element={
+            <>
+              <EmailVerify />
+            </>
+          }
+        />
+        <Route
+        path="/products"
+        element={<AddNewProductPage1/>}
+        />
+        <Route 
             path="/" 
             element={
               <div className="p-6">
@@ -20,10 +47,8 @@ function App() {
           } exact></Route>
           <Route path="/wishlist" element={<WishlistViewProducts />}></Route>
           <Route  path="/add-to-wishlist" element={<EmptyWishlistViewProducts />}></Route>
-          </Routes>
-        </Router>
-      </>
-    </div>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
