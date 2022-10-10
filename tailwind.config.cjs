@@ -8,6 +8,7 @@ module.exports = {
       fontFamily:{
         "cabinet": ['Cabinet Grotesk', "sans-serif"],
         "poppins": ['Poppins', "sans-serif"],
+        "campton": ['Campton', "sans-serif"]
       },
       colors: {
         primary: {

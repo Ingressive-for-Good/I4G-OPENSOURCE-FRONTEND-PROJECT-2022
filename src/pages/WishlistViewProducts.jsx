@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import NavbarDashboard from "../molecules/NavbarDashboard";
-import SidebarDashboard from "../molecules/SidebarDashboard";
-import DashboardSelect from "../molecules/DashboardSelect";
+import NavbarDashboard from "../components/molecules/NavbarDashboard";
+import SidebarDashboard from "../components/molecules/SidebarDashboard";
+import DashboardSelect from "../components/molecules/DashboardSelect";
 
 function WishlistViewProducts() {
     const [showSelect, setShowSelect] = useState(false)
