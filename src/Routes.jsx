@@ -5,7 +5,7 @@ import Help from "./molecules/Help";
 import LandingPage from "./pages/LandingPage";
 import DashboardPage from "./pages/DashboardPage";
 import EmailVerify from "./component/email/EmailVerify";
-
+import DeleteProduct from "./delete/deleteProduct";
 import PhoneNumberVerification from "./pages/PhoneNumberVerification";
 import AddNewProductPage1 from "./AddNewProduct/pageOne/AddNewProductPage1";
 
@@ -19,7 +19,7 @@ function Routes() {
       <Route path="/email-verification" element={<EmailVerify />} />
       <Route path="/phone-verification" element={<PhoneNumberVerification />} />
       <Route path="/products" element={<AddNewProductPage1 />} />
-
+      <Route path="/delete-product" element={<DeleteProduct />} />
       <Route
         path="/messages"
         element={<h1 className="text-3xl font-bold text-red-600">Messages</h1>}
@@ -57,6 +57,7 @@ function Routes() {
             <Link to="/products">Add new product</Link>
             <Link to="/verification">Phone number verification</Link>
             <Link to="/login">Login</Link>
+            <Link to="/delete-product">Delete uploaded product</Link>
           </div>
         }
       />
