@@ -64,6 +64,8 @@ function Routes() {
             <Link to="/products">Add new product</Link>
             <Link to="/verification">Phone number verification</Link>
             <Link to="/login">Login</Link>
+            <Link to="/create-account">Create Account</Link>
+
           </div>
         }
       />  
