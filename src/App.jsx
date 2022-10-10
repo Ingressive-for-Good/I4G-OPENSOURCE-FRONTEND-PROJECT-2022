@@ -1,6 +1,6 @@
 import React from "react";
 
-import All from "./delete/all";
+import DeleteProduct from "./delete/deleteProduct";
 import EmailVerify from "./component/email/EmailVerify";
 import AddNewProductPage1 from "./AddNewProduct/pageOne/AddNewProductPage1";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
@@ -14,7 +14,6 @@ import Home from "./molecules/Home";
 function App() {
   return (
     <BrowserRouter>
-      <All />
       <Routes>
         <Route
           path="/"
@@ -28,7 +27,8 @@ function App() {
               </Link>
               <br />
               <Link to="/products">Add new product</Link>
-              <Link to="/kyc">Kyc Page</Link>
+              <Link to="/kyc">Kyc Page</Link> <br />
+              <Link to="/delete-product">Delete uploaded product</Link>
             </>
           }
         />
@@ -94,6 +94,14 @@ function App() {
           path="/add-to-wishlist"
           element={<EmptyWishlistViewProducts />}
         ></Route>
+        <Route
+          path="/delete-product"
+          element={
+            <>
+              <DeleteProduct />
+            </>
+          }
+        />
       </Routes>
     </BrowserRouter>
   );

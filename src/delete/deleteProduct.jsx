@@ -3,7 +3,7 @@ import Hero from "./hero";
 import Delete from "./delete";
 import Sidebar from "./sidebar";
 import Modal from "./modal";
-const All = () => {
+const DeleteProduct = () => {
   return (
     <div className="relative h-screen">
       <Modal />
@@ -18,4 +18,4 @@ const All = () => {
   );
 };
 
-export default All;
+export default DeleteProduct;
