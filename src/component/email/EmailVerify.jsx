@@ -4,10 +4,30 @@ import girlSvg from "./girl-photo.svg";
 import logo from "./logo.svg";
 import lineSvg from "./line.svg";
 import ham from "./hamburger.svg";
+import headAvatar from "./head-avatar.svg";
 const EmailVerify = () => {
+  const [modal, setModal] = React.useState(false);
   return (
-    <div className="container h-full w-full">
-      <div className="lg:grid h-full w-full grid-cols-2 ipad-full">
+    <div className="container h-full w-full relative">
+      <div
+        className={`notification-modal absolute ${
+          modal === true ? "" : "hidden"
+        }`}
+      >
+        <div className="notification-modal-body">
+          <h2 className="text-[#F17105]">Check your Email Inbox!</h2>
+          <img src={headAvatar} alt="" />
+          <p>
+            A link to reset your password has been sent to your email address.
+          </p>
+          <button className="btn m-4">Open Mail</button>
+        </div>
+      </div>
+      <div
+        className={`lg:grid h-full w-full grid-cols-2 ipad-full ${
+          modal === true ? "blur-fx" : ""
+        }`}
+      >
         <div className="">
           <div className="logo flex justify-between px-8 lg:hidden mt-2 w-full ipad-ham">
             <img src={logo} alt="logo" className="w-20 logo-img" />
