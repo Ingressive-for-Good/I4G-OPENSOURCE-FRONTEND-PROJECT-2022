@@ -7,6 +7,11 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
 import WishlistViewProducts from "./pages/WishlistViewProducts";
 
+
+
+import Kyc from "./component/kyc-page/Kyc";
+
+
 import Home from "./molecules/Home";
 
 function App() {
@@ -26,6 +31,11 @@ function App() {
               </Link>
               <br />
               <Link to="/products">Add new product</Link>
+
+
+              <Link to="/kyc">Kyc Page</Link>
+
+
             </>
           }
         />
@@ -39,6 +49,7 @@ function App() {
         />
         <Route path="/products" element={<AddNewProductPage1 />} />
         <Route
+
           path="/"
           element={
             <>
@@ -52,6 +63,19 @@ function App() {
               <Link to="/products">Add new product</Link>
             </>
           }
+        <Route
+          path="/kyc"
+          element={
+            <>
+              <Kyc />
+            </>
+          }
+        />
+        
+        <Route
+        path="/products"
+        element={<AddNewProductPage1/>}
+
         />
 
         <Route
