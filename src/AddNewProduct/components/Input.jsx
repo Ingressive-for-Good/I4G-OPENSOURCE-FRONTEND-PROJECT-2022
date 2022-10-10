@@ -2,37 +2,26 @@
 import DragNDrop from "./DragNDrop";
 
 // Options for each select input goes here. Create more and replace
-const categories = [
 
-  { value: "option-1", label: "Option 1" },
-  { value: "option-2", label: "Option 2" },
-  { value: "option-3", label: "Option 3" },
-  { value: "option-4", label: "Option 4" },
-];
-export default function Input() {
+export default function Input({ handleClick }) {
+  // Function handles form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    handleClick();
+  };
+  const categories = [
+    { value: "option-1", label: "Option 1" },
+    { value: "option-2", label: "Option 2" },
+    { value: "option-3", label: "Option 3" },
+    { value: "option-4", label: "Option 4" },
+  ];
   return (
-    <form className="font-campton flex flex-col my-[40px]">
+    <form
+      onSubmit={handleSubmit}
+      className="font-campton flex flex-col my-[40px]"
+    >
       <div className="flex md:flex-row flex-col gap-[40px]">
         <div className="w-full flex flex-col gap-[26px]">
-
-  { value: 'option-1', label: 'Option 1' },
-  { value: 'option-2', label: 'Option 2' },
-  { value: 'option-3', label: 'Option 3' },
-  { value: 'option-4', label: 'Option 4' },
-]
-
-export default function Input({handleClick}) {
-  
-  // Function handles form submission
-  const handleSubmit = (e) =>{
-    e.preventDefault()
-    handleClick()
-  }
-  return (
-    <form onSubmit={handleSubmit} className='font-campton flex flex-col my-[40px]'>
-      <div className='flex md:flex-row flex-col gap-[40px]'>
-        <div className='w-full flex flex-col gap-[26px]'>
-
           <label>
             <p className="pb-[7px]">
               Product Category <span className="text-error-500">*</span>
@@ -56,7 +45,7 @@ export default function Input({handleClick}) {
               Product name <span className="text-error-500">*</span>
             </p>
             <input
-              className="p-[16px] border border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[100%]"
+              className="p-[16px]  border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[100%]"
               type="text"
               placeholder="placeholder"
             />
@@ -66,7 +55,7 @@ export default function Input({handleClick}) {
               Product prize <span className="text-error-500">*</span>
             </p>
             <input
-              className="p-[16px] border border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[100%]"
+              className="p-[16px] border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[100%]"
               type="text"
               placeholder="placeholder"
             />
@@ -115,7 +104,7 @@ export default function Input({handleClick}) {
               Product Description <span className="text-error-500">*</span>
             </p>
             <textarea
-              className="p-[16px] h-[121px] border border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[100%]"
+              className="p-[16px] h-[121px] border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[100%]"
               type="text"
               placeholder="placeholder"
             />
