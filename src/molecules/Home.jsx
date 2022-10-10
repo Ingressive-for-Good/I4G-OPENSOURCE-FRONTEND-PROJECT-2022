@@ -12,6 +12,7 @@ import controller from "../images/product-controller.png"
 import cartIcon from "../images/cart-icon.svg"
 import profileImg from "../images/landingpage__client-profile-img.svg"
 import p2p from "../images/landingpage__p2p.svg"
+import { Link } from "react-router-dom";
 
 function App() {
     const toggleMenu = () => {
@@ -45,12 +46,12 @@ function App() {
             <a className="text-primary-500 font-medium" href="">
               Log In
             </a>
-            <a
+            <Link
               className="text-white text-sm rounded-lg px-5 py-3 bg-primary-500"
-              href=""
+              to="/create-account"
             >
               Create an account
-            </a>
+            </Link>
           </div>
         </nav>
       </header>
@@ -68,9 +69,9 @@ function App() {
             them to connect with other creatives around world.
           </p>
           <div className="sm:w-fit sm:mx-auto sm:flex sm:justify-center sm:items-center md:my-8">
-            <button className="font-cabinetGrotesk bg-primary-500 text-white px-5 py-4 rounded-lg sm:h-fit">
+            <Link to="/create-account" className="font-cabinetGrotesk bg-primary-500 text-white px-5 py-4 rounded-lg sm:h-fit">
               Create an account
-            </button>
+            </Link>
             <div className="w-fit mx-auto px-6 py-3 rounded-lg my-2 hover:bg-primary-100 transition-all">
               <a
                 href=""

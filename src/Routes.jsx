@@ -58,6 +58,7 @@ function Routes() {
             <Link to="/verification">Phone number verification</Link>
             <Link to="/login">Login</Link>
             <Link to="/delete-product">Delete uploaded product</Link>
+            <Link to="/create-account">Create Account</Link>
           </div>
         }
       />

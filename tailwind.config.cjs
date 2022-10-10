@@ -12,6 +12,12 @@ module.exports = {
         mdP: ["20px", "25px"],
         mdH4: ["28px", "35px"],
       },
+      backgroundColor: { "black-t-50": "rgba(0,0,0,0.5)" },
+      fontFamily: {
+        cabinet: ["Cabinet Grotesk", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        campton: ["Campton", "sans-serif"],
+      },
 
       backgroundColor: { "black-t-50": "rgba(0,0,0,0.5)" },
 

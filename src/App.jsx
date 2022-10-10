@@ -7,6 +7,8 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
 import WishlistViewProducts from "./pages/WishlistViewProducts";
 
+import CreateAccount from "./pages/create-account/CreateAccount";
+
 import Kyc from "./component/kyc-page/Kyc";
 
 import Home from "./molecules/Home";
@@ -30,6 +32,10 @@ function App() {
               <Link to="/products">Add new product</Link>
               <Link to="/kyc">Kyc Page</Link> <br />
               <Link to="/delete-product">Delete uploaded product</Link>
+              <br />
+              <Link to="/create-account">Create Account</Link>
+              <br />
+              <Link to="/kyc">Kyc Page</Link>
             </>
           }
         />
@@ -54,14 +60,6 @@ function App() {
               </Link>
               <br />
               <Link to="/products">Add new product</Link>
-            </>
-          }
-        />
-        <Route
-          path="/kyc"
-          element={
-            <>
-              <Kyc />
             </>
           }
         />
@@ -103,6 +101,8 @@ function App() {
             </>
           }
         />
+
+        <Route path="/create-account" element={<CreateAccount />}></Route>
       </Routes>
     </BrowserRouter>
   );
