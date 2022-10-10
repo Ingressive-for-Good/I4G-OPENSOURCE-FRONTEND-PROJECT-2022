@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import ProductsCard from './ProductsCard';
 import Img1 from '../assets/element-4.png'
 import Img2 from '../assets/Chat.png';
 import Img3 from '../assets/box.png'
@@ -13,7 +14,7 @@ import Img9 from '../assets/avatar.png'
 import emptyBox from '../assets/logos_parcel-icon.png'
 
 const ProductDesktop = () => {
-    const {isEmpty} = useSelector((state) => state.app)
+    const {isEmpty, uploadedProducts} = useSelector((state) => state.app)
     const sidebarMenu = [
         {name: 'Dashboard', icon:Img1, linkName: '/dashboard'},
         {name: 'Messages', icon:Img2, linkName: '/messages'},
@@ -29,7 +30,7 @@ const ProductDesktop = () => {
   return (
     <div className=''>
         <div className=' w-[300px] pt-[25px]  fixed bg-[#E7E9F8] side'>
-            <p className='text-[#0F27BD] pl-[55px] font-grotesk pb-5 font-[700] text-[30px] '>tech<span className='text-[#F17105]'>mart</span></p>
+            <p className='text-[#0F27BD] pl-[55px] font-cabinet pb-5 font-[700] text-[30px] '>tech<span className='text-[#F17105]'>mart</span></p>
             <p className='text-[#0F27BD] pl-[55px] font-campton font-[700] pb-6 text-[16px] '>Menu</p>
             <div className='' >
                 {sidebarMenu.map(item => (
@@ -46,7 +47,7 @@ const ProductDesktop = () => {
         </div>
         <div className='absolute left-[300px] tab mt-8'>
             <div className='flex justify-between items-center'>
-                <div className='ml-6 font-grotesk'>
+                <div className='ml-6 font-cabinet'>
                     <p className='text-[#252730] space-x-2 sm:text-[20px] text-[16px]'>Hey Nora 👋🏾</p>
                     <p className='text-[#131418] text-[21px] sm:text-[28px] mt-1 font-semibold '>View Your Uploaded Products</p>
                 </div>
@@ -61,7 +62,7 @@ const ProductDesktop = () => {
             {isEmpty ? (<div className='flex justify-center items-center flex-col mt-[80px]'>
                     <div className='h-[166px] sm:h-[264px] sm:max-w-[350.18px] max-w-[219px]'><img src={emptyBox} alt="empty cart" /></div>
                     <div className='mt-[16px]'>
-                        <p className=' text-neutral-900 text-[20px] text-center font-grotesk font-semibold'>You're yet to upload your products</p>
+                        <p className=' text-neutral-900 text-[20px] text-center font-cabinet font-semibold'>You're yet to upload your products</p>
                         <p className='text-[#717591] font-campton text-center mt-[10px]'>Upload your products</p>
                     </div>
                     <div className='mt-[24px] mb-0 sm:mb-6'>
@@ -71,7 +72,20 @@ const ProductDesktop = () => {
                     </div>
                 </div>) : 
                 (<div>
-
+                    <div className='mt-8'>
+            <div className='flex justify-between pb-2 mx-4'>
+                <p className='text-[#4B4E61] font-campton'>{`${uploadedProducts.length} ${uploadedProducts.length > 1 ? 'Item(s)' : 'Item'} `}</p>
+                <button className='text-[#0F27BD] font-semibold'><span>+</span>Add New Product</button>
+            </div>
+            <hr color='gray'/>
+            <div className='flex justify-center'>
+                <div className='mt-8 grid grid-cols-3 gap-1'>{uploadedProducts.map(products => (
+                <ProductsCard products={products}/>
+                )
+                )}
+                </div>
+            </div>
+        </div>
                 </div>
             )}
     </div>

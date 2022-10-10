@@ -1,21 +1,16 @@
 import React from 'react';
 import Delete from '../assets/delete.png'
 import Edit from '../assets/edit.png'
-import {setOpenEdit, setAvailability, showState } from '../../utils/services/appSlice'
-import { useSelector, useDispatch } from 'react-redux';
-import { useEffect } from 'react';
+import {setOpenEdit, setAvailability} from '../../utils/services/appSlice'
+import { useDispatch } from 'react-redux';
+
 
 const ProductsCard = ({products}) => {
-  const {openEdit} = useSelector(state => state.app)
   const dispatch = useDispatch()
-  const states = useSelector(showState)
-useEffect(()=>{
-  console.log(states)
-}, [states])
 
   const ToggleEdit = () => {
-    if(openEdit){
-      return 'w-[145px] rounded-xl absolute top-16 right-8 h-24 bg-neutral-300 gap-2 flex justify-center flex-col items-center'
+    if(products.openEdit){
+      return 'w-[145px] rounded-xl absolute cursor-pointer top-16 right-8 h-24 bg-neutral-300 gap-2 flex justify-center flex-col items-center'
     }else{
       return 'hidden'
     }
@@ -26,7 +21,7 @@ useEffect(()=>{
       <div className='max-w-[340px] relative h-[220px] bg-neutral-300 '>
         <img src={products.productImg} alt="" className='h-[220px] object-cover grid place-items-center'/>
         <p onClick={() =>{
-          dispatch(setOpenEdit(false))
+          dispatch(setOpenEdit(products.id))
           console.log(openEdit)
         }} className='absolute top-3 right-2 cursor-pointer'><img src={Edit} alt="" /></p>
         <div className={ToggleEdit()}>
