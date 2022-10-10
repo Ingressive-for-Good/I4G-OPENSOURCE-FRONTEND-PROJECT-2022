@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "../public/images/logo.png";
-import vector from "../public/images/bar.png";
-import ipad from "../public/images/ipadLogo.png";
+import logo from "../../public/images/logo.png";
+import vector from "../../public/images/bar.png";
+import ipad from "../../public/images/ipadLogo.png";
 
-import notification from "../public/images/notification.png";
-import rectangle from "../public/images/person.png";
-import search from "../public/images/search.png";
+import notification from "../../public/images/notification.png";
+import rectangle from "../../public/images/person.png";
+import search from "../../public/images/search.png";
 import { UseAppContext } from "./context";
 const Hero = () => {
   const { value } = UseAppContext();

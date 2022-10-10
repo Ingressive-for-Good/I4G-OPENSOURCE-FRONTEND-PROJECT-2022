@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../public/images/33.png";
+import image from "../../public/images/33.png";
 import { UseAppContext } from "./context";
 const Modal = () => {
   const { alert, value, setValue } = UseAppContext();

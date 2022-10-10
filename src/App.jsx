@@ -1,6 +1,6 @@
 import React from "react";
 
-import All from "./all";
+import All from "./delete/all";
 import EmailVerify from "./component/email/EmailVerify";
 import AddNewProductPage1 from "./AddNewProduct/pageOne/AddNewProductPage1";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";

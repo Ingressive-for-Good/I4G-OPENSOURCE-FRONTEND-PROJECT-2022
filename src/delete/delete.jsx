@@ -10,7 +10,7 @@ function Delete() {
   const Edit = (id) => {
     const a = setShow(!show);
     setId(id);
-    // const newShow = value.map((info) => info.id === editId);
+
     setValue(
       value.map((info) => {
         if (info.id === id) {

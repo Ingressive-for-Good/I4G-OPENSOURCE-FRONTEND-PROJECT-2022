@@ -1,10 +1,10 @@
 import React from "react";
-import web from "../public/images/web.png";
+import web from "../../public/images/web.png";
 import { UseAppContext } from "./context";
 const Sidebar = () => {
   const { nav } = UseAppContext();
   return (
-    <div className="bg-primary-50 w-72 h-[40em] px-8 py-10 sticky top-0 left-0 z-10 hidden lg:block">
+    <div className="bg-primary-50 w-72 h-screen px-8 py-10 sticky top-0 left-0 z-10 hidden lg:block">
       <img src={web} alt="" srcset="" className="hidden lg:block pb-8" />
       <p className="mb-8 text-primary-500">MENU</p>
 
