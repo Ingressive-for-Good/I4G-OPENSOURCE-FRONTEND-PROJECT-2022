@@ -66,6 +66,16 @@ function App() {
         />
 
         <Route path="/products" element={<AddNewProductPage1 />} />
+        <Route
+          path="/kyc"
+          element={
+            <>
+              <Kyc />
+            </>
+          }
+        />
+
+        <Route path="/products" element={<AddNewProductPage1 />} />
 
         <Route
           path="/"

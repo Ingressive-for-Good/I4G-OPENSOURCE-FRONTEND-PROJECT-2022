@@ -1589,13 +1589,21 @@ eslint-utils@^2.1.0:
     eslint-visitor-keys "^1.1.0"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 15d1eb5b1d52ccab1a1b168a6970f7700b5e3fc8
 eslint-visitor-keys@^1.1.0, eslint-visitor-keys@^1.3.0:
   version "1.3.0"
   resolved "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-1.3.0.tgz"
   integrity sha512-6J72N8UNa462wa/KFODt/PJ3IU60SDpC3QXC1Hjc1BXXpfL2C9R5+AU7jhe0F6GREqVMh4Juu+NY7xn+6dipUQ==
 
+<<<<<<< HEAD
 =======
 >>>>>>> 98cff525963a47ac6fdadcb5f07a42f59eacf3e3
+=======
+
+>>>>>>> 15d1eb5b1d52ccab1a1b168a6970f7700b5e3fc8
 eslint-visitor-keys@^2.0.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-2.1.0.tgz"
@@ -1653,6 +1661,10 @@ eslint-visitor-keys@^3.3.0:
     v8-compile-cache "^2.0.3"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 15d1eb5b1d52ccab1a1b168a6970f7700b5e3fc8
 espree@^7.3.0, espree@^7.3.1:
   version "7.3.1"
   resolved "https://registry.npmjs.org/espree/-/espree-7.3.1.tgz"
@@ -1662,8 +1674,12 @@ espree@^7.3.0, espree@^7.3.1:
     acorn-jsx "^5.3.1"
     eslint-visitor-keys "^1.3.0"
 
+<<<<<<< HEAD
 =======
 >>>>>>> 98cff525963a47ac6fdadcb5f07a42f59eacf3e3
+=======
+
+>>>>>>> 15d1eb5b1d52ccab1a1b168a6970f7700b5e3fc8
 espree@^9.4.0:
   version "9.4.0"
   resolved "https://registry.yarnpkg.com/espree/-/espree-9.4.0.tgz#cd4bc3d6e9336c433265fc0aa016fc1aaf182f8a"
@@ -1909,10 +1925,18 @@ globals@^11.1.0:
   integrity sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 globals@^13.6.0, globals@^13.9.0:
 =======
 globals@^13.15.0:
 >>>>>>> 98cff525963a47ac6fdadcb5f07a42f59eacf3e3
+=======
+
+globals@^13.6.0, globals@^13.9.0:
+
+globals@^13.15.0:
+
+>>>>>>> 15d1eb5b1d52ccab1a1b168a6970f7700b5e3fc8
   version "13.17.0"
   resolved "https://registry.npmjs.org/globals/-/globals-13.17.0.tgz"
   integrity sha512-1C+6nQRb1GwGMKm2dH/E7enFAMxGTmGI7/dEdhy/DNelv85w9B72t3uc5frtMNXIbzrarJJ/lTCjcaZwbLJmyw==
@@ -1993,16 +2017,28 @@ html-tags@^3.1.0:
   integrity sha512-vy7ClnArOZwCnqZgvv+ddgHgJiAFXe3Ge9ML5/mBctVJoUoYPCdxVucOywjDARn6CVoh3dRSFdPHy2sX80L0Wg==
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 15d1eb5b1d52ccab1a1b168a6970f7700b5e3fc8
 ignore@^4.0.6:
   version "4.0.6"
   resolved "https://registry.npmjs.org/ignore/-/ignore-4.0.6.tgz"
   integrity sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> 15d1eb5b1d52ccab1a1b168a6970f7700b5e3fc8
 ignore@^5.2.0:
   version "5.2.0"
   resolved "https://registry.npmjs.org/ignore/-/ignore-5.2.0.tgz"
   integrity sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==
+<<<<<<< HEAD
 >>>>>>> 98cff525963a47ac6fdadcb5f07a42f59eacf3e3
+=======
+
+>>>>>>> 15d1eb5b1d52ccab1a1b168a6970f7700b5e3fc8
 
 immer@^9.0.7:
   version "9.0.15"
@@ -2198,6 +2234,10 @@ isexe@^2.0.0:
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 15d1eb5b1d52ccab1a1b168a6970f7700b5e3fc8
 js-yaml@^3.13.1:
   version "3.14.1"
   resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-3.14.1.tgz"
@@ -2205,14 +2245,22 @@ js-yaml@^3.13.1:
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> 15d1eb5b1d52ccab1a1b168a6970f7700b5e3fc8
 js-yaml@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.1.0.tgz#c1fb65f8f5017901cdd2c951864ba18458a10602"
   integrity sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==
   dependencies:
     argparse "^2.0.1"
+<<<<<<< HEAD
 >>>>>>> 98cff525963a47ac6fdadcb5f07a42f59eacf3e3
+=======
+
+>>>>>>> 15d1eb5b1d52ccab1a1b168a6970f7700b5e3fc8
 
 jsesc@^2.5.1:
   version "2.5.2"
@@ -2365,10 +2413,18 @@ memoize-one@^5.0.0:
   integrity sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 merge2@^1.3.0:
 =======
 merge2@^1.3.0, merge2@^1.4.1:
 >>>>>>> 98cff525963a47ac6fdadcb5f07a42f59eacf3e3
+=======
+
+merge2@^1.3.0:
+
+merge2@^1.3.0, merge2@^1.4.1:
+
+>>>>>>> 15d1eb5b1d52ccab1a1b168a6970f7700b5e3fc8
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
@@ -2780,8 +2836,7 @@ react-dom@^18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
-<<<<<<< HEAD
-=======
+
 
 react-dropzone@^14.2.2:
   version "14.2.2"
@@ -2791,7 +2846,7 @@ react-dropzone@^14.2.2:
     attr-accept "^2.2.2"
     file-selector "^0.6.0"
     prop-types "^15.8.1"
->>>>>>> KYC-UI_fix_conflits_2
+
 
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
@@ -3078,6 +3133,10 @@ sourcemap-codec@^1.4.8:
   integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 15d1eb5b1d52ccab1a1b168a6970f7700b5e3fc8
 sprintf-js@~1.0.2:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
@@ -3090,8 +3149,12 @@ ssri@^9.0.0:
   dependencies:
     minipass "^3.1.1"
 
+<<<<<<< HEAD
 =======
 >>>>>>> 98cff525963a47ac6fdadcb5f07a42f59eacf3e3
+=======
+
+>>>>>>> 15d1eb5b1d52ccab1a1b168a6970f7700b5e3fc8
 string-similarity@^4.0.3:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/string-similarity/-/string-similarity-4.0.4.tgz#42d01ab0b34660ea8a018da8f56a3309bb8b2a5b"
