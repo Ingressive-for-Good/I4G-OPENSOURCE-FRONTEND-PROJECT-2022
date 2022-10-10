@@ -6,7 +6,7 @@ import lineSvg from "./line.svg";
 import ham from "./hamburger.svg";
 import headAvatar from "./head-avatar.svg";
 const EmailVerify = () => {
-  const [modal, setModal] = React.useState(false);
+  const [modal, setModal] = React.useState(true);
   return (
     <div className="container h-full w-full relative">
       <div
@@ -15,12 +15,15 @@ const EmailVerify = () => {
         }`}
       >
         <div className="notification-modal-body">
-          <h2 className="text-[#F17105]">Check your Email Inbox!</h2>
+          <h2 className="text-[#0FBD3B] text-3xl">
+            Verification Successful!!!
+          </h2>
           <img src={headAvatar} alt="" />
           <p>
-            A link to reset your password has been sent to your email address.
+            Congratulations! The verification process was successful. Now, you
+            are expected to fill the KYC form to help us know more about you.
           </p>
-          <button className="btn m-4">Open Mail</button>
+          <button className="btn m-4">Proceed</button>
         </div>
       </div>
       <div

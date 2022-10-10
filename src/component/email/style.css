@@ -70,7 +70,7 @@
   filter: blur(1.8px);
   -webkit-filter: blur(1.8px);
   /*opacity: 0.5;
-  *//*background: #9f9fa0;
+  */ /*background: #9f9fa0;
   */
 }
 
@@ -86,6 +86,7 @@
   top: 150px;
   overflow: auto;
   z-index: 1;
+  max-width: 550px;
 }
 
 .notification-modal-body {
