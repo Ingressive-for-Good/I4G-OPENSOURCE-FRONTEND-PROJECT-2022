@@ -1,6 +1,8 @@
 import React from "react";
 import LogoutButton from "../atoms/Button/LogoutButton";
 
+// The function below displays the side navigation on wide screens.
+
 function SidebarDashboard() {
   
   return (

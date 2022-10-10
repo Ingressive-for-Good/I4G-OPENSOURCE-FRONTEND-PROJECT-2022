@@ -2,15 +2,13 @@
 
 ## 🛠️ Fixes Issue
 
+<!-- Remove this section of not applicable  -->
 
-`Closes #21`
-Closes #21
+<!-- Example: Closes #31 -->
 
 ## 👨‍💻 Changes proposed
 
-- Developed user dashboard: wishlist(view product on wishlist).
-- All pages.
-- Mobile responsive
+<!-- List all the proposed changes in your PR -->
 
 ## ✔️ Check List (Check all the applicable boxes) <!-- Follow the below conventions to check the box -->
 
@@ -20,20 +18,12 @@ Closes #21
 [ ] - Not correct; marked as **not** done
 -->
 
-- [x] My code follows the code style of this project.
-- [x] This PR does not contain plagiarized content.
-- [x] The title of my pull request is a short description of the requested changes.
+- [ ] My code follows the code style of this project.
+- [ ] This PR does not contain plagiarized content.
+- [ ] The title of my pull request is a short description of the requested changes.
 
 ## 📄 Note to reviewers
 
-Endpoints
-- /wishlist (view products in wishlist)
-- /add-to-wishlist (add products to wishlist)
+<!-- Add notes to reviewers if applicable -->
 
 ## 📷 Screenshots
-
-<img src="./images/empty.png"><br/>
-
-<img src="./images/wishlist.png"><br/>
-
-<img src="./images/mobile2.png">
