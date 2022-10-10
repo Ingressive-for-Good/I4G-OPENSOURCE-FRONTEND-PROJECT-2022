@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import Img1 from '../assets/element-4.png'
 import Img2 from '../assets/Chat.png';
 import Img3 from '../assets/box.png'
@@ -14,28 +15,31 @@ import emptyBox from '../assets/logos_parcel-icon.png'
 const ProductDesktop = () => {
     const {isEmpty} = useSelector((state) => state.app)
     const sidebarMenu = [
-        {name: 'Dashboard', icon:Img1},
-        {name: 'Messages', icon:Img2},
-        {name: 'Products', icon:Img3},
-        {name: 'Wishlists', icon:Img4},
-        {name: 'Help & support', icon:Img5}
+        {name: 'Dashboard', icon:Img1, linkName: '/dashboard'},
+        {name: 'Messages', icon:Img2, linkName: '/messages'},
+        {name: 'Products', icon:Img3, linkName: '/view-products'},
+        {name: 'Wishlists', icon:Img4, linkName: '/wishlists'},
+        {name: 'Help & support', icon:Img5, linkName: '/support'}
     ]
 
+    const ActiveBackground = 'white'
+    const ActiveLink = '';
+    const normalLink = ''
 
   return (
     <div className=''>
-        <div className=' w-[300px] pt-[50px]  pl-[55px] fixed bg-[#E7E9F8] side'>
-            <p className='text-[#0F27BD] font-grotesk pb-5 font-[700] text-[30px] '>tech<span className='text-[#F17105]'>mart</span></p>
-            <p className='text-[#0F27BD] font-campton font-[700] pb-6 text-[16px] '>Menu</p>
-            <div>
+        <div className=' w-[300px] pt-[25px]  fixed bg-[#E7E9F8] side'>
+            <p className='text-[#0F27BD] pl-[55px] font-grotesk pb-5 font-[700] text-[30px] '>tech<span className='text-[#F17105]'>mart</span></p>
+            <p className='text-[#0F27BD] pl-[55px] font-campton font-[700] pb-6 text-[16px] '>Menu</p>
+            <div className='' >
                 {sidebarMenu.map(item => (
-                    <div className='flex items-center mb-10 gap-2 cursor-pointer'>
+                    <NavLink style={({isActive}) => ({backgroundColor: isActive ? ActiveBackground : ''})} to={item.linkName} className='flex pl-[55px] gap-2 py-4 rounded-[-120px] items-center mb-6 cursor-pointer'>
                         <img src={item.icon} alt="img text" />
                         <p className='text-[16px] font-campton text-[#A1A4B6]'>{item.name}</p>
-                    </div>
+                    </NavLink>
                 ))}
             </div>
-            <div className='pt-10 flex items-center gap-2 cursor-pointer'>
+            <div className=' pl-[55px] pt-8 flex items-center gap-2 cursor-pointer'>
                 <img src={Img6} alt="" />
                 <p className='text-[#D41111] font-campton text-[18px]'>Log out</p>
             </div>

@@ -1,14 +1,15 @@
 import React from 'react';
-import navImg from '../assets/Vector.png'
+import ProductsCard from './ProductsCard'
+import navImg from '../assets/Vector2.png'
 import emptyBox from '../assets/logos_parcel-icon.png'
 import { useSelector } from 'react-redux';
 
 const ProductMobile = ({mobileText}) => {
-    const {isEmpty} = useSelector((state) => state.app);
+    const {isEmpty, uploadedProducts} = useSelector((state) => state.app);
 
 
   return (
-    <div className=''>
+    <div className='mx-6 sm:mx-8'>
         <div className='flex justify-between items-center pt-10'>
             <div className='font-grotesk'>
                 {mobileText ? <p className='text-[#0F27BD] text-[27px] font-[700]'>mart<span className='text-[#F17105] '>Z</span></p> : <p className='text-[#0F27BD] font-[700] text-[30px] '>tech<span className='text-[#F17105]'>mart</span></p>}
@@ -37,8 +38,19 @@ const ProductMobile = ({mobileText}) => {
             </div>
         </div>
         ) : (
-        <div>
-
+        <div className='mt-8'>
+            <div className='flex justify-between pb-2'>
+                <p className='text-[#4B4E61] font-campton'>{`${uploadedProducts.length} ${uploadedProducts.length > 1 ? 'Item(s)' : 'Item'} `}</p>
+                <button className='text-[#0F27BD] font-semibold'><span>+</span>Add New Product</button>
+            </div>
+            <hr color='gray'/>
+            <div className='flex justify-center'>
+                <div className='mt-8 flex items-center sm:gap-8 sm:grid sm:grid-cols-2 flex-col'>{uploadedProducts.map(products => (
+                <ProductsCard products={products}/>
+                )
+                )}
+                </div>
+            </div>
         </div>
         )}
     </div>

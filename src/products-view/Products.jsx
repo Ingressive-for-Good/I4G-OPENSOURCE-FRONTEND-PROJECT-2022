@@ -31,7 +31,7 @@ const ViewProducts = () => {
     
 
   return (
-    <div className='mx-4 lg:mx-6 xl:mx-0'>
+    <div className=''>
         {mobileText ? (<ProductMobile mobileText={mobileText}/>) :
             (<ProductDesktop/>)
         }
