@@ -55,6 +55,10 @@ function App() {
         path="/products"
         element={<AddNewProductPage1/>}
         />
+        <Route
+        path="/view-products"
+        element={<ViewProducts/>}
+        />
         <Route 
             path="/" 
             element={
