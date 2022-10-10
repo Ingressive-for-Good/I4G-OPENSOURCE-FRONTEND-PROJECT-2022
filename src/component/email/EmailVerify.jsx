@@ -6,7 +6,7 @@ import lineSvg from "./line.svg";
 import ham from "./hamburger.svg";
 import headAvatar from "./head-avatar.svg";
 const EmailVerify = () => {
-  const [modal, setModal] = React.useState(true);
+  const [modal, setModal] = React.useState(false);
   return (
     <div className="container h-full w-full relative">
       <div
