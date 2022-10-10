@@ -88,6 +88,6 @@ module.exports = {
         "checked-image": "url('/src/assets/Tick.png')",
       },
     },
-    plugins: [require('@tailwindcss/forms')],
+    plugins: [],
   },
 };
