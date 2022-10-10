@@ -9,11 +9,6 @@ import WishlistViewProducts from "./pages/WishlistViewProducts";
 
 import Home from "./molecules/Home";
 
-import AddNewProductPage1 from './AddNewProduct/pageOne/AddNewProductPage1'
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-
-
-
 function App() {
   return (
     <BrowserRouter>
