@@ -10,7 +10,6 @@ import CreateAccount from "./pages/create-account/CreateAccount";
 import Kyc from "./component/kyc-page/Kyc";
 import Home from "./molecules/Home";
 import ViewProducts from "./products-view/Products";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Help from "./pages/Help";
 
 function App() {
