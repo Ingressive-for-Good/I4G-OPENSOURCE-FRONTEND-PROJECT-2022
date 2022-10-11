@@ -58,7 +58,7 @@ Click `issues` in the repository to see the reported issues.
 This project follows the Atomic Design Principles. This principle has to be adhered to if your pull request is to be merged.
 
 The structure below explains the atomic design principle.
-**(NOTE: before creating any new compnent, please check if it exists already to avoid duplicate components.)**
+**NOTE: before creating any new compnent, please check if it exists already to avoid duplicate components.**
 
 In the root directory is an src folder which conteins the following sub-folders;
 
