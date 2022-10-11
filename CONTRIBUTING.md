@@ -12,6 +12,8 @@ Please make sure to read the relevant section before making your contributions, 
 - [Intended Audience](#intended-audience)
 - [How to contribute](#how-to-contribute)
 - [Issues](#working-with-issues)
+- [Project Structure](#project-structure)
+- [Style Guide](#style-guide)
 - [Submitting Changes](#submit-changes)
 - [Communication](#communication)
 - [Code of Conduct](#code-of-conduct)
@@ -50,6 +52,28 @@ Click `issues` in the repository to see the reported issues.
 - If you are able and want to fix this, fork the repository on GitHub
 - **See [Issue Template](./issue_template.md) for a formatted way of submmiting an issue.**
 
+
+## Project Structure
+
+This project follows the Atomic Design Principles. This principle has to be adhered to if your pull request is to be merged.
+
+The structure below explains the atomic design principle.
+**(NOTE: before creating any new compnent, please check if it exists already to avoid duplicate components.)**
+
+In the root directory is an src folder which conteins the following sub-folders;
+
+- **atoms:** this folder should house the smallest possible components, such as buttons, titles, inputs, text.
+
+- **molecules:** in this folder resides components that are composed of two or more atoms, for example, a search Box comprising of an HTML TextInput and a Button.
+
+- **organism:** here, you should have your bigger UI components composed of groups of molecules and/or atoms, this could be a Navigation Bar, Side Bar, a section of a page.
+
+- **pages:** here, it all finally comes together. This is where all components come together to make a complete page.
+
+
+## Style Guide
+
+**See the complete style guide on [figma](https://www.figma.com/file/cK9hICwy4Tcs7Nw2mXh0Aj/I4G-Open-Source)**
 
 ## Submit Changes
 
