@@ -68,12 +68,19 @@ In the root directory is an **src** folder which contains the following sub-fold
 
     **atoms:** this sub-folder should house the smallest possible components, such as buttons, titles, inputs, text.
 
-    **molecules:** in this sub-folder resides components that are composed of two or more atoms, for example, a search Box comprising of an HTML TextInput and a Button.
+    **molecules:** in this sub-folder resides components that are composed of two or more atoms, for example, a search Box comprising of an HTML TextInput and a     Button.
+
+- **template:** this folder houses layouts. It is basically a skeletal structure of what the page would look like without the components of the page.
 
 - **pages:** here, it all finally comes together. This is where all components come together to show what the UI looks like with real representative content in place.
 
+**Before creating any new component, check all appropriate folders to see if the same component exists already. Avoid creation of duplicate components.**
 
 ## Style Guide
+
+**NOTE: Tailwind CSS is the only accepted framework to be used if you are to have your PR merged.**
+
+**There's no need to create your own style configuration, most of the style guides are alredy defined in the tailwind.config.cjs file.**
 
 [Style Guide](./style_guide.md)
 
