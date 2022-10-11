@@ -2,6 +2,8 @@ import React from "react";
 
 import DeleteProduct from "./delete/deleteProduct";
 import EmailVerify from "./component/email/EmailVerify";
+import ForgotPassword from "./component/forgotPasswordPage/ForgotPassword";
+
 import AddNewProductPage1 from "./AddNewProduct/pageOne/AddNewProductPage1";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
@@ -69,6 +71,14 @@ function App() {
           element={
             <>
               <Kyc />
+            </>
+          }
+        />
+        <Route
+          path="/account-recovery"
+          element={
+            <>
+              <ForgotPassword />
             </>
           }
         />
