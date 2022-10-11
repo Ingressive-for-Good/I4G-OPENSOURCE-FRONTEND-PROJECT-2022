@@ -1,5 +1,12 @@
 ## Style Guide
 
+**IMPORTANT**
+
+Tailwind CSS is the only accepted framework to be used if you are to have your PR merged.
+
+There's no need to create your own style configuration, most of the style guides are alredy defined in the tailwind.config.cjs file.
+
+
 # FONTS USED
 
 **Cabinet Grotesk**
