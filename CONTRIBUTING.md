@@ -60,18 +60,22 @@ This project follows the Atomic Design Principles. This principle has to be adhe
 The structure below explains the atomic design principle.
 **NOTE: before creating any new compnent, please check if it exists already to avoid duplicate components.**
 
-In the root directory is an src folder which conteins the following sub-folders;
+In the root directory is an **src** folder which contains the following sub-folders;
 
-- **atoms:** this folder should house the smallest possible components, such as buttons, titles, inputs, text.
+- **assets:** add all images and icons here.
 
-- **molecules:** in this folder resides components that are composed of two or more atoms, for example, a search Box comprising of an HTML TextInput and a Button.
+- **components:** this folder houses the **atoms** and **molecules** subfolders.
 
-- **organism:** here, you should have your bigger UI components composed of groups of molecules and/or atoms, this could be a Navigation Bar, Side Bar, a section of a page.
+    **atoms:** this sub-folder should house the smallest possible components, such as buttons, titles, inputs, text.
 
-- **pages:** here, it all finally comes together. This is where all components come together to make a complete page.
+    **molecules:** in this sub-folder resides components that are composed of two or more atoms, for example, a search Box comprising of an HTML TextInput and a Button.
+
+- **pages:** here, it all finally comes together. This is where all components come together to show what the UI looks like with real representative content in place.
 
 
 ## Style Guide
+
+[Style Guide](./style_guide.md)
 
 **See the complete style guide on [figma](https://www.figma.com/file/cK9hICwy4Tcs7Nw2mXh0Aj/I4G-Open-Source)**
 
