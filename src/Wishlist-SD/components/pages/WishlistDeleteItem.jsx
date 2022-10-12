@@ -16,7 +16,9 @@ function WishlistDeleteItem() {
 
     function deleteSuccess() {
         setDeleteStats(true);
-        setClickedDelete(!clickedDelete)
+        setClickedDelete(!clickedDelete);
+        setTimeout(() => {
+            setDeleteStats(false)}, 2000);
     }
 
     return (
@@ -34,6 +36,7 @@ function WishlistDeleteItem() {
 
             <div className="flex flex-col justify-center items-center lg:w-[1062px] lg:flex-row lg:flex-wrap lg:justify-start lg:gap-x-[32px] lg:gap-y-2">
                 <WishlistItem
+                    id = {1}
                     imageLink="src\Wishlist-SD\images\Rectangle 12dell.png"
                     imageText="Dell Keyboard & Mouse"
                     ItemName="Dell Keyboard & Mouse"
@@ -41,18 +44,20 @@ function WishlistDeleteItem() {
                     ItemDescription="Working equipment"
                 />
                 <WishlistItem
-                    imageLink="src\Wishlist-SD\images\Rectangle 12dell.png"
-                    imageText="Dell Keyboard & Mouse"
-                    ItemName="Dell Keyboard & Mouse"
+                    id = {2}
+                    imageLink="src\Wishlist-SD\images\Rectangle 14GamePad.png"
+                    imageText="Gaming Pad"
+                    ItemName="Gaming Pad"
                     ItemPrice="#25,000"
-                    ItemDescription="Working equipment"
+                    ItemDescription="Games"
                 />
                 <WishlistItem
-                    imageLink="src\Wishlist-SD\images\Rectangle 12dell.png"
-                    imageText="Dell Keyboard & Mouse"
-                    ItemName="Dell Keyboard & Mouse"
+                    id = {3}
+                    imageLink="src\Wishlist-SD\images\Rectangle 14GamePad.png"
+                    imageText="Gaming Pad"
+                    ItemName="Gaming Pad"
                     ItemPrice="#25,000"
-                    ItemDescription="Working equipment"
+                    ItemDescription="Games"
                 />
             </div>
         </div>

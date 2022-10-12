@@ -6,14 +6,12 @@ import AddNewProductPage1 from "./AddNewProduct/pageOne/AddNewProductPage1";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
 import WishlistViewProducts from "./pages/WishlistViewProducts";
-
 import CreateAccount from "./pages/create-account/CreateAccount";
-import AddNewProductPage1 from './AddNewProduct/pageOne/AddNewProductPage1'
 import WishlistDeleteItem from "./Wishlist-SD/components/pages/WishlistDeleteItem"
 import Kyc from "./component/kyc-page/Kyc";
 import Home from "./molecules/Home";
 import ViewProducts from "./products-view/Products";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
 
 function App() {
   return (

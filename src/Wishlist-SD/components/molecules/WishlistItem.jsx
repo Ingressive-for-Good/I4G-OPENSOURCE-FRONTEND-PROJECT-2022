@@ -13,7 +13,7 @@ function WishlistItem(props) {
     }
 
     return (
-        <div className="">
+        <div className="" id={props.id}>
             <div
                 className={(clicked ? "border-primary-500 " : "border-neutral-300 ") + "flex justify-center items-start pt-[24px] w-[333px] h-[366px] border-[1.5px] rounded-lg md:w-[583px] md:h-[224px] md:flex md:justify-start mt-[24px] lg:w-[505px] lg:h-[216px]"}
                 >
