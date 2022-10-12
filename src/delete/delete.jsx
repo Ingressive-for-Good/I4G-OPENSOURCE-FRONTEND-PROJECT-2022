@@ -4,23 +4,8 @@ import React, { useState } from "react";
 import { UseAppContext } from "./context";
 
 function Delete() {
-  const [editId, setId] = useState(null);
-  const { value, setValue, show, setShow, alert, setAlert } = UseAppContext();
-
-  const Edit = (id) => {
-    const a = setShow(!show);
-    setId(id);
-
-    setValue(
-      value.map((info) => {
-        if (info.id === id) {
-          return { ...info, a };
-        } else {
-          return info;
-        }
-      })
-    );
-  };
+  const { value, setValue, alert, setAlert, alertDelete, setAlertDelete } =
+    UseAppContext();
 
   return (
     <div className="w-full md:grid md:grid-cols-2 md:gap-6 lg:grid-cols-3  ">
@@ -35,6 +20,7 @@ function Delete() {
           price,
           category,
         } = info;
+        const [show, setShow] = useState(false);
         return (
           <div
             key={id}
@@ -50,20 +36,37 @@ function Delete() {
               src={nav}
               alt=""
               srcSet=""
-              onClick={() => Edit(id)}
+              onClick={() => setShow(!show)}
               className="absolute top-4 right-6 bg-primary-50 h-10 w-10 object-contain p-2 rounded-full"
             />
-            <div
-              className={
-                " absolute bg-neutral-50 top-16 right-2 p-2 rounded-md text-small text-center leading-5 " +
-                (show ? "block" : "hidden")
-              }
-            >
-              <ul>
-                <li>Edit Details</li>
-                <li>Mark as Available</li>
-              </ul>
-            </div>
+
+            {show ? (
+              <>
+                <div
+                  className={
+                    " absolute bg-neutral-50 top-16 right-2 p-2 rounded-md text-small text-center leading-5 " +
+                    (show ? "block" : "hidden")
+                  }
+                >
+                  <ul>
+                    <li className="p-2">Edit Details</li>
+                    <li
+                      onClick={() =>
+                        setAlert({
+                          available: true,
+                          msg: "Success! An item has been marked as available",
+                        })
+                      }
+                    >
+                      Mark as Available
+                    </li>
+                  </ul>
+                </div>
+              </>
+            ) : (
+              ""
+            )}
+
             <div className="flex justify-between items-center bg-white p-5">
               <div>
                 <p className="text-button font-semibold text-neutral-700">
@@ -72,7 +75,7 @@ function Delete() {
                 <p>{category}</p>
                 <h4 className="text-h4 font-bold text-neutral-900">{price}</h4>
                 <p className="text-button font-semibold text-secondary-700">
-                  {available}
+                  {show && alert.available ? "available" : `${available}`}
                 </p>
               </div>
               <div>
@@ -80,9 +83,9 @@ function Delete() {
                   src={icon}
                   alt=""
                   srcSet=""
-                  onClick={() => {
-                    setAlert(!alert);
-                  }}
+                  // onClick={() => {
+                  //   setAlertDelete(!alertDelete);
+                  // }}
                 />
               </div>
             </div>

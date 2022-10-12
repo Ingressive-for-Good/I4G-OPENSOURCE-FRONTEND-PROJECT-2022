@@ -16,7 +16,7 @@ export const data = [
     discription: "Workspace Equipment",
     category: "Product Category",
     price: "₦25,000.00",
-    available: "available",
+    available: "Unavailable",
     icon: "../images/trash-can.png",
   },
   {
@@ -26,7 +26,7 @@ export const data = [
     discription: "Workspace Equipment",
     category: "Product Category",
     price: "₦25,000.00",
-    available: "available",
+    available: "Unavailable",
     icon: "../images/trash-can.png",
   },
   {
@@ -36,7 +36,7 @@ export const data = [
     discription: "Workspace Equipment",
     category: "Product Category",
     price: "₦25,000.00",
-    available: "available",
+    available: "Unavailable",
     icon: "../images/trash-can.png",
   },
 ];
