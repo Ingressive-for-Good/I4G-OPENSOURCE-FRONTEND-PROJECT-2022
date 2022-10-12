@@ -16,7 +16,7 @@ export default function SideBar() {
           <li className='pl-[50px] py-[19.5px]'>
             <NavLink className='flex flex-row gap-[10px]' to='#'>
               <img src={dashboardIcon} alt="" />
-              <span className="font-medium text-neutral-500">
+              <span className="font-medium text-neutral-500 hover:text-primary-500">
                 Dashboard
               </span>
             </NavLink>
@@ -24,7 +24,7 @@ export default function SideBar() {
           <li className='pl-[50px] py-[19.5px]'>
             <NavLink className='flex flex-row gap-[10px]' to='#'>
               <img src={chatIcon} alt="" />
-              <span className="font-medium text-neutral-500">
+              <span className="font-medium text-neutral-500 hover:text-primary-500">
                 Messages
               </span>
             </NavLink>
@@ -32,7 +32,7 @@ export default function SideBar() {
           <li className='pl-[50px] py-[19.5px]'>
             <NavLink className='flex flex-row gap-[10px]' to='#'>
               <img src={productIcon} alt="" />
-              <span className="font-medium text-neutral-500">
+              <span className="font-medium text-neutral-500 hover:text-primary-500">
                 Products
               </span>
             </NavLink>
@@ -40,7 +40,7 @@ export default function SideBar() {
           <li className='pl-[50px] py-[19.5px] bg-white'>
             <NavLink className='flex flex-row gap-[10px]' to='#'>
               <img src={wishlistIcon} alt="" />
-              <span className='text-primary-500 font-semibold'>
+              <span className='text-primary-500 font-semibold hover:text-primary-500'>
                 Wishlist
               </span>
             </NavLink>
@@ -48,7 +48,7 @@ export default function SideBar() {
           <li className='pl-[50px] py-[19.5px]'>
             <NavLink className='flex flex-row gap-[10px]' to='#'>
               <img src={helpIcon} alt="" />
-              <span className="font-medium text-neutral-500">
+              <span className="font-medium text-neutral-500 hover:text-primary-500">
                 Help & Support
               </span>
               </NavLink>
