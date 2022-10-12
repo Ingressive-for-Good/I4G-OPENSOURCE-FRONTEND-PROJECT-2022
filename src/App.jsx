@@ -3,6 +3,8 @@ import { BrowserRouter,Routes, Route} from "react-router-dom";
 import PhoneNumberVerificationSuccessUI from "./molecules/modal/PhoneNumberVerificationSuccessUI";
 import DeleteProduct from "./delete/deleteProduct";
 import EmailVerify from "./component/email/EmailVerify";
+import ForgotPassword from "./component/forgotPasswordPage/ForgotPassword";
+
 import AddNewProductPage1 from "./AddNewProduct/pageOne/AddNewProductPage1";
 import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
 import WishlistViewProducts from "./pages/WishlistViewProducts";
@@ -70,10 +72,9 @@ function App() {
             </>
           }
         />
-        <Route
-        path="/products"
-        element={<AddNewProductPage1/>}
-        />
+        <Route path="/account-recovery" element={<ForgotPassword />}/>
+
+        <Route path="/products" element={<AddNewProductPage1 />} />
         <Route
         path="/view-products"
         element={<ViewProducts/>}
