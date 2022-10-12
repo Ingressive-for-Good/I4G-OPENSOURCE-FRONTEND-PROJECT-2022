@@ -100,6 +100,12 @@ In the root directory is an **src** folder which contains the following sub-fold
 - You can modify previous solutions if you feel like your solution has better Time or Space complexity.
 - Even if you have write access to the repository, do not directly push or merge pull-requests. Let another team member review your pull request and approve.
 
+**Important notes before pushing codes:**
+- Always make sure your forked repository is in sync with the Ingressive-for-Good develop branch by clicking Sync fork and updating branch.
+- On your local machine do a git pull to your feature branch for a local update.
+- If any merge conflicts occurs locally, make a fix and drop a merge commit message on conflicts fixed to help maintainers know what changes were made while making sure your change works.
+- With all these done you are good to go and ready to push your code and make a pull request, if met with further conflicts repeat the process or leave a comment in your PR tagging a maintainer.
+
 
 ## Code of conduct
 
