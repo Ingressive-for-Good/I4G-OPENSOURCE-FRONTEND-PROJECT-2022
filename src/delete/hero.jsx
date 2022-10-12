@@ -6,7 +6,7 @@ import ipad from "../../public/images/ipadLogo.png";
 import notification from "../../public/images/notification.png";
 import rectangle from "../../public/images/person.png";
 import search from "../../public/images/search.png";
-import frame from "../../public/images/frame.png";
+import success from "../../public/images/success.png";
 import { UseAppContext } from "./context";
 const Hero = () => {
   const { value, alert } = UseAppContext();
@@ -37,7 +37,7 @@ const Hero = () => {
           <div className="absolute  -translate-y-1/2 md:translate-x-1/2 z-20 top-3 lg:top-8 bg-success-50 rounded-md border-success-500 border">
             {alert.available && (
               <div className="flex justify-between items-center py-2 px-6 gap-4">
-                <img src={frame} alt="" srcset="" />
+                <img src={success} alt="" srcset="" />
                 <p>{alert.msg}</p>
               </div>
             )}
