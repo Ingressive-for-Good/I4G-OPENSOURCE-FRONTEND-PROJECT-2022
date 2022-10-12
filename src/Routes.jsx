@@ -1,13 +1,13 @@
 import React from "react";
 import { Route, Routes as Switch, Link } from "react-router-dom";
 import Login from "./src/Components/Login";
-import Help from "./molecules/Help";
 import LandingPage from "./pages/LandingPage";
 import DashboardPage from "./pages/DashboardPage";
 import EmailVerify from "./component/email/EmailVerify";
 import DeleteProduct from "./delete/deleteProduct";
 import PhoneNumberVerification from "./pages/PhoneNumberVerification";
 import AddNewProductPage1 from "./AddNewProduct/pageOne/AddNewProductPage1";
+import Help from "./pages/Help";
 
 import Home from "./molecules/Home";
 

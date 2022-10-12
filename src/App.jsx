@@ -2,16 +2,17 @@ import React from "react";
 
 import DeleteProduct from "./delete/deleteProduct";
 import EmailVerify from "./component/email/EmailVerify";
+import ForgotPassword from "./component/forgotPasswordPage/ForgotPassword";
+
 import AddNewProductPage1 from "./AddNewProduct/pageOne/AddNewProductPage1";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
 import WishlistViewProducts from "./pages/WishlistViewProducts";
-
 import CreateAccount from "./pages/create-account/CreateAccount";
-
 import Kyc from "./component/kyc-page/Kyc";
-
 import Home from "./molecules/Home";
+import ViewProducts from "./products-view/Products";
+import Help from "./pages/Help";
 
 function App() {
   return (
@@ -29,13 +30,13 @@ function App() {
                 Visit Email Verification Page
               </Link>
               <br />
-              <Link to="/products">Add new product</Link>
-              <Link to="/kyc">Kyc Page</Link> <br />
-              <Link to="/delete-product">Delete uploaded product</Link>
+              <Link to="/products">Add new product</Link><br />
               <br />
               <Link to="/create-account">Create Account</Link>
               <br />
-              <Link to="/kyc">Kyc Page</Link>
+              <Link to="/kyc">Kyc Page</Link><br />
+              <Link to="/view-products">View products</Link><br/>
+            <Link to="/delete-product">Delete uploaded product</Link>
             </>
           }
         />
@@ -73,13 +74,34 @@ function App() {
             </>
           }
         />
+        <Route
+          path="/account-recovery"
+          element={
+            <>
+              <ForgotPassword />
+            </>
+          }
+        />
 
         <Route path="/products" element={<AddNewProductPage1 />} />
 
         <Route
+          path="/account-recovery"
+          element={
+            <>
+              <ForgotPassword />
+            </>
+          }
+        />
+        <Route
+        path="/view-products"
+        element={<ViewProducts/>}
+        />
+        <Route 
           path="/"
           element={
             <div className="p-6">
+
               <h1 className="text-3xl font-bold text-red-600">Hello world!</h1>
               <p>/wishlist (view products in wishlist)</p>
               <p>/add-to-wishlist (add products to wishlist)</p>
@@ -88,7 +110,6 @@ function App() {
           exact
         ></Route>
         <Route path="/wishlist" element={<WishlistViewProducts />}></Route>
-
         <Route
           path="/add-to-wishlist"
           element={<EmptyWishlistViewProducts />}
@@ -103,6 +124,8 @@ function App() {
         />
 
         <Route path="/create-account" element={<CreateAccount />}></Route>
+         <Route path="/support" element= {<Help />}></Route>
+
       </Routes>
     </BrowserRouter>
   );
