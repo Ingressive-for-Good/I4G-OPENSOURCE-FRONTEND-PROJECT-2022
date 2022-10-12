@@ -2,6 +2,8 @@ import React from "react";
 
 import DeleteProduct from "./delete/deleteProduct";
 import EmailVerify from "./component/email/EmailVerify";
+import ForgotPassword from "./component/forgotPasswordPage/ForgotPassword";
+
 import AddNewProductPage1 from "./AddNewProduct/pageOne/AddNewProductPage1";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
@@ -72,12 +74,24 @@ function App() {
             </>
           }
         />
+        <Route
+          path="/account-recovery"
+          element={
+            <>
+              <ForgotPassword />
+            </>
+          }
+        />
 
         <Route path="/products" element={<AddNewProductPage1 />} />
 
         <Route
-        path="/products"
-        element={<AddNewProductPage1/>}
+          path="/account-recovery"
+          element={
+            <>
+              <ForgotPassword />
+            </>
+          }
         />
         <Route
         path="/view-products"
@@ -96,7 +110,6 @@ function App() {
           exact
         ></Route>
         <Route path="/wishlist" element={<WishlistViewProducts />}></Route>
-
         <Route
           path="/add-to-wishlist"
           element={<EmptyWishlistViewProducts />}
