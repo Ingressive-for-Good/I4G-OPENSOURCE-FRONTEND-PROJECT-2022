@@ -13,6 +13,7 @@ import Kyc from "./component/kyc-page/Kyc";
 import Home from "./molecules/Home";
 import ViewProducts from "./products-view/Products";
 import Help from "./pages/Help";
+import PhoneNumberVerificationSuccessfullUI from "./molecules/modal/PhoneNumberVerificationSuccessfullUI";
 
 function App() {
   return (
@@ -125,7 +126,7 @@ function App() {
 
         <Route path="/create-account" element={<CreateAccount />}></Route>
          <Route path="/support" element= {<Help />}></Route>
-
+         <Route path="/phone-number-verification-successfullUi" element={<PhoneNumberVerificationSuccessfullUI/>}></Route>
       </Routes>
     </BrowserRouter>
   );
