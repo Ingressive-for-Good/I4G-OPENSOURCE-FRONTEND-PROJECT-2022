@@ -42,3 +42,21 @@ The button also being the only highlighted button seems to encourage an action w
 ### Observations/Changes 
 - I researched and came up with the overall userflow using FigJam for the open source project, which is an e-commerce platform for techies.
 -----Main Goal -- Userflow
+
+
+## Name: Nora Eboesomi , Ayomide Olowosile
+
+## Description: Design Style Guide
+### Observations/Changes
+- Using the research result and the design brief, Ayomide and I came up with a design style guide which included Logo, Colors, Typography, Iconography, Form fields, Buttons and Alerts for desktop, tablet and mobile screens.
+- The importance of the style guide is to ensure consistency throughout the design.
+-----Main Goal -- Design Style Guide
+
+
+## Name:
+
+## Description: 
+### Observations/Changes
+
+
+-----Main Goal -- 
