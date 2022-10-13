@@ -13,6 +13,7 @@ import Kyc from "./component/kyc-page/Kyc";
 import Home from "./molecules/Home";
 import ViewProducts from "./products-view/Products";
 import Help from "./pages/Help";
+import ResetPasswordPage from "./pages/PasswordResetPage";
 
 function App() {
   return (
@@ -110,10 +111,8 @@ function App() {
           exact
         ></Route>
         <Route path="/wishlist" element={<WishlistViewProducts />}></Route>
-        <Route
-          path="/add-to-wishlist"
-          element={<EmptyWishlistViewProducts />}
-        ></Route>
+        <Route path="/add-to-wishlist" element={<EmptyWishlistViewProducts />}></Route>
+        <Route path="/reset-password" element={<ResetPasswordPage />}></Route>
         <Route
           path="/delete-product"
           element={
