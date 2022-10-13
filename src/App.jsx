@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
 import WishlistViewProducts from "./pages/WishlistViewProducts";
 import CreateAccount from "./pages/create-account/CreateAccount";
+import WishlistDeleteItem from "./Wishlist-SD/components/pages/WishlistDeleteItem"
 import Kyc from "./component/kyc-page/Kyc";
 import Home from "./molecules/Home";
 import ViewProducts from "./products-view/Products";
@@ -36,7 +37,9 @@ function App() {
               <br />
               <Link to="/kyc">Kyc Page</Link><br />
               <Link to="/view-products">View products</Link><br/>
-            <Link to="/delete-product">Delete uploaded product</Link>
+            <Link to="/delete-product">Delete uploaded product</Link><br />
+              <Link to="/wishlist">Delete Item From Wishlist</Link>
+
             </>
           }
         />
@@ -92,6 +95,11 @@ function App() {
               <ForgotPassword />
             </>
           }
+        />
+
+        <Route
+        path="/wishlist"
+        element={<WishlistDeleteItem />}
         />
         <Route
         path="/view-products"
