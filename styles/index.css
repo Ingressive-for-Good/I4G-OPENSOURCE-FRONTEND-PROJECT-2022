@@ -14,9 +14,10 @@
 }
 @font-face {
     font-family: "CabinetGrotesk";
-    src: url("../public/fonts/CabinetGrotesk-Regular.otf");
+    src: url("../src/assets/fonts/CabinetGrotesk-Regular.otf");
 }
 @font-face {
     font-family: "Campton";
-    src: url("../public/fonts/Campton-LightDEMO.otf");
+    src: url("../src/assets/fonts/Campton-LightDEMO.otf");
 }
+
