@@ -5,11 +5,10 @@ import ipad from "../../assets/icons/ipadLogo.png";
 import notification from "../../assets/icons/notification.png";
 import rectangle from "../../assets/icons/person.png";
 import search from "../../assets/icons/search.png";
-
 import { UseAppContext } from "../../../utils/context";
 
 const Hero = () => {
-  const { value } = UseAppContext();
+  const { value, alert } = UseAppContext();
   return (
     <div>
       <div className="logo-container flex justify-between items-center mb-4 lg:py-4">
@@ -25,7 +24,8 @@ const Hero = () => {
           <img src={vector} alt="" srcset="" />
         </button>
       </div>
-      <div className="flex justify-between items-center mb-4 ">
+
+      <div className="flex justify-between items-center mb-4 relative ">
         <div>
           <p className="text-p font-medium font-lato text-neutral-800 mb-2 md:text-mdP">
             Hey Nora👋🏾
@@ -33,6 +33,14 @@ const Hero = () => {
           <h4 className="text-h4 font-bold text-neutral-900 md:text-mdH4">
             View your Uploaded Products
           </h4>
+          <div className="absolute  -translate-y-1/2 md:translate-x-1/2 z-20 top-3 lg:top-8 bg-success-50 rounded-md border-success-500 border">
+            {alert.available && (
+              <div className="flex justify-between items-center py-2 px-6 gap-4">
+                <img src={success} alt="" srcset="" />
+                <p>{alert.msg}</p>
+              </div>
+            )}
+          </div>
         </div>
         <div className=" gap-4 items-center relative hidden lg:flex">
           <input

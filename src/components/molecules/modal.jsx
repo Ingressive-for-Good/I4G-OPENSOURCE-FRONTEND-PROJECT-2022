@@ -1,6 +1,7 @@
 import React from "react";
 import image from "../../assets/icons/33.png";
 import { UseAppContext } from "../../../utils/context";
+
 const Modal = () => {
   const { alert, value, setValue } = UseAppContext();
 

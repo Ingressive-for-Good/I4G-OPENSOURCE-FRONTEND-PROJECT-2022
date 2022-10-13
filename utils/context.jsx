@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { data, nav } from "../src/assets/data/data";
+
 const AppContext = React.createContext();
 const Context = ({ children }) => {
   const [value, setValue] = useState(data);
