@@ -46,7 +46,7 @@ const ProductMobile = ({mobileText}) => {
             <hr color='gray'/>
             <div className='flex justify-center'>
                 <div className='mt-8 flex items-center sm:gap-8 sm:grid sm:grid-cols-2 flex-col'>{uploadedProducts.map(products => (
-                <ProductsCard products={products}/>
+                <ProductsCard key={products.id} products={products}/>
                 )
                 )}
                 </div>

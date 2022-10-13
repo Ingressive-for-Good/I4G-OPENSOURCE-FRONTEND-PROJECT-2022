@@ -3,6 +3,7 @@ import EmailVerify from "./component/email/EmailVerify";
 import Home from "./molecules/Home";
 import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
 import WishlistViewProducts from "./pages/WishlistViewProducts";
+import EditProductDetails from "./products-view/EditProductDetails";
 import CreateAccount from "./pages/create-account/CreateAccount";
 import AddNewProductPage1 from './AddNewProduct/pageOne/AddNewProductPage1'
 import Kyc from "./component/kyc-page/Kyc";
@@ -39,6 +40,14 @@ function App() {
           element={
             <>
               <EmailVerify />
+            </>
+          }
+        />
+        <Route
+          path="/edit-product-details"
+          element={
+            <>
+              <EditProductDetails/>
             </>
           }
         />

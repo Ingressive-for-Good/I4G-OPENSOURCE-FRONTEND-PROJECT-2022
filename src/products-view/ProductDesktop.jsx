@@ -34,7 +34,7 @@ const ProductDesktop = () => {
             <p className='text-[#0F27BD] pl-[55px] font-campton font-[700] pb-6 text-[16px] '>Menu</p>
             <div className='' >
                 {sidebarMenu.map(item => (
-                    <NavLink style={({isActive}) => ({backgroundColor: isActive ? ActiveBackground : ''})} to={item.linkName} className='flex pl-[55px] gap-2 py-4 rounded-[-120px] items-center mb-6 cursor-pointer'>
+                    <NavLink key={item.name} style={({isActive}) => ({backgroundColor: isActive ? ActiveBackground : ''})} to={item.linkName} className='flex pl-[55px] gap-2 py-4 rounded-[-120px] items-center mb-6 cursor-pointer'>
                         <img src={item.icon} alt="img text" />
                         <p className='text-[16px] font-campton text-[#A1A4B6]'>{item.name}</p>
                     </NavLink>
