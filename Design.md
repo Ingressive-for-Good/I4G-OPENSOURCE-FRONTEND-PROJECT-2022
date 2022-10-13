@@ -36,8 +36,9 @@ The key primary button on the page might also lead to users having mislead inter
 The button also being the only highlighted button seems to encourage an action which doesn’t aid the core functionality of the screen
 -----Main Goal -- Improved UX
 
-## Name: Nnadiukwu Chidiebere Oscar 
+## Name: Nora Eboesomi 
 
-## Description:
+## Description: Techmart Userflow
 ### Observations/Changes 
------Main Goal --
+- I researched and came up with the overall userflow using FigJam for the open source project, which is an e-commerce platform for techies.
+-----Main Goal -- Userflow
