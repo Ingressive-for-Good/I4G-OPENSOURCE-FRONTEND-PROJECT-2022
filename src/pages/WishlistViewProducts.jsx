@@ -3,7 +3,11 @@ import NavbarDashboard from "../molecules/NavbarDashboard";
 import SidebarDashboard from "../molecules/SidebarDashboard";
 import DashboardSelect from "../molecules/DashboardSelect";
 
+// The function below displays the wishlist page with products in it.
+
 function WishlistViewProducts() {
+
+    // This logic shows or hides the select dropdown on the dashboard page.
     const [showSelect, setShowSelect] = useState(false)
 
     let select

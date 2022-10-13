@@ -3,6 +3,8 @@ import CreateWishButton from "../atoms/Button/CreateWishButton";
 import NavbarDashboard from "../molecules/NavbarDashboard";
 import SidebarDashboard from "../molecules/SidebarDashboard";
 
+// The function below displays the empty view products in wishlist page.
+
 function EmptyWishlistViewProducts() {
   return (
     <div className="md:bg-gray-50">
