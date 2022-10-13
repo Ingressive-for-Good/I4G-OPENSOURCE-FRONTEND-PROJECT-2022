@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PhoneNumberVerificationSuccessfullUI from '../molecules/modal/PhoneNumberVerificationSuccessfullUI';
 
 export default function PhoneNumberVerification() {
   const [otp, setOtp] = useState(new Array(4).fill(""));
@@ -12,9 +13,11 @@ export default function PhoneNumberVerification() {
     }
   };
 
+const [openModal, setOpenModal] = useState(false)
   
   return (
-    <section className='lg:h-screen flex flex-col lg:flex-row'>
+  <>
+    <div className='lg:h-screen flex flex-col lg:flex-row'>
       {/* Div One Start */}
         <div className='lg:bg-primary-50 lg:w-2/5'>
           {/* Logo & Toggle Mobile Start */}
@@ -82,7 +85,7 @@ export default function PhoneNumberVerification() {
 
           {/* Proceed Start */}
             <div className='mx-5'>
-              <button className='bg-primary-500 w-full text-center text-white text-[17px] md:text-[18px] leading-[24px] font-bold rounded-[8px] py-[18px] font-campton'  type="submit" onClick={e => otp.join("")} >Verify</button>
+              <button className='bg-primary-500 w-full text-center text-white text-[17px] md:text-[18px] leading-[24px] font-bold rounded-[8px] py-[18px] font-campton'  type="submit" onClick={e => otp.join("")} onClick={() => setOpenModal(true)} >Verify</button>
             </div>
           {/* Proceed End */}
 
@@ -94,6 +97,9 @@ export default function PhoneNumberVerification() {
 
         </div>
       {/* Div Two End */}
-    </section>
+    </div>
+    {/* Successfull Modal */}
+    <PhoneNumberVerificationSuccessfullUI open={openModal} onClose={() => setOpenModal(false)}/>
+  </>
   )
 }

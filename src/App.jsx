@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import DeleteProduct from "./delete/deleteProduct";
 import EmailVerify from "./component/email/EmailVerify";
@@ -14,8 +14,9 @@ import Home from "./molecules/Home";
 import ViewProducts from "./products-view/Products";
 import Help from "./pages/Help";
 import PhoneNumberVerificationSuccessfullUI from "./molecules/modal/PhoneNumberVerificationSuccessfullUI";
-
+import PhoneNumberVerification from "./pages/PhoneNumberVerification";
 function App() {
+  const [openModal, setOpenModal] = useState(false)
   return (
     <BrowserRouter>
       <Routes>
@@ -126,8 +127,10 @@ function App() {
 
         <Route path="/create-account" element={<CreateAccount />}></Route>
          <Route path="/support" element= {<Help />}></Route>
+         <Route path="/phoneVerification" element={<PhoneNumberVerification/>}></Route>
          <Route path="/phone-number-verification-successfullUi" element={<PhoneNumberVerificationSuccessfullUI/>}></Route>
       </Routes>
+
     </BrowserRouter>
   );
 }
