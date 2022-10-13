@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import SideBar from "../../../Wishlist-SD/components/molecules/SideBar";
-import Navbar from "../../../Wishlist-SD/components/molecules/Navbar";
+import SideBar from "../../molecules/WishListSideBar";
+import Navbar from "../../../Wishlist-SD/components/molecules/WishlistNavbar";
 import WishlistItem from "../Wishlist-SD/components/molecules/WishlistItem";
 import DeleteConfirmation from "../../molecules/DeleteConfirmation";
 import DeleteNotification from "../Wishlist-SD/components/molecules/DeleteNotification";
-
 
 function WishlistDeleteItem() {
     const [clickedDelete, setClickedDelete] = useState(false);
