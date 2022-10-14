@@ -53,10 +53,28 @@ The button also being the only highlighted button seems to encourage an action w
 -----Main Goal -- Design Style Guide
 
 
+## Name:  Nora Eboesomi , Ayomide Olowosile
+
+## Description: Landing Page Design
+### Observations/Changes
+- Using the style guide, userflow and design brief, Ayomide and I designed a fully responsive landing page for the platform.
+- The landing page consists of the following sections:
+     - A hero section that tell users what the platform is about in a sentence.
+     - A section that tells users the benefits of using the platform.
+     - A section that breaks down the process of purchasing a product.
+     - A similar section that explains the process of selling a product.
+     - A section that shows popular products available on the platform.
+     - A client reviews section
+     - Lastly the footer section
+
+-----Main Goal -- Landing Page Design
+
+
+
 ## Name:
 
 ## Description: 
 ### Observations/Changes
 
 
------Main Goal -- 
+-----Main Goal --
