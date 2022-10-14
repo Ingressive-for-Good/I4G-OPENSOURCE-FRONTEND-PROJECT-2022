@@ -1,18 +1,6 @@
 import React from "react";
-
-import DeleteProduct from "./delete/deleteProduct";
-import EmailVerify from "./component/email/EmailVerify";
-import ForgotPassword from "./component/forgotPasswordPage/ForgotPassword";
-
-import AddNewProductPage1 from "./AddNewProduct/pageOne/AddNewProductPage1";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
-import WishlistViewProducts from "./pages/WishlistViewProducts";
-import CreateAccount from "./pages/create-account/CreateAccount";
-import Kyc from "./component/kyc-page/Kyc";
-import Home from "./molecules/Home";
-import ViewProducts from "./products-view/Products";
-import Help from "./pages/Help";
+import { BrowserRouter } from "react-router-dom";
+import Routes from "./Routes";
 import ResetPasswordPage from "./pages/PasswordResetPage";
 
 function App() {

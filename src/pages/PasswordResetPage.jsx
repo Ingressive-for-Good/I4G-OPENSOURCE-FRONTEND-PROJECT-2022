@@ -1,7 +1,6 @@
 import React from "react";
 import NavbarDashboard from "../molecules/NavbarDashboard";
 import PasswordResetForm from "../molecules/PasswordResetForm"
-import PasswordResetSuccessPopup from "../molecules/PasswordResetSuccessPopup";
 
 function ResetPasswordPage() {
   return (

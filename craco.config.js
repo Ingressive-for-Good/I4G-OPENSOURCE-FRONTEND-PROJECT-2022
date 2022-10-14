@@ -2,11 +2,11 @@
 /* eslint-disable global-require */
 module.exports = {
   babel: {
-    plugins: ["babel-plugin-macros"],
+    plugins: ['babel-plugin-macros'],
   },
   style: {
     postcss: {
-      plugins: [require("tailwindcss"), require("autoprefixer")],
+      plugins: [require('tailwindcss'), require('autoprefixer')],
     },
   },
 };
