@@ -1,6 +1,6 @@
 import React from "react";
-import web from "../../public/images/web.png";
-import { UseAppContext } from "./context";
+import web from "../../assets/icons/web.png";
+import { UseAppContext } from "react";
 
 const Sidebar = () => {
   const { nav } = UseAppContext();
