@@ -13,30 +13,64 @@ import WishlistViewProducts from "./pages/WishlistViewProducts";
 import CreateAccount from "./pages/CreateAccount";
 import DeleteProduct from "./components/molecules/deleteProduct";
 import ResetPasswordPage from "./pages/PasswordResetPage";
+import {
+  ADDTOWISHLIST,
+  CREATEACCOUNT,
+  DASHBOARD,
+  DELETEPRODUCT,
+  EMAILVERIFICATION,
+  KYC,
+  LOGIN,
+  MESSAGES,
+  NOTIFICATIONS,
+  PHONEVERIFICATION,
+  PRODUCTS,
+  PROFILE,
+  RESETPASSWORD,
+  SUPPORT,
+  WISHLIST,
+} from "./helpers/routeConstants";
+
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
   return (
     <Switch>
       <Route path="/" element={<Home />} />
-      <Route path="/products" element={<AddNewProductPage1 />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/create-account" element={<CreateAccount />} />
-      <Route path="/email-verification" element={<EmailVerify />} />
-      <Route path="/phone-verification" element={<PhoneNumberVerification/>} />
+      <Route path={`/${PRODUCTS}`} element={<AddNewProductPage1 />} />
+      <Route path={`/${LOGIN}`} element={<Login />} />
+      <Route path={`/${CREATEACCOUNT}`} element={<CreateAccount />} />
+      <Route path={`/${EMAILVERIFICATION}`} element={<EmailVerify />} />
+      <Route
+        path={`/${PHONEVERIFICATION}`}
+        element={<PhoneNumberVerification />}
+      />
 
       {/* Protected Pages */}
-      <Route path="/dashboard" element={<DashboardPage />} />
-      <Route path="/kyc" element={<Kyc />} />
-      <Route path="/products" element={<AddNewProductPage1/>} />
-      <Route path="/delete-product" element={<DeleteProduct />} />
-      <Route path="/wishlist" element={<WishlistViewProducts />} />
-      <Route path="/add-to-wishlist" element={<EmptyWishlistViewProducts />} />
-      <Route path="/reset-password" element={<ResetPasswordPage />} />
-      <Route path="/support" element={<Help />} />
-      <Route path="/messages" element={<h1 className="text-3xl font-bold text-red-600">Messages</h1>} />
-      <Route path="/wishlist" element={<h1 className="text-3xl font-bold text-red-600">Wishlist</h1>} />
-      <Route path="/notifications" element={<h1 className="text-3xl font-bold text-red-600">Notifications</h1>} />
-      <Route path="/profile" element={<h1 className="text-3xl font-bold text-red-600">Profile</h1>} />
+      <Route path={`/${DASHBOARD}`} element={<DashboardPage />} />
+      <Route path={`/${KYC}`} element={<Kyc />} />
+      <Route path={`/${PRODUCTS}`} element={<AddNewProductPage1 />} />
+      <Route path={`/${DELETEPRODUCT}`} element={<DeleteProduct />} />
+      <Route path={`/${WISHLIST}`} element={<WishlistViewProducts />} />
+      <Route
+        path={`/${ADDTOWISHLIST}`}
+        element={<EmptyWishlistViewProducts />}
+      />
+      <Route path={`/${RESETPASSWORD}`} element={<ResetPasswordPage />} />
+      <Route path={`/${SUPPORT}`} element={<Help />} />
+      <Route
+        path={`/${MESSAGES}`}
+        element={<h1 className="text-3xl font-bold text-red-600">Messages</h1>}
+      />
+      <Route
+        path={`/${NOTIFICATIONS}`}
+        element={
+          <h1 className="text-3xl font-bold text-red-600">Notifications</h1>
+        }
+      />
+      <Route
+        path={`/${PROFILE}`}
+        element={<h1 className="text-3xl font-bold text-red-600">Profile</h1>}
+      />
     </Switch>
   );
 }
