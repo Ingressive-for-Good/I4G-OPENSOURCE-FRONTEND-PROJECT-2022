@@ -1,7 +1,16 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 import Routes from "./Routes";
 import ResetPasswordPage from "./pages/PasswordResetPage";
+import Home from "./pages/Home";
+import EmailVerify from "./pages/EmailVerify";
+import AddNewProductPage1 from "./pages/AddNewProductPage1";
+import Kyc from "./pages/Kyc";
+import WishlistViewProducts from "./pages/WishlistViewProducts";
+import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
+import DeleteProduct from "./components/molecules/deleteProduct";
+import CreateAccount from "./pages/CreateAccount";
+import Help from "./pages/Help";
 
 function App() {
   return (
@@ -67,25 +76,17 @@ function App() {
           path="/account-recovery"
           element={
             <>
-              <ForgotPassword />
+              {/* <ForgotPassword /> */}
             </>
           }
         />
 
         <Route path="/products" element={<AddNewProductPage1 />} />
 
-        <Route
-          path="/account-recovery"
-          element={
-            <>
-              <ForgotPassword />
-            </>
-          }
-        />
-        <Route
+        {/* <Route
         path="/view-products"
         element={<ViewProducts/>}
-        />
+        /> */}
         <Route 
           path="/"
           element={
