@@ -36,7 +36,7 @@ function EmptyWishlistViewProducts() {
                 </svg>
             </div>
             {/* User Image */}
-            <img src="/userAvatar.png" alt="user avatar" />
+            <img src="../src/assets/icons/avatar.png" alt="user avatar" />
             </div>
         </div>
         {/* Empty wishlist icon */}

@@ -39,7 +39,7 @@ function MessageEmpty () {
                     </svg>
                 </div>
                 {/* User Avatar */}
-                <img src="/userAvatar.png" alt="user avatar" />
+                <img src="../assets/icons/avatar.png" alt="avatar" />
             </div>
         </div>
         {/* Empty message icon */}
