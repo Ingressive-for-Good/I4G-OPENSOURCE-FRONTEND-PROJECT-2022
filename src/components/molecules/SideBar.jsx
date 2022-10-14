@@ -1,10 +1,10 @@
-import dashboardIcon from '../../assets/icons/dashboard.svg'
-import chatIcon from '../../assets/icons/Chat.svg'
-import helpIcon from '../../assets/icons/help.svg'
-import wishlistIcon from '../../assets/icons/wishlistIcon.svg'
-import productIcon from '../../assets/icons/box.svg'
-import logoutIcon from '../../assets/icons/logout.svg'
-import { Link, NavLink } from 'react-router-dom'
+import dashboardIcon from "../../assets/icons/dashboard.svg";
+import chatIcon from "../../assets/icons/Chat.svg";
+import helpIcon from "../../assets/icons/help.svg";
+import wishlistIcon from "../../assets/icons/wishlistIcon.svg";
+import productIcon from "../../assets/icons/box.svg";
+import logoutIcon from "../../assets/icons/logout.svg";
+import { Link, NavLink } from "react-router-dom";
 
 export default function SideBar() {
   return (

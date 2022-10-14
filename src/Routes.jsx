@@ -21,20 +21,34 @@ function Routes() {
       <Route path="/login" element={<Login />} />
       <Route path="/create-account" element={<CreateAccount />} />
       <Route path="/email-verification" element={<EmailVerify />} />
-      <Route path="/phone-verification" element={<PhoneNumberVerification/>} />
+      <Route path="/phone-verification" element={<PhoneNumberVerification />} />
 
       {/* Protected Pages */}
       <Route path="/dashboard" element={<DashboardPage />} />
       <Route path="/kyc" element={<Kyc />} />
-      <Route path="/products" element={<AddNewProductPage1/>} />
+      <Route path="/products" element={<AddNewProductPage1 />} />
       <Route path="/delete-product" element={<DeleteProduct />} />
       <Route path="/wishlist" element={<WishlistViewProducts />} />
       <Route path="/add-to-wishlist" element={<EmptyWishlistViewProducts />} />
       <Route path="/support" element={<Help />} />
-      <Route path="/messages" element={<h1 className="text-3xl font-bold text-red-600">Messages</h1>} />
-      <Route path="/wishlist" element={<h1 className="text-3xl font-bold text-red-600">Wishlist</h1>} />
-      <Route path="/notifications" element={<h1 className="text-3xl font-bold text-red-600">Notifications</h1>} />
-      <Route path="/profile" element={<h1 className="text-3xl font-bold text-red-600">Profile</h1>} />
+      <Route
+        path="/messages"
+        element={<h1 className="text-3xl font-bold text-red-600">Messages</h1>}
+      />
+      <Route
+        path="/wishlist"
+        element={<h1 className="text-3xl font-bold text-red-600">Wishlist</h1>}
+      />
+      <Route
+        path="/notifications"
+        element={
+          <h1 className="text-3xl font-bold text-red-600">Notifications</h1>
+        }
+      />
+      <Route
+        path="/profile"
+        element={<h1 className="text-3xl font-bold text-red-600">Profile</h1>}
+      />
     </Switch>
   );
 }

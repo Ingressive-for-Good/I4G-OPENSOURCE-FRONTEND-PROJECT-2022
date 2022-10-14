@@ -1,50 +1,59 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import menuIcon from "../assets/icons/menu-icon.svg";
-import wavyArrow from "../assets/icons/landingpage__wavy-arrow.svg"
-import wavyUnderline from "../assets/icons/landingpage__wavy-underline.svg"
-import bestQuality from "../assets/icons/landingpage__best-quality.svg"
-import meetnconnect from "../assets/icons/landingpage__meetnconnect.svg"
-import support from "../assets/icons/landingpage__support.svg"
-import wavyDashed from "../assets/icons/landingpage__wavy-dashed.svg"
-import keyboard from "../assets/images/product-keyboard.png"
-import controller from "../assets/images/product-controller.png"
-import cartIcon from "../assets/icons/cart-icon.svg"
-import profileImg from "../assets/images/landingpage__client-profile-img.svg"
-import p2p from "../assets/icons/landingpage__p2p.svg"
+import wavyArrow from "../assets/icons/landingpage__wavy-arrow.svg";
+import wavyUnderline from "../assets/icons/landingpage__wavy-underline.svg";
+import bestQuality from "../assets/icons/landingpage__best-quality.svg";
+import meetnconnect from "../assets/icons/landingpage__meetnconnect.svg";
+import support from "../assets/icons/landingpage__support.svg";
+import wavyDashed from "../assets/icons/landingpage__wavy-dashed.svg";
+import keyboard from "../assets/images/product-keyboard.png";
+import controller from "../assets/images/product-controller.png";
+import cartIcon from "../assets/icons/cart-icon.svg";
+import profileImg from "../assets/images/landingpage__client-profile-img.svg";
+import p2p from "../assets/icons/landingpage__p2p.svg";
 
 function App() {
-    const toggleMenu = () => {
-        var nav = document.getElementById("nav");
-        var body = document.getElementById("body");
-        // var navItems = document.querySelectorAll("nav a")
-        body.style.overflowY = "hidden";
-        nav.classList.toggle("hidden");
-    }
+  const toggleMenu = () => {
+    var nav = document.getElementById("nav");
+    var body = document.getElementById("body");
+    // var navItems = document.querySelectorAll("nav a")
+    body.style.overflowY = "hidden";
+    nav.classList.toggle("hidden");
+  };
   return (
     <div id="body" className="text-neutral-900 font-campton">
-      
       {/* header and navigation */}
       <header className="relative bg-primary-50 px-8 py-9 flex items-center justify-between">
         <h1 className="font-cabinetGrotesk text-primary-500 font-bold text-2xl">
           tech<span className="text-secondary-500">mart</span>
         </h1>
         <div className="border-primary-500 border rounded-xl p-3 lg:hidden">
-          <img className="" onClick={toggleMenu} id="hamburger" src={menuIcon} alt="" />
+          <img
+            className=""
+            onClick={toggleMenu}
+            id="hamburger"
+            src={menuIcon}
+            alt=""
+          />
         </div>
         <nav
           id="nav"
           className="h-screen lg:h-fit w-screen lg:w-fit flex hidden absolute lg:relative z-100 top-0 lg:top-unset left-0 lg:left-unset bg-white lg:bg-transparent lg:flex flex-col lg:flex-row space-y-8 lg:space-y-0 justify-center items-center lg:space-x-5 text-neutral-700"
         >
-          <img className="lg:hidden absolute top-12 right-16" onClick={toggleMenu} id="hamburger" src="src/images/close-icon.png" alt="" />
+          <img
+            className="lg:hidden absolute top-12 right-16"
+            onClick={toggleMenu}
+            id="hamburger"
+            src="src/images/close-icon.png"
+            alt=""
+          />
           <a href="">Home</a>
           <a href="#howitworks">How it Works</a>
           <a href="#marketplace">Market Place</a>
           <a href="#contactUs">Contact Us</a>
           <div className="mx-4 space-x-4">
-            <Link 
-              className="text-primary-500 font-medium" 
-              to="/login">
+            <Link className="text-primary-500 font-medium" to="/login">
               Log In
             </Link>
             <Link
@@ -57,7 +66,6 @@ function App() {
         </nav>
       </header>
       <main>
-        
         {/* hero section */}
         <section className="px-[10%] py-4 text-center bg-primary-50">
           <h1 className="font-cabinetGrotesk font-bold text-3xl sm:text-4xl lg:text-5xl my-3 sm:max-w-md md:max-w-lg sm:mx-auto">
@@ -70,7 +78,10 @@ function App() {
             them to connect with other creatives around world.
           </p>
           <div className="sm:w-fit sm:mx-auto sm:flex sm:justify-center sm:items-center md:my-8">
-            <Link to="/create-account" className="font-cabinetGrotesk bg-primary-500 text-white px-5 py-4 rounded-lg sm:h-fit">
+            <Link
+              to="/create-account"
+              className="font-cabinetGrotesk bg-primary-500 text-white px-5 py-4 rounded-lg sm:h-fit"
+            >
               Create an account
             </Link>
             <div className="w-fit mx-auto px-6 py-3 rounded-lg my-2 hover:bg-primary-100 transition-all">
@@ -80,11 +91,7 @@ function App() {
               >
                 Learn More
               </a>
-              <img
-                className="mx-auto"
-                src={wavyArrow}
-                alt=""
-              />
+              <img className="mx-auto" src={wavyArrow} alt="" />
             </div>
           </div>
         </section>
@@ -94,11 +101,7 @@ function App() {
           <h1 className="font-cabinetGrotesk text-2xl font-semibold">
             Why Choose Us?
           </h1>
-          <img
-            className="mx-auto mb-8"
-            src={wavyUnderline}
-            alt=""
-          />
+          <img className="mx-auto mb-8" src={wavyUnderline} alt="" />
           <p className="text-neutral-700">
             Take control of all your ecommerce transactions
           </p>
@@ -106,11 +109,7 @@ function App() {
           {/* reasons to choose us */}
           <div className="space-y-4 sm:space-y-0 my-8 sm:grid sm:grid-cols-2 sm:gap-5 lg:grid-cols-4 lg:w-5/6 lg:mx-auto">
             <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto">
-              <img
-                className="mx-auto"
-                src={bestQuality}
-                alt=""
-              />
+              <img className="mx-auto" src={bestQuality} alt="" />
               <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
                 Best Quality
               </h4>
@@ -119,11 +118,7 @@ function App() {
               </p>
             </div>
             <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto">
-              <img
-                className="mx-auto"
-                src={meetnconnect}
-                alt=""
-              />
+              <img className="mx-auto" src={meetnconnect} alt="" />
               <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
                 Meet & Connect
               </h4>
@@ -132,11 +127,7 @@ function App() {
               </p>
             </div>
             <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto">
-              <img
-                className="mx-auto"
-                src={p2p}
-                alt=""
-              />
+              <img className="mx-auto" src={p2p} alt="" />
               <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
                 P2P Payment
               </h4>
@@ -145,11 +136,7 @@ function App() {
               </p>
             </div>
             <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto w-full">
-              <img
-                className="mx-auto"
-                src={support}
-                alt=""
-              />
+              <img className="mx-auto" src={support} alt="" />
               <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
                 24/7 Support
               </h4>
@@ -162,7 +149,10 @@ function App() {
         </section>
 
         {/* buy an item */}
-        <section id="howitworks" className="w-fit mx-auto px-6 py-3 rounded-lg my-5 text-center">
+        <section
+          id="howitworks"
+          className="w-fit mx-auto px-6 py-3 rounded-lg my-5 text-center"
+        >
           <h1 className="font-cabinetGrotesk text-2xl font-semibold">
             <span className="text-secondary-500">Buy Items</span> in 3 Easy
             Steps
@@ -182,11 +172,7 @@ function App() {
                 Create an account by completing the registration process
               </p>
             </div>
-            <img
-              className="lg:rotate-90 mx-auto"
-              src={wavyDashed}
-              alt=""
-            />
+            <img className="lg:rotate-90 mx-auto" src={wavyDashed} alt="" />
             <div className="max-w-xs mx-auto lg:mx-8">
               <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2">
                 02. View Products
@@ -195,11 +181,7 @@ function App() {
                 View correct details of the products you want to buy
               </p>
             </div>
-            <img
-              className="lg:rotate-90 mx-auto"
-              src={wavyDashed}
-              alt=""
-            />
+            <img className="lg:rotate-90 mx-auto" src={wavyDashed} alt="" />
             <div className="max-w-xs mx-auto lg:ml-8">
               <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2">
                 03. Contact Seller
@@ -272,11 +254,7 @@ function App() {
           <h1 className="text-center text-xl font-semibold font-cabinetGrotesk">
             Popular Products
           </h1>
-          <img
-            className="mx-auto mb-4"
-            src={wavyUnderline}
-            alt=""
-          />
+          <img className="mx-auto mb-4" src={wavyUnderline} alt="" />
           <p className="text-neutral-700 text-center my-5">
             View a few products from our techies
           </p>
@@ -298,7 +276,7 @@ function App() {
               </div>
             </div>
             <div className="bg-neutral-50 w-fit mx-auto">
-            <img src={controller} alt="" />
+              <img src={controller} alt="" />
               <div className="border-x-2 border-b-2 border-neutral-300 rounded-b-lg flex flex-row justify-between items-center px-6 py-5">
                 <div>
                   <h5 className="text-neutral-700 font-medium">
@@ -326,7 +304,7 @@ function App() {
               </div>
             </div>
             <div className="bg-neutral-50 w-fit mx-auto">
-            <img src={keyboard} alt="" />
+              <img src={keyboard} alt="" />
               <div className="border-x-2 border-b-2 border-neutral-300 rounded-b-lg flex flex-row justify-between items-center px-6 py-5">
                 <div>
                   <h5 className="text-neutral-700 font-medium">
@@ -346,15 +324,14 @@ function App() {
         </section>
 
         {/* newsletter subscription*/}
-        <section id="contactUs" className="bg-primary-500 p-6 w-5/6 mx-auto my-16 rounded-lg">
+        <section
+          id="contactUs"
+          className="bg-primary-500 p-6 w-5/6 mx-auto my-16 rounded-lg"
+        >
           <h1 className="text-center text-white text-3xl font-semibold font-cabinetGrotesk">
             Subscribe for Updates
           </h1>
-          <img
-            className="mx-auto mb-4"
-            src= {wavyUnderline}
-            alt=""
-          />
+          <img className="mx-auto mb-4" src={wavyUnderline} alt="" />
           <p className="text-white text-center my-5">
             Subscribe to our newsletter to get the latest updates on our
             platform
@@ -383,11 +360,7 @@ function App() {
           <h1 className="text-center text-3xl font-cabinetGrotesk font-medium">
             Client Reviews
           </h1>
-          <img
-            className="mx-auto"
-            src={wavyUnderline}
-            alt=""
-          />
+          <img className="mx-auto" src={wavyUnderline} alt="" />
           <p className="text-center my-3">
             We serve hundreds of thousands of customers and this is what people
             are saying about us.
@@ -396,11 +369,7 @@ function App() {
           {/* review grid */}
           <div className="space-y-4 gap-6 sm:space-y-0 sm:grid sm:grid-cols-2 lg:grid-cols-4">
             <div className="bg-primary-50 rounded-lg p-7">
-              <img
-                className="mx-auto my-4"
-                src={profileImg}
-                alt=""
-              />
+              <img className="mx-auto my-4" src={profileImg} alt="" />
               <p className="text-neutral-900 text-center leading-relaxed">
                 "techmart is unarguably the best eccomerce platform - a great
                 transforation to Africa"
@@ -411,11 +380,7 @@ function App() {
               <p className="text-center w-fit mx-auto">techmart Vendor</p>
             </div>
             <div className="bg-primary-50 rounded-lg p-7">
-              <img
-                className="mx-auto my-4"
-                src={profileImg}
-                alt=""
-              />
+              <img className="mx-auto my-4" src={profileImg} alt="" />
               <p className="text-neutral-900 text-center leading-relaxed">
                 "techmart is unarguably the best eccomerce platform - a great
                 transforation to Africa"
@@ -426,11 +391,7 @@ function App() {
               <p className="text-center w-fit mx-auto">techmart Vendor</p>
             </div>
             <div className="bg-primary-50 rounded-lg p-7">
-              <img
-                className="mx-auto my-4"
-                src={profileImg}
-                alt=""
-              />
+              <img className="mx-auto my-4" src={profileImg} alt="" />
               <p className="text-neutral-900 text-center leading-relaxed">
                 "techmart is unarguably the best eccomerce platform - a great
                 transforation to Africa"
@@ -441,11 +402,7 @@ function App() {
               <p className="text-center w-fit mx-auto">techmart Vendor</p>
             </div>
             <div className="bg-primary-50 rounded-lg p-7">
-              <img
-                className="mx-auto my-4"
-                src={profileImg}
-                alt=""
-              />
+              <img className="mx-auto my-4" src={profileImg} alt="" />
               <p className="text-neutral-900 text-center leading-relaxed">
                 "techmart is unarguably the best eccomerce platform - a great
                 transforation to Africa"
