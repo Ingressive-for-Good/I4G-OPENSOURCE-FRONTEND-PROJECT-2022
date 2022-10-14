@@ -2,7 +2,7 @@
 
 ## 🛠️ Fixes Issue
 
-<!-- Remove this section if not applicable -->
+<!-- Remove this section of not applicable  -->
 
 <!-- Example: Closes #31 -->
 

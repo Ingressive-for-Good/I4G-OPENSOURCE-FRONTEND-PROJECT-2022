@@ -6,7 +6,6 @@ import chevronDown from "../images/chevronDown.svg";
 import defaultAvatar from "../images/avatar.svg";
 
 import search from "../images/search-icon.svg";
-import martZ from "../images/martZ.svg";
 import techmart from "../images/techmart.svg";
 import SideNav from "../atoms/SideNav";
 import Avatar from "../atoms/Avatar";
@@ -107,12 +106,12 @@ function Help() {
           </div>
         </div>
 
-        <div className="mt-4 w-48 md:mt-6 md:w-64 flex flex-col">
+        <div className="mt-4 w-48 md:mt-6 md:w-72 flex flex-col">
           <h1 className="md:font-bold md:text-xl">
             Frequently Asked Questions
           </h1>
           <img
-            className="-mt-1 w-16 self-center"
+            className="-mt-1 w-14 self-center"
             src={curlyArrow}
             alt="underlining arrow for the FAQ title"
           />
