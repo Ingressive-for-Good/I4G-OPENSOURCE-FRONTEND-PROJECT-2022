@@ -1,4 +1,5 @@
 import React from "react";
+
 // This function handles the side nav/hamburger menu on mobile and tablet screen
 function SideNav() {
   return (
@@ -38,7 +39,7 @@ function SideNav() {
                     Products
                 </li>
                 <li className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5">
-                    <img src="/iconGrey.png" alt="" />
+                    <img src="../src/assets/icons/wishlist.png" alt="" />
                     Wishlist
                 </li>
                 <li className="flex font-medium sm:text-[17px] text-gray-400 gap-7 items-center p-5">

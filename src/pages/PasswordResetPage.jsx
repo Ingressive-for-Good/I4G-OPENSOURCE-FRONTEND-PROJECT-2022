@@ -48,7 +48,6 @@ function ResetPasswordPage() {
       </div>
       { menumask }
       { success }
-      
     </div>
     )
 }
