@@ -12,6 +12,7 @@ import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
 import WishlistViewProducts from "./pages/WishlistViewProducts";
 import CreateAccount from "./pages/CreateAccount";
 import DeleteProduct from "./components/molecules/deleteProduct";
+import ResetPasswordPage from "./pages/PasswordResetPage";
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
   return (
@@ -30,6 +31,7 @@ function Routes() {
       <Route path="/delete-product" element={<DeleteProduct />} />
       <Route path="/wishlist" element={<WishlistViewProducts />} />
       <Route path="/add-to-wishlist" element={<EmptyWishlistViewProducts />} />
+      <Route path="/reset-password" element={<ResetPasswordPage />} />
       <Route path="/support" element={<Help />} />
       <Route
         path="/messages"

@@ -1,7 +1,8 @@
-import { useState } from "react";
-import { useDropzone } from "react-dropzone";
-import Upload from "../../assets/icons/UploadMedia.svg";
-import DeleteIcon from "../../assets/icons/delete.svg";
+import { useState } from "react"
+// import { useDropzone } from "react-dropzone"
+import Upload from '../../assets/icons/UploadMedia.svg'
+import DeleteIcon from '../../assets/icons/delete.svg'
+
 
 export default function DragNDrop() {
   // file gets saved in the usestate but doesn't persist yet.
