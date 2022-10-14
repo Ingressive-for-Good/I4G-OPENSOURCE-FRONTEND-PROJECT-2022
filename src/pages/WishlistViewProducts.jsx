@@ -44,14 +44,14 @@ function WishlistViewProducts() {
                 </svg>
             </div>
             {/* User Image */}
-            <img src="/userAvatar.png" alt="user avatar"/>
+            <img src="../src/assets/icons/avatar.png" alt="user avatar"/>
             </div>
         </div>
         {/* main content */}
         <div className="flex px-6 pb-3 pt-6 justify-between md:ml-64 leading-tight">
             <p className="font-campton">3 item(s)</p>
             {/* options svg */}
-            <button onClick={() => setShowSelect(!showSelect)}  >
+            <button onClick={() => setShowSelect(!showSelect)} >
                 <svg className="mr-4" width="4" height="20" viewBox="0 0 4 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.09091 3.18182C2.6934 3.18182 3.18182 2.6934 3.18182 2.09091C3.18182 1.48842 2.6934 1 2.09091 1C1.48842 1 1 1.48842 1 2.09091C1 2.6934 1.48842 3.18182 2.09091 3.18182Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M2.09091 11.1818C2.6934 11.1818 3.18182 10.6934 3.18182 10.0909C3.18182 9.48842 2.6934 9 2.09091 9C1.48842 9 1 9.48842 1 10.0909C1 10.6934 1.48842 11.1818 2.09091 11.1818Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -68,7 +68,7 @@ function WishlistViewProducts() {
             {/* Product 1 */}
             <div className=" gap-4 border-2 rounded-md m-6 p-6 bg-gray-50 w-[490px] sm:flex md:bg-none">
                 <div>
-                    <img src="/Rectangle12.png" alt="product-image" width={230}/>
+                    <img src="../src/assets/images/Rectangle 12dell.png" alt="product-image" width={230}/>
                 </div>
                 <div className="font-cabinetGrotesk leading-[40px]">
                     <p className="font-semibold text-[16px]">Dell Keyboard & Mouse.</p>
@@ -80,7 +80,7 @@ function WishlistViewProducts() {
             {/* Product 2 */}
             <div className=" gap-4 border-2 rounded-md m-6 p-6 bg-gray-50 w-[490px] sm:flex md:bg-none">
                 <div>
-                    <img src="/Rectangle14.png" alt="product-image" width={230}/>
+                    <img src="../src/assets/images/Rectangle 14GamePad.png" alt="product-image" width={230}/>
                 </div>
                 <div className="font-cabinetGrotesk leading-[40px]">
                     <p className=" font-semibold text-[16px]">Game Controller.</p>
@@ -92,7 +92,7 @@ function WishlistViewProducts() {
             {/* Product 3 */}
             <div className=" gap-4 border-2 rounded-md m-6 p-6 bg-gray-50 w-[490px] sm:flex md:bg-none">
                 <div>
-                    <img src="/image2.png" alt="product-image" width={230}/>
+                    <img src="../src/assets/images/image 2macbook.png" alt="product-image" width={230}/>
                 </div>
                 <div className="font-cabinetGrotesk leading-[40px]">
                     <p className="font-semibold text-[16px]">MacBook Pro 14” M1 Chip.</p>

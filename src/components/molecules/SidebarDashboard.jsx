@@ -41,7 +41,7 @@ function SidebarDashboard() {
               Products
             </li>
             <li className="flex font-medium text-[17px] w-56 p-4 pl-11 bg-gray-50 gap-2 items-center text-blue-700">
-            <img src="/wishlistIcon.png" alt="" />
+            <img src="../src/assets/images/wishlist-icon.png" alt="" />
               Wishlist
             </li>
             <li className="flex font-medium text-[17px] w-56 pl-11 p-4 bg-gray-200 gap-2 items-center">

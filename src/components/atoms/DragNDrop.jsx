@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { useDropzone } from "react-dropzone"
+// import { useDropzone } from "react-dropzone"
 import Upload from '../../assets/icons/UploadMedia.svg'
 import DeleteIcon from '../../assets/icons/delete.svg'
 
