@@ -5,9 +5,8 @@ import LogoutButton from "../atoms/Button/LogoutButton";
 function SidebarDashboard() {
   return (
     <div className=" absolute top-0 flex font-normal pb-28 pt-20  text-gray-400 text-sm w-56 p-4 justify-center">
-        <ul className="font-campton bg-gray-200">
+        <ul className="font-campton">
             <li className=" absolute top-0 pt-24  text-[16px] font-semibold w-56 pl-11 p-4 text-blue-800 bg-gray-200">Menu</li>
-
             <li className="flex font-medium text-[18px] w-56 pl-11 p-4 bg-gray-200 gap-2 items-center">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M21.5 10.9V4.1C21.5 2.6 20.86 2 19.27 2H15.23C13.64 2 13 2.6 13 4.1V10.9C13 12.4 13.64 13 15.23 13H19.27C20.86 13 21.5 12.4 21.5 10.9Z" fill="#A1A4B6"/>
@@ -15,9 +14,6 @@ function SidebarDashboard() {
                 <path d="M21.5 19.9V17.1C21.5 15.6 20.86 15 19.27 15H15.23C13.64 15 13 15.6 13 17.1V19.9C13 21.4 13.64 22 15.23 22H19.27C20.86 22 21.5 21.4 21.5 19.9Z" fill="#A1A4B6"/>
                 <path d="M11 6.9V4.1C11 2.6 10.36 2 8.77 2H4.73C3.14 2 2.5 2.6 2.5 4.1V6.9C2.5 8.4 3.14 9 4.73 9H8.77C10.36 9 11 8.4 11 6.9Z" fill="#A1A4B6"/>
                 </svg>
-            </li>
-            <li className="flex font-medium text-[17px] w-56 pl-11 p-4 bg-gray-200 gap-2 items-center">
-                <img src={dashboard} alt="" className="" />
                 Dashboard
             </li>
             <li className="flex font-medium text-[17px] w-56 p-4 pl-11 bg-gray-50 gap-2 items-center text-blue-700">

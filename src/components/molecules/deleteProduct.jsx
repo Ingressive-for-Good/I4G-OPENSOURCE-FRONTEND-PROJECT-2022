@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "./hero";
 import Delete from "./delete";
-import Sidebar from "./SideBar";
+import Sidebar from "./sidebar";
 import Modal from "./modal";
 
 const DeleteProduct = () => {

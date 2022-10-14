@@ -1,6 +1,6 @@
 import React from "react";
 
-function CreateWishButton() {
+function StartChatButton() {
   return (
     <div className="flex bg-primary-500 rounded-md w-48 p-4 text-center text-white gap-2 justify-center items-center">
         <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -11,4 +11,4 @@ function CreateWishButton() {
   )
 }
 
-export default CreateWishButton;
+export default StartChatButton;

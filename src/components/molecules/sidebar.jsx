@@ -1,58 +1,29 @@
-import dashboardIcon from '../../assets/icons/dashboard.svg'
-import chatIcon from '../../assets/icons/Chat.svg'
-import helpIcon from '../../assets/icons/help.svg'
-import wishlistIcon from '../../assets/icons/wishlistIcon.svg'
-import productIcon from '../../assets/icons/box.svg'
-import logoutIcon from '../../assets/icons/logout.svg'
-import { Link, NavLink } from 'react-router-dom'
+import React from "react";
+import web from "../../public/images/web.png";
+import { UseAppContext } from "./context";
 
-export default function SideBar() {
+const Sidebar = () => {
+  const { nav } = UseAppContext();
   return (
-    <aside className="font-campton fixed top-0 left-0 h-screen bg-primary-50 w-[230px] pt-[50px] hidden lg:block">
-      <h1 className="font-cabinetGrotesk text-[32px] font-[700]  pl-[50px] pb-[38px] text-primary-500">
-        tech<span className="text-secondary-500">mart</span>
-      </h1>
-      <div className="flex flex-col justify-between h-[80%]">
-        <ul className="flex flex-col w-full">
-          <h2 className="pl-[50px] pb-[15px] text-primary-500">MENU</h2>
-          <li className="pl-[50px] py-[19.5px]">
-            <NavLink className="flex flex-row gap-[10px]" to="#">
-              <img src={dashboardIcon} alt="" />
-              <span>Dashboard</span>
-            </NavLink>
-          </li>
-          <li className="pl-[50px] py-[19.5px]">
-            <NavLink className="flex flex-row gap-[10px]" to="#">
-              <img src={chatIcon} alt="" />
-              <span>Messages</span>
-            </NavLink>
-          </li>
-          <li className="pl-[50px] py-[19.5px] bg-white">
-            <NavLink className="flex flex-row gap-[10px]" to="#">
-              <img src={productIcon} alt="" />
-              <span className="text-primary-500">Products</span>
-            </NavLink>
-          </li>
-          <li className="pl-[50px] py-[19.5px]">
-            <NavLink className="flex flex-row gap-[10px]" to="#">
-              <img src={wishlistIcon} alt="" />
-              <span>Wishlist</span>
-            </NavLink>
-          </li>
-          <li className="pl-[50px] py-[19.5px]">
-            <NavLink className="flex flex-row gap-[10px]" to="#">
-              <img src={helpIcon} alt="" />
-              <span>Help & Support</span>
-            </NavLink>
-          </li>
-        </ul>
-        <div className="pl-[50px]">
-          <Link className="flex flex-row gap-[10px]" to="#">
-            <img src={logoutIcon} alt="logouticon" />
-            <span>Logout</span>
-          </Link>
-        </div>
-      </div>
-    </aside>
+    <div className="bg-primary-50 w-72 h-screen px-8 py-10 sticky top-0 left-0 z-10 hidden lg:block">
+      <img src={web} alt="" srcSet="" className="hidden lg:block pb-8" />
+      <p className="mb-8 text-primary-500">MENU</p>
+
+      {nav.map((main) => {
+        const { id, image, name } = main;
+        return (
+          <div
+            key={id}
+            className="flex gap-2 mb-8 hover:bg-white hover:-mx-8 hover:px-8 hover:py-2 relative last:absolute last:bottom-8 last:text-error-500"
+          >
+            <img src={image} alt="" srcset="" />
+
+            <p className=" text-neutral-500 ">{name}</p>
+          </div>
+        );
+      })}
+    </div>
   );
-}
+};
+
+export default Sidebar;
