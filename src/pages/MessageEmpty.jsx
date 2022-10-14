@@ -1,7 +1,7 @@
 import React from "react";
-import StartChatButton from "../atoms/Button/StartChatButton";
-import NavbarDashboard from "../molecules/NavbarDashboard";
-import SidebarDashboard from "../molecules/SidebarDashboard";
+import StartChatButton from "../components/atoms/Button/StartChatButton";
+import NavbarDashboard from "../components/molecules/NavbarDashboard";
+import SidebarDashboard from "../components/molecules/SidebarDashboard";
 
 function MessageEmpty () {
   return (
