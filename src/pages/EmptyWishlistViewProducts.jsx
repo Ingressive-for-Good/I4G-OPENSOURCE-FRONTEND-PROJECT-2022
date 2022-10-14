@@ -1,9 +1,7 @@
 import React from "react";
-import CreateWishButton from "../atoms/Button/CreateWishButton";
-import NavbarDashboard from "../molecules/NavbarDashboard";
-import SidebarDashboard from "../molecules/SidebarDashboard";
-
-// The function below displays the empty view products in wishlist page.
+import CreateWishButton from "../components/atoms/Button/CreateWishButton";
+import NavbarDashboard from "../components/molecules/NavbarDashboard";
+import SidebarDashboard from "../components/molecules/SidebarDashboard";
 
 function EmptyWishlistViewProducts() {
   return (
