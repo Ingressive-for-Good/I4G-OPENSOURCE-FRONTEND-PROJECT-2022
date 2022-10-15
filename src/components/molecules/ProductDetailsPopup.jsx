@@ -4,10 +4,18 @@ import MessageSellerButton from "../atoms/Button/MessageSellerButton";
 
 function ProductDetailsPopup() {
     return(
-        <div className="fixed top-[8%] md:top-[6%]  md:right-[28%] bg-gray-100 border p-6 m-6 font-cabinetGrotesk md:w-[500px] align-middle">
-            <div className="bg-gray-50 border-2 rounded-md">
+        <div className="fixed top-[8%] md:top-[5%]  md:right-[28%] bg-gray-100 border p-6 m-6 font-cabinetGrotesk md:w-[500px] align-middle">
+            <img className="absolute top-2 right-4 md:right-2 m-2 md:left-[410px] pb-2" src="../src/assets/icons/CloseSquare.svg" alt="" width={30}/>
+            <div className="bg-gray-50 border-2 rounded-md flex items-center p-3 mt-8">
+                <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 2L1.5 9L8.5 16" stroke="#6877D5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
                 <img className="mx-auto p-10" src="../src/assets/images/image-2macbook.png" alt="product-image"/>
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 1L8.5 8L1.5 15" stroke="#6877D5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
             </div>
+            
             <div className="flex justify-between pt-6">
                 <div>
                     <p className="font-semibold md:text-[18px]">Product Name</p>
@@ -24,7 +32,7 @@ function ProductDetailsPopup() {
                     <p className="text-gray-400">Seller's Details</p>
                 </div>
                 <hr />
-                <p className="text-[14px] md:text-[18px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                <p className="text-[14px] md:text-[16px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                     Deleniti laborum nobis laboriosam rerum harum placeat sequi, 
                     autem cumque? Rem, ipsa sequi possimus consectetur voluptatum 
                      impedit?

@@ -53,6 +53,7 @@ function DashboardPage() {
                     <img src="../src/assets/icons/avatar.png" alt="user avatar"/>
                 </div>
             </div>
+        
             {/* main content */}
             <div className="md:ml-64">
                 <div className="flex px-6 gap-8">
@@ -74,9 +75,25 @@ function DashboardPage() {
                         </div>
                     </div>
                 </div>
+                <div className="flex md:hidden m-6 gap-2 h-10 p-4 border-2 rounded-md items-center">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.17502 16.6833C13.3218 16.6833 16.6834 13.3217 16.6834 9.17496C16.6834 5.02822 13.3218 1.66663 9.17502 1.66663C5.02828 1.66663 1.66669 5.02822 1.66669 9.17496C1.66669 13.3217 5.02828 16.6833 9.17502 16.6833Z" fill="#717591"/>
+                        <path d="M18.325 15.7917C18.05 15.2833 17.4667 15 16.6834 15C16.0917 15 15.5834 15.2417 15.2834 15.6583C14.9834 16.075 14.9167 16.6333 15.1 17.1917C15.4584 18.275 16.0834 18.5167 16.425 18.5583C16.475 18.5667 16.525 18.5667 16.5834 18.5667C16.95 18.5667 17.5167 18.4083 18.0667 17.5833C18.5084 16.9417 18.5917 16.3 18.325 15.7917Z" fill="#717591"/>
+                    </svg>
+                    <form action="">
+                        <input className="font-cabinetGrotesk p-1" type="text" placeholder="Search for gadgets" />
+                    </form>
+                </div>
                 <div className="flex justify-between px-6 pt-6 pb-3 items-center">
                     <p className=" font-cabinetGrotesk font-semibold text-[20px]">Categories</p>
-                    <p><small>See all &gt;</small></p>
+                    <p>
+                        <small className="flex gap-4">
+                        See all 
+                        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 1L8.5 8L1.5 15" stroke="#131418" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </small>
+                     </p>
                 </div>
                 {/* Categories */}
                 <div className="flex gap-4 px-6 font-campton">
