@@ -11,13 +11,13 @@ function ResetPasswordPage() {
   const [showSuccess, setShowSuccess] = useState(false)
 
   let success
-  let menumask
+  let popupMask
 
   if(showSuccess){
     success = <PasswordResetSuccessPopup />
 
-    // menumask adds a transparent dark background once the sidenav on mobile is open.
-    menumask = <div onClick={() => setShowSuccess(false)} className="absolute top-0 left-0 bg-black-t-50 w-screen h-full"></div>
+    // popupMask adds a transparent dark background once the sidenav on mobile is open.
+    popupMask = <div onClick={() => setShowSuccess(false)} className="absolute top-0 left-0 bg-black-t-50 w-screen h-full"></div>
   }
 
   return (
@@ -46,7 +46,7 @@ function ResetPasswordPage() {
           <p className="text-center font-campton pt-16">Already have an account? <span className=" text-blue-800 font-semibold"><a href=""> Log In </a></span></p>
         </div>
       </div>
-      { menumask }
+      { popupMask }
       { success }
     </div>
     )

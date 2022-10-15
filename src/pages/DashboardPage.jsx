@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import NavbarDashboard from "../components/molecules/NavbarDashboard";
+import ProductDetailsPopup from "../components/molecules/ProductDetailsPopup";
 import SidebarDashboard from "../components/molecules/SidebarDashboard";
 
 function DashboardPage() {
+
+    // the below handles the product details popup on click of the submit button
+    const [showProductDetails, setShowProductDetails] = useState(false)
+
+    let productDetails
+    let popupMask
+
+    if(showProductDetails){
+        productDetails = <ProductDetailsPopup />
+
+        // popupMask adds a transparent dark background once the sidenav on mobile is open.
+        popupMask = <div onClick={() => setShowProductDetails(false)} className="fixed top-0 left-0 bg-black-t-50 w-screen h-full"></div>
+    }
+
     return(
-        <div className=" overflow-x-hidden">
+        <div className=" md:bg-gray-50 overflow-x-hidden">
             <NavbarDashboard />
             {/* sidebar */}
             <div className="hidden md:block">
@@ -24,7 +39,7 @@ function DashboardPage() {
                             <path d="M18.325 15.7917C18.05 15.2833 17.4667 15 16.6834 15C16.0917 15 15.5834 15.2417 15.2834 15.6583C14.9834 16.075 14.9167 16.6333 15.1 17.1917C15.4584 18.275 16.0834 18.5167 16.425 18.5583C16.475 18.5667 16.525 18.5667 16.5834 18.5667C16.95 18.5667 17.5167 18.4083 18.0667 17.5833C18.5084 16.9417 18.5917 16.3 18.325 15.7917Z" fill="#717591"/>
                         </svg>
                         <form action="">
-                            <input className="bg-gray-50" type="text" placeholder="Search for gadgets" />
+                            <input className=" bg-gray-50 font-cabinetGrotesk p-1" type="text" placeholder="Search for gadgets" />
                         </form>
                     </div>
                     {/* notification icon */}
@@ -40,28 +55,44 @@ function DashboardPage() {
             </div>
             {/* main content */}
             <div className="md:ml-64">
-                <div className="flex px-6 items-center gap-8">
+                <div className="flex px-6 gap-8">
                     <img src="../src/assets/images/dashboard-banner.png" alt="banner" />
-                    <img className="hidden md:flex" src="../src/assets/images/Rectangle 14GamePad.png" alt="hot-deals" width={320} />
+                    <div className="hidden md:flex bg-[url('../src/assets/images/Rectangle-14GamePad.png')] bg-contain bg-no-repeat">
+                        <div className="flex flex-col w-[340px] text-white">
+                            <p className="relative rounded-r-md left-[245px] bg-orange-500 p-2 max-w-max font-campton"><small>HOT DEAL</small></p>
+                            <div className="flex items-center justify-between font-cabinetGrotesk p-6 mt-28 leading-8">
+                                <div>
+                                    <p className=" font-semibold">Gaming Controller</p>
+                                    <p className="">₦25,000.00</p>
+                                </div>
+                                <div className=" bg-gray-200 rounded-full p-2 w-[36px] mr-4">
+                                    <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.015C0 4.74712 4.21 0 10.02 0C15.7 0 20 4.65699 20 9.98498C20 16.1642 14.96 20 10 20C8.36 20 6.54 19.5593 5.08 18.698C4.57 18.3876 4.14 18.1572 3.59 18.3375L1.57 18.9384C1.06 19.0986 0.6 18.698 0.75 18.1572L1.42 15.9139C1.53 15.6034 1.51 15.2729 1.35 15.0125C0.49 13.4301 0 11.6975 0 10.015ZM8.7 10.015C8.7 10.7261 9.27 11.2969 9.98 11.307C10.69 11.307 11.26 10.7261 11.26 10.025C11.26 9.31397 10.69 8.74311 9.98 8.74311C9.28 8.7331 8.7 9.31397 8.7 10.015ZM13.31 10.025C13.31 10.7261 13.88 11.307 14.59 11.307C15.3 11.307 15.87 10.7261 15.87 10.025C15.87 9.31397 15.3 8.74311 14.59 8.74311C13.88 8.74311 13.31 9.31397 13.31 10.025ZM5.37 11.307C4.67 11.307 4.09 10.7261 4.09 10.025C4.09 9.31397 4.66 8.74311 5.37 8.74311C6.08 8.74311 6.65 9.31397 6.65 10.025C6.65 10.7261 6.08 11.2969 5.37 11.307Z" fill="#717591"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="flex justify-between p-6">
+                <div className="flex justify-between px-6 pt-6 pb-3 items-center">
                     <p className=" font-cabinetGrotesk font-semibold text-[20px]">Categories</p>
-                    <p><small>See all</small></p>
+                    <p><small>See all &gt;</small></p>
                 </div>
-                <div className="flex gap-4 px-6">
-                    <p className="flex flex-nowrap border rounded-md px-6 py-3 items-center">All</p>
-                    <p className="flex flex-nowrap border rounded-md px-6 py-3 items-center">Laptops</p>
-                    <p className="flex flex-nowrap border rounded-md px-6 py-3 items-center">Phones</p>
-                    <p className="flex flex-nowrap border rounded-md px-6 py-3 items-center">Workspace Equipments</p>
-                    <p className="flex flex-nowrap border rounded-md px-6 py-3 items-center">AR Equipments</p>
-                    <p className="flex flex-nowrap border rounded-md px-6 py-3 items-center">Merch</p>
-                    <p className="flex flex-nowrap border rounded-md px-6 py-3 items-center">VR Equipments</p>
+                {/* Categories */}
+                <div className="flex gap-4 px-6 font-campton">
+                    <p className="flex flex-nowrap border-2 rounded-md px-6 py-3 items-center min-w-max bg-primary-500 text-white">All</p>
+                    <p className="flex flex-nowrap border-2 rounded-md px-6 py-3 items-center min-w-max">Laptops</p>
+                    <p className="flex flex-nowrap border-2 rounded-md px-6 py-3 items-center min-w-max">Phones</p>
+                    <p className="flex flex-nowrap border-2 rounded-md px-6 py-3 items-center min-w-max">Workspace Equipments</p>
+                    <p className="flex flex-nowrap border-2 rounded-md px-6 py-3 items-center min-w-max">AR Equipments</p>
+                    <p className="flex flex-nowrap border-2 rounded-md px-6 py-3 items-center min-w-max">Merch</p>
+                    <p className="flex flex-nowrap border-2 rounded-md px-6 py-3 items-center min-w-max">VR Equipments</p>
                 </div>
             {/* Products */}
                 <div className="flex flex-wrap gap-12 px-6 py-6">
                     {/* Product 1 */}
                     <div className="border rounded-md">
-                        <div className=" bg-[url('../src/assets/images/product-controller.png')] bg-contain bg-no-repeat h-full w-[300px]">
+                        <div className=" bg-[url('../src/assets/images/product-keyboard.png')] bg-contain bg-no-repeat h-full w-[300px]">
                             <div className=" bg-gray-200 rounded-full p-2 w-[36px] relative left-[240px] top-[18px]">
                                 <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.015C0 4.74712 4.21 0 10.02 0C15.7 0 20 4.65699 20 9.98498C20 16.1642 14.96 20 10 20C8.36 20 6.54 19.5593 5.08 18.698C4.57 18.3876 4.14 18.1572 3.59 18.3375L1.57 18.9384C1.06 19.0986 0.6 18.698 0.75 18.1572L1.42 15.9139C1.53 15.6034 1.51 15.2729 1.35 15.0125C0.49 13.4301 0 11.6975 0 10.015ZM8.7 10.015C8.7 10.7261 9.27 11.2969 9.98 11.307C10.69 11.307 11.26 10.7261 11.26 10.025C11.26 9.31397 10.69 8.74311 9.98 8.74311C9.28 8.7331 8.7 9.31397 8.7 10.015ZM13.31 10.025C13.31 10.7261 13.88 11.307 14.59 11.307C15.3 11.307 15.87 10.7261 15.87 10.025C15.87 9.31397 15.3 8.74311 14.59 8.74311C13.88 8.74311 13.31 9.31397 13.31 10.025ZM5.37 11.307C4.67 11.307 4.09 10.7261 4.09 10.025C4.09 9.31397 4.66 8.74311 5.37 8.74311C6.08 8.74311 6.65 9.31397 6.65 10.025C6.65 10.7261 6.08 11.2969 5.37 11.307Z" fill="#717591"/>
@@ -89,7 +120,7 @@ function DashboardPage() {
                             <div className="flex items-center justify-between p-6 mt-36">
                                 <div className="font-cabinetGrotesk leading-[40px]">
                                     <h1 className="font-semibold text-[16px]" >Workspace Equipment</h1>
-                                    <p className="font-bold text-[18px]  md:text-[21px]">₦25,000.00</p>
+                                    <p className="font-bold text-[18px]  md:text-[21px]">₦100,000.00</p>
                                 </div>
                                 <div>
                                     <img src="../src/assets/icons/wishlist.png" alt="icon" />
@@ -98,8 +129,8 @@ function DashboardPage() {
                         </div>
                     </div>
                     {/* Product 3 */}
-                    <div className="border rounded-md">
-                        <div className=" bg-[url('../src/assets/images/product-controller.png')] bg-contain bg-no-repeat h-full w-[300px]">
+                    <div onClick={() => setShowProductDetails(!showProductDetails)} className="border rounded-md">
+                        <div className=" bg-[url('../src/assets/images/image-2macbook.png')] bg-contain bg-no-repeat h-full w-[300px]">
                             <div className=" bg-gray-200 rounded-full p-2 w-[36px] relative left-[240px] top-[18px]">
                                 <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.015C0 4.74712 4.21 0 10.02 0C15.7 0 20 4.65699 20 9.98498C20 16.1642 14.96 20 10 20C8.36 20 6.54 19.5593 5.08 18.698C4.57 18.3876 4.14 18.1572 3.59 18.3375L1.57 18.9384C1.06 19.0986 0.6 18.698 0.75 18.1572L1.42 15.9139C1.53 15.6034 1.51 15.2729 1.35 15.0125C0.49 13.4301 0 11.6975 0 10.015ZM8.7 10.015C8.7 10.7261 9.27 11.2969 9.98 11.307C10.69 11.307 11.26 10.7261 11.26 10.025C11.26 9.31397 10.69 8.74311 9.98 8.74311C9.28 8.7331 8.7 9.31397 8.7 10.015ZM13.31 10.025C13.31 10.7261 13.88 11.307 14.59 11.307C15.3 11.307 15.87 10.7261 15.87 10.025C15.87 9.31397 15.3 8.74311 14.59 8.74311C13.88 8.74311 13.31 9.31397 13.31 10.025ZM5.37 11.307C4.67 11.307 4.09 10.7261 4.09 10.025C4.09 9.31397 4.66 8.74311 5.37 8.74311C6.08 8.74311 6.65 9.31397 6.65 10.025C6.65 10.7261 6.08 11.2969 5.37 11.307Z" fill="#717591"/>
@@ -108,7 +139,7 @@ function DashboardPage() {
                             <div className="flex items-center justify-between p-6 mt-36">
                                 <div className="font-cabinetGrotesk leading-[40px]">
                                     <h1 className="font-semibold text-[16px]" >Workspace Equipment</h1>
-                                    <p className="font-bold text-[18px]  md:text-[21px]">₦25,000.00</p>
+                                    <p className="font-bold text-[18px]  md:text-[21px]">₦1,550,000.00</p>
                                 </div>
                                 <div>
                                     <img src="../src/assets/icons/wishlist.png" alt="icon" />
@@ -155,7 +186,11 @@ function DashboardPage() {
                         </div>
                     </div>
                 </div>
-            </div>
+                <div>
+                    { popupMask }
+                    { productDetails }
+                </div>
+            </div> 
         </div>
     )
 }
