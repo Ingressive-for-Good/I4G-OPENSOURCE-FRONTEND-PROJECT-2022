@@ -71,10 +71,33 @@ The button also being the only highlighted button seems to encourage an action w
 
 
 
-## Name:
+## Name: Oluwatosin Alabi
 
-## Description: 
+## Description: Improved UX Writing on the Landing Page
 ### Observations/Changes
+- Using the agreed brand tone and voice, I worked on the improving the UX writing of the landing page.
+- Improved the UX writing for the navbar.
+- Improved the UX writing for the 'create an account' button.
+- Improved the UX writing for the heading. 
+- Improved the UX writing for the sub-heading.
+- Improved the UX writing for the 'buy an item now' button.
+- Improved the UX writing for the 'sell an item now' button.
+- Improved the UX writing for the 'why techmart' section.
+- Improved the UX writing for the 'why techmart' sub-heading.
+- Improved the UX writing for the best quality card.
+- Improved the UX writing for the 'buy items' sub-heading.
+- Improved the UX writing for the create an account card.
+- Improved the UX writing for the 'list & sell items' section.
+- Improved the UX writing for the 'list & sell items' sub-heading.
+- Improved the UX writing for the create an account card.
+- Improved the UX writing for the 'Stay up to date' section.
+- Improved the UX writing for the 'Stay up to date' sub-heading.
+- Improved the UX writing for the 'Client reviews' section.
+- Improved the UX writing for the 'Client reviews' sub-heading.
+- Improved the UX writing for each review card.
+- Replacement of Logo with correct brand logo(footer)
+
+ 
+-----Main Goal -- Landing Page UX Writing
 
 
------Main Goal --
