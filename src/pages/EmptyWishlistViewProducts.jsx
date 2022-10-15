@@ -1,7 +1,7 @@
 import React from "react";
 import CreateWishButton from "../components/atoms/Button/CreateWishButton";
 import NavbarDashboard from "../components/molecules/NavbarDashboard";
-import SidebarDashboard from "../components/molecules/SidebarDashboard";
+import SidebarWishlist from "../components/molecules/SidebarWishlist";
 
 function EmptyWishlistViewProducts() {
   return (
@@ -9,7 +9,7 @@ function EmptyWishlistViewProducts() {
         <NavbarDashboard />
         {/* Sidebar */}
         <div className="hidden md:block">
-            <SidebarDashboard />
+            <SidebarWishlist />
         </div>
         <div className="flex px-6 justify-between md:relative md:bottom-14">
             {/* Intro text */}

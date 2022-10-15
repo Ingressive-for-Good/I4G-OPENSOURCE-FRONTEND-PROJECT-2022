@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavbarDashboard from "../components/molecules/NavbarDashboard";
-import SidebarDashboard from "../components/molecules/SidebarDashboard";
+import SidebarWishlist from "../components/molecules/SidebarWishlist";
 import DashboardSelect from "../components/molecules/DashboardSelect";
 
 function WishlistViewProducts() {
@@ -17,7 +17,7 @@ function WishlistViewProducts() {
         <NavbarDashboard />
         {/* Sidebar */}
         <div className="hidden md:block">
-            <SidebarDashboard />
+            <SidebarWishlist />
         </div>
         <div className="flex px-6 justify-between md:relative md:bottom-14">
             {/* Intro text */}

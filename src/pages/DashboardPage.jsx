@@ -4,13 +4,13 @@ import SidebarDashboard from "../components/molecules/SidebarDashboard";
 
 function DashboardPage() {
     return(
-        <div>
+        <div className=" overflow-x-hidden">
             <NavbarDashboard />
             {/* sidebar */}
             <div className="hidden md:block">
                 <SidebarDashboard />
             </div>
-            <div className="flex px-6 justify-between md:relative md:bottom-14">
+            <div className="flex px-6 justify-between md:relative bottom-4">
                 {/* Intro text */}
                 <div className="font-cabinetGrotesk md:ml-64">
                     <p className="font-medium text-[20px]">Hey Nora👋🏾</p>
@@ -57,14 +57,101 @@ function DashboardPage() {
                     <p className="flex flex-nowrap border rounded-md px-6 py-3 items-center">Merch</p>
                     <p className="flex flex-nowrap border rounded-md px-6 py-3 items-center">VR Equipments</p>
                 </div>
-                <div className="flex gap-4 px-6 py-6">
+            {/* Products */}
+                <div className="flex flex-wrap gap-12 px-6 py-6">
+                    {/* Product 1 */}
                     <div className="border rounded-md">
-                        <div>
-                            <img src="../src/assets/images/product-controller.png" alt="product-image" width={260} />
+                        <div className=" bg-[url('../src/assets/images/product-controller.png')] bg-contain bg-no-repeat h-full w-[300px]">
+                            <div className=" bg-gray-200 rounded-full p-2 w-[36px] relative left-[240px] top-[18px]">
+                                <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.015C0 4.74712 4.21 0 10.02 0C15.7 0 20 4.65699 20 9.98498C20 16.1642 14.96 20 10 20C8.36 20 6.54 19.5593 5.08 18.698C4.57 18.3876 4.14 18.1572 3.59 18.3375L1.57 18.9384C1.06 19.0986 0.6 18.698 0.75 18.1572L1.42 15.9139C1.53 15.6034 1.51 15.2729 1.35 15.0125C0.49 13.4301 0 11.6975 0 10.015ZM8.7 10.015C8.7 10.7261 9.27 11.2969 9.98 11.307C10.69 11.307 11.26 10.7261 11.26 10.025C11.26 9.31397 10.69 8.74311 9.98 8.74311C9.28 8.7331 8.7 9.31397 8.7 10.015ZM13.31 10.025C13.31 10.7261 13.88 11.307 14.59 11.307C15.3 11.307 15.87 10.7261 15.87 10.025C15.87 9.31397 15.3 8.74311 14.59 8.74311C13.88 8.74311 13.31 9.31397 13.31 10.025ZM5.37 11.307C4.67 11.307 4.09 10.7261 4.09 10.025C4.09 9.31397 4.66 8.74311 5.37 8.74311C6.08 8.74311 6.65 9.31397 6.65 10.025C6.65 10.7261 6.08 11.2969 5.37 11.307Z" fill="#717591"/>
+                                </svg>
+                            </div>
+                            <div className="flex items-center justify-between p-6 mt-36">
+                                <div className="font-cabinetGrotesk leading-[40px]">
+                                    <h1 className="font-semibold text-[16px]" >Workspace Equipment</h1>
+                                    <p className="font-bold text-[18px]  md:text-[21px]">₦25,000.00</p>
+                                </div>
+                                <div>
+                                    <img src="../src/assets/icons/wishlist.png" alt="icon" />
+                                </div>
+                            </div>
                         </div>
-                        <div className="p-6">
-                            <h1>Workspace Equipment</h1>
-                            <p>#25,000.00</p>
+                    </div>
+                    {/* Product 2 */}
+                    <div className="border rounded-md">
+                        <div className=" bg-[url('../src/assets/images/product-controller.png')] bg-contain bg-no-repeat h-full w-[300px]">
+                            <div className=" bg-gray-200 rounded-full p-2 w-[36px] relative left-[240px] top-[18px]">
+                                <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.015C0 4.74712 4.21 0 10.02 0C15.7 0 20 4.65699 20 9.98498C20 16.1642 14.96 20 10 20C8.36 20 6.54 19.5593 5.08 18.698C4.57 18.3876 4.14 18.1572 3.59 18.3375L1.57 18.9384C1.06 19.0986 0.6 18.698 0.75 18.1572L1.42 15.9139C1.53 15.6034 1.51 15.2729 1.35 15.0125C0.49 13.4301 0 11.6975 0 10.015ZM8.7 10.015C8.7 10.7261 9.27 11.2969 9.98 11.307C10.69 11.307 11.26 10.7261 11.26 10.025C11.26 9.31397 10.69 8.74311 9.98 8.74311C9.28 8.7331 8.7 9.31397 8.7 10.015ZM13.31 10.025C13.31 10.7261 13.88 11.307 14.59 11.307C15.3 11.307 15.87 10.7261 15.87 10.025C15.87 9.31397 15.3 8.74311 14.59 8.74311C13.88 8.74311 13.31 9.31397 13.31 10.025ZM5.37 11.307C4.67 11.307 4.09 10.7261 4.09 10.025C4.09 9.31397 4.66 8.74311 5.37 8.74311C6.08 8.74311 6.65 9.31397 6.65 10.025C6.65 10.7261 6.08 11.2969 5.37 11.307Z" fill="#717591"/>
+                                </svg>
+                            </div>
+                            <div className="flex items-center justify-between p-6 mt-36">
+                                <div className="font-cabinetGrotesk leading-[40px]">
+                                    <h1 className="font-semibold text-[16px]" >Workspace Equipment</h1>
+                                    <p className="font-bold text-[18px]  md:text-[21px]">₦25,000.00</p>
+                                </div>
+                                <div>
+                                    <img src="../src/assets/icons/wishlist.png" alt="icon" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* Product 3 */}
+                    <div className="border rounded-md">
+                        <div className=" bg-[url('../src/assets/images/product-controller.png')] bg-contain bg-no-repeat h-full w-[300px]">
+                            <div className=" bg-gray-200 rounded-full p-2 w-[36px] relative left-[240px] top-[18px]">
+                                <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.015C0 4.74712 4.21 0 10.02 0C15.7 0 20 4.65699 20 9.98498C20 16.1642 14.96 20 10 20C8.36 20 6.54 19.5593 5.08 18.698C4.57 18.3876 4.14 18.1572 3.59 18.3375L1.57 18.9384C1.06 19.0986 0.6 18.698 0.75 18.1572L1.42 15.9139C1.53 15.6034 1.51 15.2729 1.35 15.0125C0.49 13.4301 0 11.6975 0 10.015ZM8.7 10.015C8.7 10.7261 9.27 11.2969 9.98 11.307C10.69 11.307 11.26 10.7261 11.26 10.025C11.26 9.31397 10.69 8.74311 9.98 8.74311C9.28 8.7331 8.7 9.31397 8.7 10.015ZM13.31 10.025C13.31 10.7261 13.88 11.307 14.59 11.307C15.3 11.307 15.87 10.7261 15.87 10.025C15.87 9.31397 15.3 8.74311 14.59 8.74311C13.88 8.74311 13.31 9.31397 13.31 10.025ZM5.37 11.307C4.67 11.307 4.09 10.7261 4.09 10.025C4.09 9.31397 4.66 8.74311 5.37 8.74311C6.08 8.74311 6.65 9.31397 6.65 10.025C6.65 10.7261 6.08 11.2969 5.37 11.307Z" fill="#717591"/>
+                                </svg>
+                            </div>
+                            <div className="flex items-center justify-between p-6 mt-36">
+                                <div className="font-cabinetGrotesk leading-[40px]">
+                                    <h1 className="font-semibold text-[16px]" >Workspace Equipment</h1>
+                                    <p className="font-bold text-[18px]  md:text-[21px]">₦25,000.00</p>
+                                </div>
+                                <div>
+                                    <img src="../src/assets/icons/wishlist.png" alt="icon" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* Product 4 */}
+                    <div className="border rounded-md">
+                        <div className=" bg-[url('../src/assets/images/product-controller.png')] bg-contain bg-no-repeat h-full w-[300px]">
+                            <div className=" bg-gray-200 rounded-full p-2 w-[36px] relative left-[240px] top-[18px]">
+                                <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.015C0 4.74712 4.21 0 10.02 0C15.7 0 20 4.65699 20 9.98498C20 16.1642 14.96 20 10 20C8.36 20 6.54 19.5593 5.08 18.698C4.57 18.3876 4.14 18.1572 3.59 18.3375L1.57 18.9384C1.06 19.0986 0.6 18.698 0.75 18.1572L1.42 15.9139C1.53 15.6034 1.51 15.2729 1.35 15.0125C0.49 13.4301 0 11.6975 0 10.015ZM8.7 10.015C8.7 10.7261 9.27 11.2969 9.98 11.307C10.69 11.307 11.26 10.7261 11.26 10.025C11.26 9.31397 10.69 8.74311 9.98 8.74311C9.28 8.7331 8.7 9.31397 8.7 10.015ZM13.31 10.025C13.31 10.7261 13.88 11.307 14.59 11.307C15.3 11.307 15.87 10.7261 15.87 10.025C15.87 9.31397 15.3 8.74311 14.59 8.74311C13.88 8.74311 13.31 9.31397 13.31 10.025ZM5.37 11.307C4.67 11.307 4.09 10.7261 4.09 10.025C4.09 9.31397 4.66 8.74311 5.37 8.74311C6.08 8.74311 6.65 9.31397 6.65 10.025C6.65 10.7261 6.08 11.2969 5.37 11.307Z" fill="#717591"/>
+                                </svg>
+                            </div>
+                            <div className="flex items-center justify-between p-6 mt-36">
+                                <div className="font-cabinetGrotesk leading-[40px]">
+                                    <h1 className="font-semibold text-[16px]" >Workspace Equipment</h1>
+                                    <p className="font-bold text-[18px]  md:text-[21px]">₦25,000.00</p>
+                                </div>
+                                <div>
+                                    <img src="../src/assets/icons/wishlist.png" alt="icon" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* Product 5 */}
+                    <div className="border rounded-md">
+                        <div className=" bg-[url('../src/assets/images/product-controller.png')] bg-contain bg-no-repeat h-full w-[300px]">
+                            <div className=" bg-gray-200 rounded-full p-2 w-[36px] relative left-[240px] top-[18px]">
+                                <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.015C0 4.74712 4.21 0 10.02 0C15.7 0 20 4.65699 20 9.98498C20 16.1642 14.96 20 10 20C8.36 20 6.54 19.5593 5.08 18.698C4.57 18.3876 4.14 18.1572 3.59 18.3375L1.57 18.9384C1.06 19.0986 0.6 18.698 0.75 18.1572L1.42 15.9139C1.53 15.6034 1.51 15.2729 1.35 15.0125C0.49 13.4301 0 11.6975 0 10.015ZM8.7 10.015C8.7 10.7261 9.27 11.2969 9.98 11.307C10.69 11.307 11.26 10.7261 11.26 10.025C11.26 9.31397 10.69 8.74311 9.98 8.74311C9.28 8.7331 8.7 9.31397 8.7 10.015ZM13.31 10.025C13.31 10.7261 13.88 11.307 14.59 11.307C15.3 11.307 15.87 10.7261 15.87 10.025C15.87 9.31397 15.3 8.74311 14.59 8.74311C13.88 8.74311 13.31 9.31397 13.31 10.025ZM5.37 11.307C4.67 11.307 4.09 10.7261 4.09 10.025C4.09 9.31397 4.66 8.74311 5.37 8.74311C6.08 8.74311 6.65 9.31397 6.65 10.025C6.65 10.7261 6.08 11.2969 5.37 11.307Z" fill="#717591"/>
+                                </svg>
+                            </div>
+                            <div className="flex items-center justify-between p-6 mt-36">
+                                <div className="font-cabinetGrotesk leading-[40px]">
+                                    <h1 className="font-semibold text-[16px]" >Workspace Equipment</h1>
+                                    <p className="font-bold text-[18px]  md:text-[21px]">₦25,000.00</p>
+                                </div>
+                                <div>
+                                    <img src="../src/assets/icons/wishlist.png" alt="icon" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
