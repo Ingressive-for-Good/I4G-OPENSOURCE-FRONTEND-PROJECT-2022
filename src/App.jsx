@@ -11,6 +11,7 @@ import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
 import DeleteProduct from "./components/molecules/deleteProduct";
 import CreateAccount from "./pages/CreateAccount";
 import Help from "./pages/Help";
+import Users from "./pages/Users";
 
 function App() {
   return (
@@ -82,6 +83,7 @@ function App() {
         />
 
         <Route path="/products" element={<AddNewProductPage1 />} />
+        <Route path="/users" element={<Users/>} />
 
         {/* <Route
         path="/view-products"

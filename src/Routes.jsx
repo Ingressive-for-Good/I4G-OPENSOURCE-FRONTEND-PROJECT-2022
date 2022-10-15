@@ -13,6 +13,7 @@ import WishlistViewProducts from "./pages/WishlistViewProducts";
 import CreateAccount from "./pages/CreateAccount";
 import DeleteProduct from "./components/molecules/deleteProduct";
 import ResetPasswordPage from "./pages/PasswordResetPage";
+import Users from "./pages/Users";
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
   return (
@@ -28,6 +29,7 @@ function Routes() {
       <Route path="/dashboard" element={<DashboardPage />} />
       <Route path="/kyc" element={<Kyc />} />
       <Route path="/products" element={<AddNewProductPage1/>} />
+      <Route path="/users" element={<Users/>} />
       <Route path="/delete-product" element={<DeleteProduct />} />
       <Route path="/wishlist" element={<WishlistViewProducts />} />
       <Route path="/add-to-wishlist" element={<EmptyWishlistViewProducts />} />
