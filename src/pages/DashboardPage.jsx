@@ -91,7 +91,7 @@ function DashboardPage() {
             {/* Products */}
                 <div className="flex flex-wrap gap-12 px-6 py-6">
                     {/* Product 1 */}
-                    <div className="border rounded-md">
+                    <div onClick={() => setShowProductDetails(!showProductDetails)} className="border rounded-md">
                         <div className=" bg-[url('../src/assets/images/product-keyboard.png')] bg-contain bg-no-repeat h-full w-[300px]">
                             <div className=" bg-gray-200 rounded-full p-2 w-[36px] relative left-[240px] top-[18px]">
                                 <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +110,7 @@ function DashboardPage() {
                         </div>
                     </div>
                     {/* Product 2 */}
-                    <div className="border rounded-md">
+                    <div onClick={() => setShowProductDetails(!showProductDetails)} className="border rounded-md">
                         <div className=" bg-[url('../src/assets/images/product-controller.png')] bg-contain bg-no-repeat h-full w-[300px]">
                             <div className=" bg-gray-200 rounded-full p-2 w-[36px] relative left-[240px] top-[18px]">
                                 <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
