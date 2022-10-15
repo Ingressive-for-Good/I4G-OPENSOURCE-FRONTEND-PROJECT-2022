@@ -17,3 +17,5 @@ export const SUPPORT = 'support';
 export const MESSAGES = 'messages';
 export const NOTIFICATIONS = 'notifications';
 export const PROFILE = 'profile';
+export const ADMIN = 'admin';
+export const USERS = 'users';
