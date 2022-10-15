@@ -1,0 +1,15 @@
+export const HOME = "/";
+export const PRODUCTS = "/products";
+export const LOGIN = "/login";
+export const CREATE_ACCOUNT = "/create-account";
+export const EMAIL_VERIFICATION = "/email-verification";
+export const DASHBOARD = "/dashboard";
+export const KYC = "/kyc";
+export const DELETE_PRODUCT = "/delete-product";
+export const WISHLIST = "/wishlist";
+export const ADD_TO_WISHLIST = "/add-to-wishlist";
+export const RESET_PASSWORD = "/reset-password";
+export const SUPPORT = "/support";
+export const MESSAGES = "/messages";
+export const NOTIFICATIONS = "/notifications";
+export const PROFILE = "/profile";
