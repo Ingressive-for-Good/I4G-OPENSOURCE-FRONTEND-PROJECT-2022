@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import NavbarDashboard from "../components/molecules/NavbarDashboard";
-import SidebarDashboard from "../components/molecules/SidebarDashboard";
+import SideBar from "../components/molecules/SideBar";
 import DashboardSelect from "../components/molecules/DashboardSelect";
+import { sideNav } from "../assets/data/data";
 
 function WishlistViewProducts() {
     const [showSelect, setShowSelect] = useState(false)
@@ -17,7 +18,7 @@ function WishlistViewProducts() {
         <NavbarDashboard />
         {/* Sidebar */}
         <div className="hidden md:block">
-            <SidebarDashboard />
+            <SideBar navData={sideNav} />
         </div>
         <div className="flex px-6 justify-between md:relative md:bottom-14">
             {/* Intro text */}

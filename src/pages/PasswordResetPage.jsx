@@ -4,9 +4,7 @@ import PasswordResetForm from "../components/molecules/PasswordResetForm"
 import PasswordResetSuccessPopup from "../components/molecules/PasswordResetSuccessPopup"
 import SubmitButton from "../components/atoms/Button/SubmitButton";
 
-
 function ResetPasswordPage() {
-
   // the below handles the popup success message on click of the submit button
   const [showSuccess, setShowSuccess] = useState(false)
 
