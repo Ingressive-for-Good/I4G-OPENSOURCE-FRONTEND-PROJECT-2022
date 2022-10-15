@@ -3,7 +3,7 @@ import Input from '../components/atoms/Input'
 import AddNewProductSucessPopUp from '../components/molecules/AddNewProductSucessPopUp'
 import Navbar from '../components/molecules/Navbar'
 import Overlay from '../components/molecules/Overlay'
-import SideBar from '../components/molecules/sidebar'
+import SideBar from '../components/molecules/SideBar'
 
 export default function AddNewProductPage1() {
   // This state controls the success pop up
