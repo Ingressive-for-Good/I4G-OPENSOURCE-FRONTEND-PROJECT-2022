@@ -28,13 +28,16 @@ function App() {
                 Visit Email Verification Page
               </Link>
               <br />
-              <Link to="/products">Add new product</Link><br />
+              <Link to="/products">Add new product</Link>
+              <br />
               <br />
               <Link to="/create-account">Create Account</Link>
               <br />
-              <Link to="/kyc">Kyc Page</Link><br />
-              <Link to="/view-products">View products</Link><br/>
-            <Link to="/delete-product">Delete uploaded product</Link>
+              <Link to="/kyc">Kyc Page</Link>
+              <br />
+              <Link to="/view-products">View products</Link>
+              <br />
+              <Link to="/delete-product">Delete uploaded product</Link>
             </>
           }
         />
@@ -74,11 +77,7 @@ function App() {
         />
         <Route
           path="/account-recovery"
-          element={
-            <>
-              {/* <ForgotPassword /> */}
-            </>
-          }
+          element={<>{/* <ForgotPassword /> */}</>}
         />
 
         <Route path="/products" element={<AddNewProductPage1 />} />
@@ -87,11 +86,10 @@ function App() {
         path="/view-products"
         element={<ViewProducts/>}
         /> */}
-        <Route 
+        <Route
           path="/"
           element={
             <div className="p-6">
-
               <h1 className="text-3xl font-bold text-red-600">Hello world!</h1>
               <p>/wishlist (view products in wishlist)</p>
               <p>/add-to-wishlist (add products to wishlist)</p>
@@ -100,7 +98,10 @@ function App() {
           exact
         ></Route>
         <Route path="/wishlist" element={<WishlistViewProducts />}></Route>
-        <Route path="/add-to-wishlist" element={<EmptyWishlistViewProducts />}></Route>
+        <Route
+          path="/add-to-wishlist"
+          element={<EmptyWishlistViewProducts />}
+        ></Route>
         <Route path="/reset-password" element={<ResetPasswordPage />}></Route>
         <Route
           path="/delete-product"
@@ -112,8 +113,7 @@ function App() {
         />
 
         <Route path="/create-account" element={<CreateAccount />}></Route>
-         <Route path="/support" element= {<Help />}></Route>
-
+        <Route path="/support" element={<Help />}></Route>
       </Routes>
     </BrowserRouter>
   );

@@ -1,9 +1,9 @@
-import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const ApiHeaders = {
-  Accept: 'application/json',
+  Accept: "application/json",
 };
-const baseUrl = 'http://localhost:3000';
+const baseUrl = "http://localhost:3000";
 const createRequest = (url, method) => ({ url, headers: ApiHeaders, method });
 const postRequest = (url, method, body) => ({
   url,
@@ -12,19 +12,19 @@ const postRequest = (url, method, body) => ({
   body: JSON.stringify(body),
 });
 const apiConnection = createApi({
-  reducerPath: 'Api',
+  reducerPath: "Api",
   baseQuery: fetchBaseQuery({ baseUrl }),
-  tagTypes: ['Post', 'Get'],
+  tagTypes: ["Post", "Get"],
 
   endpoints: (builder) => ({
     getData: builder.query({
-      query: () => createRequest('/api/get', 'GET'),
+      query: () => createRequest("/api/get", "GET"),
       transformResponse: (response) => response.data,
-      providesTags: ['Get'],
+      providesTags: ["Get"],
     }),
     postData: builder.query({
-      query: (payload) => postRequest('/api/post', 'Post', payload),
-      providesTags: ['Post'],
+      query: (payload) => postRequest("/api/post", "Post", payload),
+      providesTags: ["Post"],
     }),
   }),
 });

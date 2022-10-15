@@ -12,18 +12,20 @@ body {
   body {
     background: white;
   }
-  .sidebar p, .sidebar div, .sidebar a {
+  .sidebar p,
+  .sidebar div,
+  .sidebar a {
     display: none;
   }
   .sidebar h3 {
     font-size: 32px;
-    color: #0F27BD;
+    color: #0f27bd;
     margin: 50px 0 0 10vw;
     font-weight: 700;
     display: inline-block;
   }
   .sidebar h3 span {
-    color: #F17105;
+    color: #f17105;
   }
   .sidebar .menu-icon {
     float: right;
@@ -39,7 +41,8 @@ body {
     font-weight: 600;
     font-size: 25px;
   }
-  .main .nav-right .circle, .main .nav-right .search {
+  .main .nav-right .circle,
+  .main .nav-right .search {
     display: none;
   }
   .main h3 {
@@ -50,12 +53,12 @@ body {
     display: block;
     margin: 40px auto 0 auto;
     border-radius: 8px;
-    border: 1px solid #A1A4B6;
+    border: 1px solid #a1a4b6;
   }
   .main .main-info div {
     height: 9vh;
     border: none;
-    border-bottom: 1.2px solid #A1A4B6;
+    border-bottom: 1.2px solid #a1a4b6;
     padding: 0 40px 0 25px;
   }
   .main .main-info div p {
@@ -79,12 +82,13 @@ body {
   .main .main-info .sections4 {
     border: none;
   }
-  .main .footer h4, .main .footer p {
+  .main .footer h4,
+  .main .footer p {
     margin: 4vw 8.5vw 15px 8vw;
   }
   .main .footer a {
     text-decoration: none;
-    color: #F17105;
+    color: #f17105;
   }
 }
 @media only screen and (min-width: 1101px) {
@@ -93,26 +97,26 @@ body {
   }
   .sidebar {
     float: left;
-    background: #E7E9F8;
-    color: #A1A4B6;
+    background: #e7e9f8;
+    color: #a1a4b6;
     height: 80%;
     width: 24vw;
   }
   .sidebar h3 {
     font-size: 32px;
-    color: #0F27BD;
+    color: #0f27bd;
     text-align: center;
     margin-top: 50px;
     font-weight: 700;
   }
   .sidebar h3 span {
-    color: #F17105;
+    color: #f17105;
   }
   .sidebar .menu {
     font-size: 16px;
     font-weight: 600;
     margin: 50px 0 20px 20%;
-    color: #0F27BD;
+    color: #0f27bd;
   }
   .sidebar div {
     margin: 0 0 40px 20%;
@@ -129,7 +133,7 @@ body {
     background: white;
     padding: 18px 0 18px 15%;
     margin-left: 0;
-    color: #0F27BD;
+    color: #0f27bd;
   }
   .sidebar .logout {
     color: red;
@@ -167,14 +171,14 @@ body {
   .main .nav-right input {
     width: 20vw;
     height: 32px;
-    background: #FAFAFB;
+    background: #fafafb;
     vertical-align: middle;
-    border: 1.2px solid #A1A4B6;
+    border: 1.2px solid #a1a4b6;
     border-radius: 8px;
     padding: 2px 32px;
   }
   .main .nav-right input:focus {
-    border: 2px solid #A1A4B6;
+    border: 2px solid #a1a4b6;
     outline: none;
   }
   .main .nav-right .search::before {
@@ -187,7 +191,7 @@ body {
     background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.17502 16.6832C13.3218 16.6832 16.6834 13.3216 16.6834 9.17484C16.6834 5.0281 13.3218 1.6665 9.17502 1.6665C5.02828 1.6665 1.66669 5.0281 1.66669 9.17484C1.66669 13.3216 5.02828 16.6832 9.17502 16.6832Z' fill='%23717591'/%3E%3Cpath d='M18.325 15.7917C18.05 15.2833 17.4667 15 16.6834 15C16.0917 15 15.5834 15.2417 15.2834 15.6583C14.9834 16.075 14.9167 16.6333 15.1 17.1917C15.4584 18.275 16.0834 18.5167 16.425 18.5583C16.475 18.5667 16.525 18.5667 16.5834 18.5667C16.95 18.5667 17.5167 18.4083 18.0667 17.5833C18.5084 16.9417 18.5917 16.3 18.325 15.7917Z' fill='%23717591'/%3E%3C/svg%3E%0A");
   }
   .main .nav-right .circle {
-    background: #E7E9F8;
+    background: #e7e9f8;
     width: 40px;
     height: 40px;
     margin-left: 10px;
@@ -208,12 +212,12 @@ body {
     height: 60vh;
     margin: 26px 0%;
     border-radius: 8px;
-    border: 1px solid #A1A4B6;
+    border: 1px solid #a1a4b6;
   }
   .main .main-info div {
     height: 10vh;
     border: none;
-    border-bottom: 1.2px solid #A1A4B6;
+    border-bottom: 1.2px solid #a1a4b6;
     padding: 0 40px 0 25px;
   }
   .main .main-info div p {
@@ -242,11 +246,11 @@ body {
   }
   .main .footer p {
     font-size: 18px;
-    color: #4B4E61;
+    color: #4b4e61;
     line-height: 25px;
   }
   .main .footer p a {
-    color: #F17105;
+    color: #f17105;
     text-decoration: none;
   }
-}/*# sourceMappingURL=support.css.map */
+} /*# sourceMappingURL=support.css.map */
