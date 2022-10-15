@@ -38,8 +38,36 @@ function DashboardPage() {
                     <img src="../src/assets/icons/avatar.png" alt="user avatar"/>
                 </div>
             </div>
-            <div>
-                <img src="" alt="" srcset="" />
+            {/* main content */}
+            <div className="md:ml-64">
+                <div className="flex px-6 items-center gap-8">
+                    <img src="../src/assets/images/dashboard-banner.png" alt="banner" />
+                    <img className="hidden md:flex" src="../src/assets/images/Rectangle 14GamePad.png" alt="hot-deals" width={320} />
+                </div>
+                <div className="flex justify-between p-6">
+                    <p className=" font-cabinetGrotesk font-semibold text-[20px]">Categories</p>
+                    <p><small>See all</small></p>
+                </div>
+                <div className="flex gap-4 px-6">
+                    <p className="flex flex-nowrap border rounded-md px-6 py-3 items-center">All</p>
+                    <p className="flex flex-nowrap border rounded-md px-6 py-3 items-center">Laptops</p>
+                    <p className="flex flex-nowrap border rounded-md px-6 py-3 items-center">Phones</p>
+                    <p className="flex flex-nowrap border rounded-md px-6 py-3 items-center">Workspace Equipments</p>
+                    <p className="flex flex-nowrap border rounded-md px-6 py-3 items-center">AR Equipments</p>
+                    <p className="flex flex-nowrap border rounded-md px-6 py-3 items-center">Merch</p>
+                    <p className="flex flex-nowrap border rounded-md px-6 py-3 items-center">VR Equipments</p>
+                </div>
+                <div className="flex gap-4 px-6 py-6">
+                    <div className="border rounded-md">
+                        <div>
+                            <img src="../src/assets/images/product-controller.png" alt="product-image" width={260} />
+                        </div>
+                        <div className="p-6">
+                            <h1>Workspace Equipment</h1>
+                            <p>#25,000.00</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
