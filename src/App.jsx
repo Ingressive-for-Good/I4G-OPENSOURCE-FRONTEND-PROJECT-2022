@@ -11,7 +11,6 @@ import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
 import DeleteProduct from "./components/molecules/deleteProduct";
 import CreateAccount from "./pages/CreateAccount";
 import Help from "./pages/Help";
-import EmptyMessagePage from "./pages/EmptyMessagePage";
 
 function App() {
   return (
@@ -36,8 +35,6 @@ function App() {
               <Link to="/kyc">Kyc Page</Link><br />
               <Link to="/view-products">View products</Link><br/>
             <Link to="/delete-product">Delete uploaded product</Link>
-              <br />
-              <Link to="/empty-message-page">Empty Message Page</Link>
             
             </>
           }
@@ -106,7 +103,6 @@ function App() {
         <Route path="/wishlist" element={<WishlistViewProducts />}></Route>
         <Route path="/add-to-wishlist" element={<EmptyWishlistViewProducts />}></Route>
         <Route path="/reset-password" element={<ResetPasswordPage />}></Route>
-        <Route path="/empty-message-page" element={<EmptyMessagePage />}></Route>
         <Route
           path="/delete-product"
           element={
