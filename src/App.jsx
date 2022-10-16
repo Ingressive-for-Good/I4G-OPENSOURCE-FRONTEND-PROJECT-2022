@@ -35,6 +35,7 @@ function App() {
               <Link to="/kyc">Kyc Page</Link><br />
               <Link to="/view-products">View products</Link><br/>
             <Link to="/delete-product">Delete uploaded product</Link>
+            
             </>
           }
         />
