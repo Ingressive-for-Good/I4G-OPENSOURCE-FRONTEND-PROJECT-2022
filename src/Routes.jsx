@@ -13,6 +13,7 @@ import WishlistViewProducts from "./pages/WishlistViewProducts";
 import CreateAccount from "./pages/CreateAccount";
 import DeleteProduct from "./components/molecules/deleteProduct";
 import ResetPasswordPage from "./pages/PasswordResetPage";
+import EmptyMessagePage from './pages/EmptyMessagePage';
 import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
 import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
 // Routes Component Containing Routes For All Base Pages.
@@ -46,7 +47,7 @@ function Routes() {
       <Route path="/wishlist" element={<h1 className="text-3xl font-bold text-red-600">Wishlist</h1>} />
       <Route path="/notifications" element={<h1 className="text-3xl font-bold text-red-600">Notifications</h1>} />
       <Route path="/profile" element={<h1 className="text-3xl font-bold text-red-600">Profile</h1>} />
-      <Route path="/MessagesEmpty" element={<h1 className="text-3xl font-bold text-red-600">Messages-Empty</h1>} />
+      <Route path="/EmptyMessagePage" element={<h1 className="text-3xl font-bold text-red-600">Messages-Empty</h1>} />
     </Switch>
   );
 }
