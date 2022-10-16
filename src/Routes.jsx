@@ -40,7 +40,6 @@ function Routes() {
       <Route path="/delete-product" element={<DeleteProduct />} />
       <Route path="/wishlist" element={<WishlistViewProducts />} />
       <Route path="/add-to-wishlist" element={<EmptyWishlistViewProducts />} />
-      <Route path="/empty-message-page" element={<EmptyMessagePage />} />
       <Route path="/reset-password" element={<ResetPasswordPage />} />
       <Route path="/support" element={<Help />} />
       <Route path="/messages" element={<h1 className="text-3xl font-bold text-red-600">Messages</h1>} />
