@@ -25,3 +25,4 @@ export default function AddNewProductPage1() {
       }
     </div>
   )
+}
