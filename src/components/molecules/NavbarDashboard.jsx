@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SideNav from "./SideNav";
+import SideBar from "./SideBar";
 
 // This function handles the navbar on wide screens
 
@@ -15,7 +15,7 @@ function NavbarDashboard() {
 
   if(showNav){
     nav =   <div className="absolute top-0 left-0 bg-white z-40 w-3/4">
-                <SideNav />
+                <SideBar />
             </div>
     // menumask adds a transparent dark background once the sidenav on mobile is open.
     menumask = <div onClick={() => setShowNav(false)} className="absolute top-0 left-0 bg-black-t-50 w-screen h-full pb-[1000px]"></div>
