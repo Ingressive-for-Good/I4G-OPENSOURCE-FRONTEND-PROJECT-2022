@@ -7,7 +7,7 @@ import appTheme from "../styles/app-theme";
 import GlobalStyle from "../styles/global-style";
 import "../styles/index.css";
 import store from "../utils/services/store";
-import { Context } from "./delete/context";
+import { Context } from "./deleteUploadedProduct/context";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

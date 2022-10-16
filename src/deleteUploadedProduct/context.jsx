@@ -3,13 +3,13 @@ import { data, nav } from "./data";
 const AppContext = React.createContext();
 const Context = ({ children }) => {
   const [value, setValue] = useState(data);
-  const [alertDelete, setAlertDelete] = useState(false);
-  const [alert, setAlert] = useState({ available: false, msg: "" });
+
+  const [alert, setAlert] = useState(false);
+  const [message, setMessage] = useState("");
+  const [popUp, setPopUp] = useState(false);
   useEffect(() => {
-    const message = alert.msg;
-    console.log(message);
     const set = setInterval(() => {
-      setAlert({ ...alert, message });
+      setPopUp(!popUp);
     }, 2000);
     return () => {
       clearInterval(set);
@@ -23,8 +23,10 @@ const Context = ({ children }) => {
         nav,
         alert,
         setAlert,
-        alertDelete,
-        setAlertDelete,
+        message,
+        setMessage,
+        popUp,
+        setPopUp,
       }}
     >
       {children}

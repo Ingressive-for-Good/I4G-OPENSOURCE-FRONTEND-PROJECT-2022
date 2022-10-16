@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../../public/images/logo.png";
 import vector from "../../public/images/bar.png";
 import ipad from "../../public/images/ipadLogo.png";
@@ -9,7 +9,8 @@ import search from "../../public/images/search.png";
 import success from "../../public/images/success.png";
 import { UseAppContext } from "./context";
 const Hero = () => {
-  const { value, alert } = UseAppContext();
+  const { value, alert, message, popUp } = UseAppContext();
+
   return (
     <div>
       <div className="logo-container flex justify-between items-center mb-4 lg:py-4">
@@ -35,10 +36,10 @@ const Hero = () => {
             View your Uploaded Products
           </h4>
           <div className="absolute  -translate-y-1/2 md:translate-x-1/2 z-20 top-3 lg:top-8 bg-success-50 rounded-md border-success-500 border">
-            {alert.available && (
-              <div className="flex justify-between items-center py-2 px-6 gap-4">
-                <img src={success} alt="" srcset="" />
-                <p>{alert.msg}</p>
+            {popUp && alert && (
+              <div className="flex px-4 py-2 gap-4 justify-center items-center">
+                <img src={success} alt="" srcSet="" />
+                <p>{message}</p>
               </div>
             )}
           </div>
