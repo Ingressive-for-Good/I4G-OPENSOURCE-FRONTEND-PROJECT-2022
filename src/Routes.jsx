@@ -15,7 +15,6 @@ import DeleteProduct from "./components/molecules/deleteProduct";
 import ResetPasswordPage from "./pages/PasswordResetPage";
 import EmptyMessagePage from './pages/EmptyMessagePage';
 import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
-import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
   return (
