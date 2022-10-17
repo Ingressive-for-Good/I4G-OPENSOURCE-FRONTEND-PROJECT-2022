@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import ForgotPassword from "./component/forgotPasswordPage/ForgotPassword";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
-import React from "react";
-import Routes from "./Routes";
+import ForgotPassword from "./component/forgotPasswordPage/ForgotPassword";
 import ResetPasswordPage from "./pages/PasswordResetPage";
 import Home from "./pages/Home";
 import EmailVerify from "./pages/EmailVerify";
