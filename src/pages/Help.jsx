@@ -1,16 +1,14 @@
 import { useState } from "react";
-
-import curlyArrow from "../images/curlyArrow.svg";
-import chevronUp from "../images/chevronUp.svg";
-import chevronDown from "../images/chevronDown.svg";
-import defaultAvatar from "../images/avatar.svg";
-
-import search from "../images/search-icon.svg";
-import techmart from "../images/techmart.svg";
-import SideNav from "../atoms/SideNav";
-import Avatar from "../atoms/Avatar";
-import Notification from "../atoms/Notification";
-import MobileNav from "../atoms/MobileNav";
+import curlyArrow from "../assets/icons/curlyArrow.svg";
+import chevronUp from "../assets/icons/chevronUp.svg";
+import chevronDown from "../assets/icons/chevronDown.svg";
+import defaultAvatar from "../assets/icons/avatar.svg";
+import search from "../assets/icons/search-icon.svg";
+import techmart from "../assets/icons/techmart.svg";
+import SideBar from "../components/molecules/SideBar";
+import Avatar from "../components/atoms/Avatar";
+import Notification from "../components/atoms/Notification";
+import MobileNav from "../components/atoms/MobileNav";
 
 // FAQ Questions and Answers in a list
 const info = [
@@ -75,7 +73,7 @@ function QnA({ question, answer }) {
 function Help() {
   return (
     <div className="font-cabinetGrotesk xl:flex">
-      <SideNav />
+      <SideBar />
       <div className="mx-5 flex-1 mt-12 font-cabinetGrotesk text-neutral-900 md:mx-10 xl:mr-16 xl:ml-10">
         <div className="flex justify-between xl:hidden items-center">
           <img src={techmart} alt="techmart logo" />

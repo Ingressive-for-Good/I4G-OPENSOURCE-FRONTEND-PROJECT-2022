@@ -1,17 +1,17 @@
 import React, { useState } from "react";
-
-import DeleteProduct from "./delete/deleteProduct";
-import EmailVerify from "./component/email/EmailVerify";
 import ForgotPassword from "./component/forgotPasswordPage/ForgotPassword";
-
-import AddNewProductPage1 from "./AddNewProduct/pageOne/AddNewProductPage1";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
+import React from "react";
+import Routes from "./Routes";
+import ResetPasswordPage from "./pages/PasswordResetPage";
+import Home from "./pages/Home";
+import EmailVerify from "./pages/EmailVerify";
+import AddNewProductPage1 from "./pages/AddNewProductPage1";
+import Kyc from "./pages/Kyc";
 import WishlistViewProducts from "./pages/WishlistViewProducts";
-import CreateAccount from "./pages/create-account/CreateAccount";
-import Kyc from "./component/kyc-page/Kyc";
-import Home from "./molecules/Home";
-import ViewProducts from "./products-view/Products";
+import DeleteProduct from "./components/molecules/deleteProduct";
+import CreateAccount from "./pages/CreateAccount";
 import Help from "./pages/Help";
 import PhoneNumberVerificationSuccessfullUI from "./molecules/modal/PhoneNumberVerificationSuccessfullUI";
 import PhoneNumberVerification from "./pages/PhoneNumberVerification";
@@ -80,25 +80,17 @@ function App() {
           path="/account-recovery"
           element={
             <>
-              <ForgotPassword />
+              {/* <ForgotPassword /> */}
             </>
           }
         />
 
         <Route path="/products" element={<AddNewProductPage1 />} />
 
-        <Route
-          path="/account-recovery"
-          element={
-            <>
-              <ForgotPassword />
-            </>
-          }
-        />
-        <Route
+        {/* <Route
         path="/view-products"
         element={<ViewProducts/>}
-        />
+        /> */}
         <Route 
           path="/"
           element={
@@ -112,10 +104,8 @@ function App() {
           exact
         ></Route>
         <Route path="/wishlist" element={<WishlistViewProducts />}></Route>
-        <Route
-          path="/add-to-wishlist"
-          element={<EmptyWishlistViewProducts />}
-        ></Route>
+        <Route path="/add-to-wishlist" element={<EmptyWishlistViewProducts />}></Route>
+        <Route path="/reset-password" element={<ResetPasswordPage />}></Route>
         <Route
           path="/delete-product"
           element={
