@@ -44,7 +44,7 @@ function WishlistViewProducts() {
                 </svg>
             </div>
             {/* User Image */}
-            <img src="/src/assets/icons/avatar.png" alt="user avatar"/>
+            <img src="/src/assets/icons/avatar.png" alt="user avatar" width={50}/>
             </div>
         </div>
         {/* main content */}

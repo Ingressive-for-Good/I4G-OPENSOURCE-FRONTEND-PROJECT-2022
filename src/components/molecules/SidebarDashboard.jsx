@@ -57,4 +57,4 @@ function SidebarDashboard() {
   )
 }
 
-export default SidebarDashboard;
+export default SidebarDashboard
