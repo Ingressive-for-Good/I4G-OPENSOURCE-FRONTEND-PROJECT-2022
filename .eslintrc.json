@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "extends": ["airbnb", "plugin:react/recommended"],
+  "plugins": ["react", "react-hooks"],
+  "rules": {
+    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
+    "react/react-in-jsx-scope": "off",
+    "import/no-unresolved": "off",
+    "no-shadow": "off",
+    "indent": "off",
+    "react/jsx-indent": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-indent-props": "off",
+    "react/jsx-props-no-spreading" : "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "no-param-reassign": [2, { "props": false }]
+  },
+  "ignorePatterns": [
+    "dist/",
+    "build/"
+  ]
+}
+  

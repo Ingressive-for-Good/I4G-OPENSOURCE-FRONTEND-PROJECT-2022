@@ -36,8 +36,68 @@ The key primary button on the page might also lead to users having mislead inter
 The button also being the only highlighted button seems to encourage an action which doesn’t aid the core functionality of the screen
 -----Main Goal -- Improved UX
 
-## Name: Nnadiukwu Chidiebere Oscar 
+## Name: Nora Eboesomi 
 
-## Description:
+## Description: Techmart Userflow
 ### Observations/Changes 
------Main Goal --
+- I researched and came up with the overall userflow using FigJam for the open source project, which is an e-commerce platform for techies.
+-----Main Goal -- Userflow
+
+
+## Name: Nora Eboesomi , Ayomide Olowosile
+
+## Description: Design Style Guide
+### Observations/Changes
+- Using the research result and the design brief, Ayomide and I came up with a design style guide which included Logo, Colors, Typography, Iconography, Form fields, Buttons and Alerts for desktop, tablet and mobile screens.
+- The importance of the style guide is to ensure consistency throughout the design.
+-----Main Goal -- Design Style Guide
+
+
+## Name:  Nora Eboesomi , Ayomide Olowosile
+
+## Description: Landing Page Design
+### Observations/Changes
+- Using the style guide, userflow and design brief, Ayomide and I designed a fully responsive landing page for the platform.
+- The landing page consists of the following sections:
+     - A hero section that tell users what the platform is about in a sentence.
+     - A section that tells users the benefits of using the platform.
+     - A section that breaks down the process of purchasing a product.
+     - A similar section that explains the process of selling a product.
+     - A section that shows popular products available on the platform.
+     - A client reviews section
+     - Lastly the footer section
+
+-----Main Goal -- Landing Page Design
+
+
+
+## Name: Oluwatosin Alabi
+
+## Description: Improved UX Writing on the Landing Page
+### Observations/Changes
+- Using the agreed brand tone and voice, I worked on the improving the UX writing of the landing page.
+- Improved the UX writing for the navbar.
+- Improved the UX writing for the 'create an account' button.
+- Improved the UX writing for the heading. 
+- Improved the UX writing for the sub-heading.
+- Improved the UX writing for the 'buy an item now' button.
+- Improved the UX writing for the 'sell an item now' button.
+- Improved the UX writing for the 'why techmart' section.
+- Improved the UX writing for the 'why techmart' sub-heading.
+- Improved the UX writing for the best quality card.
+- Improved the UX writing for the 'buy items' sub-heading.
+- Improved the UX writing for the create an account card.
+- Improved the UX writing for the 'list & sell items' section.
+- Improved the UX writing for the 'list & sell items' sub-heading.
+- Improved the UX writing for the create an account card.
+- Improved the UX writing for the 'Stay up to date' section.
+- Improved the UX writing for the 'Stay up to date' sub-heading.
+- Improved the UX writing for the 'Client reviews' section.
+- Improved the UX writing for the 'Client reviews' sub-heading.
+- Improved the UX writing for each review card.
+- Replacement of Logo with correct brand logo(footer)
+
+ 
+-----Main Goal -- Landing Page UX Writing
+
+
