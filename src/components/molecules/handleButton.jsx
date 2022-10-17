@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import nav from "../../assets/icons/vector2.png";
+import nav from "../../assets/icons/Vector2.png";
 import { UseAppContext } from "../../../utils/context";
 const HandleButton = () => {
   const [show, setShow] = useState(false);
