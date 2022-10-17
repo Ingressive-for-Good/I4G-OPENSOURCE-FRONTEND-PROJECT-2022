@@ -1,9 +1,8 @@
 import React from "react";
-import CreateWishButton from "../atoms/Button/CreateWishButton";
-import NavbarDashboard from "../molecules/NavbarDashboard";
-import SidebarDashboard from "../molecules/SidebarDashboard";
-
-// The function below displays the empty view products in wishlist page.
+import CreateWishButton from "../components/atoms/Button/CreateWishButton";
+import NavbarDashboard from "../components/molecules/NavbarDashboard";
+import SideBar from "../components/molecules/SideBar";
+import { sideNav } from "../assets/data/data";
 
 function EmptyWishlistViewProducts() {
   return (
@@ -11,7 +10,7 @@ function EmptyWishlistViewProducts() {
         <NavbarDashboard />
         {/* Sidebar */}
         <div className="hidden md:block">
-            <SidebarDashboard />
+            <SideBar navData={sideNav}/>
         </div>
         <div className="flex px-6 justify-between md:relative md:bottom-14">
             {/* Intro text */}
@@ -38,7 +37,7 @@ function EmptyWishlistViewProducts() {
                 </svg>
             </div>
             {/* User Image */}
-            <img src="/userAvatar.png" alt="user avatar" />
+            <img src="../src/assets/icons/avatar.png" alt="user avatar" />
             </div>
         </div>
         {/* Empty wishlist icon */}
