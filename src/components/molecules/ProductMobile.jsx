@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductsCard from './ProductsCard'
-import navImg from '../assets/Vector2.png'
-import emptyBox from '../assets/logos_parcel-icon.png'
+import navImg from '../../assets/icons/Vector2.png'
+import emptyBox from '../../assets/icons/logos_parcel-icon.png'
 import { useSelector } from 'react-redux';
 
 const ProductMobile = ({mobileText}) => {
