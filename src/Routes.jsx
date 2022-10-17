@@ -13,6 +13,8 @@ import WishlistViewProducts from "./pages/WishlistViewProducts";
 import CreateAccount from "./pages/CreateAccount";
 import DeleteProduct from "./components/molecules/deleteProduct";
 import ResetPasswordPage from "./pages/PasswordResetPage";
+import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
+
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
   return (
@@ -26,6 +28,13 @@ function Routes() {
 
       {/* Protected Pages */}
       <Route path="/dashboard" element={<DashboardPage />} />
+      <Route element={<AdminDashBoardLayout/>}>
+        <Route path="/admin/dashboard" element ={<h1> create dashboard</h1>} />
+        <Route path="/admin/products" element={<h1> Admin producet </h1>} />
+        <Route path="/admin/messages" element={<h2> messages </h2>} />
+        <Route path="/admin/users" element={<h2> users </h2>} />
+        <Route path="/admin/profile" element={<h2> profile </h2>} />
+      </Route>
       <Route path="/kyc" element={<Kyc />} />
       <Route path="/products" element={<AddNewProductPage1/>} />
       <Route path="/delete-product" element={<DeleteProduct />} />

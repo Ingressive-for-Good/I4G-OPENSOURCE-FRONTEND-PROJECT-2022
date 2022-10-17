@@ -6,7 +6,6 @@ import Hide from '../assets/icons/Hide.svg'
 import Google from '../assets/icons/Google.svg'
 import Facebook from '../assets/icons/Facebook.svg'
 
-
 function CreateAccount() {
     return (
     <div className='bg-neutral-50 px-5 py-11 md:px-20 md:py-10 lg:p-0 text-neutral-900 font-campton'>
