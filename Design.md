@@ -143,10 +143,14 @@ The button also being the only highlighted button seems to encourage an action w
 
 
 
-## Name:
+## Name: Lateefat Salami
 
-## Description: 
+## Description: Improved UX Writing on Authentication Screens (Sign Up and KYC pages)
 ### Observations/Changes
+- I improved the UX Writing for the Authentication screens working with the brand tone.
+- I improved the UX Writing for the Sign up screens.
+- I improved the UX Writing for the Know Your Customer (KYC) screens.
+- I reviewed the changes I made with my team and iterated accordingly.
 
 
------Main Goal --
+-----Main Goal -- Seamless User Experience using effective UX Copy 
