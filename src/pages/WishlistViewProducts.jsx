@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavbarDashboard from "../components/molecules/NavbarDashboard";
-import SidebarWishlist from "../components/molecules/SidebarWishlist";
 import DashboardSelect from "../components/molecules/DashboardSelect";
+import SidebarWishlist from "../components/molecules/SidebarWishlist";
 
 function WishlistViewProducts() {
     const [showSelect, setShowSelect] = useState(false)
@@ -17,7 +17,7 @@ function WishlistViewProducts() {
         <NavbarDashboard />
         {/* Sidebar */}
         <div className="hidden md:block">
-            <SidebarWishlist />
+            <SidebarWishlist/>
         </div>
         <div className="flex px-6 justify-between md:relative bottom-4">
             {/* Intro text */}
@@ -44,7 +44,7 @@ function WishlistViewProducts() {
                 </svg>
             </div>
             {/* User Image */}
-            <img src="../src/assets/icons/avatar.png" alt="user avatar"/>
+            <img src="/src/assets/icons/avatar.png" alt="user avatar"/>
             </div>
         </div>
         {/* main content */}
@@ -68,7 +68,7 @@ function WishlistViewProducts() {
             {/* Product 1 */}
             <div className=" gap-4 border-2 rounded-md m-6 p-6 bg-gray-50 w-[490px] sm:flex md:bg-none">
                 <div>
-                    <img src="../src/assets/images/Rectangle 12dell.png" alt="product-image" width={230}/>
+                    <img src="/src/assets/images/Rectangle 12dell.png" alt="product-image" width={230}/>
                 </div>
                 <div className="font-cabinetGrotesk leading-[40px]">
                     <p className="font-semibold text-[16px]">Dell Keyboard & Mouse.</p>
@@ -80,7 +80,7 @@ function WishlistViewProducts() {
             {/* Product 2 */}
             <div className=" gap-4 border-2 rounded-md m-6 p-6 bg-gray-50 w-[490px] sm:flex md:bg-none">
                 <div>
-                    <img src="../src/assets/images/Rectangle 14GamePad.png" alt="product-image" width={230}/>
+                    <img src="/src/assets/images/Rectangle 14GamePad.png" alt="product-image" width={230}/>
                 </div>
                 <div className="font-cabinetGrotesk leading-[40px]">
                     <p className=" font-semibold text-[16px]">Game Controller.</p>
@@ -92,7 +92,7 @@ function WishlistViewProducts() {
             {/* Product 3 */}
             <div className=" gap-4 border-2 rounded-md m-6 p-6 bg-gray-50 w-[490px] sm:flex md:bg-none">
                 <div>
-                    <img src="../src/assets/images/image 2macbook.png" alt="product-image" width={230}/>
+                    <img src="/src/assets/images/image 2macbook.png" alt="product-image" width={230}/>
                 </div>
                 <div className="font-cabinetGrotesk leading-[40px]">
                     <p className="font-semibold text-[16px]">MacBook Pro 14” M1 Chip.</p>

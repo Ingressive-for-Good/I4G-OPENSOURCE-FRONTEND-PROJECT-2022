@@ -2,7 +2,7 @@ import React from "react";
 import LogoutButton from "../atoms/Button/LogoutButton";
 
 // The function below displays the side navigation on wide screens.
-function SidebarDashboard() {
+function SidebarWishlist() {
   return (
     <div className=" fixed top-0 flex font-normal pb-28 pt-20  text-gray-400 text-sm w-56 p-4 justify-center">
         <ul className="font-campton">
@@ -41,7 +41,7 @@ function SidebarDashboard() {
               Products
             </li>
             <li className="flex font-medium text-[17px] w-56 p-4 pl-11 bg-gray-50 gap-2 items-center text-blue-700">
-            <img src="../src/assets/images/wishlist-icon.png" alt="" />
+            <img src="/src/assets/images/wishlist-icon.png" alt="icon" />
               Wishlist
             </li>
             <li className="flex font-medium text-[17px] w-56 pl-11 p-4 bg-gray-200 gap-2 items-center">
@@ -57,4 +57,4 @@ function SidebarDashboard() {
   )
 }
 
-export default SidebarDashboard;
+export default SidebarWishlist;

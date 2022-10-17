@@ -43,7 +43,7 @@ function SideNav() {
                     Wishlist
                 </li>
                 <li className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5">
-                    <img src="../src/assets/icons/ProfileIcon.svg" alt="" />
+                    <img src="/src/assets/icons/ProfileIcon.svg" alt="" />
                     My Profile
                 </li>
                 <li className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5">
