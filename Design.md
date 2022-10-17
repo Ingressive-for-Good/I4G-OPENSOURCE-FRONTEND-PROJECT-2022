@@ -115,3 +115,42 @@ The button also being the only highlighted button seems to encourage an action w
 
 
 -----Main Goal -- Landing Page Alignment and Visual Hierachy
+
+
+
+## Name: Olowosile Ayomide, Nora Eboesomi
+
+## Description: Design Authentication Screens (Create an Account)
+### Observations/Changes
+- I and Nora designed the responsive authentication screen for the platform comprising of create account, email verification, KYC form and Phone number verification.
+- I and Nora made sure the design complied with the style guide.
+- I and Nora changed the old brand logo (Martz) with the new logo (techmart) to ensure consistency with other screens.
+- I and Nora worked on the alignment of the screens to ensure it complied with the grid.
+
+-----Main Goal -- Responsive Authentication screen design.
+
+
+## Name: Olowosile Ayomide, Nora Eboesomi
+
+## Description: Design Authentication Screens (Sign In)
+### Observations/Changes
+- Ayomide and I designed the responsive authentication screen for the platform comprising of Sign In, forgotten password and Recover Password flows.
+- Ayomide and I made sure the design complied with the style guide.
+- Ayomide and I changed the old brand logo (Martz) with the new logo (techmart) to ensure consistency with other screens.
+- Ayomide and Iworked on the alignment of the screens to ensure it complied with the grid.
+
+-----Main Goal -- Responsive Authentication screen design (Sign In, forgotten password and Recover Password flow)
+
+
+
+## Name: Lateefat Salami
+
+## Description: Improved UX Writing on Authentication Screens (Sign Up and KYC pages)
+### Observations/Changes
+- I improved the UX Writing for the Authentication screens working with the brand tone.
+- I improved the UX Writing for the Sign up screens.
+- I improved the UX Writing for the Know Your Customer (KYC) screens.
+- I reviewed the changes I made with my team and iterated accordingly.
+
+
+-----Main Goal -- Seamless User Experience using effective UX Copy 
