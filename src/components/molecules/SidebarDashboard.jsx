@@ -1,5 +1,7 @@
 import React from "react";
 import LogoutButton from "../atoms/Button/LogoutButton";
+import wishlistIcon from "../../assets/icons/wishlist.png"
+
 
 // The function below displays the side navigation on wide screens.
 function SidebarDashboard() {
@@ -41,7 +43,7 @@ function SidebarDashboard() {
               Products
             </li>
             <li className="flex font-medium text-[17px] w-56 p-4 pl-11 bg-gray-200 gap-2 items-center">
-            <img src="/src/assets/icons/wishlist.png" alt="" />
+            <img src={wishlistIcon} alt="" />
               Wishlist
             </li>
             <li className="flex font-medium text-[17px] w-56 pl-11 p-4 bg-gray-200 gap-2 items-center">

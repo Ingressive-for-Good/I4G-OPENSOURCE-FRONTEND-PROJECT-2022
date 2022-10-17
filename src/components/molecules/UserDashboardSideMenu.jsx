@@ -1,4 +1,6 @@
 import React from "react";
+import wishlistIcon from "../../assets/icons/wishlist.png";
+import profileIcon from "../../assets/icons/ProfileIcon.svg";
 
 // This function handles the side nav/hamburger menu on mobile and tablet screen
 function SideNav() {
@@ -39,11 +41,11 @@ function SideNav() {
                     Products
                 </li>
                 <li className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5">
-                    <img src="../src/assets/icons/wishlist.png" alt="" />
+                    <img src={wishlistIcon} alt="" />
                     Wishlist
                 </li>
                 <li className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5">
-                    <img src="/src/assets/icons/ProfileIcon.svg" alt="" />
+                    <img src={profileIcon} alt="" />
                     My Profile
                 </li>
                 <li className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5">

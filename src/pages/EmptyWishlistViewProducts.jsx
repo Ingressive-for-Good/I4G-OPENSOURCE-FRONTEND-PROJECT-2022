@@ -2,6 +2,7 @@ import React from "react";
 import CreateWishButton from "../components/atoms/Button/CreateWishButton";
 import NavbarDashboard from "../components/molecules/NavbarDashboard";
 import SidebarWishlist from "../components/molecules/SidebarWishlist";
+import userAvatar from "../assets/icons/avatar.png"
 
 function EmptyWishlistViewProducts() {
   return (
@@ -36,7 +37,7 @@ function EmptyWishlistViewProducts() {
                 </svg>
             </div>
             {/* User Image */}
-            <img src="/src/assets/icons/avatar.png" alt="user avatar" width={50}/>
+            <img src={userAvatar} alt="user avatar" width={50}/>
             </div>
         </div>
         {/* Empty wishlist icon */}

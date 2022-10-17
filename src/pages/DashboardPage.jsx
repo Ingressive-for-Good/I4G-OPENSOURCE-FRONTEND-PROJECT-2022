@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import NavbarDashboard from "../components/molecules/NavbarDashboard";
 import ProductDetailsPopup from "../components/molecules/ProductDetailsPopup";
 import SidebarDashboard from "../components/molecules/SidebarDashboard";
+import bannerImage from "../assets/images/dashboard-banner.png";
+import userAvatar from "../assets/icons/avatar.png";
+import wishlistIcon from "../assets/icons/wishlist.png"
 
 function DashboardPage() {
 
@@ -50,14 +53,14 @@ function DashboardPage() {
                         </svg>
                     </div>
                     {/* User Image */}
-                    <img src="/src/assets/icons/avatar.png" alt="user avatar" width={50}/>
+                    <img src={userAvatar} alt="user avatar" width={50}/>
                 </div>
             </div>
         
             {/* main content */}
             <div className="md:ml-64">
                 <div className="flex px-6 gap-8">
-                    <img src="/src/assets/images/dashboard-banner.png" alt="banner" />
+                    <img src={bannerImage} alt="banner" />
                     <div className="hidden md:flex bg-[url('../src/assets/images/Rectangle-14GamePad.png')] bg-contain bg-no-repeat">
                         <div className="flex flex-col w-[340px] text-white">
                             <p className="relative rounded-r-md left-[245px] bg-orange-500 p-2 max-w-max font-campton"><small>HOT DEAL</small></p>
@@ -121,7 +124,7 @@ function DashboardPage() {
                                     <p className="font-bold text-[18px]  md:text-[21px]">₦25,000.00</p>
                                 </div>
                                 <div>
-                                    <img src="/src/assets/icons/wishlist.png" alt="icon" />
+                                    <img src={wishlistIcon} alt="icon" />
                                 </div>
                             </div>
                         </div>
@@ -140,7 +143,7 @@ function DashboardPage() {
                                     <p className="font-bold text-[18px]  md:text-[21px]">₦100,000.00</p>
                                 </div>
                                 <div>
-                                    <img src="/src/assets/icons/wishlist.png" alt="icon" />
+                                    <img src={wishlistIcon} alt="icon" />
                                 </div>
                             </div>
                         </div>
@@ -159,7 +162,7 @@ function DashboardPage() {
                                     <p className="font-bold text-[18px]  md:text-[21px]">₦1,550,000.00</p>
                                 </div>
                                 <div>
-                                    <img src="/src/assets/icons/wishlist.png" alt="icon" />
+                                    <img src={wishlistIcon} alt="icon" />
                                 </div>
                             </div>
                         </div>
@@ -178,7 +181,7 @@ function DashboardPage() {
                                     <p className="font-bold text-[18px]  md:text-[21px]">₦25,000.00</p>
                                 </div>
                                 <div>
-                                    <img src="/src/assets/icons/wishlist.png" alt="icon" />
+                                    <img src={wishlistIcon} alt="icon" />
                                 </div>
                             </div>
                         </div>
@@ -197,7 +200,7 @@ function DashboardPage() {
                                     <p className="font-bold text-[18px]  md:text-[21px]">₦25,000.00</p>
                                 </div>
                                 <div>
-                                    <img src="/src/assets/icons/wishlist.png" alt="icon" />
+                                    <img src={wishlistIcon} alt="icon" />
                                 </div>
                             </div>
                         </div>

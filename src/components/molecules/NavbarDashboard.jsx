@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SideNav from "./SideNav";
+import SideNav from "./UserDashboardSideMenu";
 
 // This function handles the navbar on wide screens
 
