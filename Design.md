@@ -130,4 +130,23 @@ The button also being the only highlighted button seems to encourage an action w
 -----Main Goal -- Responsive Authentication screen design.
 
 
+## Name: Olowosile Ayomide, Nora Eboesomi
 
+## Description: Design Authentication Screens (Sign In)
+### Observations/Changes
+- Ayomide and I designed the responsive authentication screen for the platform comprising of Sign In, forgotten password and Recover Password flows.
+- Ayomide and I made sure the design complied with the style guide.
+- Ayomide and I changed the old brand logo (Martz) with the new logo (techmart) to ensure consistency with other screens.
+- Ayomide and Iworked on the alignment of the screens to ensure it complied with the grid.
+
+-----Main Goal -- Responsive Authentication screen design (Sign In, forgotten password and Recover Password flow)
+
+
+
+## Name:
+
+## Description: 
+### Observations/Changes
+
+
+-----Main Goal --
