@@ -1,7 +1,7 @@
 import React from 'react';
-import Delete from '../assets/delete.png'
-import Edit from '../assets/edit.png'
-import {setOpenEdit, setAvailability} from '../../utils/services/appSlice'
+import Delete from '../../assets/icons/delete.png'
+import Edit from '../../assets/icons/edit.png'
+import {setOpenEdit, setAvailability} from '../../../utils/services/appSlice'
 import { useDispatch } from 'react-redux';
 
 

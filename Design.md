@@ -101,3 +101,56 @@ The button also being the only highlighted button seems to encourage an action w
 -----Main Goal -- Landing Page UX Writing
 
 
+## Name: Oluwatomisin Ligali
+
+## Description: Improve Visual Hierachy and Alignment on the Landing Page
+### Observations/Changes
+- I worked on the alignment and hierarchy of the landing page
+- Improved the Create an account button placement within the margin and the navigation content was center aligned.
+- Improved the arrow in the text button in was changed from a decimal to a whole number, because decimals are not advised in designs to ease the work of developers when implementing the design.
+- Improved The arrow underneath the text from decimal to a whole, and made to have consistent height and width.
+- Improved the user flow, there is meant to be a “wishlist icon” not “an add to cart icon” because this a P2P platform where there is no form of payment to be done on the app.
+- Improved the contents in the footer were changed to be properly aligned with the margin.
+- Improved the logo in the footer from “Martz” to “techmart”
+
+
+-----Main Goal -- Landing Page Alignment and Visual Hierachy
+
+
+
+## Name: Olowosile Ayomide, Nora Eboesomi
+
+## Description: Design Authentication Screens (Create an Account)
+### Observations/Changes
+- I and Nora designed the responsive authentication screen for the platform comprising of create account, email verification, KYC form and Phone number verification.
+- I and Nora made sure the design complied with the style guide.
+- I and Nora changed the old brand logo (Martz) with the new logo (techmart) to ensure consistency with other screens.
+- I and Nora worked on the alignment of the screens to ensure it complied with the grid.
+
+-----Main Goal -- Responsive Authentication screen design.
+
+
+## Name: Olowosile Ayomide, Nora Eboesomi
+
+## Description: Design Authentication Screens (Sign In)
+### Observations/Changes
+- Ayomide and I designed the responsive authentication screen for the platform comprising of Sign In, forgotten password and Recover Password flows.
+- Ayomide and I made sure the design complied with the style guide.
+- Ayomide and I changed the old brand logo (Martz) with the new logo (techmart) to ensure consistency with other screens.
+- Ayomide and Iworked on the alignment of the screens to ensure it complied with the grid.
+
+-----Main Goal -- Responsive Authentication screen design (Sign In, forgotten password and Recover Password flow)
+
+
+
+## Name: Lateefat Salami
+
+## Description: Improved UX Writing on Authentication Screens (Sign Up and KYC pages)
+### Observations/Changes
+- I improved the UX Writing for the Authentication screens working with the brand tone.
+- I improved the UX Writing for the Sign up screens.
+- I improved the UX Writing for the Know Your Customer (KYC) screens.
+- I reviewed the changes I made with my team and iterated accordingly.
+
+
+-----Main Goal -- Seamless User Experience using effective UX Copy 
