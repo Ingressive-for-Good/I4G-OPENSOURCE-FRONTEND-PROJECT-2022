@@ -1,8 +1,8 @@
+import { info } from "autoprefixer";
 import React, { useState } from "react";
 import HandleButton from "./handleButton";
-
-import Modal from "./modal";
 import { UseAppContext } from "../../../utils/context";
+import Modal from "./modal";
 
 function Delete() {
   const [alertDelete, setAlertDelete] = useState(false);
@@ -17,8 +17,16 @@ function Delete() {
   return (
     <div className="w-full md:grid md:grid-cols-2 md:gap-6 lg:grid-cols-3  ">
       {value.map((info) => {
-        const { id, image, discription, icon, available, price, category } =
-          info;
+        const {
+          id,
+          image,
+
+          discription,
+          icon,
+          available,
+          price,
+          category,
+        } = info;
 
         return (
           <div

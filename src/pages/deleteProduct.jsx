@@ -1,4 +1,5 @@
 import React from "react";
+
 import Hero from "../components/molecules/hero";
 
 import Delete from "../components/molecules/delete";

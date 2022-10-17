@@ -1,11 +1,14 @@
 import React from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
-import Routes from "./Routes";
+
 import ResetPasswordPage from "./pages/PasswordResetPage";
 import Home from "./pages/Home";
 import EmailVerify from "./pages/EmailVerify";
 import AddNewProductPage1 from "./pages/AddNewProductPage1";
 import Kyc from "./pages/Kyc";
+
+// import ForgotPassword from "./component/forgotPasswordPage/ForgotPassword";
+
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import WishlistViewProducts from "./pages/WishlistViewProducts";
 import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
@@ -76,17 +79,21 @@ function App() {
             </>
           }
         />
-        <Route
+        {/* <Route
           path="/account-recovery"
-          element={<>{/* <ForgotPassword /> */}</>}
-        />
+          element={<> <ForgotPassword /></>}
+        /> */}
 
         <Route path="/products" element={<AddNewProductPage1 />} />
 
-        <Route
+        {/* <Route
           path="/account-recovery"
-          element={<>{/* <ForgotPassword /> */}</>}
-        />
+          element={
+            <>
+              <ForgotPassword />
+            </>
+          }
+        /> */}
         {/* <Route path="/view-products" element={<ViewProducts />} /> */}
 
         {/* <Route
