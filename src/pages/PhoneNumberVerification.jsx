@@ -76,7 +76,8 @@ const [openModal, setOpenModal] = useState(false)
               </div>
             </div>
           {/* Verification Code Input End */}
-
+          {/* code input */}
+          <p>{e => otp.join("")}</p>
           {/* Resend Verification Code Button Start */}
             <div className='my-4'>
               <h1 className='text-[14px] md:text-[16px] leading-[24px] font-campton'>Didn’t get a code? <span className='font-bold text-primary-500 '><a href="#">Resend Code</a></span> </h1>
@@ -85,7 +86,7 @@ const [openModal, setOpenModal] = useState(false)
 
           {/* Proceed Start */}
             <div className='mx-5'>
-              <button className='bg-primary-500 w-full text-center text-white text-[17px] md:text-[18px] leading-[24px] font-bold rounded-[8px] py-[18px] font-campton'  type="submit" onClick={e => otp.join("")} onClick={() => setOpenModal(true)} >Verify</button>
+              <button className='bg-primary-500 w-full text-center text-white text-[17px] md:text-[18px] leading-[24px] font-bold rounded-[8px] py-[18px] font-campton'  type="submit"  onClick={() => setOpenModal(true)} >Verify</button>
             </div>
           {/* Proceed End */}
 

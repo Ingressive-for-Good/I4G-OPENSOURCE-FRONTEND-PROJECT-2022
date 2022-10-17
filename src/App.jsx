@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
-import ForgotPassword from "./component/forgotPasswordPage/ForgotPassword";
 import ResetPasswordPage from "./pages/PasswordResetPage";
 import Home from "./pages/Home";
 import EmailVerify from "./pages/EmailVerify";
@@ -14,7 +13,6 @@ import Help from "./pages/Help";
 import PhoneNumberVerificationSuccessfullUI from "./molecules/modal/PhoneNumberVerificationSuccessfullUI";
 import PhoneNumberVerification from "./pages/PhoneNumberVerification";
 function App() {
-  const [openModal, setOpenModal] = useState(false)
   return (
     <BrowserRouter>
       <Routes>
