@@ -2,16 +2,16 @@ import React from 'react'
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import ProductsCard from './ProductsCard';
-import Img1 from '../assets/element-4.png'
-import Img2 from '../assets/Chat.png';
-import Img3 from '../assets/box.png'
-import Img4 from '../assets/Vector1.png'
-import Img5 from '../assets/_.png'
-import Img6 from '../assets/logout.png'
-import Img7 from '../assets/notification.png'
-import Img8 from '../assets/search-normal.png'
-import Img9 from '../assets/avatar.png'
-import emptyBox from '../assets/logos_parcel-icon.png'
+import Img1 from '../../assets/icons/element-4.png'
+import Img2 from '../../assets/icons/Chat.png';
+import Img3 from '../../assets/icons/box.png'
+import Img4 from '../../assets/icons/Vector1.png'
+import Img5 from '../../assets/icons/_.png'
+import Img6 from '../../assets/icons/logout.png'
+import Img7 from '../../assets/icons/notification.png'
+import Img8 from '../../assets/icons/search-normal.png'
+import Img9 from '../../assets/icons/avatar.png'
+import emptyBox from '../../assets/icons/logos_parcel-icon.png'
 
 const ProductDesktop = () => {
     const {isEmpty, uploadedProducts} = useSelector((state) => state.app)
@@ -34,7 +34,7 @@ const ProductDesktop = () => {
             <p className='text-[#0F27BD] pl-[55px] font-campton font-[700] pb-6 text-[16px] '>Menu</p>
             <div className='' >
                 {sidebarMenu.map(item => (
-                    <NavLink style={({isActive}) => ({backgroundColor: isActive ? ActiveBackground : ''})} to={item.linkName} className='flex pl-[55px] gap-2 py-4 rounded-[-120px] items-center mb-6 cursor-pointer'>
+                    <NavLink key={item.name} style={({isActive}) => ({backgroundColor: isActive ? ActiveBackground : ''})} to={item.linkName} className='flex pl-[55px] gap-2 py-4 rounded-[-120px] items-center mb-6 cursor-pointer'>
                         <img src={item.icon} alt="img text" />
                         <p className='text-[16px] font-campton text-[#A1A4B6]'>{item.name}</p>
                     </NavLink>
