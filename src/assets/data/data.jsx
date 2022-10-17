@@ -11,7 +11,7 @@ import image3 from "../icons/image3.png";
 import image4 from "../icons/image4.png";
 import trash from "../icons/trash-can.png";
 import dashboard from "../icons/element-4.png";
-import chat from "../icons/message.png";
+import chat from "../icons/Chat.png";
 import box from "../icons/box.png";
 import logOut from "../icons/logout.png";
 import group from "../icons/Group.png";
