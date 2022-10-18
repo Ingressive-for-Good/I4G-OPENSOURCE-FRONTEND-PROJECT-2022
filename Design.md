@@ -187,3 +187,16 @@ The button also being the only highlighted button seems to encourage an action w
 - I worked hand in hand with Latefaat Salaami to improve the overall UX writting on the authentication screens.
 
 -----Main Goal -- Easy to understand UX writting.
+
+
+
+## Name: Nnanyere Scottderek
+## Description: User Dashboard Edit, Message Screen (Two screen Responsive), Notification Screen (Three screen Responsive), Product Empty State (Three screen Responsive), Product (View Uploaded Products) Screens.
+### Observations/Changes
+- I made changes to the user dashboard side menu which was previously "cart" to "wishlist"
+- Designed the mobile wishlist
+- I designed some of the message screens across the responsive screens
+- I designed the notification screens of the user dashboard
+- Designed the empty states of each screens in the user dashboard across all screen platform (responsive)
+
+-----Main Goal -- Improved User interface Responsively.
