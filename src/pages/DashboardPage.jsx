@@ -1,5 +1,12 @@
+import { DashboardNotificationDialog } from "../Components/atoms/DashboardDialog";
+
 const DashboardPage = () => (
-    <div> This is a dashboard Page</div>
-)
+  <>
+    <div className=" "> This is a dashboard Page</div>
+    <div>
+      <DashboardNotificationDialog />
+    </div>
+  </>
+);
 
 export default DashboardPage;
