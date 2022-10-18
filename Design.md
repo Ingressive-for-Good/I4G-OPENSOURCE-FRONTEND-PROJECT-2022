@@ -187,3 +187,13 @@ The button also being the only highlighted button seems to encourage an action w
 - I worked hand in hand with Latefaat Salaami to improve the overall UX writting on the authentication screens.
 
 -----Main Goal -- Easy to understand UX writting.
+
+
+## Name: Osasumwen Isibor
+
+## Description: I designed the Terms of use page and Privacy policy page for the landing page  
+### Observations/Changes
+- I created the layout of the Terms of use screen and made it fully responsive
+- I created the layout of the Privacy policy screen and made it fully responsive
+
+-----Main Goal -- Responsive Terms of use and Privacy policy screen design.
