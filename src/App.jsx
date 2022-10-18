@@ -12,8 +12,10 @@ import CreateAccount from "./pages/CreateAccount";
 import Help from "./pages/Help";
 import PhoneNumberVerificationSuccessfullUI from "./molecules/modal/PhoneNumberVerificationSuccessfullUI";
 import PhoneNumberVerification from "./pages/PhoneNumberVerification";
+
 function App() {
   return (
+    //Any Routes added here won't be merged, please check the routes.jsx file, follow the pattern and add any additional routes.
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -62,8 +64,6 @@ function App() {
             </>
           }
         />
-
-        <Route path="/products" element={<AddNewProductPage1 />} />
         <Route
           path="/kyc"
           element={
@@ -80,8 +80,6 @@ function App() {
             </>
           }
         />
-
-        <Route path="/products" element={<AddNewProductPage1 />} />
 
         {/* <Route
         path="/view-products"
@@ -122,3 +120,4 @@ function App() {
 }
 
 export default App;
+
