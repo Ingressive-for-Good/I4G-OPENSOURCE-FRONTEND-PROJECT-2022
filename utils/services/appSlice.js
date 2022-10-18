@@ -5,7 +5,7 @@ const initialState = {
   isEmpty: false,
   uploadedProducts: [
     {
-      id: 0,
+      id: 1,
       productName: 'Workspace equipment',
       description: 'product category',
       productImg: '../../src/assets/img1.png',
@@ -14,7 +14,7 @@ const initialState = {
       openEdit: false,
     },
     {
-      id: 1,
+      id: 2,
       productName: 'product name',
       description: 'product category',
       productImg: '../../src/assets/img2.png',
@@ -23,7 +23,7 @@ const initialState = {
       openEdit: false,
     },
     {
-      id: 2,
+      id: 3,
       productName: 'product name',
       description: 'product category',
       productImg: '../../src/assets/img3.png',
@@ -32,7 +32,7 @@ const initialState = {
       openEdit: false,
     },
     {
-      id: 3,
+      id: 4,
       productName: 'product name',
       description: 'product category',
       productImg: '../../src/assets/img4.png',
