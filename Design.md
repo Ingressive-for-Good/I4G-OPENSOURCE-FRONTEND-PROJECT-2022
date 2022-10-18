@@ -180,7 +180,7 @@ The button also being the only highlighted button seems to encourage an action w
 
 ## Name: Egbo-Egbo Prosper
 
-## Description: I Improved The UX Writting On The Authentication screens(login, Forgot Password screens)  
+## Description: I Improved The UX Writing On The Authentication screens(login, Forgot Password screens)  
 ### Observations/Changes
 - I improved the UX writting for the login screen
 - I improved the UX writting for the forgot password
