@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import NavbarDashboard from "../components/molecules/NavbarDashboard";
-import SidebarDashboard from "../components/molecules/SidebarDashboard";
 import DashboardSelect from "../components/molecules/DashboardSelect";
+import SidebarWishlist from "../components/molecules/SidebarWishlist";
+import userAvatar from "../assets/icons/avatar.png";
+import productOne from "../assets/images/Rectangle 12dell.png";
+import productTwo from "../assets/images/Rectangle 14GamePad.png";
+import productThree from "../assets/images/image 2macbook.png";
 
 function WishlistViewProducts() {
     const [showSelect, setShowSelect] = useState(false)
@@ -17,9 +21,9 @@ function WishlistViewProducts() {
         <NavbarDashboard />
         {/* Sidebar */}
         <div className="hidden md:block">
-            <SidebarDashboard />
+            <SidebarWishlist/>
         </div>
-        <div className="flex px-6 justify-between md:relative md:bottom-14">
+        <div className="flex px-6 justify-between md:relative bottom-4">
             {/* Intro text */}
             <div className="font-cabinetGrotesk md:ml-64">
                 <p className="font-medium text-[20px]">Hey Nora👋🏾</p>
@@ -33,7 +37,7 @@ function WishlistViewProducts() {
                     <path d="M18.325 15.7917C18.05 15.2833 17.4667 15 16.6834 15C16.0917 15 15.5834 15.2417 15.2834 15.6583C14.9834 16.075 14.9167 16.6333 15.1 17.1917C15.4584 18.275 16.0834 18.5167 16.425 18.5583C16.475 18.5667 16.525 18.5667 16.5834 18.5667C16.95 18.5667 17.5167 18.4083 18.0667 17.5833C18.5084 16.9417 18.5917 16.3 18.325 15.7917Z" fill="#717591"/>
                 </svg>
                 <form action="">
-                    <input className="bg-gray-50" type="text" placeholder="Search for gadgets" />
+                    <input className=" bg-gray-50 font-cabinetGrotesk p-1" type="text" placeholder="Search for gadgets" />
                 </form>
             </div>
             {/* notification icon */}
@@ -44,14 +48,14 @@ function WishlistViewProducts() {
                 </svg>
             </div>
             {/* User Image */}
-            <img src="/userAvatar.png" alt="user avatar"/>
+            <img src={userAvatar} alt="user avatar" width={50}/>
             </div>
         </div>
         {/* main content */}
         <div className="flex px-6 pb-3 pt-6 justify-between md:ml-64 leading-tight">
             <p className="font-campton">3 item(s)</p>
             {/* options svg */}
-            <button onClick={() => setShowSelect(!showSelect)}  >
+            <button onClick={() => setShowSelect(!showSelect)} >
                 <svg className="mr-4" width="4" height="20" viewBox="0 0 4 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2.09091 3.18182C2.6934 3.18182 3.18182 2.6934 3.18182 2.09091C3.18182 1.48842 2.6934 1 2.09091 1C1.48842 1 1 1.48842 1 2.09091C1 2.6934 1.48842 3.18182 2.09091 3.18182Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M2.09091 11.1818C2.6934 11.1818 3.18182 10.6934 3.18182 10.0909C3.18182 9.48842 2.6934 9 2.09091 9C1.48842 9 1 9.48842 1 10.0909C1 10.6934 1.48842 11.1818 2.09091 11.1818Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -68,7 +72,7 @@ function WishlistViewProducts() {
             {/* Product 1 */}
             <div className=" gap-4 border-2 rounded-md m-6 p-6 bg-gray-50 w-[490px] sm:flex md:bg-none">
                 <div>
-                    <img src="/Rectangle12.png" alt="product-image" width={230}/>
+                    <img src={productOne} alt="product-image" width={230}/>
                 </div>
                 <div className="font-cabinetGrotesk leading-[40px]">
                     <p className="font-semibold text-[16px]">Dell Keyboard & Mouse.</p>
@@ -80,7 +84,7 @@ function WishlistViewProducts() {
             {/* Product 2 */}
             <div className=" gap-4 border-2 rounded-md m-6 p-6 bg-gray-50 w-[490px] sm:flex md:bg-none">
                 <div>
-                    <img src="/Rectangle14.png" alt="product-image" width={230}/>
+                    <img src={productTwo} alt="product-image" width={230}/>
                 </div>
                 <div className="font-cabinetGrotesk leading-[40px]">
                     <p className=" font-semibold text-[16px]">Game Controller.</p>
@@ -92,7 +96,7 @@ function WishlistViewProducts() {
             {/* Product 3 */}
             <div className=" gap-4 border-2 rounded-md m-6 p-6 bg-gray-50 w-[490px] sm:flex md:bg-none">
                 <div>
-                    <img src="/image2.png" alt="product-image" width={230}/>
+                    <img src={productThree} alt="product-image" width={230}/>
                 </div>
                 <div className="font-cabinetGrotesk leading-[40px]">
                     <p className="font-semibold text-[16px]">MacBook Pro 14” M1 Chip.</p>
