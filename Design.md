@@ -12,6 +12,7 @@
 - Create a pull request to develop branch.
 - When you create your pull request ensure you indicate the issue number your pull request is closing
 
+
 # CONTRIBUTIONS
 
 ## Name: Nnadiukwu Chidiebere Oscar 
@@ -24,6 +25,8 @@ The up-to-date section would also remind users of the need to constantly flag pr
 Failure of sticking to the company policy of trust would lead to getting products flagged by users and suspension/deletion by admin from the platform 
 also attached a scroll bar to remind the developers of a screen being scrollable with a fixed side navigation. 
 -----Main Goal -- Improved UX
+
+
 
 ## Name: Nnadiukwu Chidiebere Oscar 
 
@@ -44,6 +47,8 @@ The button also being the only highlighted button seems to encourage an action w
 -----Main Goal -- Userflow
 
 
+
+
 ## Name: Nora Eboesomi , Ayomide Olowosile
 
 ## Description: Design Style Guide
@@ -51,6 +56,7 @@ The button also being the only highlighted button seems to encourage an action w
 - Using the research result and the design brief, Ayomide and I came up with a design style guide which included Logo, Colors, Typography, Iconography, Form fields, Buttons and Alerts for desktop, tablet and mobile screens.
 - The importance of the style guide is to ensure consistency throughout the design.
 -----Main Goal -- Design Style Guide
+
 
 
 ## Name:  Nora Eboesomi , Ayomide Olowosile
@@ -96,9 +102,9 @@ The button also being the only highlighted button seems to encourage an action w
 - Improved the UX writing for the 'Client reviews' sub-heading.
 - Improved the UX writing for each review card.
 - Replacement of Logo with correct brand logo(footer)
-
- 
+-  
 -----Main Goal -- Landing Page UX Writing
+
 
 
 ## Name: Oluwatomisin Ligali
@@ -113,8 +119,8 @@ The button also being the only highlighted button seems to encourage an action w
 - Improved the contents in the footer were changed to be properly aligned with the margin.
 - Improved the logo in the footer from “Martz” to “techmart”
 
-
 -----Main Goal -- Landing Page Alignment and Visual Hierachy
+
 
 
 
@@ -128,6 +134,7 @@ The button also being the only highlighted button seems to encourage an action w
 - I and Nora worked on the alignment of the screens to ensure it complied with the grid.
 
 -----Main Goal -- Responsive Authentication screen design.
+
 
 
 ## Name: Olowosile Ayomide, Nora Eboesomi
@@ -154,3 +161,29 @@ The button also being the only highlighted button seems to encourage an action w
 
 
 -----Main Goal -- Seamless User Experience using effective UX Copy 
+
+
+
+## Name:  Nora Eboesomi , Ayomide Olowosile 
+
+## Description: Design of User Dashboard: Home
+### Observations/Changes
+- Ayomide and I designed the side navigation for the user dashboard to allow for easy navigation through the whole interface. 
+- Ayomide and I designed the user dashboard that shows the available products for sale.
+- Ayomide and I made the user dashboard: home design fully responsive that is, the desktop, tablet and mobile views was created.
+- Ayomide and I used the colors and typography on the style guide to ensure consistency.
+
+-----Main Goal -- Design of Side Navigation and Home Page of User Dashboard
+
+
+
+
+## Name: Egbo-Egbo Prosper
+
+## Description: I Improved The UX Writing On The Authentication screens(login, Forgot Password screens)  
+### Observations/Changes
+- I improved the UX writting for the login screen
+- I improved the UX writting for the forgot password
+- I worked hand in hand with Latefaat Salaami to improve the overall UX writting on the authentication screens.
+
+-----Main Goal -- Easy to understand UX writting.
