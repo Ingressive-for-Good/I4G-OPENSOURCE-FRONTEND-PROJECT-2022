@@ -1,4 +1,6 @@
-import React from 'react';
+import {Link} from 'react-router-dom'
+
+import React, { useState } from 'react';
 import Menu from '../assets/icons/Menu-Full.svg'
 import Main from '../assets/icons/Main.svg'
 import Line from '../assets/icons/Line.svg'
@@ -7,6 +9,7 @@ import Google from '../assets/icons/Google.svg'
 import Facebook from '../assets/icons/Facebook.svg'
 
 function CreateAccount() {
+    const [show, setShow] = useState(false)
     return (
     <div className='bg-neutral-50 px-5 py-11 md:px-20 md:py-10 lg:p-0 text-neutral-900 font-campton'>
         <header className='flex lg:hidden justify-between items-center'>
@@ -32,32 +35,32 @@ function CreateAccount() {
                     <p className='text-neutral-700 font-medium mt-6 md:text-lg md:text-neutral-900 md:leading-5 md:mt-10 lg:text-neutral-700'>Fill in the correct details below to create an Account.</p>
 
                     <form className='pt-6'>
-                        <label for="fullName" className='font-medium leading-5'>Full Name</label>
+                        <label htmlFor="fullName" className='font-medium leading-5'>Full Name</label>
                         <br />
 
                         <input type="text" id='fullName' placeholder='Enter your full name' className='mt-2 mb-6 md:mb-5 bg-neutral-50 border-2 rounded-lg py-5 px-4 w-full border-neutral-500 placeholder:text-neutral-800 placeholder:leading-5' />
                         <br />
 
-                        <label for="email" className='font-medium leading-5'>Email Address</label>
+                        <label htmlFor="email" className='font-medium leading-5'>Email Address</label>
                         <br />
 
                         <input type="email" id='email' placeholder='Enter your email address' className='mt-2 mb-6 md:mb-5 bg-neutral-50 border-2 rounded-lg py-5 px-4 w-full border-neutral-500 placeholder:text-neutral-800 placeholder:leading-5' />
                         <br />
 
-                        <label for="password" className='font-medium leading-5'>Password</label>
+                        <label htmlFor="password" className='font-medium leading-5'>Password</label>
                         <br />    
 
                         <div className='relative w-full '>
-                            <div className='absolute right-0 pr-4 pt-7'>
+                            <div onClick={() => show ? setShow(false) : setShow(true)} className='absolute right-0 pr-4 pt-7'>
                                 <img src={Hide} alt="Hide Logo" />
                             </div>
 
-                            <input type="password" id='password' placeholder='Set a 8-character password' className='w-full border-2 mt-2 mb-6 md:mb-5 rounded-lg py-5 px-4 border-neutral-500 bg-neutral-50 placeholder:text-neutral-800 placeholder:leading-5' /> 
+                            <input type={show ? 'text': 'password'}  id='password' placeholder='Set a 8-character password' className='w-full border-2 mt-2 mb-6 md:mb-5 rounded-lg py-5 px-4 border-neutral-500 bg-neutral-50 placeholder:text-neutral-800 placeholder:leading-5' /> 
                         </div>
 
                         <div className='flex w-full items-center mb-8'>
                             <input type="checkbox" id='terms' className='w-5 h-5 bg-neutral-50 border-2 border-neutral-500 rounded'  />
-                            <label for="terms" className='ml-2.5 font-medium'>I agree to the company’s <a href='#' className='font-semibold md:font-bold lg:font-semibold text-secondary-500'>Terms of Service</a> and <a href='#' className='font-semibold md:font-bold lg:font-semibold text-secondary-500'>Privacy Policy</a></label>
+                            <label htmlFor="terms" className='ml-2.5 font-medium'>I agree to the company’s <a href='#' className='font-semibold md:font-bold lg:font-semibold text-secondary-500'>Terms of Service</a> and <a href='#' className='font-semibold md:font-bold lg:font-semibold text-secondary-500'>Privacy Policy</a></label>
                         </div>
 
                         <button type='submit' className='text-center w-full bg-primary-500 rounded-lg py-5 text-white font-bold text-lg leading-6 mb-6 md:mb-4'>Proceed</button>
@@ -80,7 +83,7 @@ function CreateAccount() {
                             </button>
                         </div>
 
-                        <p className='font-medium mt-10 md:mt-14 leading-6 text-sm text-center'>Already have an account? <a href="#" className='text-base font-bold text-primary-500'>Log In</a></p>
+                        <p className='font-medium mt-10 md:mt-14 leading-6 text-sm text-center'>Already have an account? <Link to="/login" className='text-base font-bold text-primary-500'>Log In</Link></p> 
                     </form>
                 </div>
                 

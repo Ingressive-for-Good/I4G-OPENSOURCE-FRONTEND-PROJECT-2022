@@ -119,7 +119,7 @@ const Login = () => {
                 <input
                   className={`${
                     emailInvalid && "border-error-500 bg-error-50"
-                  } ${emailValid && "border-success-500 bg-success-50"}`}
+                  } ${emailValid && "border-success-500 bg-success-50"} w-full border-2 mt-2 mb-6 md:mb-5 rounded-lg py-5 px-4 border-neutral-500 bg-neutral-50 placeholder:text-neutral-800 placeholder:leading-5`}
                   type="email"
                   id="Email"
                   placeholder="Enter your Email Address"
@@ -138,7 +138,7 @@ const Login = () => {
                 <input
                   className={`${
                     passwordInvalid && "border-error-500 bg-error-50"
-                  } ${passwordValid && "border-success-500 bg-success-50"}`}
+                  } ${passwordValid && "border-success-500 bg-success-50"} w-full border-2 mt-2 mb-6 md:mb-5 rounded-lg py-5 px-4 border-neutral-500 bg-neutral-50 placeholder:text-neutral-800 placeholder:leading-5`}
                   type={passwordType}
                   id="Email"
                   placeholder="Password"
@@ -147,7 +147,7 @@ const Login = () => {
                   value={enteredPassword}
                 />
                 <img
-                  className="w-6 absolute right-4 cursor-pointer translate-y-[170%]"
+                  className="w-6 absolute right-4 cursor-pointer translate-y-[240%]"
                   src={
                     passwordType === "password" ? HidePassword : ShowPassword
                   }
