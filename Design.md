@@ -196,4 +196,4 @@ The button also being the only highlighted button seems to encourage an action w
 - I created the layout of the Terms of use screen and made it fully responsive
 - I created the layout of the Privacy policy screen and made it fully responsive
 
------Main Goal -- Responsive Terms of use and Privacy policy screen design.
+-----Main Goal -- Responsive Terms of use and Privacy policy screen design
