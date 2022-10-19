@@ -307,3 +307,12 @@ The button also being the only highlighted button seems to encourage an action w
 
 
 
+
+
+## Name:  Abigail Nwakanma
+## Description: Improve UX writing of Legal Policy Statement 
+
+### Observation/Changes: 
+- I drafted and formulated the legal policy statement of the brand in line with applicable legal standards.
+
+—— Main Goal —To enable users know their rights, obligations and the legal poicies that guide them as they make use of the platform.
