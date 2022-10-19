@@ -19,3 +19,7 @@ export const NOTIFICATIONS = 'notifications';
 export const PROFILE = 'profile';
 export const ADMIN = 'admin';
 export const USERS = 'users';
+export const USERLIST = 'userlist';
+export const SUBADMINLIST = 'subadminlist';
+export const SUSPENDEDUSERLIST = 'suspendeduserlist';
+export const START = 'start';

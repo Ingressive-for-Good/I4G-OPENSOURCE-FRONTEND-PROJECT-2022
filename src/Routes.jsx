@@ -13,6 +13,7 @@ import WishlistViewProducts from './pages/WishlistViewProducts';
 import CreateAccount from './pages/CreateAccount';
 import DeleteProduct from './components/molecules/deleteProduct';
 import ResetPasswordPage from './pages/PasswordResetPage';
+
 import {
   ADDTOWISHLIST,
   CREATEACCOUNT,
@@ -31,9 +32,23 @@ import {
   WISHLIST,
   ADMIN,
   USERS,
+  USERLIST,
+  SUBADMINLIST,
+  SUSPENDEDUSERLIST,
+  START,
 } from './helpers/routeConstants';
 
+import Users from './pages/Users';
+
 import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
+
+import UserList from './pages/UserList';
+import SubAdminList from './pages/SubAdminList';
+import SuspendedUsersList from './pages/SuspendedUsersList';
+import AdminUsersProfile from './pages/AdminUsersProfile';
+
+import MessagesEmpty from './pages/MessagesEmpty';
+import MessagesStart from './pages/MessagesStart';
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -61,8 +76,25 @@ function Routes() {
           path={`/${ADMIN}/${PRODUCTS}`}
           element={<h1> Admin producet </h1>}
         />
-        <Route path={`/${ADMIN}/${MESSAGES}`} element={<h2> messages </h2>} />
-        <Route path={`/${ADMIN}/${USERS}`} element={<h2> users </h2>} />
+        <Route path={`/${ADMIN}/${MESSAGES}`} element={<MessagesEmpty />} />
+        <Route
+          path={`/${ADMIN}/${MESSAGES}/${START}`}
+          element={<MessagesStart />}
+        />
+        <Route path={`/${ADMIN}/${USERS}`} element={<Users />} />
+        <Route path={`/${ADMIN}/${USERS}/${USERLIST}`} element={<UserList />} />
+        <Route
+          path={`/${ADMIN}/${USERS}/${SUBADMINLIST}`}
+          element={<SubAdminList />}
+        />
+        <Route
+          path={`/${ADMIN}/${USERS}/${SUSPENDEDUSERLIST}`}
+          element={<SuspendedUsersList />}
+        />
+        <Route
+          path={`/${ADMIN}/${USERS}/${PROFILE}`}
+          element={<AdminUsersProfile />}
+        />
         <Route path={`/${ADMIN}/${PROFILE}`} element={<h2> profile </h2>} />
       </Route>
       <Route path={`/${KYC}`} element={<Kyc />} />
