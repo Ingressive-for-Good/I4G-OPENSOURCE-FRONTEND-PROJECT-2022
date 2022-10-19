@@ -384,3 +384,13 @@ The button also being the only highlighted button seems to encourage an action w
 -----Main Goal -- Improved User interface Responsively.
 
 
+
+## Name: Olatide Jegede 
+
+## Description: Improved Color Consistency on User Dashboard (Product Description Pop Up)
+### Observations/Changes 
+- I made sure that every color used in the design screen was accurate and applied consistently throughout the entire design.
+
+-----Main Goal -- Improved UI Color Consistency
+
+
