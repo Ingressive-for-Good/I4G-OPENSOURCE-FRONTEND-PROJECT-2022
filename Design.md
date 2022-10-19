@@ -338,3 +338,14 @@ The button also being the only highlighted button seems to encourage an action w
 - This was to show the user results of products being searched
 
 -----Main Goal -- Responsive Search Result Screen for the User dashboard 
+
+
+
+## Name: Nnanyere Scottderek
+
+## Description: Design a responsive Wishlist page.
+### Observations/Changes
+- I designed the wishlist pages for the responsive screens of the platform
+- I designed the empty states of each screens across the platform responsively
+
+-----Main Goal -- Improved User interface Responsively.
