@@ -4,6 +4,7 @@ import Arrow from "../assets/icons/arrow.png";
 import Overlay from "../components/molecules/Overlay";
 import headAvatar from "../assets/icons/head-avatar.svg";
 import Frame from "../assets/icons/menu-icon.svg";
+import { Link } from 'react-router-dom';
 
 
 
@@ -103,7 +104,7 @@ export default function PhoneNumberVerification() {
 
           {/* Resend Verification Code Button Start */}
             <div className='my-4'>
-              <h1 className='text-[14px] md:text-[16px] leading-[24px] font-campton'>Didn’t get a code? <span className='font-bold text-primary-500 '><a href="#">Resend Code</a></span> </h1>
+              <h1 className='text-[14px] md:text-[16px] leading-[24px] font-campton'>Didn’t get a code? <span className='font-bold text-primary-500 '><Link to="/login" >Resend Code</Link></span> </h1>
             </div>
           {/* Resend Verification Code Button End */}
 

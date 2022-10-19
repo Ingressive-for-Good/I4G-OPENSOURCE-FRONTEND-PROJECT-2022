@@ -5,6 +5,7 @@ import logo from "../assets/icons/logo.svg";
 import lineSvg from "../assets/icons/line.svg";
 import ham from "../assets/icons/hamburger.svg";
 import PrimaryButton from "../components/atoms/PrimaryButton";
+import { Link } from "react-router-dom";
 
 const Kyc = () => {
   return (
@@ -111,7 +112,7 @@ const Kyc = () => {
           <footer className="footer lg:mt-24">
             <p className="text-center">
               Already have an account?{" "}
-              <strong className="resend">Login In</strong>
+              <Link to="/login" className="resend">Login In</Link>
             </p>
           </footer>
         </div>

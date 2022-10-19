@@ -8,6 +8,7 @@ import AuthSide from "../components/atoms/AuthSide";
 import PrimaryButton from "../components/atoms/PrimaryButton";
 import { useState } from "react";
 import Overlay from "../components/molecules/Overlay";
+import { Link } from "react-router-dom";
 
 
 const EmailVerify = () => {
@@ -79,7 +80,7 @@ const EmailVerify = () => {
           <footer className="footer lg:mt-[200px]">
             <p className="text-center">
               Already have an account?{" "}
-              <strong className="resend">Login In</strong>
+              <Link to="/login" className="resend">Login In</Link>
             </p>
           </footer>
         </div>
