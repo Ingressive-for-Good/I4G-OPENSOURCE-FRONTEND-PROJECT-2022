@@ -1,16 +1,14 @@
 import React, { useState } from "react";
-import loginImage from "../assets/images/LoginImage.png";
-import webLogo from "../assets/icons/web-logo.png";
+import Main from '../assets/images/main.svg'
 import Arrow from "../assets/icons/arrow.png";
 import PrimaryButton from "../components/atoms/PrimaryButton";
 import SecondaryButton from "../components/atoms/SecondaryButton";
 import Facebook from "../assets/icons/logos_facebook.png";
 import Google from "../assets/icons/icons_google.png";
-import iPadLogo from "../assets/icons/iPad-logo.png";
-import Frame from "../assets/icons/Frame 1.png";
-import MobileLogo from "../assets/icons/mobile-logo.png";
+import Frame from "../assets/icons/menu-icon.svg";
 import HidePassword from "../assets/icons/Hide.png";
 import ShowPassword from "../assets/icons/show-password.png";
+import { Link } from "react-router-dom";
 
 const PASSWORD_REGEX =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
@@ -77,35 +75,30 @@ const Login = () => {
   };
 
   return (
-    <section className="h-screen">
+    <section className="h-screen font-campton font-[500px]">
       <div className="w-full flex">
-        <div className="hidden lg:block lg:w-[40%] bg-primary-50 min-h-screen h-full lg:px-[7%]">
-          <img className="pt-[5%] pl-[5%]" src={webLogo} alt="" />
-          <div>
-            <img className="mt-16" src={loginImage} alt="" />
+        <div className="hidden lg:block lg:w-[40%] bg-primary-50 min-h-screen h-full lg:px-[7%] pt-[49px] ">
+          <h1 className='font-cabinetGrotesk text-2xl font-bold text-primary-500 '>tech<span className='text-secondary-500'>mart</span></h1>
+          <div className="">
+            <img src={Main} alt="Main Image" className='mt-24' />
           </div>
           <p className="text-neutral-600 text-center leading-8 lg:mt-8">
-            When you verify email address, your email marketing is more
-            effective, fraud prevention is improved and the ability to protect
-            your sender reputation increases.
+          Verify your email address to stay protected and get the best deals.
           </p>
         </div>
         <div className="bg-white w-full lg:w-[60%] md:py-[3%] md:px-[8%] px-[5%] py-[5%]">
-          <div className="lg:hidden md:flex justify-between items-center hidden">
-            <img className="max-w-full" src={iPadLogo} alt="" />
-            <img src={Frame} alt="" />
+          <div className="lg:hidden flex justify-between items-center">
+            <h1 className='font-cabinetGrotesk text-2xl font-bold text-primary-500 '>tech<span className='text-secondary-500'>mart</span></h1>
+            <div className="py-[17.9px] px-[16.9px] border rounded-[12px] border-primary-500 cursor-pointer w-[50px]">
+            <img className="" src={Frame} alt="" />
           </div>
-          <div className="sm:hidden flex justify-between items-center">
-            <img src={MobileLogo} alt="" />
-            <img src={Frame} alt="" />
           </div>
-          <div className="text-center mt-12 sm:mt-8 lg:mt-0">
-            <h4>Log In</h4>
+          <div className="text-center mt-12 sm:mt-8 lg:mt-0 mb-[41px]">
+            <h4 className="text-[30px] text-neutral-900 font-[700]">Log In</h4>
             <img className="mx-auto" src={Arrow} alt="" />
           </div>
-          <p className="font-medium text-neutral-900 lg:mt-2 my-4 lg:mb-0">
-            Nice to see you again! Log In with details you entered during
-            registration.
+          <p className="font-medium text-neutral-700 lg:mt-2 my-4 lg:mb-0 text-[14px]">
+            Nice to see you again! Log In with your details
           </p>
           <div className="py-4 lg:w-[90%]">
             <form onSubmit={formSubmissionHandler}>
@@ -169,7 +162,7 @@ const Login = () => {
                 </a>
               </div>
               <div className="my-6">
-                <PrimaryButton disabled={!formIsValid}>Log In</PrimaryButton>
+                <PrimaryButton>Log In</PrimaryButton>
               </div>
             </form>
             <div className="my-6 flex items-center justify-between">
@@ -195,10 +188,10 @@ const Login = () => {
           <div className="md:fixed text-center my-4 sm:my-0 lg:mx-[10%] md:mx-[25%] lg:bottom-4 md:bottom-16">
             <span>
               Don't have an account?
-              <a href="#" className="text-primary-500 font-bold">
+              <Link to='/create-account' className="text-primary-500 font-bold">
                 {" "}
                 Create an account
-              </a>
+              </Link>
             </span>
           </div>
         </div>

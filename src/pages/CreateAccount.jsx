@@ -2,7 +2,9 @@ import {Link} from 'react-router-dom'
 
 import React, { useState } from 'react';
 import Menu from '../assets/icons/Menu-Full.svg'
-import Main from '../assets/icons/Main.svg'
+import Main from '<div className="" />
+<assets />
+<images></images>/main.svg'
 import Line from '../assets/icons/Line.svg'
 import Hide from '../assets/icons/Hide.svg'
 import Google from '../assets/icons/Google.svg'
@@ -10,6 +12,26 @@ import Facebook from '../assets/icons/Facebook.svg'
 
 function CreateAccount() {
     const [show, setShow] = useState(false)
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [nameError, setNameError] = useState(false)
+    const [emailError, setEmailError] = useState(false)
+    const [passwordError, setPasswordError] = useState(false)
+    const [password, setPassword] = useState("");
+
+    const formSubmissionHandler = (event) => {
+        event.preventDefault();
+        if(email === ''){
+            setEmailError(true)
+        }
+        if(password === ''){
+            setPasswordError(true)
+        }
+        if(name === ''){
+            setNameError(true)
+        }
+
+      };
     return (
     <div className='bg-neutral-50 px-5 py-11 md:px-20 md:py-10 lg:p-0 text-neutral-900 font-campton'>
         <header className='flex lg:hidden justify-between items-center'>
@@ -20,7 +42,7 @@ function CreateAccount() {
             </a>
            
         </header>
-        <main className='flex items-stretch'>
+        <main className='flex items-stretch h-screen'>
             <section className='hidden w-2/5 lg:flex flex-col justify-around  bg-primary-50 pt-12 pb-24 px-11 xl:px-12'>
                 <h1 className='font-cabinetGrotesk text-3xl font-bold text-primary-500 justify-self-start self-start xl:pl-10 pl-8'>tech<span className='text-secondary-500'>mart</span></h1>
 
@@ -34,17 +56,21 @@ function CreateAccount() {
                     <img src={Line} alt="Line Icon" className='mx-auto w-12 md:w-auto' />
                     <p className='text-neutral-700 font-medium mt-6 md:text-lg md:text-neutral-900 md:leading-5 md:mt-10 lg:text-neutral-700'>Fill in the correct details below to create an Account.</p>
 
-                    <form className='pt-6'>
+                    <form onSubmit={formSubmissionHandler} className='pt-6'>
                         <label htmlFor="fullName" className='font-medium leading-5'>Full Name</label>
                         <br />
 
-                        <input type="text" id='fullName' placeholder='Enter your full name' className='mt-2 mb-6 md:mb-5 bg-neutral-50 border-2 rounded-lg py-5 px-4 w-full border-neutral-500 placeholder:text-neutral-800 placeholder:leading-5' />
+                        <input onChange={(e) => setName(e.target.value)} value={name} type="text" id='fullName' placeholder='Enter your full name' className={`${
+                                nameError && "border-error-500 bg-error-50"
+                            } w-full border-2 mt-2 mb-6 md:mb-5 rounded-lg py-5 px-4 border-neutral-500 bg-neutral-50 placeholder:text-neutral-800 placeholder:leading-5`} />
                         <br />
 
                         <label htmlFor="email" className='font-medium leading-5'>Email Address</label>
                         <br />
 
-                        <input type="email" id='email' placeholder='Enter your email address' className='mt-2 mb-6 md:mb-5 bg-neutral-50 border-2 rounded-lg py-5 px-4 w-full border-neutral-500 placeholder:text-neutral-800 placeholder:leading-5' />
+                        <input onChange={(e) => setEmail(e.target.value)} value={email} type="email" id='email' placeholder='Enter your email address' className={`${
+                                emailError && "border-error-500 bg-error-50"
+                            } mt-2 mb-6 md:mb-5 bg-neutral-50 border-2 rounded-lg py-5 px-4 w-full border-neutral-500 placeholder:text-neutral-800 placeholder:leading-5`} />
                         <br />
 
                         <label htmlFor="password" className='font-medium leading-5'>Password</label>
@@ -55,7 +81,9 @@ function CreateAccount() {
                                 <img src={Hide} alt="Hide Logo" />
                             </div>
 
-                            <input type={show ? 'text': 'password'}  id='password' placeholder='Set a 8-character password' className='w-full border-2 mt-2 mb-6 md:mb-5 rounded-lg py-5 px-4 border-neutral-500 bg-neutral-50 placeholder:text-neutral-800 placeholder:leading-5' /> 
+                            <input onChange={(e) => setPassword(e.target.value)} value={password} type={show ? 'text': 'password'}  id='password' placeholder='Set a 8-character password' className={`${
+                                passwordError && "border-error-500 bg-error-50"
+                            } w-full border-2 mt-2 mb-6 md:mb-5 rounded-lg py-5 px-4 border-neutral-500 bg-neutral-50 placeholder:text-neutral-800 placeholder:leading-5`} /> 
                         </div>
 
                         <div className='flex w-full items-center mb-8'>
