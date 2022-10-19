@@ -209,3 +209,17 @@ The button also being the only highlighted button seems to encourage an action w
 - This was to give the user more information about a product they are interested in.
 
 -----Main Goal -- Responsive and simple Product description Pop up for User dashboard
+
+
+
+
+
+## Name:  Abigail Nwakanma
+
+## Description: Improve UX writing of Privacy Policy
+### Observations/Changes
+- I wrote a well drafted and well researched privacy policy statement in line with the project's goals and intended scope of operation.
+- I concisely defined the concept of "cookies" to further aid the users' understanding.
+
+-----Main Goal -- explanatory and easy to understand privacy policy statement.
+
