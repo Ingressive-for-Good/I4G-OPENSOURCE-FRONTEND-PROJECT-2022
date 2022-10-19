@@ -189,6 +189,7 @@ The button also being the only highlighted button seems to encourage an action w
 -----Main Goal -- Easy to understand UX writting.
 
 
+
 ## Name: Osasumwen Isibor
 
 ## Description: I designed the Terms of use page and Privacy policy page for the landing page  
@@ -197,3 +198,14 @@ The button also being the only highlighted button seems to encourage an action w
 - I created the layout of the Privacy policy screen and made it fully responsive
 
 -----Main Goal -- Responsive Terms of use and Privacy policy screen design
+
+
+
+## Name: Osasumwen Isibor
+
+## Description: I designed the Product description pop up for the User dashboard.  
+### Observations/Changes
+- I designed the pop up to view details of a product and made it fully responsive
+- This was to give the user more information about a product they are interested in.
+
+-----Main Goal -- Responsive and simple Product description Pop up for User dashboard
