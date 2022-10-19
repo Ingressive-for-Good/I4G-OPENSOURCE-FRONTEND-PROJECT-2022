@@ -1,32 +1,38 @@
-import React from "react";
-import { Route, Routes as Switch, Link } from "react-router-dom";
-import AddNewProductPage1 from "./pages/AddNewProductPage1";
-import PhoneNumberVerification from "./pages/PhoneNumberVerification";
-import Login from "./pages/Login";
-import Help from "./pages/Help";
-import DashboardPage from "./pages/DashboardPage";
-import Kyc from "./pages/Kyc";
-import EmailVerify from "./pages/EmailVerify";
-import Home from "./pages/Home";
-import ViewProducts from "./components/molecules/Products";
-import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
-import WishlistViewProducts from "./pages/WishlistViewProducts";
-import CreateAccount from "./pages/CreateAccount";
-import DeleteProduct from "./pages/deleteProduct";
-import ResetPasswordPage from "./pages/PasswordResetPage";
 
 
-import Users from "./pages/Users";
+import React from 'react';
+import { Route, Routes as Switch, Link } from 'react-router-dom';
+import AddNewProductPage1 from './pages/AddNewProductPage1';
+import PhoneNumberVerification from './pages/PhoneNumberVerification';
+import Login from './pages/Login';
+import Help from './pages/Help';
+import DashboardPage from './pages/DashboardPage';
+import Kyc from './pages/Kyc';
+import EmailVerify from './pages/EmailVerify';
+import Home from './pages/Home';
+import ViewProducts from './components/molecules/Products';
+import EmptyWishlistViewProducts from './pages/EmptyWishlistViewProducts';
+import WishlistViewProducts from './pages/WishlistViewProducts';
+import CreateAccount from './pages/CreateAccount';
+import DeleteProduct from './components/molecules/deleteProduct';
+import ResetPasswordPage from './pages/PasswordResetPage';
+import Users from './pages/Users';
+
 
 import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
-import UserList from "./pages/UserList.jsx";
-import SubAdminList from "./pages/SubAdminList";
-import SuspendedUsersList from "./pages/SuspendedUsersList";
 
+import UserList from './pages/UserList.jsx';
+import SubAdminList from './pages/SubAdminList';
+import SuspendedUsersList from './pages/SuspendedUsersList';
+import AdminUsersProfile from './pages/AdminUsersProfile';
+
+import MessagesEmpty from "./pages/MessagesEmpty";
+import MessagesStart from "./pages/MessagesStart";
 
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
+
   return (
     <Switch>
       <Route path="/" element={<Home />} />
@@ -73,6 +79,7 @@ function Routes() {
 
     </Switch>
   );
+
 }
 
 export default Routes;
