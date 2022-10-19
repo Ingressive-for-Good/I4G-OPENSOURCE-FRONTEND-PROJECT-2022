@@ -394,3 +394,13 @@ The button also being the only highlighted button seems to encourage an action w
 -----Main Goal -- Improved UI Color Consistency
 
 
+## Name: Olatide Jegede 
+
+## Description: Improved Visual Balance and Consistency on User Dashboard
+### Observations/Changes 
+- I made sure that every component and element used in the design of the User Dashboard screens was accurate and applied consistently throughout.
+- I corrected elements where there were mistakes and errors in the design of the User Dashboard Screens.
+
+-----Main Goal -- Improved UI Visual Balance and Consistency
+
+
