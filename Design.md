@@ -475,3 +475,12 @@ The button also being the only highlighted button seems to encourage an action w
 
 -----Main Goal -- Improved User Experience, UI Design
 
+
+
+## Name: Toyeeb Amusan
+
+#Description: Design of Side Navigation for Admin Dashboard - Tablet
+### Observation/Changes
+- I designed the side navigation for the tablet screens for the admin dashboard to ease navigation for the admin
+
+-----Main Goal -- Improved User Experience, UI Design
