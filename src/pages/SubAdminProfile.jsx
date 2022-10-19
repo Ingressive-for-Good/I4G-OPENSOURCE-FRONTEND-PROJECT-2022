@@ -1,7 +1,11 @@
 import React from "react";
 import NavbarAdmin from "../components/molecules/NavbarAdmin";
 import userAvatar from "../assets/icons/avatar.png";
-import userIconBlue from "../assets/icons/userIconBlue.svg"
+import userIconBlue from "../assets/icons/userIconBlue.svg";
+import backArrow from "../assets/icons/arrowLeft.svg";
+import plusIcon from "../assets/icons/plusIcon.svg"
+import WarningButton from "../components/atoms/Button/WarningButton";
+import Button from "../components/atoms/PrimaryButton";
 
 
 
@@ -37,9 +41,36 @@ function SubAdminProfilePage() {
                     <img src={userAvatar} alt="user avatar" width={50}/>
                 </div>
             </div>
+            <div className="hidden md:flex gap-4 py-4 font-campton">
+                <img src={backArrow} alt="" />
+                <p>Return to previous page</p>
+            </div>
+            <div>
+                <p className=" text-blue-800 text-[18px] font-medium font-cabinetGrotesk px-6 md:px-0">Account Information</p>
+            </div>
+            <div className="px-6 md:px-0">
+                <p>Name</p>
+                <p>Email Address</p>
+                <p>Phone</p>
+            </div>
+            <div className="px-6 mt-10 md:px-0 font-cabinetGrotesk">
+                <div className="flex items-center justify-between">
+                    <p className="font-bold text-[20px]">Sub admin Activities</p>
+                    <p className="flex items-center gap-4 text-blue-700"><img src={plusIcon} alt="" /> Assign Task</p>
+                </div>
+                <p>No activity</p>
+            </div>
+            <div className="px-6 gap-4 mt-44 mb-12 md:flex items-center md:px-0 md:w-[60%] md:float-right">
+                <div className="w-full">
+                    <WarningButton children="Delete Account"/>
+                </div>
+                <div className="mt-4 md:mt-0 w-full">
+                    <Button  children="Suspend Account"/>
+                </div>
+            </div>
             <div className="hidden absolute top-[365px] left-0 md:flex gap-3 bg-white p-4 items-center w-[230px]">
                 <img className="ml-9" src={userIconBlue} alt="icon" />
-                Users
+                <p className=" font-cabinetGrotesk text-blue-700 font-medium text-[17px]">Users</p>
             </div>
         </div>
     )
