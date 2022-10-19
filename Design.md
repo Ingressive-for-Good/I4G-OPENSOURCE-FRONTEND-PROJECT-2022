@@ -360,3 +360,15 @@ The button also being the only highlighted button seems to encourage an action w
 - I designed the dropdown for the select/delete state.
 
 -----Main Goal -- Improved User interface Responsively.
+
+
+
+## Name: Nnanyere Scottderek
+
+## Description: Design a notification popup screen
+### Observations/Changes
+- I designed the notification popup screen of each of the screens responsively
+- I designed the empty state of the screen across the platform responsively.
+
+-----Main Goal -- Improved User interface Responsively.
+
