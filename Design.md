@@ -223,3 +223,18 @@ The button also being the only highlighted button seems to encourage an action w
 
 -----Main Goal -- explanatory and easy to understand privacy policy statement.
 
+
+
+## Name:  Ayomide Olowosile , Nora Eboesomi 
+## Description: Design User Dashboard: View Uploaded Products Screen
+
+### Observation/Changes: Explain in details the contribution you made.
+- This screen enables users to be able to see the products they have uploaded for sale.
+- On this page, users can mark products as unavailable and permanently delete uploaded products
+- Nora and I designed an empty state page - a page that indicates that the user has not uploaded any product and a button to prompt the user to add a new product
+- Nora and I designed a filled state page - a page that shows the list of uploaded products by the user.
+- We added a more option button with two options: "edit details" and "mark as unavailable"
+- Nora and I made the design fully responsive (desktop, tablet and mobile views were created).
+- Nora and I used the colors and typography on the style guide to ensure consistency.
+
+—— Main Goal — Fully Responsive Design for View Uploaded Products Screen on User Dashboard
