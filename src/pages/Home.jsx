@@ -1,33 +1,35 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import menuIcon from "../assets/icons/menu-icon.svg";
-import wavyArrow from "../assets/icons/landingpage__wavy-arrow.svg"
-import wavyUnderline from "../assets/icons/landingpage__wavy-underline.svg"
-import bestQuality from "../assets/icons/landingpage__best-quality.svg"
-import meetnconnect from "../assets/icons/landingpage__meetnconnect.svg"
-import support from "../assets/icons/landingpage__support.svg"
-import wavyDashed from "../assets/icons/landingpage__wavy-dashed.svg"
-import keyboard from "../assets/images/product-keyboard.png"
-import controller from "../assets/images/product-controller.png"
-import cartIcon from "../assets/icons/cart-icon.svg"
-import profileImg from "../assets/images/landingpage__client-profile-img.svg"
-import p2p from "../assets/icons/landingpage__p2p.svg"
+import React from 'react';
+import { Link } from 'react-router-dom';
+import menuIcon from '../assets/icons/menu-icon.svg';
+import closeMenuIcon from '../assets/icons/close-icon.png';
+import wavyArrow from '../assets/icons/landingpage__wavy-arrow.svg';
+import wavyUnderline from '../assets/icons/landingpage__wavy-underline.svg';
+import bestQuality from '../assets/icons/landingpage__best-quality.svg';
+import meetnconnect from '../assets/icons/landingpage__meetnconnect.svg';
+import support from '../assets/icons/landingpage__support.svg';
+import wavyDashed from '../assets/icons/landingpage__wavy-dashed.svg';
+import keyboard from '../assets/images/product-keyboard.png';
+import controller from '../assets/images/product-controller.png';
+import cartIcon from '../assets/icons/cart-icon.svg';
+import profileImg from '../assets/images/landingpage__client-profile-img.svg';
+import p2p from '../assets/icons/landingpage__p2p.svg';
 
 function App() {
     const toggleMenu = () => {
-        var nav = document.getElementById("nav");
-        var body = document.getElementById("body");
+        const nav = document.getElementById('nav');
+        const body = document.getElementById('body');
         // var navItems = document.querySelectorAll("nav a")
-        body.style.overflowY = "hidden";
-        nav.classList.toggle("hidden");
-    }
+        body.style.overflowY = 'hidden';
+        nav.classList.toggle('hidden');
+    };
   return (
     <div id="body" className="text-neutral-900 font-campton">
-      
+
       {/* header and navigation */}
       <header className="relative bg-primary-50 px-8 py-9 flex items-center justify-between">
         <h1 className="font-cabinetGrotesk text-primary-500 font-bold text-2xl">
-          tech<span className="text-secondary-500">mart</span>
+          tech
+<span className="text-secondary-500">mart</span>
         </h1>
         <div className="border-primary-500 border rounded-xl p-3 lg:hidden">
           <img className="" onClick={toggleMenu} id="hamburger" src={menuIcon} alt="" />
@@ -36,15 +38,16 @@ function App() {
           id="nav"
           className="h-screen lg:h-fit w-screen lg:w-fit flex hidden absolute lg:relative z-100 top-0 lg:top-unset left-0 lg:left-unset bg-white lg:bg-transparent lg:flex flex-col lg:flex-row space-y-8 lg:space-y-0 justify-center items-center lg:space-x-5 text-neutral-700"
         >
-          <img className="lg:hidden absolute top-12 right-16" onClick={toggleMenu} id="hamburger" src="src/images/close-icon.png" alt="" />
+          <img className="lg:hidden absolute top-12 right-16" onClick={toggleMenu} id="hamburger" src={closeMenuIcon} alt="" />
           <a href="">Home</a>
           <a href="#howitworks">How it Works</a>
           <a href="#marketplace">Market Place</a>
           <a href="#contactUs">Contact Us</a>
           <div className="mx-4 space-x-4">
-            <Link 
-              className="text-primary-500 font-medium" 
-              to="/login">
+            <Link
+              className="text-primary-500 font-medium"
+              to="/login"
+            >
               Log In
             </Link>
             <Link
@@ -57,7 +60,7 @@ function App() {
         </nav>
       </header>
       <main>
-        
+
         {/* hero section */}
         <section className="px-[10%] py-4 text-center bg-primary-50">
           <h1 className="font-cabinetGrotesk font-bold text-3xl sm:text-4xl lg:text-5xl my-3 sm:max-w-md md:max-w-lg sm:mx-auto">
@@ -154,8 +157,13 @@ function App() {
                 24/7 Support
               </h4>
               <p className="text-neutral-700 text-sm">
-                Do you have a complaint? <br />
-                Fill this <a href=""> form </a>to get answers ASAP
+                Do you have a complaint?
+{' '}
+<br />
+                Fill this
+{' '}
+<a href=""> form </a>
+to get answers ASAP
               </p>
             </div>
           </div>
@@ -164,7 +172,9 @@ function App() {
         {/* buy an item */}
         <section id="howitworks" className="w-fit mx-auto px-6 py-3 rounded-lg my-5 text-center">
           <h1 className="font-cabinetGrotesk text-2xl font-semibold">
-            <span className="text-secondary-500">Buy Items</span> in 3 Easy
+            <span className="text-secondary-500">Buy Items</span>
+{' '}
+in 3 Easy
             Steps
           </h1>
           <p className="text-neutral-700 my-2">
@@ -217,7 +227,9 @@ function App() {
         {/* list an item */}
         <section className="w-fit mx-auto px-6 py-3 rounded-lg my-5 lg:my-12 text-center">
           <h1 className="font-cabinetGrotesk text-2xl font-semibold">
-            <span className="text-secondary-500">List Items</span> in 3 Easy
+            <span className="text-secondary-500">List Items</span>
+{' '}
+in 3 Easy
             Steps
           </h1>
           <p className="text-neutral-700 my-2">
@@ -345,14 +357,14 @@ function App() {
           </button>
         </section>
 
-        {/* newsletter subscription*/}
+        {/* newsletter subscription */}
         <section id="contactUs" className="bg-primary-500 p-6 w-5/6 mx-auto my-16 rounded-lg">
           <h1 className="text-center text-white text-3xl font-semibold font-cabinetGrotesk">
             Subscribe for Updates
           </h1>
           <img
             className="mx-auto mb-4"
-            src= {wavyUnderline}
+            src={wavyUnderline}
             alt=""
           />
           <p className="text-white text-center my-5">
