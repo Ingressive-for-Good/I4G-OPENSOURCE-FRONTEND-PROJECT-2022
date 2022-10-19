@@ -404,3 +404,13 @@ The button also being the only highlighted button seems to encourage an action w
 -----Main Goal -- Improved UI Visual Balance and Consistency
 
 
+## Name: Olatide Jegede 
+
+## Description: Replacement of logo and improved balance on the User Dashboard - Mobile View
+### Observations/Changes 
+- I replaced the logo of the user dashboard screens (mobile view) to the correct logo.
+- I improved balance on the user dashboard screens (mobile view) by ensuring all elements were used according to the style guide and aligned properly.
+
+-----Main Goal -- Improved UI Balance and Consistency
+
+
