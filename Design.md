@@ -242,7 +242,7 @@ The button also being the only highlighted button seems to encourage an action w
 
 
 
-## Name: Ayomide Olowosile , Nora Eboesomi 
+## Name: Ayomide Olowosile
 ## Description: Design User dashboard ( Product upload page)
 
 ### Observation/Changes: 
@@ -260,6 +260,19 @@ The button also being the only highlighted button seems to encourage an action w
 
 —— Main Goal —  Responsive Design for the User dashboard (Product upload page)
 
+
+
+## Name: Ayomide Olowosile 
+## Description: User Dashboard: Help & Support
+
+### Observation/Changes: 
+- This screen provides help and support to the users.
+     - I designed a Frequently Asked Questions Accordion that comprised of possible questions users may have and the answers to every question.
+     - I designed a section that provides extra support incase the user still has more questions.
+     - My design was fully responsive (desktop, tablet and mobile views must be created).
+     - I used the colors and typography on the style guide to ensure consistency.
+
+—— Main Goal —  Responsive Design for the User dashboard (Help & Support)
 
 
 ## Name:  
