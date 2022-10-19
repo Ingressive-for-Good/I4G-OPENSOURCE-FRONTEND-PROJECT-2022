@@ -451,4 +451,12 @@ The button also being the only highlighted button seems to encourage an action w
 ### Observation/Changes
 - I designed the side navigation for the mobile screens on the user dashboard to ease navigation for users. 
 
------Main Goal -- Imporoved User Experience, UI Design
+-----Main Goal -- Improved User Experience, UI Design
+
+## Name: Toyeeb Amusan
+
+#Description: Addition of Search Input Fields on User Dashboard - Tablet and Mobile View
+### Observation/Changes
+- I added search input fields for the tablet and mobile screens on the user dashboard to make the user journey shorter when they need to search for anything
+
+-----Main Goal -- Improved User Experience, UI Design
