@@ -349,3 +349,14 @@ The button also being the only highlighted button seems to encourage an action w
 - I designed the empty states of each screens across the platform responsively
 
 -----Main Goal -- Improved User interface Responsively.
+
+
+
+## Name: Nnanyere Scottderek
+
+## Description: Design select and delete product on wishlist.
+### Observations/Changes
+- I designed the select and delete product pages for the responsive screens of the platform
+- I designed the dropdown for the select/delete state.
+
+-----Main Goal -- Improved User interface Responsively.
