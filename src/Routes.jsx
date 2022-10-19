@@ -23,8 +23,9 @@ import SubAdminList from './pages/SubAdminList';
 import SuspendedUsersList from './pages/SuspendedUsersList';
 import AdminUsersProfile from './pages/AdminUsersProfile';
 
-import MessagesEmpty from "./pages/MessagesEmpty";
-import MessagesStart from "./pages/MessagesStart";
+import MessagesEmpty from './pages/MessagesEmpty';
+import MessagesStart from './pages/MessagesStart';
+import AdminUsersProfileWithProducts from './pages/AdminUsersProfileWithProducts';
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -59,9 +60,11 @@ function Routes() {
                     path='/admin/products'
                     element={<h1> Admin producet </h1>}
                 />
-                <Route path="/admin/messages" element={<MessagesEmpty />} />
-                    <Route path="/admin/messages/start" element={<MessagesStart />} />
-
+                <Route path='/admin/messages' element={<MessagesEmpty />} />
+                <Route
+                    path='/admin/messages/start'
+                    element={<MessagesStart />}
+                />
 
                 <Route path='/admin/users' element={<Users />} />
                 <Route path='/admin/users/userlist' element={<UserList />} />
@@ -77,7 +80,10 @@ function Routes() {
                     path='/admin/users/profile'
                     element={<AdminUsersProfile />}
                 />
-
+                <Route
+                    path='/admin/users/profile-with-products'
+                    element={<AdminUsersProfileWithProducts />}
+                />
 
                 <Route path='/admin/profile' element={<h2> profile </h2>} />
             </Route>
