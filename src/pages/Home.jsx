@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import menuIcon from "../assets/icons/menu-icon.svg";
+import "./home.css";
 import wavyArrow from "../assets/icons/landingpage__wavy-arrow.svg";
 import wavyUnderline from "../assets/icons/landingpage__wavy-underline.svg";
 import bestQuality from "../assets/icons/landingpage__best-quality.svg";
@@ -12,6 +13,14 @@ import controller from "../assets/images/product-controller.png";
 import cartIcon from "../assets/icons/cart-icon.svg";
 import profileImg from "../assets/images/landingpage__client-profile-img.svg";
 import p2p from "../assets/icons/landingpage__p2p.svg";
+import heroClipArtLeft from "../assets/images/landingpage-hero-clipart-left.svg";
+import heroClipArtRight from "../assets/images/landingpage-hero-clipart-right.svg";
+import logo from "../assets/icons/logo.svg";
+import facebook from "../assets/icons/footer-fb.svg";
+import twitter from "../assets/icons/twitter.svg";
+import instagram from "../assets/icons/instagram.svg";
+import linkedin from "../assets/icons/linkedin.svg";
+import upArrow from "../assets/icons/up-arrow.svg";
 
 function App() {
   const toggleMenu = () => {
@@ -22,9 +31,12 @@ function App() {
     nav.classList.toggle("hidden");
   };
   return (
-    <div id="body" className="text-neutral-900 font-campton">
+    <div id="body" className="text-neutral-900 font-campton scroll-smooth">
       {/* header and navigation */}
-      <header className="relative bg-primary-50 px-8 py-9 flex items-center justify-between">
+      <header
+        id="hero"
+        className="relative bg-primary-50 px-8 py-9 flex items-center justify-between"
+      >
         <h1 className="font-cabinetGrotesk text-primary-500 font-bold text-2xl">
           tech<span className="text-secondary-500">mart</span>
         </h1>
@@ -67,32 +79,48 @@ function App() {
       </header>
       <main>
         {/* hero section */}
-        <section className="px-[10%] py-4 text-center bg-primary-50">
-          <h1 className="font-cabinetGrotesk font-bold text-3xl sm:text-4xl lg:text-5xl my-3 sm:max-w-md md:max-w-lg sm:mx-auto">
-            Buy, Sell & Swap Quality Items for techies - all in
-            <span className="text-secondary-500"> one place.</span>
-          </h1>
-          <p className="text-neutral-700 font-campton my-5 md:max-w-xl mx-auto">
-            A platform where techies can buy any physical item and also sell or
-            swap items that they are not in use of, it also create an avenue for
-            them to connect with other creatives around world.
-          </p>
-          <div className="sm:w-fit sm:mx-auto sm:flex sm:justify-center sm:items-center md:my-8">
-            <Link
-              to="/create-account"
-              className="font-cabinetGrotesk bg-primary-500 text-white px-5 py-4 rounded-lg sm:h-fit"
-            >
-              Create an account
-            </Link>
-            <div className="w-fit mx-auto px-6 py-3 rounded-lg my-2 hover:bg-primary-100 transition-all">
-              <a
-                href=""
-                className="font-cabinetGrotesk text-primary-500 font-semibold"
+        <section className="px-[10%] py-4 text-center flex items-center justify-between bg-primary-50">
+          <div className="clipart-left">
+            <img
+              src={heroClipArtLeft}
+              alt=""
+              className="w-[350px] lg:w-[180px] -rotate-12 hidden lg:block md:block md:w-[150px] lg:mt-6"
+            />
+          </div>
+          <div className="main-txt">
+            <h1 className="font-cabinetGrotesk font-bold text-xl sm:text-4xl lg:text-[2.5rem] lg:leading-[1.2] my-3 sm:max-w-md md:max-w-lg sm:mx-auto">
+              <span className="text-secondary-500"> One-stop shop</span> for all
+              things tech - buy, Sell & Swap Quality Items.
+            </h1>
+            <p className="text-neutral-700 font-campton my-5 md:max-w-xl mx-auto">
+              An online marketplace for techies to buy, sell, and swap items
+              they don't use, as well as connect with other creatives around the
+              world.
+            </p>
+            <div className="sm:w-fit sm:mx-auto sm:flex sm:justify-center sm:items-center md:my-8">
+              <Link
+                to="/create-account"
+                className="font-cabinetGrotesk bg-primary-500 text-white px-5 py-4 rounded-lg sm:h-fit"
               >
-                Learn More
-              </a>
-              <img className="mx-auto" src={wavyArrow} alt="" />
+                Create an account
+              </Link>
+              <div className="w-fit ml-[5rem] lg:ml-2 md:ml-2 text-center ml-20 px-6 py-3 rounded-lg my-2 hover:bg-primary-100 ml-4 transition-all">
+                <a
+                  href=""
+                  className="font-cabinetGrotesk text-primary-500 font-semibold"
+                >
+                  Learn More
+                </a>
+                <img className="mx-auto" src={wavyArrow} alt="" />
+              </div>
             </div>
+          </div>
+          <div className="clipart-right">
+            <img
+              src={heroClipArtRight}
+              alt=""
+              className="w-[150px] hidden lg:block md:block rotate-12 lg:w-[180px] md:w-[150px] lg:mt-6"
+            />
           </div>
         </section>
 
@@ -356,7 +384,7 @@ function App() {
         </section>
 
         {/* client reviews */}
-        <section className="w-5/6 mx-auto">
+        <section className="w-5/6 mx-auto mb-12 md:mb-8">
           <h1 className="text-center text-3xl font-cabinetGrotesk font-medium">
             Client Reviews
           </h1>
@@ -415,7 +443,119 @@ function App() {
           </div>
         </section>
       </main>
-      {/* <footer></footer> */}
+
+      {/* footer */}
+      <footer className="bg-[#131418] p-12 lg:flex lg:justify-around relative w-full ">
+        <div className="mb-4 lg:mr-8 md:mr-8 lg:items-center">
+          <div className="logo-md">
+            <img src={logo} alt="" />
+          </div>
+          <div className="my-8 med-devices">
+            <p className="my-10 text-xl font-semibold lg:text-center text-white">
+              © Enterprise martZ Limited
+            </p>
+            <div className="flex">
+              <a href="#" className="mr-4">
+                <img src={facebook} alt="" className="w-[39px] md:w-[60px]" />
+              </a>
+              <a href="#" className="mr-4">
+                <img src={twitter} alt="" className="w-[39px] md:w-[60px]" />
+              </a>
+              <a href="#" className="mr-4">
+                <img src={instagram} alt="" className="w-[39px] md:w-[60px]" />
+              </a>
+              <a href="#">
+                <img src={linkedin} alt="" className="w-[39px] md:w-[60px]" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="footer-items md:flex relative lg:flex lg:justify-evenly lg:items-center">
+          <div className="about  mb-4 w-fit px-12">
+            <h5 className="text-white font-bold">About Us</h5>
+            <ul className=" text-[#FAFAFB]">
+              <li className="mb-6">
+                <a href="#" className=" font-light text-[#FAFAFB]">
+                  FAQs
+                </a>
+              </li>
+              <li className="mb-6">
+                <a href="#" className=" font-light text-[#FAFAFB]">
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a href="#" className=" font-light text-[#FAFAFB]">
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="products  mb-4  lg:mt-0 px-12 pb-8 ">
+            <h5 className="text-white lg:text-x font-bold">Products</h5>
+            <ul className=" text-[#FAFAFB]">
+              <li className="mb-6">
+                <a href="#" className=" font-light text-[#FAFAFB]">
+                  For Shopper
+                </a>
+              </li>
+              <li>
+                <a href="#" className=" font-light text-[#FAFAFB]">
+                  For Vendors
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="legal  mb-4  px-12">
+            {" "}
+            <h5 className="text-white font-bold">Legal</h5>
+            <ul className=" text-[#FAFAFB]">
+              <li className="mb-6">
+                <a href="#" className=" font-light text-[#FAFAFB]">
+                  Privacy Policy
+                </a>
+              </li>
+              <li className="mb-6">
+                <a href="#" className=" font-light text-[#FAFAFB]">
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a href="#" className=" font-light text-[#FAFAFB]">
+                  FAQs
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="contact lg:w-fit lg:px-12">
+            {" "}
+            <h5 className="text-white font-bold">Contact Us</h5>
+            <ul className=" text-[#FAFAFB]">
+              <li className="mb-6">
+                <a href="#" className=" font-light text-[#FAFAFB]">
+                  support@mortz.com
+                </a>
+              </li>
+              <li className="mb-6">
+                <a href="#" className=" font-light text-[#FAFAFB]">
+                  Lagos, Nigeria
+                </a>
+              </li>
+              <li className="mb-6">
+                <a href="#" className=" font-light text-[#FAFAFB]">
+                  08123456789
+                </a>
+              </li>
+              <li className="flex">
+                <a href="#hero" className=" font-light text-[#FAFAFB] mr-2">
+                  <img src={upArrow} alt="up arrow" className="w-[16px]" />
+                </a>
+                <span>back to top</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

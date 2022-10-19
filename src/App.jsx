@@ -8,7 +8,7 @@ function App() {
   return (
     //Any Routes added here won't be merged, please check the routes.jsx file, follow the pattern and add any additional routes.
     <BrowserRouter>
-      <Routes></Routes>
+      <Routes />
     </BrowserRouter>
   );
 }

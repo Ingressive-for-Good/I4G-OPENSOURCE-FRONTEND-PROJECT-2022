@@ -1,5 +1,5 @@
 import React from "react";
-import SubmitButton from "../atoms/Button/SubmitButton";
+import hideIcon from "../../assets/images/HideIcon.png";
 
 function PasswordResetForm() {
   return (
