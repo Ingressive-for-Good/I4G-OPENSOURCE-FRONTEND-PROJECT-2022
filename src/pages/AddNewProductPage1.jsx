@@ -4,6 +4,9 @@ import AddNewProductSucessPopUp from "../components/molecules/AddNewProductSuces
 import Navbar from "../components/molecules/Navbar";
 import Overlay from "../components/molecules/Overlay";
 import SideBar from "../components/molecules/SideBar";
+
+import AddProductNavMsg from "../components/atoms/AddProductNavMsg";
+
 import { sideNav } from "../assets/data/data";
 
 export default function AddNewProductPage1() {
@@ -14,8 +17,10 @@ export default function AddNewProductPage1() {
   };
   return (
     <div className="relative pt-[50px]  lg:pl-[270px] sm:px-[40px] px-[10px] pb-[30px]">
+      <Navbar NavMsg={AddProductNavMsg} />
+
       <SideBar navData={sideNav} />
-      <Navbar />
+
       <Input handleClick={handleClick} />
       {popUp && (
         <>

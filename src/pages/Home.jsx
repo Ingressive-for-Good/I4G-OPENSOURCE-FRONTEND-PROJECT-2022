@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import menuIcon from "../assets/icons/menu-icon.svg";
-import "./home.css";
 import wavyArrow from "../assets/icons/landingpage__wavy-arrow.svg";
 import wavyUnderline from "../assets/icons/landingpage__wavy-underline.svg";
 import bestQuality from "../assets/icons/landingpage__best-quality.svg";
