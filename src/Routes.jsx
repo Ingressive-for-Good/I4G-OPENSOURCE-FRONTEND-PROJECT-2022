@@ -20,6 +20,7 @@ import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
 import UserList from "./pages/UserList.jsx";
 import SubAdminList from "./pages/SubAdminList";
 import SuspendedUsersList from "./pages/SuspendedUsersList";
+import MessagesEmpty from "./pages/MessagesEmpty";
 
 
 // Routes Component Containing Routes For All Base Pages.
@@ -39,7 +40,8 @@ function Routes() {
       <Route element={<AdminDashBoardLayout/>}>
         <Route path="/admin/dashboard" element ={<h1> create dashboard</h1>} />
         <Route path="/admin/products" element={<h1> Admin producet </h1>} />
-        <Route path="/admin/messages" element={<h2> messages </h2>} />
+        <Route path="/admin/messages" element={<MessagesEmpty />} />
+
         <Route path="/admin/users" element={<Users/>} />
         <Route path="/admin/users/userlist" element={<UserList/>} />
         <Route path="/admin/users/subadminlist" element={<SubAdminList/>} />
