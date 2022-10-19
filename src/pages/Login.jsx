@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Main from '../assets/images/main.svg'
 import Arrow from "../assets/icons/arrow.png";
+import Main from '../assets/icons/main.svg'
 import PrimaryButton from "../components/atoms/PrimaryButton";
 import SecondaryButton from "../components/atoms/SecondaryButton";
 import Facebook from "../assets/icons/logos_facebook.png";
@@ -9,6 +9,7 @@ import Frame from "../assets/icons/menu-icon.svg";
 import HidePassword from "../assets/icons/Hide.png";
 import ShowPassword from "../assets/icons/show-password.png";
 import { Link } from "react-router-dom";
+import AuthSide from "../components/atoms/AuthSide";
 
 const PASSWORD_REGEX =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
@@ -77,15 +78,7 @@ const Login = () => {
   return (
     <section className="h-screen font-campton font-[500px]">
       <div className="w-full flex">
-        <div className="hidden lg:block lg:w-[40%] bg-primary-50 min-h-screen h-full lg:px-[7%] pt-[49px] ">
-          <h1 className='font-cabinetGrotesk text-2xl font-bold text-primary-500 '>tech<span className='text-secondary-500'>mart</span></h1>
-          <div className="">
-            <img src={Main} alt="Main Image" className='mt-24' />
-          </div>
-          <p className="text-neutral-600 text-center leading-8 lg:mt-8">
-          Verify your email address to stay protected and get the best deals.
-          </p>
-        </div>
+        <AuthSide Main={Main}/>
         <div className="bg-white w-full lg:w-[60%] md:py-[3%] md:px-[8%] px-[5%] py-[5%]">
           <div className="lg:hidden flex justify-between items-center">
             <h1 className='font-cabinetGrotesk text-2xl font-bold text-primary-500 '>tech<span className='text-secondary-500'>mart</span></h1>
@@ -185,7 +178,7 @@ const Login = () => {
               </SecondaryButton>
             </div>
           </div>
-          <div className="md:fixed text-center my-4 sm:my-0 lg:mx-[10%] md:mx-[25%] lg:bottom-4 md:bottom-16">
+          <div className="text-center mt-[100px] lg:mx-[10%] md:mx-[25%]">
             <span>
               Don't have an account?
               <Link to='/create-account' className="text-primary-500 font-bold">

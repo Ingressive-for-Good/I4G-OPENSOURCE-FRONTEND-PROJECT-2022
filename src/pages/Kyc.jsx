@@ -4,7 +4,7 @@ import kycImg from "../assets/icons/kyc-img.svg";
 import logo from "../assets/icons/logo.svg";
 import lineSvg from "../assets/icons/line.svg";
 import ham from "../assets/icons/hamburger.svg";
-import downArrow from "../assets/icons/downArrow.svg";
+import PrimaryButton from "../components/atoms/PrimaryButton";
 
 const Kyc = () => {
   return (
@@ -23,11 +23,6 @@ const Kyc = () => {
               <img className="w-96" src={kycImg} alt="" />
             </div>
             <div className="typography">
-              <p className="text-lg font-normal leading-8 text-center mt-6 txt-color">
-                When you verify email address, your email marketing is more
-                effective, fraud prevention is improved and the ability to
-                protect your sender reputation increases.
-              </p>
             </div>
           </div>
         </div>{" "}
@@ -58,11 +53,11 @@ const Kyc = () => {
                   <div className="flex w-full h-fit items-center justify-between">
                     <input
                       type="number"
-                      className="country-code-input"
+                      className="w-[20%] border-2 mt-2 mb-6 md:mb-5 rounded-lg py-5 px-4 border-neutral-500 placeholder:text-neutral-800 placeholder:leading-5"
                       placeholder="+234"
                     />
                     <input
-                      className="form-control-v2"
+                      className="w-[75%] border-2 mt-2 mb-6 md:mb-5 rounded-lg py-5 px-4 border-neutral-500 placeholder:text-neutral-800 placeholder:leading-5"
                       // id="number"
                       type="text"
                       placeholder="Enter your 11-digit phone number"
@@ -77,15 +72,12 @@ const Kyc = () => {
                     ID Type <span className="required">*</span>
                   </label>
                   <div className="relative">
-                    <select className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline ">
+                    <select className="w-full border-2 mt-2 mb-6 md:mb-5 rounded-lg py-5 px-4 border-neutral-500 placeholder:text-neutral-800 placeholder:leading-5">
                       <option>Select the ID type</option>
                       <option>Passport</option>
                       <option>Driving License</option>
                       <option>National ID</option>
                     </select>
-                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                      <img src={downArrow} alt="" className="w-4" />
-                    </div>
                   </div>
                 </div>
                 <div className="mb-6">
@@ -95,14 +87,14 @@ const Kyc = () => {
                   >
                     Upload a copy of ID Type <span className="required">*</span>
                   </label>
-                  <div className="relative flex w-full justify-between form-control-v2">
+                  <div className="relative flex w-full justify-between w-full border-2 mt-2 mb-6 md:mb-5 rounded-lg py-5 px-4 border-neutral-500 placeholder:text-neutral-800 placeholder:leading-5">
                     <label className="block text-gray-400 text-sm sm-devices font-bold">
                       Upload a copy of your ID
                     </label>
                     <input
                       type="file"
                       id="file-upload"
-                      className="form-control-v2 hidden"
+                      className=" hidden "
                     />
                     <label
                       htmlFor="file-upload"
@@ -112,14 +104,7 @@ const Kyc = () => {
                     </label>
                   </div>
                 </div>
-                <div className="flex items-center justify-center">
-                  <button
-                    className="bg-blue-700 w-full hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline text-center"
-                    type="button"
-                  >
-                    Proceed
-                  </button>
-                </div>
+                <PrimaryButton>Proceed</PrimaryButton>
               </form>
             </div>
           </div>

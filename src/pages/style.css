@@ -21,7 +21,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 550px;
+  margin: 0 auto;
 }
 
 .typo {
@@ -179,11 +179,7 @@
   }
 
   .form-control {
-    width: 100% !important;
-    margin-right: 20px !important;
     padding: 4px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     outline: none;
     max-width: fit-content;
   }

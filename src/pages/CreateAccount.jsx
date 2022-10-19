@@ -7,6 +7,7 @@ import Line from '../assets/icons/line.svg'
 import Hide from '../assets/icons/Hide.svg'
 import Google from '../assets/icons/Google.svg'
 import Facebook from '../assets/icons/Facebook.svg'
+import AuthSide from '../components/atoms/AuthSide';
 
 function CreateAccount() {
     const [show, setShow] = useState(false)
@@ -40,15 +41,9 @@ function CreateAccount() {
             </a>
            
         </header>
-        <main className='flex items-stretch h-screen'>
-            <section className='hidden w-2/5 lg:flex flex-col justify-around  bg-primary-50 pt-12 pb-24 px-11 xl:px-12'>
-                <h1 className='font-cabinetGrotesk text-3xl font-bold text-primary-500 justify-self-start self-start xl:pl-10 pl-8'>tech<span className='text-secondary-500'>mart</span></h1>
-
-                <img src={Main} alt="Main Image" className='mt-24' />
-
-                <p className='text-center lg:mt-3 xl:mt-6 leading-8  text-neutral-600 text-lg'>When you verify email address, your email marketing is more effective, fraud prevention is improved and the ability to protect your sender reputation increases.</p>
-            </section>
-            <section className='flex justify-center w-screen pt-6 pb-5 md:pt-10 md:pb-9 lg:w-3/5 lg:pt-14 lg:pb-16'>
+        <main className='flex items-stretch'>
+            <AuthSide Main={Main}/>
+            <section className='flex justify-center pt-6 pb-5 md:pt-10 md:pb-9 lg:w-3/5 lg:pt-14 lg:pb-16'>
                 <div className='w-full lg:w-4/5 xl:w-3/4'>
                     <h2 className='font-cabinetGrotesk font-bold text-center text-xl md:text-3xl lg:mt-8 xl:mt-6'>Create An Account</h2>
                     <img src={Line} alt="Line Icon" className='mx-auto w-12 md:w-auto' />
@@ -109,7 +104,7 @@ function CreateAccount() {
                             </button>
                         </div>
 
-                        <p className='font-medium mt-10 md:mt-14 leading-6 text-sm text-center'>Already have an account? <Link to="/login" className='text-base font-bold text-primary-500'>Log In</Link></p> 
+                        <p className='font-medium mt-[100px] leading-6 text-sm text-center'>Already have an account? <Link to="/login" className='text-base font-bold text-primary-500'>Log In</Link></p> 
                     </form>
                 </div>
                 
