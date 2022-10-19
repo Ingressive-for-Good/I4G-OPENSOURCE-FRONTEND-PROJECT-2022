@@ -404,6 +404,7 @@ The button also being the only highlighted button seems to encourage an action w
 -----Main Goal -- Improved UI Visual Balance and Consistency
 
 
+
 ## Name: Olatide Jegede 
 
 ## Description: Replacement of logo and improved balance on the User Dashboard - Mobile View
@@ -413,4 +414,13 @@ The button also being the only highlighted button seems to encourage an action w
 
 -----Main Goal -- Improved UI Balance and Consistency
 
+
+
+## Name: Olatide Jegede 
+
+## Description: Addition of Product Upload Failed Pop Up
+### Observations/Changes 
+- I designed the pop up for product upload failed to let users know that the product they tried to upload failed
+
+-----Main Goal -- Improved UX, UI Design
 
