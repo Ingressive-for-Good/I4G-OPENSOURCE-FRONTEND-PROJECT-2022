@@ -1,20 +1,14 @@
-import React from "react";
-
-import { BrowserRouter} from "react-router-dom";
-
-
-
-import Routes from "./Routes";
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './Routes'; // Routes Component houses all routes in the app.
 
 function App() {
   return (
-    //Any Routes added here won't be merged, please check the routes.jsx file, follow the pattern and add any additional routes.
     <BrowserRouter>
-      <Routes>
-      </Routes>
+      {/*  Placing it here so that react knows about our defined routes */}
+      <Routes />
     </BrowserRouter>
   );
 }
 
 export default App;
-
