@@ -7,6 +7,7 @@ import Navbar from '../components/molecules/Navbar'
 import Overlay from '../components/molecules/Overlay'
 
 
+
 export default function AddNewProductPage1() {
   // This state controls the success pop up
   const [popUp, setPopUp] = useState(false)
@@ -28,6 +29,7 @@ export default function AddNewProductPage1() {
         </>
         }
       </div>
+
     </div>
   )
 }

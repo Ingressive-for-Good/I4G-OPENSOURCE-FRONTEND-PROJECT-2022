@@ -28,10 +28,10 @@ export default function Navbar({text}) {
           <img className="" src={toggle} alt="" />
         </div>
       </div>
-      <div className="lg:flex flex-row gap-[24px] hidden">
-        <label className="relative">
+      <div>
+        <label className="relative block lg:hidden">
           <input
-            className="py-[16px] pl-[40px]  border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[250px]"
+            className="py-[14px] pl-[40px]  border-[#A1A4B6] border-[1.2px] rounded-[8px] w-full"
             type="text"
             placeholder="Search for gadgets"
           />
@@ -41,12 +41,6 @@ export default function Navbar({text}) {
             alt="searchIcon"
           />
         </label>
-        <div className="w-[60px]">
-          <img src={notificatin} alt="notification" />
-        </div>
-        <div className="w-[60px]">
-          <img src={avatar} alt="avatar" />
-        </div>
       </div>
     </div>
   );
