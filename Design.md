@@ -228,7 +228,7 @@ The button also being the only highlighted button seems to encourage an action w
 ## Name:  Ayomide Olowosile , Nora Eboesomi 
 ## Description: Design User Dashboard: View Uploaded Products Screen
 
-### Observation/Changes: Explain in details the contribution you made.
+### Observation/Changes:
 - This screen enables users to be able to see the products they have uploaded for sale.
 - On this page, users can mark products as unavailable and permanently delete uploaded products
 - Nora and I designed an empty state page - a page that indicates that the user has not uploaded any product and a button to prompt the user to add a new product
@@ -238,3 +238,33 @@ The button also being the only highlighted button seems to encourage an action w
 - Nora and I used the colors and typography on the style guide to ensure consistency.
 
 —— Main Goal — Fully Responsive Design for View Uploaded Products Screen on User Dashboard
+
+
+
+
+## Name: Ayomide Olowosile , Nora Eboesomi 
+## Description: Design User dashboard ( Product upload page)
+
+### Observation/Changes: 
+- I designed a responsive product upload screen for both empty state and filled state.
+- The product upload screen comprised of;
+     - Input field with a drop down menu for product category
+     - Input field for product name
+     - Input field for product price
+     - Input field with a drop down menu, if a product is available for swapping
+     - Input field with a drop down menu for product condition
+     - Input field for product description
+     - A plus icon to upload a maximum of 3 product images
+     - An upload now CTA (Primary button)
+     - Also design a product update successful pop screen, which will comprise of;
+
+—— Main Goal —  Responsive Design for the User dashboard (Product upload page)
+
+
+
+## Name:  
+## Description:
+
+### Observation/Changes: 
+
+—— Main Goal — 
