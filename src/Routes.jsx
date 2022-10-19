@@ -14,6 +14,8 @@ import CreateAccount from "./pages/CreateAccount";
 import DeleteProduct from "./components/molecules/deleteProduct";
 import ResetPasswordPage from "./pages/PasswordResetPage";
 import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
+import CreateSubAdmin from "./pages/CreateSubAdmin";
+import SubAdminProfilePage from "./pages/SubAdminProfile";
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -34,6 +36,8 @@ function Routes() {
         <Route path="/admin/messages" element={<h2> messages </h2>} />
         <Route path="/admin/users" element={<h2> users </h2>} />
         <Route path="/admin/profile" element={<h2> profile </h2>} />
+        <Route path="/admin/create-sub-admin" element={<CreateSubAdmin/>} />
+        <Route path="/admin/sub-admin-profile" element={<SubAdminProfilePage/>} />
       </Route>
       <Route path="/kyc" element={<Kyc />} />
       <Route path="/products" element={<AddNewProductPage1/>} />
