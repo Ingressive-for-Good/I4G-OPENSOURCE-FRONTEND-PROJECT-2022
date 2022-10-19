@@ -16,10 +16,15 @@ import DeleteProduct from "./pages/deleteProduct";
 import ResetPasswordPage from "./pages/PasswordResetPage";
 import AdminDashBoardLayout from "./templates/AdminDashBoardLayout";
 
+
 import UserList from "./pages/UserList.jsx";
 import SubAdminList from "./pages/SubAdminList";
 import SuspendedUsersList from "./pages/SuspendedUsersList";
 // import AdminUsersProfile from "./pages/AdminUsersProfile";
+
+
+import EditProductDetails from "./components/molecules/EditProductDetails";
+
 
 // import MessagesEmpty from "./pages/MessagesEmpty";
 // import MessagesStart from "./pages/MessagesStart";

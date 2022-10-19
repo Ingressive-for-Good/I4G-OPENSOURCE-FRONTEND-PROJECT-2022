@@ -394,3 +394,61 @@ The button also being the only highlighted button seems to encourage an action w
 -----Main Goal -- Improved UI Color Consistency
 
 
+## Name: Olatide Jegede 
+
+## Description: Improved Visual Balance and Consistency on User Dashboard
+### Observations/Changes 
+- I made sure that every component and element used in the design of the User Dashboard screens was accurate and applied consistently throughout.
+- I corrected elements where there were mistakes and errors in the design of the User Dashboard Screens.
+
+-----Main Goal -- Improved UI Visual Balance and Consistency
+
+
+
+## Name: Olatide Jegede 
+
+## Description: Replacement of logo and improved balance on the User Dashboard - Mobile View
+### Observations/Changes 
+- I replaced the logo of the user dashboard screens (mobile view) to the correct logo.
+- I improved balance on the user dashboard screens (mobile view) by ensuring all elements were used according to the style guide and aligned properly.
+
+-----Main Goal -- Improved UI Balance and Consistency
+
+
+
+## Name: Olatide Jegede 
+
+## Description: Addition of Product Upload Failed Pop Up
+### Observations/Changes 
+- I designed the pop up for product upload failed to let users know that the product they tried to upload failed
+
+-----Main Goal -- Improved UX, UI Design
+
+
+
+## Name: Olatide Jegede 
+
+## Description:  Improved Visual Hierarchy and UX writing on User Dashboard - Wishlist
+### Observations/Changes 
+- I made corrections to some design elements: the dropdown arrow, the color of the delete button and also the text in the alert in the User Dashboard - Wishlist screen
+- I also made adjustments and alignments to some elements.
+
+-----Main Goal -- Improved UX Writing, UI Design
+
+
+
+## Name: Olatide Jegede 
+
+## Description:  Improved Visual Hierarchy on Tablet Side Navigation
+### Observations/Changes 
+- I made corrections to the elements on side navigation of the tablet view cause all were in the same color which makes it difficult to know the screen you are on.
+
+-----Main Goal -- Improved UI Design
+
+## Name: Toyeeb Amusan
+
+#Description: Addition of Side Navigation for User Dashboard - Mobile
+### Observation/Changes
+- I designed the side navigation for the mobile screens on the user dashboard to ease navigation for users. 
+
+-----Main Goal -- Imporoved User Experience, UI Design
