@@ -1,50 +1,17 @@
 import React from 'react'
 import { useSelector } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import UserSidebar from './UserSidebar';
 import ProductsCard from './ProductsCard';
-import Img1 from '../../assets/icons/element-4.png'
-import Img2 from '../../assets/icons/Chat.png';
-import Img3 from '../../assets/icons/box.png'
-import Img4 from '../../assets/icons/Vector1.png'
-import Img5 from '../../assets/icons/_.png'
-import Img6 from '../../assets/icons/logout.png'
 import Img7 from '../../assets/icons/notification.png'
-import Img8 from '../../assets/icons/search-normal.png'
 import Img9 from '../../assets/icons/avatar.png'
 import emptyBox from '../../assets/icons/logos_parcel-icon.png'
 
 const ProductDesktop = () => {
     const {isEmpty, uploadedProducts} = useSelector((state) => state.app)
-    const sidebarMenu = [
-        {name: 'Dashboard', icon:Img1, linkName: '/dashboard'},
-        {name: 'Messages', icon:Img2, linkName: '/messages'},
-        {name: 'Products', icon:Img3, linkName: '/view-products'},
-        {name: 'Wishlists', icon:Img4, linkName: '/wishlists'},
-        {name: 'Help & support', icon:Img5, linkName: '/support'}
-    ]
-
-    const ActiveBackground = 'white'
-    const ActiveLink = '';
-    const normalLink = ''
 
   return (
     <div className=''>
-        <div className=' w-[300px] pt-[25px]  fixed bg-[#E7E9F8] side'>
-            <p className='text-[#0F27BD] pl-[55px] font-cabinet pb-5 font-[700] text-[30px] '>tech<span className='text-[#F17105]'>mart</span></p>
-            <p className='text-[#0F27BD] pl-[55px] font-campton font-[700] pb-6 text-[16px] '>Menu</p>
-            <div className='' >
-                {sidebarMenu.map(item => (
-                    <NavLink key={item.name} style={({isActive}) => ({backgroundColor: isActive ? ActiveBackground : ''})} to={item.linkName} className='flex pl-[55px] gap-2 py-4 rounded-[-120px] items-center mb-6 cursor-pointer'>
-                        <img src={item.icon} alt="img text" />
-                        <p className='text-[16px] font-campton text-[#A1A4B6]'>{item.name}</p>
-                    </NavLink>
-                ))}
-            </div>
-            <div className=' pl-[55px] pt-8 flex items-center gap-2 cursor-pointer'>
-                <img src={Img6} alt="" />
-                <p className='text-[#D41111] font-campton text-[18px]'>Log out</p>
-            </div>
-        </div>
+        <UserSidebar/>
         <div className='absolute left-[300px] tab mt-8'>
             <div className='flex justify-between items-center'>
                 <div className='ml-6 font-cabinet'>

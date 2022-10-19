@@ -86,26 +86,31 @@ export const sideNav = [
     id: 1,
     icon: dashboardIcon,
     text: "Dashboard",
+    linkName: '/dashboard'
   },
   {
     id: 2,
     icon: chatIcon,
     text: "Messages",
+    linkName:'/messages'
   },
   {
     id: 3,
     icon: productIcon,
     text: "Products",
+    linkName:'/view-products'
   },
   {
     id: 4,
     icon: wishlistIcon,
     text: "Wishlist",
+    linkName:'/wishlist'
   },
   {
     id: 5,
     icon: helpIcon,
     text: "Help & Support",
+    linkName: '/help'
   },
 ];
 export const adminNav = [
