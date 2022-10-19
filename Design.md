@@ -290,3 +290,20 @@ The button also being the only highlighted button seems to encourage an action w
 - To ensure conaiatency, I made use of the colors, typography and icons on the style guide.
 
 —— Main Goal —  To enable users interact with themselves and enable users interact with the admin.
+
+
+
+
+
+## Name:  Abigail Nwakanma
+## Description: Improve UX writing of Help and Support and Frequently Asked Questions on the User dashboard. 
+
+### Observation/Changes: 
+- I brainstormed and came up with frequently asked questions with respect to the particular services to be rendered by the platform.
+- I came up with relevant answers to the frequently asked questions, in line with UX writing principles and standards.
+- I ensured that the questions and answers are straight to the point and sufficient to meet the needs of any user.
+
+—— Main Goal — To enable users seek quick answers to frequently asked questions they may have at any point in time.
+
+
+
