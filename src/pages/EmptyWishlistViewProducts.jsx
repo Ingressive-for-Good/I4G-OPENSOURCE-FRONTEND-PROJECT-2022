@@ -1,8 +1,8 @@
 import React from "react";
 import CreateWishButton from "../components/atoms/Button/CreateWishButton";
 import NavbarDashboard from "../components/molecules/NavbarDashboard";
-import SideBar from "../components/molecules/SideBar";
-import { sideNav } from "../assets/data/data";
+import SidebarWishlist from "../components/molecules/SidebarWishlist";
+import userAvatar from "../assets/icons/avatar.png"
 
 function EmptyWishlistViewProducts() {
   return (
@@ -10,9 +10,9 @@ function EmptyWishlistViewProducts() {
         <NavbarDashboard />
         {/* Sidebar */}
         <div className="hidden md:block">
-            <SideBar navData={sideNav}/>
+            <SidebarWishlist />
         </div>
-        <div className="flex px-6 justify-between md:relative md:bottom-14">
+        <div className="flex px-6 justify-between md:relative bottom-4">
             {/* Intro text */}
             <div className="font-cabinetGrotesk md:ml-64">
                 <p className="font-medium text-[20px]">Hey Nora👋🏾</p>
@@ -26,7 +26,7 @@ function EmptyWishlistViewProducts() {
                     <path d="M18.325 15.7917C18.05 15.2833 17.4667 15 16.6834 15C16.0917 15 15.5834 15.2417 15.2834 15.6583C14.9834 16.075 14.9167 16.6333 15.1 17.1917C15.4584 18.275 16.0834 18.5167 16.425 18.5583C16.475 18.5667 16.525 18.5667 16.5834 18.5667C16.95 18.5667 17.5167 18.4083 18.0667 17.5833C18.5084 16.9417 18.5917 16.3 18.325 15.7917Z" fill="#717591"/>
                 </svg>
                 <form action="">
-                    <input className="bg-gray-50" type="text" placeholder="Search for gadgets" />
+                    <input className="bg-gray-50 font-cabinetGrotesk p-1" type="text" placeholder="Search for gadgets" />
                 </form>
             </div>
             {/* notificaation icon */}
@@ -37,7 +37,7 @@ function EmptyWishlistViewProducts() {
                 </svg>
             </div>
             {/* User Image */}
-            <img src="../src/assets/icons/avatar.png" alt="user avatar" />
+            <img src={userAvatar} alt="user avatar" width={50}/>
             </div>
         </div>
         {/* Empty wishlist icon */}
