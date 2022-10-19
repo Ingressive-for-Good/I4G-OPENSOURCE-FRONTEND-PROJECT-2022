@@ -372,3 +372,15 @@ The button also being the only highlighted button seems to encourage an action w
 
 -----Main Goal -- Improved User interface Responsively.
 
+
+
+## Name: Nnanyere Scottderek
+
+## Description: Design a user profile page
+### Observations/Changes
+- I designed the profile page of the user and this has to do with designing display name, display picture, account details, reset password,  delete account popup e.t.c. 
+- This design was doe responsively across the platform  starting from the desktop, tablet and mobile screens .
+
+-----Main Goal -- Improved User interface Responsively.
+
+
