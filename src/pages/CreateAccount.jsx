@@ -2,10 +2,8 @@ import {Link} from 'react-router-dom'
 
 import React, { useState } from 'react';
 import Menu from '../assets/icons/Menu-Full.svg'
-import Main from '<div className="" />
-<assets />
-<images></images>/main.svg'
-import Line from '../assets/icons/Line.svg'
+import Main from '../assets/images/main.svg'
+import Line from '../assets/icons/line.svg'
 import Hide from '../assets/icons/Hide.svg'
 import Google from '../assets/icons/Google.svg'
 import Facebook from '../assets/icons/Facebook.svg'
