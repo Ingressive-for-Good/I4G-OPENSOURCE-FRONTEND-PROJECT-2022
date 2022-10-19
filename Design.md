@@ -445,4 +445,10 @@ The button also being the only highlighted button seems to encourage an action w
 
 -----Main Goal -- Improved UI Design
 
+## Name: Toyeeb Amusan
 
+#Description: Addition of Side Navigation for User Dashboard - Mobile
+### Observation/Changes
+- I designed the side navigation for the mobile screens on the user dashboard to ease navigation for users. 
+
+-----Main Goal -- Imporoved User Experience, UI Design
