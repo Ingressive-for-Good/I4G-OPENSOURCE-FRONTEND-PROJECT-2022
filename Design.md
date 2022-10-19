@@ -275,9 +275,18 @@ The button also being the only highlighted button seems to encourage an action w
 —— Main Goal —  Responsive Design for the User dashboard (Help & Support)
 
 
-## Name:  
-## Description:
 
-### Observation/Changes: 
 
-—— Main Goal — 
+## Name:  Abigail Nwakanma
+## Description: User Dashboard: Messages
+
+### Observation/Changes: The message feature ordinarily facilitates the sending and receiving of messages between users and between admin and users.
+
+- I designed the message screens that allow users to send a message to the seller of a product they want to purchase.
+- I designed the message screens that allow users to send a message to the the admin in deserving circumstances. 
+- I designed an empty state page to indicate to a user that they have not sent or received any messages.
+- I designed a filled state page to show t the user all the messages they have sent and received so far.
+- The designs were made with responsiveness in mind- there are desktop, tablet and mobile screen designs.
+- To ensure conaiatency, I made use of the colors, typography and icons on the style guide.
+
+—— Main Goal —  To enable users interact with themselves and enable users interact with the admin.
