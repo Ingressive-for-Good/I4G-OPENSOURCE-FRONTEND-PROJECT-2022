@@ -22,6 +22,14 @@ import instagram from "../assets/icons/instagram.svg";
 import linkedin from "../assets/icons/linkedin.svg";
 import upArrow from "../assets/icons/up-arrow.svg";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/bundle";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper";
+
+
 function App() {
   const toggleMenu = () => {
     var nav = document.getElementById("nav");
@@ -395,52 +403,156 @@ function App() {
           </p>
 
           {/* review grid */}
-          <div className="space-y-4 gap-6 sm:space-y-0 sm:grid sm:grid-cols-2 lg:grid-cols-4">
-            <div className="bg-primary-50 rounded-lg p-7">
-              <img className="mx-auto my-4" src={profileImg} alt="" />
-              <p className="text-neutral-900 text-center leading-relaxed">
-                "techmart is unarguably the best eccomerce platform - a great
-                transforation to Africa"
-              </p>
-              <h5 className="text-xl font-semibold text-center mt-5">
-                Aisha Issa
-              </h5>
-              <p className="text-center w-fit mx-auto">techmart Vendor</p>
-            </div>
-            <div className="bg-primary-50 rounded-lg p-7">
-              <img className="mx-auto my-4" src={profileImg} alt="" />
-              <p className="text-neutral-900 text-center leading-relaxed">
-                "techmart is unarguably the best eccomerce platform - a great
-                transforation to Africa"
-              </p>
-              <h5 className="text-xl font-semibold text-center mt-5">
-                Aisha Issa
-              </h5>
-              <p className="text-center w-fit mx-auto">techmart Vendor</p>
-            </div>
-            <div className="bg-primary-50 rounded-lg p-7">
-              <img className="mx-auto my-4" src={profileImg} alt="" />
-              <p className="text-neutral-900 text-center leading-relaxed">
-                "techmart is unarguably the best eccomerce platform - a great
-                transforation to Africa"
-              </p>
-              <h5 className="text-xl font-semibold text-center mt-5">
-                Aisha Issa
-              </h5>
-              <p className="text-center w-fit mx-auto">techmart Vendor</p>
-            </div>
-            <div className="bg-primary-50 rounded-lg p-7">
-              <img className="mx-auto my-4" src={profileImg} alt="" />
-              <p className="text-neutral-900 text-center leading-relaxed">
-                "techmart is unarguably the best eccomerce platform - a great
-                transforation to Africa"
-              </p>
-              <h5 className="text-xl font-semibold text-center mt-5">
-                Aisha Issa
-              </h5>
-              <p className="text-center w-fit mx-auto">techmart Vendor</p>
-            </div>
-          </div>
+
+
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={100}
+            slidesPerGroup={1}
+            loop={true}
+            loopFillGroupWithBlank={true}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            centeredSlides={true}
+            centeredSlidesBounds={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper h-1/4  w-full p-12"
+            breakpoints={
+              {
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                  slidesPerGroup: 2
+                },
+                1024: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                  slidesPerGroup: 2
+                },
+                1445: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                  slidesPerGroup: 3
+                },
+                1536: {
+                  slidesPerView: 4,
+                  spaceBetween: 20,
+                  slidesPerGroup: 4
+                }
+              }
+            }
+          >
+
+            <SwiperSlide >
+              <div className="bg-primary-50 rounded-lg p-7 w-[18rem]">
+                <img
+                  className="mx-auto my-4"
+                  src={profileImg}
+                  alt=""
+                />
+                <p className="text-neutral-900 text-center leading-relaxed">
+                  "techmart is unarguably the best eccomerce platform - a great
+                  transforation to Africa"
+                </p>
+                <h5 className="text-xl font-semibold text-center mt-5">
+                  Aisha Issa
+                </h5>
+                <p className="text-center w-fit mx-auto">techmart Vendor</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="bg-primary-50 rounded-lg p-7 w-[18rem] ">
+                <img
+                  className="mx-auto my-4"
+                  src={profileImg}
+                  alt=""
+                />
+                <p className="text-neutral-900 text-center leading-relaxed">
+                  "techmart is unarguably the best eccomerce platform - a great
+                  transforation to Africa"
+                </p>
+                <h5 className="text-xl font-semibold text-center mt-5">
+                  Aisha Issa
+                </h5>
+                <p className="text-center w-fit mx-auto">techmart Vendor</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="bg-primary-50 rounded-lg p-7 w-[18rem] ">
+                <img
+                  className="mx-auto my-4"
+                  src={profileImg}
+                  alt=""
+                />
+                <p className="text-neutral-900 text-center leading-relaxed">
+                  "techmart is unarguably the best eccomerce platform - a great
+                  transforation to Africa"
+                </p>
+                <h5 className="text-xl font-semibold text-center mt-5">
+                  Aisha Issa
+                </h5>
+                <p className="text-center w-fit mx-auto">techmart Vendor</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="bg-primary-50 rounded-lg p-7 w-[18rem] ">
+                <img
+                  className="mx-auto my-4"
+                  src={profileImg}
+                  alt=""
+                />
+                <p className="text-neutral-900 text-center leading-relaxed">
+                  "techmart is unarguably the best eccomerce platform - a great
+                  transforation to Africa"
+                </p>
+                <h5 className="text-xl font-semibold text-center mt-5">
+                  Aisha Issa
+                </h5>
+                <p className="text-center w-fit mx-auto">techmart Vendor</p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="bg-primary-50 rounded-lg p-7 w-[18rem] ">
+                <img
+                  className="mx-auto my-4"
+                  src={profileImg}
+                  alt=""
+                />
+                <p className="text-neutral-900 text-center leading-relaxed">
+                  "techmart is unarguably the best eccomerce platform - a great
+                  transforation to Africa"
+                </p>
+                <h5 className="text-xl font-semibold text-center mt-5">
+                  Aisha Issa
+                </h5>
+                <p className="text-center w-fit mx-auto">techmart Vendor</p>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="bg-primary-50 rounded-lg p-7 w-[18rem] ">
+                <img
+                  className="mx-auto my-4"
+                  src={profileImg}
+                  alt=""
+                />
+                <p className="text-neutral-900 text-center leading-relaxed">
+                  "techmart is unarguably the best eccomerce platform - a great
+                  transforation to Africa"
+                </p>
+                <h5 className="text-xl font-semibold text-center mt-5">
+                  Aisha Issa
+                </h5>
+                <p className="text-center w-fit mx-auto">techmart Vendor</p>
+              </div>
+            </SwiperSlide>
+
+          </Swiper>
         </section>
       </main>
 

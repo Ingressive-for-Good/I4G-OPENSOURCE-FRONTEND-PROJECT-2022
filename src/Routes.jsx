@@ -17,6 +17,7 @@ import ResetPasswordPage from './pages/PasswordResetPage';
 import Users from './pages/Users';
 
 import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
+import EditProductDetails from "./components/molecules/EditProductDetails";
 
 import UserList from './pages/UserList.jsx';
 import SubAdminList from './pages/SubAdminList';
