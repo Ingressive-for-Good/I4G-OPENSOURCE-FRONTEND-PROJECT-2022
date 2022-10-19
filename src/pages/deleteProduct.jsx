@@ -3,7 +3,7 @@ import React from "react";
 import Hero from "../components/molecules/hero";
 
 import Delete from "../components/molecules/delete";
-import Sidebar from "../components/molecules/SideNav";
+import Sidebar from "../components/molecules/sideNav";
 
 const DeleteProduct = () => {
   return (
