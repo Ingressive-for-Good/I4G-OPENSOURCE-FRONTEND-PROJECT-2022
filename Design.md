@@ -424,3 +424,15 @@ The button also being the only highlighted button seems to encourage an action w
 
 -----Main Goal -- Improved UX, UI Design
 
+
+
+## Name: Olatide Jegede 
+
+## Description:  Improved Visual Hierarchy and UX writing on User Dashboard - Wishlist
+### Observations/Changes 
+- I made corrections to some design elements: the dropdown arrow, the color of the delete button and also the text in the alert in the User Dashboard - Wishlist screen
+- I also made adjustments and alignments to some elements.
+
+-----Main Goal -- Improved UX Writing, UI Design
+
+
