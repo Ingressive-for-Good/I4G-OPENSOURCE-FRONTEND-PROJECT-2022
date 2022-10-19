@@ -3,7 +3,7 @@ import notificatin from '../../assets/icons/notification.svg'
 import avatar from '../../assets/icons/avatar.svg'
 import toggle from '../../assets/icons/toggle.svg'
 
-export default function Navbar() {
+export default function Navbar({text}) {
   return (
     <div className="flex flex-row w-full justify-between font-cabinetGrotesk">
       <div className="">
@@ -14,7 +14,7 @@ export default function Navbar() {
           Hey Nora👋🏾
         </h1>
         <p className="text-neutral-900 md:text-[28px] font-[500] ">
-          Add a New Product
+          {text}
         </p>
         <p className="md:text-[18px] text-[16px] font-[500]">
           Ensure that you are filling the{" "}

@@ -15,6 +15,7 @@ import CreateAccount from "./pages/CreateAccount";
 import DeleteProduct from "./components/molecules/deleteProduct";
 import ResetPasswordPage from "./pages/PasswordResetPage";
 import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
+import EditProductDetails from "./components/molecules/EditProductDetails";
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -27,6 +28,7 @@ function Routes() {
       <Route path="/view-products" element={<><ViewProducts/></>}/>
       <Route path="/email-verification" element={<EmailVerify />} />
       <Route path="/phone-verification" element={<PhoneNumberVerification/>} />
+      <Route path="/edit-product" element={<EditProductDetails/>}/>
 
       {/* Protected Pages */}
       <Route path="/dashboard" element={<DashboardPage />} />
