@@ -436,3 +436,13 @@ The button also being the only highlighted button seems to encourage an action w
 -----Main Goal -- Improved UX Writing, UI Design
 
 
+
+## Name: Olatide Jegede 
+
+## Description:  Improved Visual Hierarchy on Tablet Side Navigation
+### Observations/Changes 
+- I made corrections to the elements on side navigation of the tablet view cause all were in the same color which makes it difficult to know the screen you are on.
+
+-----Main Goal -- Improved UI Design
+
+
