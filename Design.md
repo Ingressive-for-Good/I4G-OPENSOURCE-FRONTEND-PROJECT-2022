@@ -316,3 +316,14 @@ The button also being the only highlighted button seems to encourage an action w
 - I drafted and formulated the legal policy statement of the brand in line with applicable legal standards.
 
 —— Main Goal —To enable users know their rights, obligations and the legal poicies that guide them as they make use of the platform.
+
+
+
+## Name: Osasumwen Isibor
+
+## Description: I designed the Search Result not Found Page for the User dashboard  
+### Observations/Changes
+- I designed the search result not found screen and made it fully responsive
+- This was to give the user feedback about a product that is not available on the site
+
+-----Main Goal -- Responsive Search Result not Found Page for the User dashboard 
