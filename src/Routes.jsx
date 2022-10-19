@@ -22,7 +22,9 @@ import UserList from './pages/UserList.jsx';
 import SubAdminList from './pages/SubAdminList';
 import SuspendedUsersList from './pages/SuspendedUsersList';
 import AdminUsersProfile from './pages/AdminUsersProfile';
+
 import MessagesEmpty from "./pages/MessagesEmpty";
+import MessagesStart from "./pages/MessagesStart";
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -58,6 +60,9 @@ function Routes() {
                     element={<h1> Admin producet </h1>}
                 />
                 <Route path="/admin/messages" element={<MessagesEmpty />} />
+                    <Route path="/admin/messages/start" element={<MessagesStart />} />
+
+
                 <Route path='/admin/users' element={<Users />} />
                 <Route path='/admin/users/userlist' element={<UserList />} />
                 <Route
