@@ -327,3 +327,14 @@ The button also being the only highlighted button seems to encourage an action w
 - This was to give the user feedback about a product that is not available on the site
 
 -----Main Goal -- Responsive Search Result not Found Page for the User dashboard 
+
+
+
+## Name: Osasumwen Isibor
+
+## Description: I designed the Search Result Screen on the User Dashboard 
+### Observations/Changes
+- I designed the search result screen and made it fully responsive
+- This was to show the user results of products being searched
+
+-----Main Goal -- Responsive Search Result Screen for the User dashboard 
