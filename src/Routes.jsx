@@ -26,6 +26,7 @@ import SubAdminList from './pages/SubAdminList';
 import SuspendedUsersList from './pages/SuspendedUsersList';
 import AdminUsersProfile from './pages/AdminUsersProfile';
 
+import 'sme.cs'
 import MessagesEmpty from "./pages/MessagesEmpty";
 import MessagesStart from "./pages/MessagesStart";
 
