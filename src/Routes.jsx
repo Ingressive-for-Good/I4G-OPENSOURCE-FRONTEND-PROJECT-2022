@@ -17,23 +17,24 @@ import ResetPasswordPage from './pages/PasswordResetPage';
 import Users from './pages/Users';
 import PageNotFound from './pages/404';
 import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
-import CreateSubAdmin from "./pages/CreateSubAdmin";
-import SubAdminProfilePage from "./pages/SubAdminProfile";
-import EditProductDetails from "./components/molecules/EditProductDetails";
+import CreateSubAdmin from './pages/CreateSubAdmin';
+import SubAdminProfilePage from './pages/SubAdminProfile';
+import EditProductDetails from './components/molecules/EditProductDetails';
 
 import UserList from './pages/UserList.jsx';
 import SubAdminList from './pages/SubAdminList';
 import SuspendedUsersList from './pages/SuspendedUsersList';
 import AdminUsersProfile from './pages/AdminUsersProfile';
 
-import MessagesEmpty from "./pages/MessagesEmpty";
-import MessagesStart from "./pages/MessagesStart";
+import MessagesEmpty from './pages/MessagesEmpty';
+import MessagesStart from './pages/MessagesStart';
+import AdminUsersProfileWithProducts from './pages/AdminUsersProfileWithProducts';
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
     return (
         <Switch>
-            <Route path="*" element={<PageNotFound />} />
+            <Route path='*' element={<PageNotFound />} />
             <Route path='/' element={<Home />} />
             <Route path='/products' element={<AddNewProductPage1 />} />
             <Route path='/login' element={<Login />} />
@@ -63,9 +64,11 @@ function Routes() {
                     path='/admin/products'
                     element={<h1> Admin producet </h1>}
                 />
-                <Route path="/admin/messages" element={<MessagesEmpty />} />
-                    <Route path="/admin/messages/start" element={<MessagesStart />} />
-
+                <Route path='/admin/messages' element={<MessagesEmpty />} />
+                <Route
+                    path='/admin/messages/start'
+                    element={<MessagesStart />}
+                />
 
                 <Route path='/admin/users' element={<Users />} />
                 <Route path='/admin/users/userlist' element={<UserList />} />
@@ -81,13 +84,18 @@ function Routes() {
                     path='/admin/users/profile'
                     element={<AdminUsersProfile />}
                 />
-                <Route 
-                    path="/admin/create-sub-admin" 
-                    element={<CreateSubAdmin/>} 
+
+                <Route
+                    path='/admin/users/profile-with-products'
+                    element={<AdminUsersProfileWithProducts />}
                 />
-                <Route 
-                    path="/admin/sub-admin-profile" 
-                    element={<SubAdminProfilePage/>} 
+                <Route
+                    path='/admin/create-sub-admin'
+                    element={<CreateSubAdmin />}
+                />
+                <Route
+                    path='/admin/sub-admin-profile'
+                    element={<SubAdminProfilePage />}
                 />
 
                 <Route path='/admin/profile' element={<h2> profile </h2>} />
