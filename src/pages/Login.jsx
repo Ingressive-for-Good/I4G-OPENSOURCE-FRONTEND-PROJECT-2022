@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Arrow from "../assets/icons/arrow.png";
-import Main from '../assets/icons/main.svg'
+import Main from '../assets/icons/Main.svg'
 import PrimaryButton from "../components/atoms/PrimaryButton";
 import SecondaryButton from "../components/atoms/SecondaryButton";
 import Facebook from "../assets/icons/logos_facebook.png";
