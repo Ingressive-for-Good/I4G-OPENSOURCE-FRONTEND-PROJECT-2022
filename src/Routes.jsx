@@ -26,7 +26,6 @@ import UserList from './pages/UserList.jsx';
 import SubAdminList from './pages/SubAdminList';
 import SuspendedUsersList from './pages/SuspendedUsersList';
 import AdminUsersProfile from './pages/AdminUsersProfile';
-import ForgotPassword from "./pages/ForgotPassword";
 
 
 import MessagesEmpty from './pages/MessagesEmpty';
