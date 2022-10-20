@@ -14,6 +14,9 @@ import CreateAccount from "./pages/CreateAccount";
 import DeleteProduct from "./components/molecules/deleteProduct";
 import ResetPasswordPage from "./pages/PasswordResetPage";
 import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
+import AdminSuspendAccountPopup from "./components/molecules/AdminSuspendAccountPopup";
+import AdminSuspendAccountSuccessfullPopup from "./components/molecules/AdminSuspendAccountSuccessfullPopup";
+import AdminSuspendFail from "./components/molecules/AdminSuspendFail";
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -25,7 +28,6 @@ function Routes() {
       <Route path="/create-account" element={<CreateAccount />} />
       <Route path="/email-verification" element={<EmailVerify />} />
       <Route path="/phone-verification" element={<PhoneNumberVerification/>} />
-
       {/* Protected Pages */}
       <Route path="/dashboard" element={<DashboardPage />} />
       <Route element={<AdminDashBoardLayout/>}>
