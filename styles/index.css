@@ -5,19 +5,44 @@
 @tailwind utilities;
 @tailwind utilities;
 
-
-.side{
-    height: calc(100vh - theme(spacing.12))
+.side {
+  height: calc(100vh - theme(spacing.12));
 }
-.tab{
-    width: calc(100vw - theme(width.80))
-}
-@font-face {
-    font-family: "CabinetGrotesk";
-    src: url("../src/assets/fonts/CabinetGrotesk-Regular.otf");
+.tab {
+  width: calc(100vw - theme(width.80));
 }
 @font-face {
-    font-family: "Campton";
-    src: url("../src/assets/fonts/Campton-LightDEMO.otf");
+  font-family: "CabinetGrotesk";
+  src: url("../src/assets/fonts/CabinetGrotesk-Regular.otf");
+}
+@font-face {
+  font-family: "Campton";
+  src: url("../src/assets/fonts/Campton-LightDEMO.otf");
 }
 
+.notification_clip-path {
+  clip-path: polygon(
+    0 6%,
+    70% 6%,
+    71.5% 0%,
+    73% 6%,
+    100% 6%,
+    100% 100%,
+    0 100%
+  );
+
+  border-radius: 7px;
+}
+@media screen and (max-width: 768px) {
+  .notification_clip-path {
+    clip-path: polygon(
+      0 6%,
+      85% 6%,
+      83.5% 0%,
+      82% 6%,
+      100% 6%,
+      100% 100%,
+      0 100%
+    );
+  }
+} ;
