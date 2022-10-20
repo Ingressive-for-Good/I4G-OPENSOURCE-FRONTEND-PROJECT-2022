@@ -1,13 +1,14 @@
 import {Link} from 'react-router-dom'
 
 import React, { useState } from 'react';
-import Menu from '../assets/icons/Menu-Full.svg'
 import Main from '../assets/images/main.svg'
 import Line from '../assets/icons/line.svg'
 import Hide from '../assets/icons/Hide.svg'
 import Google from '../assets/icons/Google.svg'
 import Facebook from '../assets/icons/Facebook.svg'
 import AuthSide from '../components/atoms/AuthSide';
+import NavbarDashboard from "../components/molecules/NavbarDashboard";
+
 
 function CreateAccount() {
     const [show, setShow] = useState(false)
@@ -32,19 +33,14 @@ function CreateAccount() {
 
       };
     return (
-    <div className='bg-neutral-50 px-5 py-11 md:px-20 md:py-10 lg:p-0 text-neutral-900 font-campton'>
-        <header className='flex lg:hidden justify-between items-center'>
-            <h1 className='font-cabinetGrotesk text-2xl font-bold text-primary-500 '>tech<span className='text-secondary-500'>mart</span></h1>
-
-            <a href="" className=''>
-                <img src={Menu} alt="Menu Logo"  />
-            </a>
-           
-        </header>
-        <main className='flex items-stretch'>
+    <div className='bg-neutral-50  text-neutral-900 font-campton'>
+      <div className="md:px-14 md:pt-4 md:w-[550px]">
+        <NavbarDashboard />
+      </div>
+        <main className='flex'>
             <AuthSide Main={Main}/>
-            <section className='flex justify-center pt-6 pb-5 md:pt-10 md:pb-9 lg:w-3/5 lg:pt-14 lg:pb-16'>
-                <div className='w-full lg:w-4/5 xl:w-3/4'>
+            <section className=' w-full lg:w-[60%] md:pb-[3%] px-[5%] pb-[5%] mt-[-16px]]'>
+                <div className=''>
                     <h2 className='font-cabinetGrotesk font-bold text-center text-xl md:text-3xl lg:mt-8 xl:mt-6'>Create An Account</h2>
                     <img src={Line} alt="Line Icon" className='mx-auto w-12 md:w-auto' />
                     <p className='text-neutral-700 font-medium mt-6 md:text-lg md:text-neutral-900 md:leading-5 md:mt-10 lg:text-neutral-700'>Fill in the correct details below to create an Account.</p>

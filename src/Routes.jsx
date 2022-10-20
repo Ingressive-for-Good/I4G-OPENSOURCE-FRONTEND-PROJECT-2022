@@ -20,6 +20,7 @@ import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
 import UserList from "./pages/UserList.jsx";
 import SubAdminList from "./pages/SubAdminList";
 import SuspendedUsersList from "./pages/SuspendedUsersList";
+import ForgotPassword from "./pages/ForgotPassword";
 
 
 // Routes Component Containing Routes For All Base Pages.
@@ -47,6 +48,7 @@ function Routes() {
         <Route path="/admin/profile" element={<h2> profile </h2>} />
       </Route>
       <Route path="/kyc" element={<Kyc />} />
+      <Route path="/forgotpassword" element={<ForgotPassword/>} />
       <Route path="/products" element={<AddNewProductPage1/>} />
       <Route path="/delete-product" element={<DeleteProduct />} />
       {/* <Route path="/view-products" element={<ViewProduct />} /> */}

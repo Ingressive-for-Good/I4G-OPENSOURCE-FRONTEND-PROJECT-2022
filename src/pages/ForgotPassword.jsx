@@ -1,5 +1,3 @@
-import React from "react";
-import "./style.css";
 import girlSvg from "../assets/icons/girl-photo.svg";
 import lineSvg from "../assets/icons/line.svg";
 import headAvatar from "../assets/icons/head-avatar.svg";
@@ -11,7 +9,9 @@ import { Link } from "react-router-dom";
 import NavbarDashboard from "../components/molecules/NavbarDashboard";
 
 
-const EmailVerify = () => {
+import "./style.css";
+
+export default function ForgotPassword() {
   const [popUp, setPopUp] = useState(false)
   const handleClick = () =>{
     popUp ? setPopUp(false) : setPopUp(true)
@@ -26,11 +26,11 @@ const EmailVerify = () => {
       {popUp && <><div className=' flex items-center fixed bg-none top-0 left-0 h-full w-screen z-50 overflow-hidden '>
       <div className="bg-white opacity-[1] w-[90%] sm:w-[80%] lg:w-[70%] max-w-[590px] mx-auto p-[30px] sm:p-[47px] mx-auto font-campton rounded-[8px]">
         <div className='flex flex-col items-center justify-center text-center '>
-          <h1 className='font-cabinetGrotesk sm:text-[30px] text-[25px] font-[700] text-success-500'>Verification Successful!!!</h1>
+          <h1 className='font-cabinetGrotesk sm:text-[30px] text-[25px] font-[700] text-secondary-500'>Check your Email!</h1>
           <img src={headAvatar} alt="" />
-          <p className='font-[500px] max-w-[350px] mt-[32px]'>  You can now fill in your details in the Know Your Customer (KYC) form.</p>
+          <p className='font-[500px] max-w-[350px] mt-[32px]'>  A link to reset your password has been sent to your email address.</p>
           <div className='flex sm:flex-row flex-col justify-center w-full mt-[32px] gap-[15px]'>
-          <button onClick={handleClick} className='border border-primary-500 py-[18px] border-[2px] w-[100%] sm:w-[45%] text-center rounded-[8px] font-[700] text-white bg-primary-500'>Proceed</button>
+          <button onClick={handleClick} className='border border-primary-500 py-[18px] border-[2px] w-[100%] sm:w-[45%] text-center rounded-[8px] font-[700] text-white bg-primary-500'>Close</button>
           </div>
         </div>
       </div>
@@ -42,36 +42,22 @@ const EmailVerify = () => {
         className='w-full flex'
       >
         <AuthSide Main={girlSvg}/>
-        <div className="bg-white w-full lg:w-[60%] md:py-[3%] md:px-[8%] px-[5%] py-[5%] mt-[-16px]">
+        <div className="bg-white w-full lg:w-[60%] md:pb-[3%] px-[5%] pb-[5%] mt-[-16px]">
           <div className="verify-container p-0">
             <div className="mb-[15px]">
               <h2 className="text-center font-bold text-3xl responsive">
-                Verify Your Email
+                Forgot Password?
               </h2>
               <div className="img-box mb-12">
                 <img src={lineSvg} className="img" alt="curve-line" />
               </div>
               <p className="lg:font-normal typo">
-                We sent a 4-digit code to{" "}
-                <strong className="text-email">nebo*****@gmail.com</strong>{" "}
-              </p>
-              <p className="font-normal typo">
-                Code expires in <strong>10 minutes</strong>
+                Enter the email address you signed up with and we’ll send you a link to reset your password.
               </p>
             </div>
             <form onSubmit={handleSubmit} className="">
-              <p className="verify-p">Verification Code</p>
-              <div className="input-box flex lg:w-full sm:gap-[10%] gap-[3%] h-[60px] mt-[10px]">
-                <input type="text" className="w-[25%] m-0 border border-neutral-500 border-[2px] rounded-[8px] p-[10px]" />
-                <input type="text" className="w-[25%] m-0 border border-neutral-500 border-[2px] rounded-[8px] p-[10px]" />
-                <input type="text" className="w-[25%] m-0 border border-neutral-500 border-[2px] rounded-[8px] p-[10px]" />
-                <input type="text" className="w-[25%] m-0 border border-neutral-500 border-[2px] rounded-[8px] p-[10px]" />
-              </div>
-              <p className="font-normal typo my-[24px]">
-                Didn’t get a code?{" "}
-                <button className="resend">Resend Code</button>
-              </p>
-              <PrimaryButton>Verify</PrimaryButton>
+                <input className="w-full border-2 mt-2 mb-6 md:mb-5 rounded-lg py-5 px-4 border-neutral-500 placeholder:text-neutral-800 placeholder:leading-5" type="email" placeholder="Enter your email address" required />
+              <PrimaryButton>Submit</PrimaryButton>
             </form>
           </div>
           <footer className="footer lg:mt-[200px]">
@@ -83,7 +69,5 @@ const EmailVerify = () => {
         </div>
       </div>
     </div>
-  );
-};
-
-export default EmailVerify;
+  )
+}

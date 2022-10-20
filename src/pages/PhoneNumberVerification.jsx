@@ -5,6 +5,9 @@ import Overlay from "../components/molecules/Overlay";
 import headAvatar from "../assets/icons/head-avatar.svg";
 import Frame from "../assets/icons/menu-icon.svg";
 import { Link } from 'react-router-dom';
+import NavbarDashboard from "../components/molecules/NavbarDashboard";
+import AuthSide from '../components/atoms/AuthSide';
+
 
 
 
@@ -30,7 +33,7 @@ export default function PhoneNumberVerification() {
   }
   
   return (
-    <section className='lg:h-screen flex flex-col lg:flex-row relative'>
+    <section className='relative'>
       {popUp && <><div className=' flex items-center fixed bg-none top-0 left-0 h-full w-screen z-50 overflow-hidden '>
       <div className="bg-white opacity-[1] w-[90%] sm:w-[80%] lg:w-[70%] max-w-[590px] mx-auto p-[30px] sm:p-[47px] mx-auto font-campton rounded-[8px]">
         <div className='flex flex-col items-center justify-center text-center '>
@@ -43,85 +46,73 @@ export default function PhoneNumberVerification() {
           </div>
         </div>
       </div>
+      
     </div><Overlay/></>}
-      {/* Div One Start */}
-        <div className='lg:bg-primary-50 lg:w-2/5 lg:px-[55px]'>
-          {/* Logo */}
-            <div className='flex justify-between px-2 py-5 lg:pt-10'>
-              {/* Logo */}
-              <h1 className='font-cabinetGrotesk lg:text-[32px] text-2xl font-bold text-primary-500'>tech<span className='text-secondary-500'>mart</span></h1>
-              <div className="lg:hidden py-[17.9px] px-[16.9px] border rounded-[12px] border-primary-500 cursor-pointer w-[50px]">
-                <img className="" src={Frame} alt="" />
+      <div className="md:px-14 md:pt-4 md:w-[550px]">
+        <NavbarDashboard />
+      </div>
+      <div className='flex'>
+        {/* Inserted the Generic sideview */}
+          <AuthSide Main={girlSvg}/>
+        {/* Div two Start */}
+          <form onSubmit={handleSubmit} className='md:w-[60%] w-full flex flex-col py-5 px-10 lg:px-20 mt-[-16px]'>
+            {/* Header Start */}
+              <div className='flex flex-col items-center justify-center'>
+                <h1 className=' text-[22px] md:text-[30px] leading-[27.2px] font-bold text-center font-cabinetGrotesk'>Phone Number Verification</h1>
+                <img className='h-[3.9px] md:h-[6.2px] w-[60px] md:w-[80px] ' src={Arrow} alt="" />
               </div>
-            </div>
-          {/* Logo & Toggle Mobile End */}
-          {/* Image & Text Start */}
-            <div className='hidden lg:flex mt-[100px]'>
-              {/* Image */}
-              <img className='hidden lg:flex rounded-[8px] object-cover ' src={girlSvg} alt="" />
-            </div>
-          {/* Image & Text End */}
-        </div>
-      {/* Div One End */}
+            {/* Header End */}
 
-      {/* Div two Start */}
-        <form onSubmit={handleSubmit} className='lg:w-3/5 flex flex-col justify-center py-5 px-2 md:px-10 lg:px-20'>
-          {/* Header Start */}
-            <div className='flex flex-col items-center justify-center'>
-              <h1 className=' text-[22px] md:text-[30px] leading-[27.2px] font-bold text-center font-cabinetGrotesk'>Phone Number Verification</h1>
-              <img className='h-[3.9px] md:h-[6.2px] w-[60px] md:w-[80px] ' src={Arrow} alt="" />
-            </div>
-          {/* Header End */}
-
-          {/* Text with Details of Phonenumber sent Start */}
-            <div className='my-[24px]'>
-              <p className='text-[15px] md:text-[18px] leading-[28px] font-medium text-left font-campton'>We sent a 4-digit code to <span className=' text-secondary-500 '>+234 813********34.<br></br></span> Code expires in <span className='font-bold'>10 minutes</span></p>
-            </div>
-          {/* Text with Details of Phonenumber sent End */}
-
-          {/* Verification Code Input Start */}
-            <div className=''>
-              <h1 className='text-[16px] leading-[19px] font-medium font-campton'>Verification Code</h1>
-              <div className='my-3 w-full flex justify-between'>
-                {
-                  otp.map( (data, index) => {
-                    return <input 
-                            className='outline-none text-center  h-[60px] md:h-[60px] w-[72px] md:w-[100px] border-neutral-500 border-[2px] rounded-[8px] ' 
-                            type="text" 
-                            name="otp" 
-                            id="otp" 
-                            maxLength="1"
-                            key={index}
-                            value={data}
-                            onChange={e => handleChange(e.target, index)}
-                            onFocus={e => e.target.select()}
-                          />
-                      })
-                }
+            {/* Text with Details of Phonenumber sent Start */}
+              <div className='my-[24px]'>
+                <p className='text-[15px] md:text-[18px] leading-[28px] font-medium text-left font-campton'>We sent a 4-digit code to <span className=' text-secondary-500 '>+234 813********34.<br></br></span> Code expires in <span className='font-bold'>10 minutes</span></p>
               </div>
-            </div>
-          {/* Verification Code Input End */}
+            {/* Text with Details of Phonenumber sent End */}
 
-          {/* Resend Verification Code Button Start */}
-            <div className='my-4'>
-              <h1 className='text-[14px] md:text-[16px] leading-[24px] font-campton'>Didn’t get a code? <span className='font-bold text-primary-500 '><Link to="/login" >Resend Code</Link></span> </h1>
-            </div>
-          {/* Resend Verification Code Button End */}
+            {/* Verification Code Input Start */}
+              <div className=''>
+                <h1 className='text-[16px] leading-[19px] font-medium font-campton'>Verification Code</h1>
+                <div className='my-3 w-full flex justify-between'>
+                  {
+                    otp.map( (data, index) => {
+                      return <input 
+                              className='outline-none text-center  h-[60px] md:h-[60px] w-[72px] md:w-[100px] border-neutral-500 border-[2px] rounded-[8px] ' 
+                              type="text" 
+                              name="otp" 
+                              id="otp" 
+                              maxLength="1"
+                              key={index}
+                              value={data}
+                              onChange={e => handleChange(e.target, index)}
+                              onFocus={e => e.target.select()}
+                            />
+                        })
+                  }
+                </div>
+              </div>
+            {/* Verification Code Input End */}
 
-          {/* Proceed Start */}
-            <div className=''>
-              <button className='bg-primary-500 w-full text-center text-white text-[17px] md:text-[18px] leading-[24px] font-bold rounded-[8px] py-[18px] font-campton'  type="submit" onClick={e => otp.join("")} >Verify</button>
-            </div>
-          {/* Proceed End */}
+            {/* Resend Verification Code Button Start */}
+              <div className='my-4'>
+                <h1 className='text-[14px] md:text-[16px] leading-[24px] font-campton'>Didn’t get a code? <span className='font-bold text-primary-500 '><Link to="/login" >Resend Code</Link></span> </h1>
+              </div>
+            {/* Resend Verification Code Button End */}
 
-          {/* Already a user Login Start */}
-            <div className='mt-[200px] w-full flex justify-center'>
-              <h1 className='text-[16px] leading-[24px] text-neutral-900 font-medium font-campton text-center'>Already have an account? <span className='text-[18px] text-primary-500 font-bold'><a href="#">Log In</a></span></h1>
-            </div>
-          {/* Already a user Login End */}
+            {/* Proceed Start */}
+              <div className=''>
+                <button className='bg-primary-500 w-full text-center text-white text-[17px] md:text-[18px] leading-[24px] font-bold rounded-[8px] py-[18px] font-campton'  type="submit" onClick={e => otp.join("")} >Verify</button>
+              </div>
+            {/* Proceed End */}
 
-        </form>
-      {/* Div Two End */}
+            {/* Already a user Login Start */}
+              <div className='mt-[200px] w-full flex justify-center'>
+                <h1 className='text-[16px] leading-[24px] text-neutral-900 font-medium font-campton text-center'>Already have an account? <span className='text-[18px] text-primary-500 font-bold'><a href="#">Log In</a></span></h1>
+              </div>
+            {/* Already a user Login End */}
+
+          </form>
+        {/* Div Two End */}
+      </div>
     </section>
   )
 }

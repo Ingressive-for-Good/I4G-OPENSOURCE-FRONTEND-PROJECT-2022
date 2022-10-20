@@ -5,11 +5,11 @@ import PrimaryButton from "../components/atoms/PrimaryButton";
 import SecondaryButton from "../components/atoms/SecondaryButton";
 import Facebook from "../assets/icons/logos_facebook.png";
 import Google from "../assets/icons/icons_google.png";
-import Frame from "../assets/icons/menu-icon.svg";
 import HidePassword from "../assets/icons/Hide.png";
 import ShowPassword from "../assets/icons/show-password.png";
 import { Link } from "react-router-dom";
 import AuthSide from "../components/atoms/AuthSide";
+import NavbarDashboard from "../components/molecules/NavbarDashboard";
 
 const PASSWORD_REGEX =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
@@ -77,15 +77,12 @@ const Login = () => {
 
   return (
     <section className="h-screen font-campton font-[500px]">
+      <div className="md:px-14 md:pt-4 md:w-[550px]">
+        <NavbarDashboard />
+      </div>
       <div className="w-full flex">
         <AuthSide Main={Main}/>
-        <div className="bg-white w-full lg:w-[60%] md:py-[3%] md:px-[8%] px-[5%] py-[5%]">
-          <div className="lg:hidden flex justify-between items-center">
-            <h1 className='font-cabinetGrotesk text-2xl font-bold text-primary-500 '>tech<span className='text-secondary-500'>mart</span></h1>
-            <div className="py-[17.9px] px-[16.9px] border rounded-[12px] border-primary-500 cursor-pointer w-[50px]">
-            <img className="" src={Frame} alt="" />
-          </div>
-          </div>
+        <div className="bg-white w-full lg:w-[60%] md:pb-[3%] px-[5%] pb-[5%] mt-[-16px]">
           <div className="text-center mt-12 sm:mt-8 lg:mt-0 mb-[41px]">
             <h4 className="text-[30px] text-neutral-900 font-[700]">Log In</h4>
             <img className="mx-auto" src={Arrow} alt="" />

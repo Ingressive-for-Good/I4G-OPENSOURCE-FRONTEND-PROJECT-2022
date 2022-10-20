@@ -6,28 +6,18 @@ import lineSvg from "../assets/icons/line.svg";
 import ham from "../assets/icons/hamburger.svg";
 import PrimaryButton from "../components/atoms/PrimaryButton";
 import { Link } from "react-router-dom";
+import NavbarDashboard from "../components/molecules/NavbarDashboard";
+import AuthSide from "../components/atoms/AuthSide";
 
 const Kyc = () => {
   return (
-    <div className="container h-full w-full">
-      <div className="lg:grid h-full w-full grid-cols-2 ipad-full">
-        <div className="">
-          <div className="logo flex justify-between px-8 lg:hidden mt-2 w-full ipad-ham">
-            <img src={logo} alt="logo" className="w-20 logo-img" />
-            <img src={ham} alt="" className="hambuger w-9 " />
-          </div>
-          <div className="w-606px p-12 pl-20 bg-accent1 h-full">
-            <div className="logo mt-2 mb-28">
-              <img src={logo} alt="logo" />
-            </div>
-            <div className="girl-img flex justify-center">
-              <img className="w-96" src={kycImg} alt="" />
-            </div>
-            <div className="typography">
-            </div>
-          </div>
-        </div>{" "}
-        <div className="w-full lg:max-w-full lg:mx-16 lg:mt-18 vm">
+    <div className="h-full w-full">
+      <div className="md:px-14 md:pt-4 md:w-[550px]">
+        <NavbarDashboard />
+      </div>
+      <div className="flex">
+        <AuthSide Main={kycImg}/>
+        <div className="md:w-[60%] w-full mt-[-16px]">
           <div className="verify-container">
             <div className="typography mb-6">
               <h2 className="text-center font-bold text-3xl responsive">
@@ -47,7 +37,7 @@ const Kyc = () => {
                 <div className="mb-4">
                   <label
                     className="block text-gray-700 text-sm font-bold mb-2"
-                    for="username"
+                    
                   >
                     Phone Number <span className="required">*</span>
                   </label>
@@ -68,7 +58,7 @@ const Kyc = () => {
                 <div className="mb-6">
                   <label
                     className="block text-gray-700 text-sm font-bold mb-2"
-                    for="password"
+                    
                   >
                     ID Type <span className="required">*</span>
                   </label>
@@ -84,7 +74,7 @@ const Kyc = () => {
                 <div className="mb-6">
                   <label
                     className="block text-gray-700 text-sm font-bold mb-2"
-                    for="password"
+                    
                   >
                     Upload a copy of ID Type <span className="required">*</span>
                   </label>
@@ -109,12 +99,12 @@ const Kyc = () => {
               </form>
             </div>
           </div>
-          <footer className="footer lg:mt-24">
+          <div className="mt-[150px]">
             <p className="text-center">
               Already have an account?{" "}
               <Link to="/login" className="resend">Login In</Link>
             </p>
-          </footer>
+          </div>
         </div>
       </div>
     </div>

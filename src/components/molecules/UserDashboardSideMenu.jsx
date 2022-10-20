@@ -1,6 +1,7 @@
 import React from "react";
 import wishlistIcon from "../../assets/icons/wishlist.png";
 import profileIcon from "../../assets/icons/ProfileIcon.svg";
+import { NavLink } from "react-router-dom";
 
 // This function handles the side nav/hamburger menu on mobile and tablet screen
 function SideNav() {
@@ -15,7 +16,7 @@ function SideNav() {
         <div className="p-6 px-12 items-center">
             <ul>
                 <li className="text-lg p-5 font-semibold text-blue-800">Menu</li>
-                <li className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5">
+                <NavLink to='/dashboard' className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M21.5 10.9V4.1C21.5 2.6 20.86 2 19.27 2H15.23C13.64 2 13 2.6 13 4.1V10.9C13 12.4 13.64 13 15.23 13H19.27C20.86 13 21.5 12.4 21.5 10.9Z" fill="#A1A4B6"/>
                         <path d="M11 13.1V19.9C11 21.4 10.36 22 8.77 22H4.73C3.14 22 2.5 21.4 2.5 19.9V13.1C2.5 11.6 3.14 11 4.73 11H8.77C10.36 11 11 11.6 11 13.1Z" fill="#A1A4B6"/>
@@ -23,14 +24,14 @@ function SideNav() {
                         <path d="M11 6.9V4.1C11 2.6 10.36 2 8.77 2H4.73C3.14 2 2.5 2.6 2.5 4.1V6.9C2.5 8.4 3.14 9 4.73 9H8.77C10.36 9 11 8.4 11 6.9Z" fill="#A1A4B6"/>
                     </svg>
                     Dashboard
-                </li>
-                <li className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5">
+                </NavLink>
+                <NavLink to='/messages' className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5">
                     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 10.015C0.5 4.74712 4.71 0 10.52 0C16.2 0 20.5 4.65699 20.5 9.98498C20.5 16.1642 15.46 20 10.5 20C8.86 20 7.04 19.5593 5.58 18.698C5.07 18.3876 4.64 18.1572 4.09 18.3375L2.07 18.9384C1.56 19.0986 1.1 18.698 1.25 18.1572L1.92 15.9139C2.03 15.6034 2.01 15.2729 1.85 15.0125C0.99 13.4301 0.5 11.6975 0.5 10.015ZM9.2 10.015C9.2 10.7261 9.77 11.2969 10.48 11.307C11.19 11.307 11.76 10.7261 11.76 10.025C11.76 9.31397 11.19 8.74311 10.48 8.74311C9.78 8.7331 9.2 9.31397 9.2 10.015ZM13.81 10.025C13.81 10.7261 14.38 11.307 15.09 11.307C15.8 11.307 16.37 10.7261 16.37 10.025C16.37 9.31397 15.8 8.74311 15.09 8.74311C14.38 8.74311 13.81 9.31397 13.81 10.025ZM5.87 11.307C5.17 11.307 4.59 10.7261 4.59 10.025C4.59 9.31397 5.16 8.74311 5.87 8.74311C6.58 8.74311 7.15 9.31397 7.15 10.025C7.15 10.7261 6.58 11.2969 5.87 11.307Z" fill="#A1A4B6"/>
+                        <path fillRule="evenodd" clipRule="evenodd" d="M0.5 10.015C0.5 4.74712 4.71 0 10.52 0C16.2 0 20.5 4.65699 20.5 9.98498C20.5 16.1642 15.46 20 10.5 20C8.86 20 7.04 19.5593 5.58 18.698C5.07 18.3876 4.64 18.1572 4.09 18.3375L2.07 18.9384C1.56 19.0986 1.1 18.698 1.25 18.1572L1.92 15.9139C2.03 15.6034 2.01 15.2729 1.85 15.0125C0.99 13.4301 0.5 11.6975 0.5 10.015ZM9.2 10.015C9.2 10.7261 9.77 11.2969 10.48 11.307C11.19 11.307 11.76 10.7261 11.76 10.025C11.76 9.31397 11.19 8.74311 10.48 8.74311C9.78 8.7331 9.2 9.31397 9.2 10.015ZM13.81 10.025C13.81 10.7261 14.38 11.307 15.09 11.307C15.8 11.307 16.37 10.7261 16.37 10.025C16.37 9.31397 15.8 8.74311 15.09 8.74311C14.38 8.74311 13.81 9.31397 13.81 10.025ZM5.87 11.307C5.17 11.307 4.59 10.7261 4.59 10.025C4.59 9.31397 5.16 8.74311 5.87 8.74311C6.58 8.74311 7.15 9.31397 7.15 10.025C7.15 10.7261 6.58 11.2969 5.87 11.307Z" fill="#A1A4B6"/>
                     </svg>
                     Messages
-                </li>
-                <li className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5">
+                </NavLink>
+                <NavLink to='/products' className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.1 6.94C20.1 7.48 19.81 7.97 19.35 8.22L17.61 9.16L16.13 9.95L13.06 11.61C12.73 11.79 12.37 11.88 12 11.88C11.63 11.88 11.27 11.79 10.94 11.61L4.65002 8.22C4.19002 7.97 3.90002 7.48 3.90002 6.94C3.90002 6.4 4.19002 5.91 4.65002 5.66L6.62002 4.6L8.19002 3.75L10.94 2.27C11.6 1.91 12.4 1.91 13.06 2.27L19.35 5.66C19.81 5.91 20.1 6.4 20.1 6.94Z" fill="#A1A4B6"/>
                     <path d="M9.89997 12.7899L4.04997 9.8699C3.59997 9.6399 3.07997 9.6699 2.64997 9.9299C2.21997 10.1899 1.96997 10.6499 1.96997 11.1499V16.6799C1.96997 17.6399 2.49997 18.4999 3.35997 18.9299L9.20997 21.8499C9.40997 21.9499 9.62997 21.9999 9.84997 21.9999C10.11 21.9999 10.37 21.9299 10.6 21.7799C11.03 21.5199 11.28 21.0599 11.28 20.5599V15.0299C11.29 14.0799 10.76 13.2199 9.89997 12.7899Z" fill="#A1A4B6"/>
@@ -39,36 +40,36 @@ function SideNav() {
                     <path d="M17.75 10.97V13.24C17.75 13.65 17.41 13.99 17 13.99C16.59 13.99 16.25 13.65 16.25 13.24V11.72L17.75 10.97Z" fill="#A1A4B6"/>
                     </svg>
                     Products
-                </li>
-                <li className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5">
+                </NavLink>
+                <NavLink to='/wishlist' className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5">
                     <img src={wishlistIcon} alt="" />
                     Wishlist
-                </li>
-                <li className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5">
+                </NavLink>
+                <NavLink to='/profile' className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5">
                     <img src={profileIcon} alt="" />
                     My Profile
-                </li>
-                <li className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5">
+                </NavLink>
+                <NavLink to='/notifications' className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5">
                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20.9516 15.6975L19.8683 13.8991C19.6408 13.4983 19.435 12.74 19.435 12.2958V9.55496C19.435 7.00912 17.94 4.80996 15.7841 3.78079C15.2208 2.78413 14.1808 2.16663 12.9891 2.16663C11.8083 2.16663 10.7466 2.80579 10.1833 3.81329C8.07081 4.86413 6.60831 7.04163 6.60831 9.55496V12.2958C6.60831 12.74 6.40248 13.4983 6.17498 13.8883L5.08081 15.6975C4.64748 16.4233 4.54998 17.225 4.82081 17.9616C5.08081 18.6875 5.69831 19.2508 6.49998 19.5216C8.60165 20.2366 10.8116 20.5833 13.0216 20.5833C15.2316 20.5833 17.4416 20.2366 19.5433 19.5325C20.3016 19.2833 20.8866 18.7091 21.1683 17.9616C21.45 17.2141 21.3741 16.3908 20.9516 15.6975Z" fill="#717591"/>
                         <path d="M16.0658 21.6775C15.6108 22.9341 14.4083 23.8333 13 23.8333C12.1442 23.8333 11.2992 23.4866 10.7033 22.8691C10.3567 22.5441 10.0967 22.1108 9.94501 21.6666C10.0858 21.6883 10.2267 21.6991 10.3783 21.7208C10.6275 21.7533 10.8875 21.7858 11.1475 21.8075C11.765 21.8616 12.3933 21.8941 13.0217 21.8941C13.6392 21.8941 14.2567 21.8616 14.8633 21.8075C15.0908 21.7858 15.3183 21.775 15.535 21.7425C15.7083 21.7208 15.8817 21.6991 16.0658 21.6775Z" fill="#717591"/>
                     </svg>
                     Notifications
-                </li>
-                <li className="flex font-medium sm:text-[17px] text-gray-400 gap-7 items-center p-5">
+                </NavLink>
+                <NavLink to='/support' className="flex font-medium sm:text-[17px] text-gray-400 gap-7 items-center p-5">
                     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="13" cy="13" r="12" fill="#A1A4B6" stroke="#A1A4B6" stroke-width="2"/>
+                    <circle cx="13" cy="13" r="12" fill="#A1A4B6" stroke="#A1A4B6" strokeWidth="2"/>
                     <path d="M13.567 15.048V14.668C13.567 12.312 17.139 12.198 17.139 9.291C17.139 7.125 15.6 6.08 13.168 6.08C10.318 6.08 8.361 7.828 8.608 10.241L10.413 11.533C10.128 9.215 11.325 8.113 13.016 8.113C14.27 8.113 14.84 8.664 14.84 9.5C14.84 11.419 11.553 11.609 11.553 14.497V15.048H13.567ZM13.757 19V16.302H11.325V19H13.757Z" fill="#FAFAFB"/>
                     </svg>
                     Help & Support
-                </li>
-                <li className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5 mt-10">
+                </NavLink>
+                <NavLink to='/' className="flex font-medium text-[17px] text-gray-400 gap-7 items-center p-5 mt-10">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16.8 2H14.2C11 2 9 4 9 7.2V11.25H15.25C15.66 11.25 16 11.59 16 12C16 12.41 15.66 12.75 15.25 12.75H9V16.8C9 20 11 22 14.2 22H16.79C19.99 22 21.99 20 21.99 16.8V7.2C22 4 20 2 16.8 2Z" fill="#D41111"/>
                         <path d="M4.55994 11.2501L6.62994 9.18009C6.77994 9.03009 6.84994 8.84009 6.84994 8.65009C6.84994 8.46009 6.77994 8.26009 6.62994 8.12009C6.33994 7.83009 5.85994 7.83009 5.56994 8.12009L2.21994 11.4701C1.92994 11.7601 1.92994 12.2401 2.21994 12.5301L5.56994 15.8801C5.85994 16.1701 6.33994 16.1701 6.62994 15.8801C6.91994 15.5901 6.91994 15.1101 6.62994 14.8201L4.55994 12.7501H8.99994V11.2501H4.55994V11.2501Z" fill="#D41111"/>
                     </svg>
                     <h1 className="text-red-600 font-medium text-[17px]">Logout</h1>
-                </li>
+                </NavLink>
             </ul>
         </div>
     </header>
