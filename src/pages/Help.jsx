@@ -1,36 +1,36 @@
-import { useState } from "react";
-import curlyArrow from "../assets/icons/curlyArrow.svg";
-import chevronUp from "../assets/icons/chevronUp.svg";
-import chevronDown from "../assets/icons/chevronDown.svg";
-import defaultAvatar from "../assets/icons/avatar.svg";
-import search from "../assets/icons/search-icon.svg";
-import techmart from "../assets/icons/techmart.svg";
-import SideBar from "../components/molecules/SideBar";
-import Avatar from "../components/atoms/Avatar";
-import Notification from "../components/atoms/Notification";
-import MobileNav from "../components/atoms/MobileNav";
+import { useState } from 'react';
+import curlyArrow from '../assets/icons/curlyArrow.svg';
+import chevronUp from '../assets/icons/chevronUp.svg';
+import chevronDown from '../assets/icons/chevronDown.svg';
+import defaultAvatar from '../assets/icons/avatar.svg';
+import search from '../assets/icons/search-icon.svg';
+import techmart from '../assets/icons/techmart.svg';
+import SideBar from '../components/molecules/SideBar';
+import Avatar from '../components/atoms/Avatar';
+import Notification from '../components/atoms/Notification';
+import MobileNav from '../components/atoms/MobileNav';
 
 // FAQ Questions and Answers in a list
 const info = [
   {
-    question: "How do I pay for items",
+    question: 'How do I pay for items',
     answer:
-      "On clicking the select button on the kebab menu, it displays select items with the “select all” and “delete” buttons. This is how it works; when clicking “select all” button, it changes to “deselect all” and the “delete” button changes to “done” and vise versa. Also, the “delete” button becomes activated when the “select all” button is clicked which automatically selects the check boxes.",
+      'On clicking the select button on the kebab menu, it displays select items with the “select all” and “delete” buttons. This is how it works; when clicking “select all” button, it changes to “deselect all” and the “delete” button changes to “done” and vise versa. Also, the “delete” button becomes activated when the “select all” button is clicked which automatically selects the check boxes.',
   },
   {
-    question: "How can I swap my products with other sellers",
+    question: 'How can I swap my products with other sellers',
     answer:
-      "On clicking the select button on the kebab menu, it displays select items with the “select all” and “delete” buttons. This is how it works; when clicking “select all” button, it changes to “deselect all” and the “delete” button changes to “done” and vise versa. Also, the “delete” button becomes activated when the “select all” button is clicked which automatically selects the check boxes.",
+      'On clicking the select button on the kebab menu, it displays select items with the “select all” and “delete” buttons. This is how it works; when clicking “select all” button, it changes to “deselect all” and the “delete” button changes to “done” and vise versa. Also, the “delete” button becomes activated when the “select all” button is clicked which automatically selects the check boxes.',
   },
   {
-    question: "What type of product can i sell on this platform?",
+    question: 'What type of product can i sell on this platform?',
     answer:
-      "On clicking the select button on the kebab menu, it displays select items with the “select all” and “delete” buttons. This is how it works; when clicking “select all” button, it changes to “deselect all” and the “delete” button changes to “done” and vise versa. Also, the “delete” button becomes activated when the “select all” button is clicked which automatically selects the check boxes.",
+      'On clicking the select button on the kebab menu, it displays select items with the “select all” and “delete” buttons. This is how it works; when clicking “select all” button, it changes to “deselect all” and the “delete” button changes to “done” and vise versa. Also, the “delete” button becomes activated when the “select all” button is clicked which automatically selects the check boxes.',
   },
   {
-    question: "How can I report fraudulent activities",
+    question: 'How can I report fraudulent activities',
     answer:
-      "On clicking the select button on the kebab menu, it displays select items with the “select all” and “delete” buttons. This is how it works; when clicking “select all” button, it changes to “deselect all” and the “delete” button changes to “done” and vise versa. Also, the “delete” button becomes activated when the “select all” button is clicked which automatically selects the check boxes.",
+      'On clicking the select button on the kebab menu, it displays select items with the “select all” and “delete” buttons. This is how it works; when clicking “select all” button, it changes to “deselect all” and the “delete” button changes to “done” and vise versa. Also, the “delete” button becomes activated when the “select all” button is clicked which automatically selects the check boxes.',
   },
 ];
 
@@ -49,7 +49,7 @@ function QnA({ question, answer }) {
       >
         <h3
           className={`${
-            isOpen ? "text-primary-400" : "text-neutral-900"
+            isOpen ? 'text-primary-400' : 'text-neutral-900'
           } font-semibold`}
         >
           {question}
@@ -130,10 +130,10 @@ function Help() {
             are here to help you. Kindly fill the form below;
           </p>
           <p className="font-campton md:text-lg text-neutral-700 mt-4">
-            Do you have a complaint? Fill this{" "}
+            Do you have a complaint? Fill this{' '}
             <a className="text-secondary-500 font-semibold" href="/#">
               form
-            </a>{" "}
+            </a>{' '}
             to get answers ASAP
           </p>
         </div>
