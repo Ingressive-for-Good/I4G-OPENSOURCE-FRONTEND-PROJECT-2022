@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductsCard from './ProductsCard'
-import navImg from '../assets/Vector2.png'
-import emptyBox from '../assets/logos_parcel-icon.png'
+import navImg from '../../assets/icons/Vector2.png'
+import emptyBox from '../../assets/icons/logos_parcel-icon.png'
 import { useSelector } from 'react-redux';
 
 const ProductMobile = ({mobileText}) => {
@@ -46,7 +46,7 @@ const ProductMobile = ({mobileText}) => {
             <hr color='gray'/>
             <div className='flex justify-center'>
                 <div className='mt-8 flex items-center sm:gap-8 sm:grid sm:grid-cols-2 flex-col'>{uploadedProducts.map(products => (
-                <ProductsCard products={products}/>
+                <ProductsCard key={products.id} products={products}/>
                 )
                 )}
                 </div>
