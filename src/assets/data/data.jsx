@@ -5,6 +5,7 @@ import wishlistIcon from '../icons/wishlistIcon.svg'
 import productIcon from '../icons/box.svg'
 import logoutIcon from '../icons/logout.svg'
 import profileIcon from '../icons/profile.svg'
+import usersIcon from '../icons/usersIcon.svg'
 import UserAvatar from '../icons/profileAvatar.svg'
 
 export const data = [
@@ -135,7 +136,7 @@ export const adminNav = [
   {
     id: 323243,
     text: 'Users',
-    icon: helpIcon,
+    icon: usersIcon,
     link: '/admin/users',
   }, 
   {

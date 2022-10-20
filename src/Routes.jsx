@@ -15,8 +15,10 @@ import CreateAccount from './pages/CreateAccount';
 import DeleteProduct from './components/molecules/deleteProduct';
 import ResetPasswordPage from './pages/PasswordResetPage';
 import Users from './pages/Users';
-
+import PageNotFound from './pages/404';
 import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
+import CreateSubAdmin from "./pages/CreateSubAdmin";
+import SubAdminProfilePage from "./pages/SubAdminProfile";
 import EditProductDetails from "./components/molecules/EditProductDetails";
 
 import UserList from './pages/UserList.jsx';
@@ -32,6 +34,7 @@ import AdminUsersProfileWithProducts from './pages/AdminUsersProfileWithProducts
 function Routes() {
     return (
         <Switch>
+            <Route path="*" element={<PageNotFound />} />
             <Route path='/' element={<Home />} />
             <Route path='/products' element={<AddNewProductPage1 />} />
             <Route path='/login' element={<Login />} />
@@ -81,9 +84,18 @@ function Routes() {
                     path='/admin/users/profile'
                     element={<AdminUsersProfile />}
                 />
+
                 <Route
                     path='/admin/users/profile-with-products'
                     element={<AdminUsersProfileWithProducts />}
+
+                <Route 
+                    path="/admin/create-sub-admin" 
+                    element={<CreateSubAdmin/>} 
+                />
+                <Route 
+                    path="/admin/sub-admin-profile" 
+                    element={<SubAdminProfilePage/>} 
                 />
 
                 <Route path='/admin/profile' element={<h2> profile </h2>} />

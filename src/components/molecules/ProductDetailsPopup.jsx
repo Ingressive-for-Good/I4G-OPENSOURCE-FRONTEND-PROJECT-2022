@@ -1,6 +1,7 @@
 import React from "react";
 import AddToWishButton from "../atoms/Button/AddToWishBtn";
 import MessageSellerButton from "../atoms/Button/MessageSellerButton";
+import productImg from "../../assets/images/image-2macbook.png"
 
 function ProductDetailsPopup() {
     return(
@@ -10,7 +11,7 @@ function ProductDetailsPopup() {
                 <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 2L1.5 9L8.5 16" stroke="#6877D5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <img className="mx-auto p-10" src="/src/assets/images/image-2macbook.png" alt="product-image"/>
+                <img className="mx-auto p-10" src={productImg} alt="product-image"/>
                 <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1.5 1L8.5 8L1.5 15" stroke="#6877D5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
