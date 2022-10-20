@@ -1,0 +1,89 @@
+@media screen and (max-width: 1024px) {
+  .med-devices {
+    position: absolute;
+    right: 6rem;
+    bottom: 3rem;
+  }
+  .logo-md {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer h5 {
+    font-size: 2rem;
+  }
+
+  footer li a {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    height: 60vh;
+    max-width: 100%;
+  }
+
+  footer .about,
+  .products,
+  .contact,
+  .legal {
+    margin-right: 1rem;
+    padding: 0;
+    width: fit-content;
+  }
+  .contact {
+    position: absolute;
+    bottom: 5rem;
+    left: 0;
+  }
+  .footer-items {
+    height: 100%;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .med-devices {
+    position: initial;
+    right: 0;
+    bottom: 0;
+  }
+  footer {
+    height: 100%;
+  }
+  .logo-md {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+  footer h5 {
+    font-size: initial;
+  }
+
+  footer li a {
+    font-size: initial;
+  }
+
+  footer .products {
+    padding: 0;
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+  footer .legal {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  footer .about,
+  .contact {
+    margin-bottom: 3rem;
+  }
+}
