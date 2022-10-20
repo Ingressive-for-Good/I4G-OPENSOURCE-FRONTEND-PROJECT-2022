@@ -72,7 +72,7 @@ function DashboardPage() {
             {/* notification icon */}
             <div className=" relative  flex flex-col space-y-4">
               <div
-                className=" space-y-5 bg-gray-300 rounded-full p-3"
+                className=" space-y-5 bg-gray-300 rounded-full p-3 transition duration-250 cursor-pointer hover:bg-gray-400"
                 onClick={() => {
                   setNotificationDialog(!isNotificationDialogOpen);
                   console.log(isNotificationDialogOpen);
