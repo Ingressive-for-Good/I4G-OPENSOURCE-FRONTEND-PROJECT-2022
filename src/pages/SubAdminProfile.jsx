@@ -46,12 +46,21 @@ function SubAdminProfilePage() {
                 <p>Return to previous page</p>
             </div>
             <div>
-                <p className=" text-blue-800 text-[18px] font-medium font-cabinetGrotesk px-6 md:px-0">Account Information</p>
+                <p className=" text-blue-800 text-[18px] font-medium font-cabinetGrotesk px-6 py-4 md:px-0">Account Information</p>
             </div>
-            <div className="px-6 md:px-0">
-                <p>Name</p>
-                <p>Email Address</p>
+            <div className="px-6 md:px-0 font-cabinetGrotesk md:flex flex-wrap justify-between">
+                <div className=" w-[500px] py-2">
+                    <p>Name</p>
+                    <p className=" text-gray-500 text-[15px]">Nora Eboesomi</p>
+                </div>
+                <div className=" w-[500px] py-2">
+                    <p>Email Address</p>
+                    <p className=" text-gray-500 text-[15px]">noraeboesomi@gmail.com</p>
+                </div>
+            </div>
+            <div className="px-6 py-2 md:px-0 font-cabinetGrotesk">
                 <p>Phone</p>
+                <p className=" text-gray-500 text-[15px]">Nora Eboesomi</p>
             </div>
             <div className="px-6 mt-10 md:px-0 font-cabinetGrotesk">
                 <div className="flex items-center justify-between">
@@ -60,7 +69,7 @@ function SubAdminProfilePage() {
                 </div>
                 <p>No activity</p>
             </div>
-            <div className="px-6 gap-4 mt-44 mb-12 md:flex items-center md:px-0 md:w-[60%] md:float-right">
+            <div className="px-6 gap-4 mt-28 mb-12 md:flex items-center md:px-0 md:w-[60%] md:float-right">
                 <div className="w-full">
                     <WarningButton children="Delete Account"/>
                 </div>
@@ -70,7 +79,7 @@ function SubAdminProfilePage() {
             </div>
             <div className="hidden absolute top-[365px] left-0 md:flex gap-3 bg-white p-4 items-center w-[230px]">
                 <img className="ml-9" src={userIconBlue} alt="icon" />
-                <p className=" font-cabinetGrotesk text-blue-700 font-medium text-[17px]">Users</p>
+                <p className=" font-cabinetGrotesk text-blue-700 font-semibold text-[18px]">Users</p>
             </div>
         </div>
     )

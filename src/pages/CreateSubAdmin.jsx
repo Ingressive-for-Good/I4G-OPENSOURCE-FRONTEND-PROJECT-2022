@@ -19,7 +19,7 @@ export default function CreateSubAdmin() {
     let error
     let popupMask
 
-    // This logic handels the error popup message
+    // This logic handels the error popup message on click of the cancel button
     if(showError){
         error= <CreateSubAdminErrorPopup/>
 
@@ -27,7 +27,7 @@ export default function CreateSubAdmin() {
         popupMask = <div onClick={() => setShowError(false)} className="fixed z-10 top-0 left-0 bg-black-t-50 w-screen h-full"></div>
     }
 
-    // This logic handles the account creation success popup message
+    // This logic handles the account creation success popup message on click of the create account button
     if(showCreationSuccess){
         success = <CreateSubAdminSuccessPopup/>
 
@@ -89,7 +89,7 @@ export default function CreateSubAdmin() {
             { error }
             <div className="hidden absolute top-[365px] left-0 md:flex gap-3 bg-white p-4 items-center w-[230px]">
                 <img className="ml-9" src={userIconBlue} alt="icon" />
-                Users
+                <p className=" font-cabinetGrotesk text-blue-700 font-semibold text-[18px]">Users</p>
             </div>
         </div>
     )

@@ -7,11 +7,11 @@ export default function SubAdminCreatePassword() {
             <form action="" className="md:flex justify-between">
                 <div className="w-full mr-6">
                     <p>Password</p>
-                    <input type="password" placeholder="Enter name" className="p-3 border-2 rounded-md w-full"/>
+                    <input type="password" placeholder="Enter password" className="p-3 border-2 rounded-md w-full"/>
                 </div>
                 <div className="w-full mt-6 md:mt-0">
                     <p>Confirm Password</p>
-                    <input type="password" placeholder="Enter email address" className="p-3 border-2 rounded-md w-full"/>
+                    <input type="password" placeholder="Confirm password" className="p-3 border-2 rounded-md w-full"/>
                 </div>
             </form>
         </div>

@@ -28,6 +28,7 @@
     "react-select": "^5.4.0",
     "redux": "^4.2.0",
     "styled-components": "^5.3.5",
+    "swiper": "^8.4.4",
     "tailwindcss": "^3.1.8",
     "twin.macro": "^2.8.2",
     "yarn": "^1.22.19"
