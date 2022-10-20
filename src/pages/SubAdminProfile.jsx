@@ -11,7 +11,7 @@ import Button from "../components/atoms/PrimaryButton";
 
 function SubAdminProfilePage() {
     return(
-        <div className="md:mr-10">
+        <div className="md:ml-[230px]">
             <NavbarAdmin/>
             <div className="flex justify-between md:mt-12 items-center">
                 <div className="px-6 md:px-0">
@@ -77,7 +77,7 @@ function SubAdminProfilePage() {
                     <Button  children="Suspend Account"/>
                 </div>
             </div>
-            <div className="hidden absolute top-[365px] left-0 md:flex gap-3 bg-white p-4 items-center w-[230px]">
+            <div className="hidden fixed top-[365px] left-0 md:flex gap-3 bg-white p-4 items-center w-[230px]">
                 <img className="ml-9" src={userIconBlue} alt="icon" />
                 <p className=" font-cabinetGrotesk text-blue-700 font-semibold text-[18px]">Users</p>
             </div>
