@@ -1,3 +1,4 @@
+
 import chatIcon from "../icons/Chat.svg";
 import dashboardIcon from "../../assets/icons/dashboard.svg";
 import helpIcon from "../icons/help.svg";
@@ -18,6 +19,11 @@ import group from "../icons/Group.png";
 import wishlist from "../icons/wishlist.png";
 
 import UserAvatar from "../icons/profileAvatar.svg";
+
+
+import usersIcon from '../icons/usersIcon.svg'
+
+
 
 export const data = [
   {
@@ -146,10 +152,12 @@ export const adminNav = [
   },
   {
     id: 323243,
-    text: "Users",
-    icon: helpIcon,
-    link: "/admin/users",
-  },
+
+    text: 'Users',
+    icon: usersIcon,
+    link: '/admin/users',
+  }, 
+
   {
     id: 322,
     text: "Profile",
