@@ -10,6 +10,8 @@ import wishlistIcon from "../assets/icons/wishlist.png";
 function DashboardPage() {
   // the below handles the product details popup on click of the submit button
   const [showProductDetails, setShowProductDetails] = useState(false);
+  // Show Notification Dialog
+  const [isNotificationDialogOpen, setNotificationDialog] = useState(false);
 
   let productDetails;
   let popupMask;
@@ -69,7 +71,13 @@ function DashboardPage() {
             </div>
             {/* notification icon */}
             <div className=" relative  flex flex-col space-y-4">
-              <div className=" space-y-5 bg-gray-300 rounded-full p-3">
+              <div
+                className=" space-y-5 bg-gray-300 rounded-full p-3"
+                onClick={() => {
+                  setNotificationDialog(!isNotificationDialogOpen);
+                  console.log(isNotificationDialogOpen);
+                }}
+              >
                 <svg
                   width="26"
                   height="26"
@@ -92,8 +100,11 @@ function DashboardPage() {
             {/* User Image */}
             <img src={userAvatar} alt="user avatar" width={50} />
           </div>
-          <div className="">
-            <DashboardNotificationDialog />
+          <div>
+            <DashboardNotificationDialog
+              open={isNotificationDialogOpen}
+              setNotificationDialog={setNotificationDialog}
+            />
           </div>
         </div>
       </div>

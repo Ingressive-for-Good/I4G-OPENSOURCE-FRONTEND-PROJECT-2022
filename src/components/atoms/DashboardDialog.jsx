@@ -1,15 +1,25 @@
 import React from "react";
 import Notification from "./Notification";
 
-export const DashboardNotificationDialog = () => {
+export const DashboardNotificationDialog = ({
+  open,
+  setNotificationDialog,
+}) => {
   return (
     <div
-      className="hidden  md:block absolute z-10 mr-3 z-10 "
+      className={`hidden   absolute z-10 mr-3 z-[99] ${
+        open ? " md:block" : " md:hidden"
+      }`}
       aria-labelledby="modal-title"
       role="dialog"
       aria-modal="true"
     >
-      <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity "></div>
+      <div
+        className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity  "
+        onClick={() => {
+          setNotificationDialog(!open);
+        }}
+      ></div>
 
       <div className="flex items-end  justify-end p-1 text-center sm:items-center sm:p-0 ">
         <div className="   px-2 pb-2 pt-4 bg-white z-10 notification_clip-path">
