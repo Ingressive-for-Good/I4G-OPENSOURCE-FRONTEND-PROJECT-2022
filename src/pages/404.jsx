@@ -17,10 +17,12 @@ function App() {
         <div id="body" className="text-neutral-900 font-campton">
             {/* header and navigation */}
             <header className="relative bg-white px-8 py-9 flex items-center justify-between">
-                <h1 className="font-cabinetGrotesk text-primary-500 font-bold text-2xl">
+                <Link 
+                    to="/"
+                    className="font-cabinetGrotesk text-primary-500 font-bold text-2xl">
                 tech
-                <span className="text-secondary-500">mart</span>
-                </h1>
+                    <span className="text-secondary-500">mart</span>
+                </Link>
                 <div className="border-primary-500 border rounded-xl p-3 lg:hidden">
                 <img className="" onClick={toggleMenu} id="hamburger" src={menuIcon} alt="" />
                 </div>
@@ -29,10 +31,10 @@ function App() {
                 className="fixed h-screen lg:h-fit w-screen lg:w-fit flex hidden lg:relative z-100 top-0 lg:top-unset left-0 lg:left-unset bg-white lg:bg-transparent lg:flex flex-col lg:flex-row space-y-8 lg:space-y-0 justify-center items-center lg:space-x-5 text-neutral-700"
                 >
                 <img className="lg:hidden absolute top-12 right-16" onClick={toggleMenu} id="hamburger" src={closeMenuIcon} alt="" />
-                <a href="">Home</a>
-                <a href="#howitworks">How it Works</a>
-                <a href="#marketplace">Market Place</a>
-                <a href="#contactUs">Contact Us</a>
+                <Link to="/">Home</Link>
+                <a href="/#howitworks">How it Works</a>
+                <a href="/#marketplace">Market Place</a>
+                <a href="/#contactUs">Contact Us</a>
                 <div className="mx-4 space-x-4">
                     <Link
                     className="text-primary-500 font-medium"
@@ -57,7 +59,7 @@ function App() {
                         The page you are looking for doesn&apos;t exist or another error occured.
                     </span>
                     <br />
-                    Go back or head over to techmart.com to choose a new direction.
+                    Go back or head over to <Link to="/" className='hover:text-primary-500 transition-all'> techmart.com </Link> to choose a new direction.
                 </p>
             </main>
         </div>
