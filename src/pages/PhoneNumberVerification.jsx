@@ -109,7 +109,6 @@ export default function PhoneNumberVerification() {
                 <h1 className='text-[16px] leading-[24px] text-neutral-900 font-medium font-campton text-center'>Already have an account? <span className='text-[18px] text-primary-500 font-bold'><a href="#">Log In</a></span></h1>
               </div>
             {/* Already a user Login End */}
-
           </form>
         {/* Div Two End */}
       </div>
