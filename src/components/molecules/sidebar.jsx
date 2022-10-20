@@ -15,11 +15,14 @@ export default function SideBar({ navData = [] }) {
       <div className="flex flex-col justify-between h-[80%]">
         <ul className="flex flex-col w-full">
           <h2 className="pl-[50px] pb-[15px] text-primary-500">MENU</h2>
-          {navData.map(({ id, icon, text, link }) => (
-            <li key={id} className="pl-[50px] py-[19.5px]">
-              <NavLink className="flex flex-row gap-[10px]" to={link}>
-                <img src={icon} alt="" />
-                <span>{text}</span>
+
+          {
+            navData.map(({ id, icon, text, link}) => (
+            <li key={ id } className="pl-[50px] py-[19.5px]">
+              <NavLink className="flex flex-row gap-[10px]" to={ link }>
+                <img src={ icon } alt="" />
+                <span className=' text-gray-400'>{ text }</span>
+
               </NavLink>
             </li>
           ))}
