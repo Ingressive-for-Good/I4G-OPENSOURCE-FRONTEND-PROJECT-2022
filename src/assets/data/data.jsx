@@ -5,6 +5,7 @@ import wishlistIcon from '../icons/wishlistIcon.svg'
 import productIcon from '../icons/box.svg'
 import logoutIcon from '../icons/logout.svg'
 import profileIcon from '../icons/profile.svg'
+import usersIcon from '../icons/usersIcon.svg'
 import UserAvatar from '../icons/profileAvatar.svg'
 
 export const data = [
@@ -86,26 +87,31 @@ export const sideNav = [
     id: 1,
     icon: dashboardIcon,
     text: "Dashboard",
+    linkName: '/dashboard'
   },
   {
     id: 2,
     icon: chatIcon,
     text: "Messages",
+    linkName:'/messages'
   },
   {
     id: 3,
     icon: productIcon,
     text: "Products",
+    linkName:'/view-products'
   },
   {
     id: 4,
     icon: wishlistIcon,
     text: "Wishlist",
+    linkName:'/wishlist'
   },
   {
     id: 5,
     icon: helpIcon,
     text: "Help & Support",
+    linkName: '/help'
   },
 ];
 export const adminNav = [
@@ -130,7 +136,7 @@ export const adminNav = [
   {
     id: 323243,
     text: 'Users',
-    icon: helpIcon,
+    icon: usersIcon,
     link: '/admin/users',
   }, 
   {

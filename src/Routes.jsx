@@ -17,12 +17,17 @@ import ResetPasswordPage from './pages/PasswordResetPage';
 import Users from './pages/Users';
 import PageNotFound from './pages/404';
 import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
+import CreateSubAdmin from "./pages/CreateSubAdmin";
+import SubAdminProfilePage from "./pages/SubAdminProfile";
+import EditProductDetails from "./components/molecules/EditProductDetails";
 
 import UserList from './pages/UserList.jsx';
 import SubAdminList from './pages/SubAdminList';
 import SuspendedUsersList from './pages/SuspendedUsersList';
 import AdminUsersProfile from './pages/AdminUsersProfile';
+
 import MessagesEmpty from "./pages/MessagesEmpty";
+import MessagesStart from "./pages/MessagesStart";
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -59,6 +64,9 @@ function Routes() {
                     element={<h1> Admin producet </h1>}
                 />
                 <Route path="/admin/messages" element={<MessagesEmpty />} />
+                    <Route path="/admin/messages/start" element={<MessagesStart />} />
+
+
                 <Route path='/admin/users' element={<Users />} />
                 <Route path='/admin/users/userlist' element={<UserList />} />
                 <Route
@@ -73,7 +81,14 @@ function Routes() {
                     path='/admin/users/profile'
                     element={<AdminUsersProfile />}
                 />
-
+                <Route 
+                    path="/admin/create-sub-admin" 
+                    element={<CreateSubAdmin/>} 
+                />
+                <Route 
+                    path="/admin/sub-admin-profile" 
+                    element={<SubAdminProfilePage/>} 
+                />
 
                 <Route path='/admin/profile' element={<h2> profile </h2>} />
             </Route>

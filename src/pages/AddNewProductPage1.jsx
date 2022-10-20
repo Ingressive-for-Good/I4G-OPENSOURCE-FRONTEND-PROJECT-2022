@@ -1,13 +1,11 @@
 import { useState } from 'react'
 import Input from '../components/atoms/Input'
 import AddNewProductSucessPopUp from '../components/molecules/AddNewProductSucessPopUp'
+import UserSidebar from '../components/molecules/UserSidebar'
+import useScreensizeHook from '../components/molecules/ScreensizeHook'
 import Navbar from '../components/molecules/Navbar'
 import Overlay from '../components/molecules/Overlay'
-import SideBar from '../components/molecules/SideBar'
 
-import AddProductNavMsg from '../components/atoms/AddProductNavMsg'
-
-import { sideNav } from '../assets/data/data'
 
 
 export default function AddNewProductPage1() {
@@ -16,22 +14,22 @@ export default function AddNewProductPage1() {
   const handleClick = () =>{
     popUp ? setPopUp(false) : setPopUp(true)
   }
+  const mobileText = useScreensizeHook()
+
   return (
-    <div className='relative pt-[50px]  lg:pl-[270px] sm:px-[40px] px-[10px] pb-[30px]'>
+    <div className=' pb-[30px]'>
+      {!mobileText && <UserSidebar/>}
+      <div className='lg:absolute left-0 flex flex-col lg:left-[300px] mx-6 mt-8'>
+        <Navbar text='Add a New Product'/>
+        <Input handleClick={handleClick} buttonText='Upload Now'/>
+        {popUp &&
+        <>
+        <AddNewProductSucessPopUp handleClick={handleClick}/>
+        <Overlay/>
+        </>
+        }
+      </div>
 
-      
-      <Navbar NavMsg={AddProductNavMsg}/>
-
-      <SideBar navData={sideNav}/>
-      
-
-      <Input handleClick={handleClick}/>
-      {popUp &&
-      <>
-      <AddNewProductSucessPopUp handleClick={handleClick}/>
-      <Overlay/>
-      </>
-      }
     </div>
   )
 }
