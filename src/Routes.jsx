@@ -17,6 +17,8 @@ import ResetPasswordPage from './pages/PasswordResetPage';
 import Users from './pages/Users';
 
 import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
+import CreateSubAdmin from "./pages/CreateSubAdmin";
+import SubAdminProfilePage from "./pages/SubAdminProfile";
 import EditProductDetails from "./components/molecules/EditProductDetails";
 
 import UserList from './pages/UserList.jsx';
@@ -78,7 +80,14 @@ function Routes() {
                     path='/admin/users/profile'
                     element={<AdminUsersProfile />}
                 />
-
+                <Route 
+                    path="/admin/create-sub-admin" 
+                    element={<CreateSubAdmin/>} 
+                />
+                <Route 
+                    path="/admin/sub-admin-profile" 
+                    element={<SubAdminProfilePage/>} 
+                />
 
                 <Route path='/admin/profile' element={<h2> profile </h2>} />
             </Route>
