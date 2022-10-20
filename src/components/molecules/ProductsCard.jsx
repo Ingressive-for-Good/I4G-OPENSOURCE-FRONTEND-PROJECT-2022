@@ -1,12 +1,14 @@
 import React from 'react';
 import Delete from '../../assets/icons/delete.png'
 import Edit from '../../assets/icons/edit.png'
+import { useNavigate } from 'react-router-dom';
 import {setOpenEdit, setAvailability} from '../../../utils/services/appSlice'
 import { useDispatch } from 'react-redux';
 
 
 const ProductsCard = ({products}) => {
   const dispatch = useDispatch()
+  let navigate = useNavigate()
 
   const ToggleEdit = () => {
     if(products.openEdit){
@@ -25,7 +27,7 @@ const ProductsCard = ({products}) => {
           console.log(openEdit)
         }} className='absolute top-3 right-2 cursor-pointer'><img src={Edit} alt="" /></p>
         <div className={ToggleEdit()}>
-          <p>Edit Details</p>
+          <p onClick={() => navigate('/edit-product')}>Edit Details</p>
           <p onClick={() => dispatch(setAvailability(products.id))}>Mark as Available</p>
         </div>
       </div>
