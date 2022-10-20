@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PhoneNumberVerificationSuccessfullUI from '../molecules/modal/PhoneNumberVerificationSuccessfullUI';
 
 export default function PhoneNumberVerification() {
   const [otp, setOtp] = useState(new Array(4).fill(""));
@@ -12,9 +13,11 @@ export default function PhoneNumberVerification() {
     }
   };
 
+const [openModal, setOpenModal] = useState(false)
   
   return (
-    <section className='lg:h-screen flex flex-col lg:flex-row'>
+  <>
+    <div className='lg:h-screen flex flex-col lg:flex-row'>
       {/* Div One Start */}
         <div className='lg:bg-primary-50 lg:w-2/5'>
           {/* Logo & Toggle Mobile Start */}
@@ -73,7 +76,8 @@ export default function PhoneNumberVerification() {
               </div>
             </div>
           {/* Verification Code Input End */}
-
+          {/* code input */}
+          <p>{e => otp.join("")}</p>
           {/* Resend Verification Code Button Start */}
             <div className='my-4'>
               <h1 className='text-[14px] md:text-[16px] leading-[24px] font-campton'>Didn’t get a code? <span className='font-bold text-primary-500 '><a href="#">Resend Code</a></span> </h1>
@@ -82,7 +86,7 @@ export default function PhoneNumberVerification() {
 
           {/* Proceed Start */}
             <div className='mx-5'>
-              <button className='bg-primary-500 w-full text-center text-white text-[17px] md:text-[18px] leading-[24px] font-bold rounded-[8px] py-[18px] font-campton'  type="submit" onClick={e => otp.join("")} >Verify</button>
+              <button className='bg-primary-500 w-full text-center text-white text-[17px] md:text-[18px] leading-[24px] font-bold rounded-[8px] py-[18px] font-campton'  type="submit"  onClick={() => setOpenModal(true)} >Verify</button>
             </div>
           {/* Proceed End */}
 
@@ -94,6 +98,9 @@ export default function PhoneNumberVerification() {
 
         </div>
       {/* Div Two End */}
-    </section>
+    </div>
+    {/* Successfull Modal */}
+    <PhoneNumberVerificationSuccessfullUI open={openModal} onClose={() => setOpenModal(false)}/>
+  </>
   )
 }

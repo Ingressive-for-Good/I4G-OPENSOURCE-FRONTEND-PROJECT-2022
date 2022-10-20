@@ -3,7 +3,7 @@ import notificatin from '../../assets/icons/notification.svg'
 import avatar from '../../assets/icons/avatar.svg'
 import toggle from '../../assets/icons/toggle.svg'
 
-export default function Navbar() {
+export default function Navbar({text}) {
   return (
     <div className="flex flex-row w-full justify-between font-cabinetGrotesk">
       <div className="">
@@ -14,7 +14,7 @@ export default function Navbar() {
           Hey Nora👋🏾
         </h1>
         <p className="text-neutral-900 md:text-[28px] font-[500] ">
-          Add a New Product
+          {text}
         </p>
         <p className="md:text-[18px] text-[16px] font-[500]">
           Ensure that you are filling the{" "}
@@ -28,10 +28,10 @@ export default function Navbar() {
           <img className="" src={toggle} alt="" />
         </div>
       </div>
-      <div className="lg:flex flex-row gap-[24px] hidden">
-        <label className="relative">
+      <div>
+        <label className="relative block lg:hidden">
           <input
-            className="py-[16px] pl-[40px]  border-[#A1A4B6] border-[1.2px] rounded-[8px] w-[250px]"
+            className="py-[14px] pl-[40px]  border-[#A1A4B6] border-[1.2px] rounded-[8px] w-full"
             type="text"
             placeholder="Search for gadgets"
           />
@@ -41,12 +41,6 @@ export default function Navbar() {
             alt="searchIcon"
           />
         </label>
-        <div className="w-[60px]">
-          <img src={notificatin} alt="notification" />
-        </div>
-        <div className="w-[60px]">
-          <img src={avatar} alt="avatar" />
-        </div>
       </div>
     </div>
   );
