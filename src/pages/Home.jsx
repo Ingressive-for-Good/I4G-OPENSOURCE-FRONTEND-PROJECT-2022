@@ -1,5 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/bundle";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper";
+
 import menuIcon from "../assets/icons/menu-icon.svg";
 import "./home.css";
 import wavyArrow from "../assets/icons/landingpage__wavy-arrow.svg";
@@ -22,31 +30,24 @@ import instagram from "../assets/icons/instagram.svg";
 import linkedin from "../assets/icons/linkedin.svg";
 import upArrow from "../assets/icons/up-arrow.svg";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/bundle";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
-
-
 function App() {
   const toggleMenu = () => {
-    var nav = document.getElementById("nav");
-    var body = document.getElementById("body");
+    const nav = document.getElementById("nav");
+    const body = document.getElementById("body");
     // var navItems = document.querySelectorAll("nav a")
     body.style.overflowY = "hidden";
     nav.classList.toggle("hidden");
   };
   return (
-    <div id="body" className="text-neutral-900 font-campton scroll-smooth">
+    <>
+      <div id="body" className="text-neutral-900 font-campton scroll-smooth">
       {/* header and navigation */}
-      <header
+        <header
         id="hero"
-        className="relative bg-primary-50 px-8 py-9 flex items-center justify-between"
-      >
+        className="relative bg-primary-50 px-8 py-9 flex items-center justify-between">
         <h1 className="font-cabinetGrotesk text-primary-500 font-bold text-2xl">
-          tech<span className="text-secondary-500">mart</span>
+          tech
+          <span className="text-secondary-500">mart</span>
         </h1>
         <div className="border-primary-500 border rounded-xl p-3 lg:hidden">
           <img
@@ -54,8 +55,7 @@ function App() {
             onClick={toggleMenu}
             id="hamburger"
             src={menuIcon}
-            alt=""
-          />
+            alt="" />
         </div>
         <nav
           id="nav"
@@ -65,35 +65,33 @@ function App() {
             className="lg:hidden absolute top-12 right-16"
             onClick={toggleMenu}
             id="hamburger"
-            src="src/images/close-icon.png"
-            alt=""
-          />
+            src={closeMenuIcon}
+            alt="" />
           <a href="">Home</a>
           <a href="#howitworks">How it Works</a>
           <a href="#marketplace">Market Place</a>
           <a href="#contactUs">Contact Us</a>
           <div className="mx-4 space-x-4">
             <Link className="text-primary-500 font-medium" to="/login">
-              Log In
+            Log In
             </Link>
-            <Link
-              className="text-white text-sm rounded-lg px-5 py-3 bg-primary-500"
-              to="/create-account"
-            >
-              Create an account
-            </Link>
-          </div>
+          <Link
+            className="text-white text-sm rounded-lg px-5 py-3 bg-primary-500"
+            to="/create-account"
+          >
+            Create an account
+          </Link>
+        </div>
         </nav>
-      </header>
-      <main>
+        </header>
+        <main>
         {/* hero section */}
         <section className="px-[10%] py-4 text-center flex items-center justify-between bg-primary-50">
           <div className="clipart-left">
             <img
               src={heroClipArtLeft}
               alt=""
-              className="w-[350px] lg:w-[180px] -rotate-12 hidden lg:block md:block md:w-[150px] lg:mt-6"
-            />
+              className="w-[350px] lg:w-[180px] -rotate-12 hidden lg:block md:block md:w-[150px] lg:mt-6" />
           </div>
           <div className="main-txt">
             <h1 className="font-cabinetGrotesk font-bold text-xl sm:text-4xl lg:text-[2.5rem] lg:leading-[1.2] my-3 sm:max-w-md md:max-w-lg sm:mx-auto">
@@ -127,8 +125,7 @@ function App() {
             <img
               src={heroClipArtRight}
               alt=""
-              className="w-[150px] hidden lg:block md:block rotate-12 lg:w-[180px] md:w-[150px] lg:mt-6"
-            />
+              className="w-[150px] hidden lg:block md:block rotate-12 lg:w-[180px] md:w-[150px] lg:mt-6" />
           </div>
         </section>
 
@@ -177,8 +174,13 @@ function App() {
                 24/7 Support
               </h4>
               <p className="text-neutral-700 text-sm">
-                Do you have a complaint? <br />
-                Fill this <a href=""> form </a>to get answers ASAP
+                Do you have a complaint?
+                {' '}
+                <br />
+                Fill this
+                {' '}
+                <a href=""> form </a>
+                to get answers ASAP
               </p>
             </div>
           </div>
@@ -190,7 +192,9 @@ function App() {
           className="w-fit mx-auto px-6 py-3 rounded-lg my-5 text-center"
         >
           <h1 className="font-cabinetGrotesk text-2xl font-semibold">
-            <span className="text-secondary-500">Buy Items</span> in 3 Easy
+            <span className="text-secondary-500">Buy Items</span>
+            {' '}
+            in 3 Easy
             Steps
           </h1>
           <p className="text-neutral-700 my-2">
@@ -235,7 +239,9 @@ function App() {
         {/* list an item */}
         <section className="w-fit mx-auto px-6 py-3 rounded-lg my-5 lg:my-12 text-center">
           <h1 className="font-cabinetGrotesk text-2xl font-semibold">
-            <span className="text-secondary-500">List Items</span> in 3 Easy
+            <span className="text-secondary-500">List Items</span>
+            {' '}
+            in 3 Easy
             Steps
           </h1>
           <p className="text-neutral-700 my-2">
@@ -256,8 +262,7 @@ function App() {
             <img
               className="lg:rotate-90 mx-auto lg:mr-8"
               src={wavyDashed}
-              alt=""
-            />
+              alt="" />
             <div className="max-w-xs mx-auto">
               <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2">
                 02. List Your Products
@@ -269,8 +274,7 @@ function App() {
             <img
               className="lg:rotate-90 mx-auto lg:mx-8"
               src={wavyDashed}
-              alt=""
-            />
+              alt="" />
             <div className="max-w-xs mx-auto">
               <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2">
                 03. Get Notified
@@ -360,10 +364,7 @@ function App() {
         </section>
 
         {/* newsletter subscription*/}
-        <section
-          id="contactUs"
-          className="bg-primary-500 p-6 w-5/6 mx-auto my-16 rounded-lg"
-        >
+        <section id="contactUs" className="bg-primary-500 p-6 w-5/6 mx-auto my-16 rounded-lg">
           <h1 className="text-center text-white text-3xl font-semibold font-cabinetGrotesk">
             Subscribe for Updates
           </h1>
@@ -377,14 +378,12 @@ function App() {
               className="w-full active:border-2 active:border-neutral-300 rounded-lg px-6 py-4"
               type="text"
               placeholder="Enter your full name"
-              required
-            />
+              required />
             <input
               className="w-full active:border-2 active:border-neutral-300 rounded-lg px-6 py-4"
               type="email"
               placeholder="Enter your email address"
-              required
-            />
+              required />
             <button className="bg-secondary-500 text-white font-medium text-lg px-6 py-4 rounded-lg mx-auto">
               Subscribe
             </button>
@@ -419,39 +418,36 @@ function App() {
             centeredSlidesBounds={true}
             modules={[Pagination, Navigation]}
             className="mySwiper h-1/4  w-full p-12"
-            breakpoints={
-              {
-                768: {
-                  slidesPerView: 2,
-                  spaceBetween: 10,
-                  slidesPerGroup: 2
-                },
-                1024: {
-                  slidesPerView: 2,
-                  spaceBetween: 20,
-                  slidesPerGroup: 2
-                },
-                1445: {
-                  slidesPerView: 3,
-                  spaceBetween: 20,
-                  slidesPerGroup: 3
-                },
-                1536: {
-                  slidesPerView: 4,
-                  spaceBetween: 20,
-                  slidesPerGroup: 4
-                }
+            breakpoints={{
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                slidesPerGroup: 2
+              },
+              1024: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                slidesPerGroup: 2
+              },
+              1445: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                slidesPerGroup: 3
+              },
+              1536: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                slidesPerGroup: 4
               }
-            }
+            }}
           >
 
-            <SwiperSlide >
+            <SwiperSlide>
               <div className="bg-primary-50 rounded-lg p-7 w-[18rem]">
                 <img
                   className="mx-auto my-4"
                   src={profileImg}
-                  alt=""
-                />
+                  alt="" />
                 <p className="text-neutral-900 text-center leading-relaxed">
                   "techmart is unarguably the best eccomerce platform - a great
                   transforation to Africa"
@@ -468,8 +464,7 @@ function App() {
                 <img
                   className="mx-auto my-4"
                   src={profileImg}
-                  alt=""
-                />
+                  alt="" />
                 <p className="text-neutral-900 text-center leading-relaxed">
                   "techmart is unarguably the best eccomerce platform - a great
                   transforation to Africa"
@@ -486,8 +481,7 @@ function App() {
                 <img
                   className="mx-auto my-4"
                   src={profileImg}
-                  alt=""
-                />
+                  alt="" />
                 <p className="text-neutral-900 text-center leading-relaxed">
                   "techmart is unarguably the best eccomerce platform - a great
                   transforation to Africa"
@@ -504,8 +498,7 @@ function App() {
                 <img
                   className="mx-auto my-4"
                   src={profileImg}
-                  alt=""
-                />
+                  alt="" />
                 <p className="text-neutral-900 text-center leading-relaxed">
                   "techmart is unarguably the best eccomerce platform - a great
                   transforation to Africa"
@@ -521,8 +514,7 @@ function App() {
                 <img
                   className="mx-auto my-4"
                   src={profileImg}
-                  alt=""
-                />
+                  alt="" />
                 <p className="text-neutral-900 text-center leading-relaxed">
                   "techmart is unarguably the best eccomerce platform - a great
                   transforation to Africa"
@@ -539,8 +531,7 @@ function App() {
                 <img
                   className="mx-auto my-4"
                   src={profileImg}
-                  alt=""
-                />
+                  alt="" />
                 <p className="text-neutral-900 text-center leading-relaxed">
                   "techmart is unarguably the best eccomerce platform - a great
                   transforation to Africa"
@@ -554,121 +545,123 @@ function App() {
 
           </Swiper>
         </section>
-      </main>
+        </main>
 
       {/* footer */}
-      <footer className="bg-[#131418] p-12 lg:flex lg:justify-around relative w-full ">
-        <div className="mb-4 lg:mr-8 md:mr-8 lg:items-center">
-          <div className="logo-md">
-            <img src={logo} alt="" />
-          </div>
-          <div className="my-8 med-devices">
-            <p className="my-10 text-xl font-semibold lg:text-center text-white">
-              © Enterprise martZ Limited
-            </p>
-            <div className="flex">
-              <a href="#" className="mr-4">
-                <img src={facebook} alt="" className="w-[39px] md:w-[60px]" />
-              </a>
-              <a href="#" className="mr-4">
-                <img src={twitter} alt="" className="w-[39px] md:w-[60px]" />
-              </a>
-              <a href="#" className="mr-4">
-                <img src={instagram} alt="" className="w-[39px] md:w-[60px]" />
-              </a>
-              <a href="#">
-                <img src={linkedin} alt="" className="w-[39px] md:w-[60px]" />
-              </a>
+        <footer className="bg-[#131418] p-12 lg:flex lg:justify-around relative w-full ">
+          <div className="mb-4 lg:mr-8 md:mr-8 lg:items-center">
+            <div className="logo-md">
+              <img src={logo} alt="" />
+            </div>
+            <div className="my-8 med-devices">
+              <p className="my-10 text-xl font-semibold lg:text-center text-white">
+                © Enterprise martZ Limited
+              </p>
+              <div className="flex">
+                <a href="#" className="mr-4">
+                  <img src={facebook} alt="" className="w-[39px] md:w-[60px]" />
+                </a>
+                <a href="#" className="mr-4">
+                  <img src={twitter} alt="" className="w-[39px] md:w-[60px]" />
+                </a>
+                <a href="#" className="mr-4">
+                  <img src={instagram} alt="" className="w-[39px] md:w-[60px]" />
+                </a>
+                <a href="#">
+                  <img src={linkedin} alt="" className="w-[39px] md:w-[60px]" />
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="footer-items md:flex relative lg:flex lg:justify-evenly lg:items-center">
-          <div className="about  mb-4 w-fit px-12">
-            <h5 className="text-white font-bold">About Us</h5>
-            <ul className=" text-[#FAFAFB]">
-              <li className="mb-6">
-                <a href="#" className=" font-light text-[#FAFAFB]">
-                  FAQs
-                </a>
-              </li>
-              <li className="mb-6">
-                <a href="#" className=" font-light text-[#FAFAFB]">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className=" font-light text-[#FAFAFB]">
-                  Blog
-                </a>
-              </li>
-            </ul>
+          <div className="footer-items md:flex relative lg:flex lg:justify-evenly lg:items-center">
+            <div className="about  mb-4 w-fit px-12">
+              <h5 className="text-white font-bold">About Us</h5>
+              <ul className=" text-[#FAFAFB]">
+                <li className="mb-6">
+                  <a href="#" className=" font-light text-[#FAFAFB]">
+                    FAQs
+                  </a>
+                </li>
+                <li className="mb-6">
+                  <a href="#" className=" font-light text-[#FAFAFB]">
+                    Careers
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className=" font-light text-[#FAFAFB]">
+                    Blog
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="products  mb-4  lg:mt-0 px-12 pb-8 ">
+              <h5 className="text-white lg:text-x font-bold">Products</h5>
+              <ul className=" text-[#FAFAFB]">
+                <li className="mb-6">
+                  <a href="#" className=" font-light text-[#FAFAFB]">
+                    For Shopper
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className=" font-light text-[#FAFAFB]">
+                    For Vendors
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="legal  mb-4  px-12">
+              {" "}
+              <h5 className="text-white font-bold">Legal</h5>
+              <ul className=" text-[#FAFAFB]">
+                <li className="mb-6">
+                  <a href="#" className=" font-light text-[#FAFAFB]">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li className="mb-6">
+                  <a href="#" className=" font-light text-[#FAFAFB]">
+                    Terms of Service
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className=" font-light text-[#FAFAFB]">
+                    FAQs
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="contact lg:w-fit lg:px-12">
+              {" "}
+              <h5 className="text-white font-bold">Contact Us</h5>
+              <ul className=" text-[#FAFAFB]">
+                <li className="mb-6">
+                  <a href="#" className=" font-light text-[#FAFAFB]">
+                    support@mortz.com
+                  </a>
+                </li>
+                <li className="mb-6">
+                  <a href="#" className=" font-light text-[#FAFAFB]">
+                    Lagos, Nigeria
+                  </a>
+                </li>
+                <li className="mb-6">
+                  <a href="#" className=" font-light text-[#FAFAFB]">
+                    08123456789
+                  </a>
+                </li>
+                <li className="flex">
+                  <a href="#hero" className=" font-light text-[#FAFAFB] mr-2">
+                    <img src={upArrow} alt="up arrow" className="w-[16px]" />
+                  </a>
+                  <span>back to top</span>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div className="products  mb-4  lg:mt-0 px-12 pb-8 ">
-            <h5 className="text-white lg:text-x font-bold">Products</h5>
-            <ul className=" text-[#FAFAFB]">
-              <li className="mb-6">
-                <a href="#" className=" font-light text-[#FAFAFB]">
-                  For Shopper
-                </a>
-              </li>
-              <li>
-                <a href="#" className=" font-light text-[#FAFAFB]">
-                  For Vendors
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="legal  mb-4  px-12">
-            {" "}
-            <h5 className="text-white font-bold">Legal</h5>
-            <ul className=" text-[#FAFAFB]">
-              <li className="mb-6">
-                <a href="#" className=" font-light text-[#FAFAFB]">
-                  Privacy Policy
-                </a>
-              </li>
-              <li className="mb-6">
-                <a href="#" className=" font-light text-[#FAFAFB]">
-                  Terms of Service
-                </a>
-              </li>
-              <li>
-                <a href="#" className=" font-light text-[#FAFAFB]">
-                  FAQs
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="contact lg:w-fit lg:px-12">
-            {" "}
-            <h5 className="text-white font-bold">Contact Us</h5>
-            <ul className=" text-[#FAFAFB]">
-              <li className="mb-6">
-                <a href="#" className=" font-light text-[#FAFAFB]">
-                  support@mortz.com
-                </a>
-              </li>
-              <li className="mb-6">
-                <a href="#" className=" font-light text-[#FAFAFB]">
-                  Lagos, Nigeria
-                </a>
-              </li>
-              <li className="mb-6">
-                <a href="#" className=" font-light text-[#FAFAFB]">
-                  08123456789
-                </a>
-              </li>
-              <li className="flex">
-                <a href="#hero" className=" font-light text-[#FAFAFB] mr-2">
-                  <img src={upArrow} alt="up arrow" className="w-[16px]" />
-                </a>
-                <span>back to top</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-    </div>
+        </footer>
+      </div>
+    </>
+
   );
 }
 

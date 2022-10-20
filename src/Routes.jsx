@@ -15,7 +15,7 @@ import CreateAccount from './pages/CreateAccount';
 import DeleteProduct from './components/molecules/deleteProduct';
 import ResetPasswordPage from './pages/PasswordResetPage';
 import Users from './pages/Users';
-
+import PageNotFound from './pages/404';
 import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
 import CreateSubAdmin from "./pages/CreateSubAdmin";
 import SubAdminProfilePage from "./pages/SubAdminProfile";
@@ -33,6 +33,7 @@ import MessagesStart from "./pages/MessagesStart";
 function Routes() {
     return (
         <Switch>
+            <Route path="*" element={<PageNotFound />} />
             <Route path='/' element={<Home />} />
             <Route path='/products' element={<AddNewProductPage1 />} />
             <Route path='/login' element={<Login />} />
