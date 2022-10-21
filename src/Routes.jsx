@@ -42,9 +42,6 @@ function Routes() {
             <Route path='/products' element={<AddNewProductPage1 />} />
             <Route path='/login' element={<Login />} />
             <Route path='/create-account' element={<CreateAccount />} />
-            <Route path='/deleteadmin' element={<AdminDeleteAccountPopup/>}></Route>
-            <Route path='/deleteadminfail' element={<AdminDeleteAccountFailPopup />}></Route>
-            <Route path='/deleteadminsuccess' element={<AdminDeleteAccountSuccessfullPopup/>}></Route>
             <Route
                 path='/view-products'
                 element={
