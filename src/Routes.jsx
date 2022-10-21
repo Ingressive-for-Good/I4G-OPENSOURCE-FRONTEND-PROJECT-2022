@@ -29,6 +29,9 @@ import AdminUsersProfile from './pages/AdminUsersProfile';
 import MessagesEmpty from './pages/MessagesEmpty';
 import MessagesStart from './pages/MessagesStart';
 import AdminUsersProfileWithProducts from './pages/AdminUsersProfileWithProducts';
+import AdminDeleteAccountPopup from './components/molecules/AdminDeleteAccountPopup';
+import AdminDeleteAccountFailPopup from './components/molecules/AdminDeleteAccountFailPopup';
+import AdminDeleteAccountSuccessfullPopup from './components/molecules/AdminDeleteAccountSuccessfullPopup';
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -39,6 +42,9 @@ function Routes() {
             <Route path='/products' element={<AddNewProductPage1 />} />
             <Route path='/login' element={<Login />} />
             <Route path='/create-account' element={<CreateAccount />} />
+            <Route path='/deleteadmin' element={<AdminDeleteAccountPopup/>}></Route>
+            <Route path='/deleteadminfail' element={<AdminDeleteAccountFailPopup />}></Route>
+            <Route path='/deleteadminsuccess' element={<AdminDeleteAccountSuccessfullPopup/>}></Route>
             <Route
                 path='/view-products'
                 element={
