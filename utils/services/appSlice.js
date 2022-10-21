@@ -74,7 +74,7 @@ const appSlice = createSlice({
   },
 });
 export const {
-setPrice, setIsEmpty, setAvailability, setOpenEdit
+setPrice, setIsEmpty, setAvailability, setOpenEdit,
 } = appSlice.actions;
 
 export default appSlice.reducer;
