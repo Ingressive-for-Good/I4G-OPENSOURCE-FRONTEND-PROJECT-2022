@@ -164,7 +164,7 @@ const Login = () => {
                   />
                   <label htmlFor="Remember">Remember me</label>
                 </div>
-                <a className="text-neutral-900 font-bold text-[16px]" href="#">
+                <a className="text-neutral-900 font-bold text-[16px] hover:text-secondary-500" href="#">
                   Forgot Password?
                 </a>
               </div>
@@ -195,7 +195,7 @@ const Login = () => {
           <div className="md:fixed text-center my-4 sm:my-0 lg:mx-[10%] md:mx-[25%] lg:bottom-4 md:bottom-16">
             <span>
               Don't have an account?
-              <a href="#" className="text-primary-500 font-bold">
+              <a href="#" className="text-primary-500 font-bold hover:text-secondary-500">
                 {" "}
                 Create an account
               </a>
