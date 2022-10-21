@@ -1,4 +1,4 @@
-import Select from 'react-select'
+import Select from "react-select";
 import DragNDrop from "./DragNDrop";
 
 // Options for each select input goes here. Create more and replace

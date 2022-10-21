@@ -1,12 +1,12 @@
-import chatIcon from '../icons/Chat.svg'
-import dashboardIcon from '../../assets/icons/dashboard.svg'
-import helpIcon from '../icons/help.svg'
-import wishlistIcon from '../icons/wishlistIcon.svg'
-import productIcon from '../icons/box.svg'
-import logoutIcon from '../icons/logout.svg'
-import profileIcon from '../icons/profile.svg'
-import usersIcon from '../icons/usersIcon.svg'
-import UserAvatar from '../icons/profileAvatar.svg'
+import chatIcon from "../icons/Chat.svg";
+import dashboardIcon from "../../assets/icons/dashboard.svg";
+import helpIcon from "../icons/help.svg";
+import wishlistIcon from "../icons/wishlistIcon.svg";
+import productIcon from "../icons/box.svg";
+import logoutIcon from "../icons/logout.svg";
+import profileIcon from "../icons/profile.svg";
+import usersIcon from "../icons/usersIcon.svg";
+import UserAvatar from "../icons/profileAvatar.svg";
 
 export const data = [
   {
@@ -87,146 +87,146 @@ export const sideNav = [
     id: 1,
     icon: dashboardIcon,
     text: "Dashboard",
-    linkName: '/dashboard'
+    linkName: "/dashboard",
   },
   {
     id: 2,
     icon: chatIcon,
     text: "Messages",
-    linkName:'/messages'
+    linkName: "/messages",
   },
   {
     id: 3,
     icon: productIcon,
     text: "Products",
-    linkName:'/view-products'
+    linkName: "/view-products",
   },
   {
     id: 4,
     icon: wishlistIcon,
     text: "Wishlist",
-    linkName:'/wishlist'
+    linkName: "/wishlist",
   },
   {
     id: 5,
     icon: helpIcon,
     text: "Help & Support",
-    linkName: '/support'
+    linkName: "/support",
   },
 ];
 export const adminNav = [
   {
     id: 231,
-    text: 'Dashboard',
+    text: "Dashboard",
     icon: dashboardIcon,
-    link: '/admin/dashboard'
+    link: "/admin/dashboard",
   },
   {
     id: 3332,
-    text: 'Messages',
+    text: "Messages",
     icon: chatIcon,
-    link: '/admin/messages',
+    link: "/admin/messages",
   },
   {
     id: 3233,
-    text: 'Products',
+    text: "Products",
     icon: productIcon,
-    link: '/admin/products',
+    link: "/admin/products",
   },
   {
     id: 323243,
-    text: 'Users',
+    text: "Users",
     icon: usersIcon,
-    link: '/admin/users',
-  }, 
+    link: "/admin/users",
+  },
   {
     id: 322,
-    text: 'Profile',
+    text: "Profile",
     icon: profileIcon,
-    link: '/admin/profile',
-  }
+    link: "/admin/profile",
+  },
 ];
 export const UserListData = [
   {
     id: 1,
     avatar: UserAvatar,
-    userName: 'Nora Eboesomi',
-    Email: 'abgctewr@gmail.com',
-    Phone: '+234 812 345 6789',
-    DateReg: '12/06/2020'
+    userName: "Nora Eboesomi",
+    Email: "abgctewr@gmail.com",
+    Phone: "+234 812 345 6789",
+    DateReg: "12/06/2020",
   },
   {
     id: 2,
     avatar: UserAvatar,
-    userName: 'Nora Eboesomi',
-    Email: 'abgctewr@gmail.com',
-    Phone: '+234 812 345 6789',
-    DateReg: '12/06/2020'
+    userName: "Nora Eboesomi",
+    Email: "abgctewr@gmail.com",
+    Phone: "+234 812 345 6789",
+    DateReg: "12/06/2020",
   },
   {
     id: 3,
     avatar: UserAvatar,
-    userName: 'Nora Eboesomi',
-    Email: 'abgctewr@gmail.com',
-    Phone: '+234 812 345 6789',
-    DateReg: '12/06/2020'
+    userName: "Nora Eboesomi",
+    Email: "abgctewr@gmail.com",
+    Phone: "+234 812 345 6789",
+    DateReg: "12/06/2020",
   },
   {
     id: 4,
     avatar: UserAvatar,
-    userName: 'Nora Eboesomi',
-    Email: 'abgctewr@gmail.com',
-    Phone: '+234 812 345 6789',
-    DateReg: '12/06/2020'
+    userName: "Nora Eboesomi",
+    Email: "abgctewr@gmail.com",
+    Phone: "+234 812 345 6789",
+    DateReg: "12/06/2020",
   },
   {
     id: 5,
     avatar: UserAvatar,
-    userName: 'Nora Eboesomi',
-    Email: 'abgctewr@gmail.com',
-    Phone: '+234 812 345 6789',
-    DateReg: '12/06/2020'
+    userName: "Nora Eboesomi",
+    Email: "abgctewr@gmail.com",
+    Phone: "+234 812 345 6789",
+    DateReg: "12/06/2020",
   },
   {
     id: 6,
     avatar: UserAvatar,
-    userName: 'Nora Eboesomi',
-    Email: 'abgctewr@gmail.com',
-    Phone: '+234 812 345 6789',
-    DateReg: '12/06/2020'
+    userName: "Nora Eboesomi",
+    Email: "abgctewr@gmail.com",
+    Phone: "+234 812 345 6789",
+    DateReg: "12/06/2020",
   },
   {
     id: 7,
     avatar: UserAvatar,
-    userName: 'Nora Eboesomi',
-    Email: 'abgctewr@gmail.com',
-    Phone: '+234 812 345 6789',
-    DateReg: '12/06/2020'
+    userName: "Nora Eboesomi",
+    Email: "abgctewr@gmail.com",
+    Phone: "+234 812 345 6789",
+    DateReg: "12/06/2020",
   },
   {
     id: 8,
     avatar: UserAvatar,
-    userName: 'Nora Eboesomi',
-    Email: 'abgctewr@gmail.com',
-    Phone: '+234 812 345 6789',
-    DateReg: '12/06/2020'
+    userName: "Nora Eboesomi",
+    Email: "abgctewr@gmail.com",
+    Phone: "+234 812 345 6789",
+    DateReg: "12/06/2020",
   },
 ];
 export const SubAdminListData = [
   {
     id: 1,
     avatar: UserAvatar,
-    userName: 'Nora Eboesomi',
-    Email: 'abgctewr@gmail.com',
-    Phone: '+234 812 345 6789',
-    DateReg: '12/06/2020'
+    userName: "Nora Eboesomi",
+    Email: "abgctewr@gmail.com",
+    Phone: "+234 812 345 6789",
+    DateReg: "12/06/2020",
   },
   {
     id: 2,
     avatar: UserAvatar,
-    userName: 'Nora Eboesomi',
-    Email: 'abgctewr@gmail.com',
-    Phone: '+234 812 345 6789',
-    DateReg: '12/06/2020'
+    userName: "Nora Eboesomi",
+    Email: "abgctewr@gmail.com",
+    Phone: "+234 812 345 6789",
+    DateReg: "12/06/2020",
   },
 ];
