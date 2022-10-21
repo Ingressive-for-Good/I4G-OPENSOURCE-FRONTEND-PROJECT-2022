@@ -26,6 +26,7 @@ import AdminUsersProfile from './pages/AdminUsersProfile';
 
 import MessagesEmpty from "./pages/MessagesEmpty";
 import MessagesStart from "./pages/MessagesStart";
+import MessagesChat from './pages/MessagesChat';
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -62,6 +63,7 @@ function Routes() {
                 />
                 <Route path="/admin/messages" element={<MessagesEmpty />} />
                     <Route path="/admin/messages/start" element={<MessagesStart />} />
+                    <Route path="/admin/messages/chat" element={<MessagesChat />} />
 
 
                 <Route path='/admin/users' element={<Users />} />
