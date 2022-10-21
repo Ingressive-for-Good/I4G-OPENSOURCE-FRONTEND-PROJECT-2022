@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import checkIcon from '../../../assets/icons/circular-check.png';
 import DeleteProductModal from './DeleteProductModal';
-import MakeProductUnavailable from './makeProductUnavailable';
+import MakeProductUnavailable from './MakeProductUnavailable';
 import ProductDetails from './ProductDetails';
 
 export default function ProductPage() {
