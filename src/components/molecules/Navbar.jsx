@@ -1,9 +1,9 @@
-import searchIcon from '../../assets/icons/Search.svg'
-import notificatin from '../../assets/icons/notification.svg'
-import avatar from '../../assets/icons/avatar.svg'
-import toggle from '../../assets/icons/toggle.svg'
+import searchIcon from "../../assets/icons/Search.svg";
+import notificatin from "../../assets/icons/notification.svg";
+import avatar from "../../assets/icons/avatar.svg";
+import toggle from "../../assets/icons/toggle.svg";
 
-export default function Navbar({text}) {
+export default function Navbar({ text }) {
   return (
     <div className="flex flex-row w-full justify-between font-cabinetGrotesk">
       <div className="">
@@ -13,9 +13,7 @@ export default function Navbar({text}) {
         <h1 className="text-neutral-800 md:text-[20px] lg:mt-0 mt-[20px] text-[16px] font-[500] lg:pb-0 pb-[10px]">
           Hey Nora👋🏾
         </h1>
-        <p className="text-neutral-900 md:text-[28px] font-[500] ">
-          {text}
-        </p>
+        <p className="text-neutral-900 md:text-[28px] font-[500] ">{text}</p>
         <p className="md:text-[18px] text-[16px] font-[500]">
           Ensure that you are filling the{" "}
           <span className="text-secondary-500">correct</span> and{" "}

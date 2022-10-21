@@ -1,16 +1,15 @@
-import { useState } from 'react';
-import QnA from '../components/molecules/QnA';
-import curlyArrow from '../assets/icons/curlyArrow.svg';
-import defaultAvatar from '../assets/icons/avatar.svg';
-import search from '../assets/icons/search-icon.svg';
-import techmart from '../assets/icons/techmart.svg';
-import SideBar from '../components/molecules/SideBar';
-import Avatar from '../components/atoms/Avatar';
-import Notification from '../components/atoms/Notification';
-import MobileNav from '../components/atoms/MobileNav';
-import info from '../assets/data/FAQ';
-import {sideNav} from "../assets/data/data"
-
+import { useState } from "react";
+import QnA from "../components/molecules/QnA";
+import curlyArrow from "../assets/icons/curlyArrow.svg";
+import defaultAvatar from "../assets/icons/avatar.svg";
+import search from "../assets/icons/search-icon.svg";
+import techmart from "../assets/icons/techmart.svg";
+import SideBar from "../components/molecules/SideBar";
+import Avatar from "../components/atoms/Avatar";
+import Notification from "../components/atoms/Notification";
+import MobileNav from "../components/atoms/MobileNav";
+import info from "../assets/data/FAQ";
+import { sideNav } from "../assets/data/data";
 
 function Help() {
   return (
@@ -72,10 +71,10 @@ function Help() {
             are here to help you. Kindly fill the form below;
           </p>
           <p className="font-campton md:text-lg text-neutral-700 mt-4">
-            Do you have a complaint? Fill this{' '}
+            Do you have a complaint? Fill this{" "}
             <a className="text-secondary-500 font-semibold" href="/#">
               form
-            </a>{' '}
+            </a>{" "}
             to get answers ASAP
           </p>
         </div>

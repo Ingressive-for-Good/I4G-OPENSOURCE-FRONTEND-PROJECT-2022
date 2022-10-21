@@ -5,8 +5,8 @@ import Navbar from "../components/molecules/Navbar";
 export default function Users() {
   return (
     <div className="pt-[50px] px-[10px] pb-[30px] lg:pl-[270px] w-full">
-      <Navbar NavMsg={UserNavMsg}/>
-      <AdminUsersSummary/>
+      <Navbar NavMsg={UserNavMsg} />
+      <AdminUsersSummary />
     </div>
-  )
+  );
 }

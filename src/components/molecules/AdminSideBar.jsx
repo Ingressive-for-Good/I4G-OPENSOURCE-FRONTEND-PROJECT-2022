@@ -1,10 +1,10 @@
-import dashboardIcon from '../../assets/icons/dashboard.svg'
-import chatIcon from '../../assets/icons/Chat.svg'
-import profileIcon from '../../assets/icons/profile.svg'
-import usersIcon from '../../assets/icons/users.svg'
-import productIcon from '../../assets/icons/box.svg'
-import logoutIcon from '../../assets/icons/logout.svg'
-import { Link, NavLink } from 'react-router-dom'
+import dashboardIcon from "../../assets/icons/dashboard.svg";
+import chatIcon from "../../assets/icons/Chat.svg";
+import profileIcon from "../../assets/icons/profile.svg";
+import usersIcon from "../../assets/icons/users.svg";
+import productIcon from "../../assets/icons/box.svg";
+import logoutIcon from "../../assets/icons/logout.svg";
+import { Link, NavLink } from "react-router-dom";
 
 export default function AdminSideBar() {
   return (

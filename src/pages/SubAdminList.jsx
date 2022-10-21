@@ -4,8 +4,8 @@ import SubAdminNavMsg from "../components/atoms/SubAdminNavMsg";
 export default function SubAdminList() {
   return (
     <div className="pt-[50px] px-[10px] pb-[30px] w-full lg:pl-[270px]">
-      <Navbar NavMsg={SubAdminNavMsg}/>
-      <AdminSubAdminList/>
+      <Navbar NavMsg={SubAdminNavMsg} />
+      <AdminSubAdminList />
     </div>
-  )
+  );
 }

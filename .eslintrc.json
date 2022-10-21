@@ -22,14 +22,10 @@
     "react/jsx-indent": "off",
     "import/prefer-default-export": "off",
     "react/jsx-indent-props": "off",
-    "react/jsx-props-no-spreading" : "off",
+    "react/jsx-props-no-spreading": "off",
     "react-hooks/exhaustive-deps": "warn",
     "react-hooks/rules-of-hooks": "error",
     "no-param-reassign": [2, { "props": false }]
   },
-  "ignorePatterns": [
-    "dist/",
-    "build/"
-  ]
+  "ignorePatterns": ["dist/", "build/"]
 }
-  
