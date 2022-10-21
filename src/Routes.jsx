@@ -1,10 +1,9 @@
-
 import React from "react";
 import { Route, Routes as Switch, Link } from "react-router-dom";
 import AddNewProductPage1 from "./pages/AddNewProductPage1";
 import PhoneNumberVerification from "./pages/PhoneNumberVerification";
 import Login from "./pages/Login";
-import Help from "./pages/Help";
+// import Help from "./pages/Help";
 import DashboardPage from "./pages/DashboardPage";
 import Kyc from "./pages/Kyc";
 import EmailVerify from "./pages/EmailVerify";
@@ -22,19 +21,16 @@ import CreateSubAdmin from "./pages/CreateSubAdmin";
 import SubAdminProfilePage from "./pages/SubAdminProfile";
 import EditProductDetails from "./components/molecules/EditProductDetails";
 
-
 import UserList from "./pages/UserList.jsx";
 import SubAdminList from "./pages/SubAdminList";
 import SuspendedUsersList from "./pages/SuspendedUsersList";
 // import AdminUsersProfile from "./pages/AdminUsersProfile";
 
+import MessagesEmpty from "./pages/MessagesEmpty";
+import MessagesStart from "./pages/MessagesStart";
+import MessagesChat from "./pages/MessagesChat";
 
-import MessagesEmpty from './pages/MessagesEmpty';
-import MessagesStart from './pages/MessagesStart';
-import MessagesChat from './pages/MessagesChat';
-
-import AdminUsersProfileWithProducts from './pages/AdminUsersProfileWithProducts';
-
+import AdminUsersProfileWithProducts from "./pages/AdminUsersProfileWithProducts";
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -56,25 +52,16 @@ function Routes() {
       <Route path="/email-verification" element={<EmailVerify />} />
       <Route path="/phone-verification" element={<PhoneNumberVerification />} />
 
+      {/* Protected Pages */}
+      <Route path="/dashboard" element={<DashboardPage />} />
+      <Route element={<AdminDashBoardLayout />}>
+        <Route path="/admin/dashboard" element={<h1> create dashboard</h1>} />
+        <Route path="/admin/products" element={<h1> Admin producet </h1>} />
 
-            {/* Protected Pages */}
-            <Route path='/dashboard' element={<DashboardPage />} />
-            <Route element={<AdminDashBoardLayout />}>
-                <Route
-                    path='/admin/dashboard'
-                    element={<h1> create dashboard</h1>}
-                />
-                <Route
-                    path='/admin/products'
-                    element={<h1> Admin producet </h1>}
-                />
+        <Route path="/admin/messages" element={<MessagesEmpty />} />
+        <Route path="/admin/messages/start" element={<MessagesStart />} />
+        <Route path="/admin/messages/chat" element={<MessagesChat />} />
 
-                <Route path="/admin/messages" element={<MessagesEmpty />} />
-                    <Route path="/admin/messages/start" element={<MessagesStart />} />
-                    <Route path="/admin/messages/chat" element={<MessagesChat />} />
-
-
-     
         {/* <Route path="/admin/users" element={<Users />} /> */}
         <Route path="/admin/users/userlist" element={<UserList />} />
         <Route path="/admin/users/subadminlist" element={<SubAdminList />} />
