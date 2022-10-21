@@ -3,7 +3,7 @@ import { Route, Routes as Switch, Link } from 'react-router-dom';
 import AddNewProductPage1 from './pages/AddNewProductPage1';
 import PhoneNumberVerification from './pages/PhoneNumberVerification';
 import Login from './pages/Login';
-import Help from './pages/Help';
+import Help from './pages/HelpandSupport';
 import DashboardPage from './pages/DashboardPage';
 import Kyc from './pages/Kyc';
 import EmailVerify from './pages/EmailVerify';
