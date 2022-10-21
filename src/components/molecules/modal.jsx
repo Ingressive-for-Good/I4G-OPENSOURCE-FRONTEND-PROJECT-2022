@@ -1,6 +1,6 @@
-import React from "react";
-import image from "../../assets/icons/33.png";
-import { UseAppContext } from "../../../utils/context";
+import React from 'react';
+import image from '../../assets/icons/SadFace.png';
+import { UseAppContext } from '../../../utils/context';
 
 const Modal = () => {
   const { alert, value, setValue } = UseAppContext();
@@ -8,8 +8,8 @@ const Modal = () => {
   return (
     <div
       className={
-        " flex flex-col items-center absolute bg-neutral-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-center w-11/12  md:w-9/12 lg:w-3/6 p-10 rounded-md " +
-        (alert ? "block" : "hidden")
+        ' flex flex-col items-center absolute bg-neutral-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 text-center w-11/12  md:w-9/12 lg:w-3/6 p-10 rounded-md ' +
+        (alert ? 'block' : 'hidden')
       }
     >
       <h2 className="text-h4 font-bold text-secondary-500  lg:px-20 ">

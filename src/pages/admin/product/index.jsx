@@ -1,12 +1,19 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import checkIcon from '../assets/icons/circular-check.png';
+import checkIcon from '../../../assets/icons/circular-check.png';
+import DeleteProductModal from './DeleteProductModal';
+import MakeProductUnavailable from './makeProductUnavailable';
+import ProductDetails from './ProductDetails';
 
-export default function AdminProductPage() {
+export default function ProductPage() {
   const { isEmpty, uploadedProducts } = useSelector((state) => state.app);
   const [showProductMenu, setShowProductMenu] = useState(false);
   const [showSortByMenu, setShowSortByMenu] = useState(false);
   const [selectedProductId, setSelectedProductId] = useState(0);
+  const [openDeleteProductModal, setDeleteProductModal] = useState(false);
+  const [makeProductUnavailableModal, setMakeProductUnavailable] =
+    useState(false);
+  const [openProductDetails, setProductDetails] = useState(false);
 
   return (
     <>
@@ -17,14 +24,14 @@ export default function AdminProductPage() {
       ) : (
         <section className="w-full max-h-[85vh] overflow-y-scroll border rounded-lg xlMax:mb-4 mt-24">
           <div className="w-full font-cabinetGrotesk py-4 border rounded-t-lg border-[#D5D5D5] px-5 bg-primary-50 flex items-center justify-between sticky top-0  z-[100]">
-            <p className="font-bold text-[#131418] text-2xl">
+            <p className="font-bold text-neutral-900 text-2xl">
               Products ({uploadedProducts ? uploadedProducts.length : '0'})
             </p>
             <div className="relative">
               <div className="flex items-center font-campton">
                 Sort By:{' '}
                 <button
-                  className="text-[#0F27BD] flex ml-2 items-center"
+                  className="text-primary-500 flex ml-2 items-center"
                   onClick={() =>
                     setShowSortByMenu(showSortByMenu ? false : true)
                   }
@@ -41,9 +48,9 @@ export default function AdminProductPage() {
                       <path
                         d="M1 1L7 7L13 1"
                         stroke="#0F27BD"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </span>
@@ -52,13 +59,13 @@ export default function AdminProductPage() {
               <div
                 className={`${
                   showSortByMenu ? '' : 'hidden'
-                } w-56 xl:w-72 rounded-lg absolute text-[#252730]  cursor-pointer z-[200] bg-white right-0 border  shadow-2xl font-campton border-[#A1A4B6] p-6`}
+                } w-56 xl:w-72 rounded-lg absolute text-neutral-800  cursor-pointer z-[200] bg-white right-0 border  shadow-2xl font-campton border-neutral-500 p-6`}
               >
-                <button className="whitespace-nowrap text-[#0F27BD]  flex justify-between w-full border-b border-[#A1A4B6] pb-3">
+                <button className="whitespace-nowrap text-primary-500  flex justify-between w-full border-b border-neutral-500 pb-3">
                   <span>Latest</span>
                   <img src={checkIcon} alt="" />
                 </button>
-                <button className="whitespace-nowrap block text-start w-full border-b border-[#A1A4B6] py-3">
+                <button className="whitespace-nowrap block text-start w-full border-b border-neutral-500 py-3">
                   Name
                 </button>
                 <button className="flex  justify-between items-center whitespace-nowrap w-full pt-4">
@@ -74,9 +81,9 @@ export default function AdminProductPage() {
                       <path
                         d="M1 1L7 7L13 1"
                         stroke="#131418"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       />
                     </svg>
                   </span>
@@ -87,7 +94,7 @@ export default function AdminProductPage() {
           {uploadedProducts?.length && (
             <table className="w-full relative bg-white">
               <thead className="sticky top-0 bg-white z-50">
-                <tr className="border-b border-[#D5D5D5] w-full text-lg text-[#252730] font-bold">
+                <tr className="border-b border-[#D5D5D5] w-full text-lg text-neutral-800 font-bold">
                   <th className="py-5 text-start pl-5">Item</th>
                   <th className="text-start">Price</th>
                   <th className="text-start">Category</th>
@@ -102,7 +109,7 @@ export default function AdminProductPage() {
                     className="text-sm font-cabinetGrotesk xl:text-base border-b border-[#D5D5D5]"
                   >
                     <td className=" w-[25%] xl:w-[27%] pl-5  pr-5">
-                      <div className="grid grid-cols-[40%_60%] xl:grid-cols-[30%_70%] text-[#131418] font-bold items-center ">
+                      <div className="grid grid-cols-[40%_60%] xl:grid-cols-[30%_70%] text-neutral-900 font-bold items-center ">
                         <div
                           className="w-12 h-12 xl:w-16 xl:h-16 mr-3 rounded-xl bg-primary-50 "
                           style={{
@@ -115,17 +122,19 @@ export default function AdminProductPage() {
                         <p>{product.productName}</p>
                       </div>
                     </td>
-                    <td className=" w-[18%]  font-medium text-[#4B4E61] xl:w-[18%]  pr-4 ">
+                    <td className=" w-[18%]  font-medium text-neutral-700 xl:w-[18%]  pr-4 ">
                       {product.price}
                     </td>
-                    <td className="w-[18%] xl:w-[20%] pr-4 break-all font-medium text-[#4B4E61]">
+                    <td className="w-[18%] xl:w-[20%] pr-4 break-all font-medium text-neutral-700">
                       {product.description}
                     </td>
-                    <td className="w-[18%] xl:w-[20%] pr-4 font-medium text-[#4B4E61]">
+                    <td className="w-[18%] xl:w-[20%] pr-4 font-medium text-neutral-700">
                       Johnson Clement
                     </td>
                     <td className="relative flex justify-between py-8  items-center pr-5 ">
-                      <p className="font-medium text-[#4B4E61] ">01/10/2022</p>
+                      <p className="font-medium text-neutral-700 ">
+                        01/10/2022
+                      </p>
                       <button
                         onClick={() => {
                           setShowProductMenu(
@@ -154,15 +163,33 @@ export default function AdminProductPage() {
                           showProductMenu && selectedProductId === product.id
                             ? ''
                             : 'hidden'
-                        } w-56 xl:w-64 rounded-lg cursor-pointer absolute top-[40%] z-[200] bg-white right-7 border  shadow-2xl font-campton border-[#A1A4B6] p-6`}
+                        } w-56 xl:w-64 rounded-lg cursor-pointer absolute top-[40%] z-[200] bg-white right-7 border  shadow-2xl font-campton border-neutral-500 p-6`}
                       >
-                        <button className="text-[#4B4E61] whitespace-nowrap block text-start w-full border-b border-[#A1A4B6] pb-3">
+                        <button
+                          onClick={() => {
+                            setProductDetails(true);
+                            setShowProductMenu(false);
+                          }}
+                          className="text-neutral-700 whitespace-nowrap block text-start w-full border-b border-neutral-500 pb-3"
+                        >
                           View Details
                         </button>
-                        <button className="text-[#4B4E61] whitespace-nowrap block text-start w-full border-b border-[#A1A4B6] py-3">
+                        <button
+                          onClick={() => {
+                            setMakeProductUnavailable(true);
+                            setShowProductMenu(false);
+                          }}
+                          className="text-neutral-700 whitespace-nowrap block text-start w-full border-b border-neutral-500 py-3"
+                        >
                           Make unavailable
                         </button>
-                        <button className="text-[#970C0C] whitespace-nowrap block text-start w-full pt-3">
+                        <button
+                          className="text-error-700 whitespace-nowrap block text-start w-full pt-3"
+                          onClick={() => {
+                            setDeleteProductModal(true);
+                            setShowProductMenu(false);
+                          }}
+                        >
                           Delete
                         </button>
                       </div>
@@ -172,6 +199,21 @@ export default function AdminProductPage() {
               </tbody>
             </table>
           )}
+          <ProductDetails
+            product={uploadedProducts.filter(
+              (product) => product.id === selectedProductId
+            )}
+            open={openProductDetails}
+            close={setProductDetails}
+          />
+          <DeleteProductModal
+            open={openDeleteProductModal}
+            close={setDeleteProductModal}
+          />
+          <MakeProductUnavailable
+            open={makeProductUnavailableModal}
+            close={setMakeProductUnavailable}
+          />
         </section>
       )}
       <style>
