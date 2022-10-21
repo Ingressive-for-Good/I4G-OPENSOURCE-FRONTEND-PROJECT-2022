@@ -446,3 +446,41 @@ The button also being the only highlighted button seems to encourage an action w
 -----Main Goal -- Improved UI Design
 
 
+
+## Name: Toyeeb Amusan
+
+#Description: Addition of Side Navigation for User Dashboard - Mobile
+### Observation/Changes
+- I designed the side navigation for the mobile screens on the user dashboard to ease navigation for users. 
+
+-----Main Goal -- Improved User Experience, UI Design
+
+
+
+## Name: Toyeeb Amusan
+
+#Description: Addition of Search Input Fields on User Dashboard - Tablet and Mobile View
+### Observation/Changes
+- I added search input fields for the tablet and mobile screens on the user dashboard to make the user journey shorter when they need to search for anything
+
+-----Main Goal -- Improved User Experience, UI Design
+
+
+
+## Name: Toyeeb Amusan
+
+#Description: Design of Side Navigation for Admin Dashboard - Desktop
+### Observation/Changes
+- I designed the side navigation for the desktop screens for the admin dashboard to ease navigation for the admins
+
+-----Main Goal -- Improved User Experience, UI Design
+
+
+
+## Name: Toyeeb Amusan
+
+#Description: Design of Side Navigation for Admin Dashboard - Tablet
+### Observation/Changes
+- I designed the side navigation for the tablet screens for the admin dashboard to ease navigation for the admin
+
+-----Main Goal -- Improved User Experience, UI Design

@@ -20,7 +20,7 @@ export default function SideBar({ navData = [] }) {
             <li key={ id } className="pl-[50px] py-[19.5px]">
               <NavLink className="flex flex-row gap-[10px]" to={ link }>
                 <img src={ icon } alt="" />
-                <span>{ text }</span>
+                <span className=' text-gray-400'>{ text }</span>
               </NavLink>
             </li>
             ))
