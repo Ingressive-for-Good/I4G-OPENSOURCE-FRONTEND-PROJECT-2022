@@ -128,7 +128,7 @@ export const sideNav = [
     id: 5,
     icon: helpIcon,
     text: "Help & Support",
-    linkName: '/help'
+    linkName: '/support'
   },
 ];
 export const adminNav = [

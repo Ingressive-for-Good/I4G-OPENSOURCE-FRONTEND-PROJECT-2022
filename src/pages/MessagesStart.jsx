@@ -1,4 +1,5 @@
 import MessagesHeader from "../components/molecules/MessagesHeader";
+import { Link } from "react-router-dom";
 
 function StartMessageBar({ headerText }) {
   return (
@@ -6,9 +7,11 @@ function StartMessageBar({ headerText }) {
       <h2 className="font-bold text-3xl md:text-4xl lg:text-[40px] mt-5 md:mt-9 ">
         {headerText}
       </h2>
+      <Link to="/admin/messages/chat" >
       <button className="font-campton bg-primary-500 text-white px-6 py-4 rounded-lg mt-3.5 mb-4 md:mb-7 md:mt-9 lg:text-lg">
         <span>+</span> Start a Chat now
       </button>
+      </Link>
     </div>
   );
 }
