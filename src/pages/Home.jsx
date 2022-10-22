@@ -30,6 +30,8 @@ import twitter from '../assets/icons/twitter.svg';
 import instagram from '../assets/icons/instagram.svg';
 import linkedin from '../assets/icons/linkedin.svg';
 import upArrow from '../assets/icons/up-arrow.svg';
+import MainNav from '../components/molecules/MainNav';
+import Footer from '../components/molecules/Footer';
 
 function App() {
     const toggleMenu = () => {
@@ -45,50 +47,7 @@ function App() {
                 id='body'
                 className='text-neutral-900 font-campton scroll-smooth'>
                 {/* header and navigation */}
-                <header
-                    id='hero'
-                    className='relative bg-primary-50 px-8 py-9 flex items-center justify-between'>
-                    <h1 className='font-cabinetGrotesk text-primary-500 font-bold text-2xl'>
-                        tech
-                        <span className='text-secondary-500'>mart</span>
-                    </h1>
-                    <div className='border-primary-500 border rounded-xl p-3 lg:hidden'>
-                        <img
-                            className=''
-                            onClick={toggleMenu}
-                            id='hamburger'
-                            src={menuIcon}
-                            alt=''
-                        />
-                    </div>
-                    <nav
-                        id='nav'
-                        className='h-screen lg:h-fit w-screen lg:w-fit flex hidden absolute lg:relative z-100 top-0 lg:top-unset left-0 lg:left-unset bg-white lg:bg-transparent lg:flex flex-col lg:flex-row space-y-8 lg:space-y-0 justify-center items-center lg:space-x-5 text-neutral-700'>
-                        <img
-                            className='lg:hidden absolute top-12 right-16'
-                            onClick={toggleMenu}
-                            id='hamburger'
-                            src={closeMenuIcon}
-                            alt=''
-                        />
-                        <a href='' className='hover:text-secondary-500'>Home</a>
-                        <a href='#howitworks' className='hover:text-primary-500'>How it Works</a>
-                        <a href='#marketplace' className='hover:text-primary-500'>Market Place</a>
-                        <a href='#contactUs' className='hover:text-primary-500'>Contact Us</a>
-                        <div className='mx-4 space-x-4'>
-                            <Link
-                                className='text-primary-500 font-medium hover:text-secondary-500'
-                                to='/login'>
-                                Log In
-                            </Link>
-                            <Link
-                                className='text-white text-sm rounded-lg px-5 py-3 bg-primary-500 border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500'
-                                to='/create-account'>
-                                Create an account
-                            </Link>
-                        </div>
-                    </nav>
-                </header>
+                <MainNav/>
                 <main>
                     {/* hero section */}
                     <section className='px-[10%] py-4 text-center flex items-center justify-between bg-primary-50'>
@@ -619,165 +578,7 @@ function App() {
                 </main>
 
                 {/* footer */}
-                <footer className='bg-[#131418] p-12 lg:flex lg:justify-around relative w-full '>
-                    <div className='mb-4 lg:mr-8 md:mr-8 lg:items-center'>
-                        <div className='logo-md'>
-                            <img src={logo} alt='' />
-                        </div>
-                        <div className='my-8 med-devices'>
-                            <p className='my-10 text-xl font-semibold lg:text-center text-white'>
-                                © Enterprise martZ Limited
-                            </p>
-                            <div className='flex'>
-                                <a href='#' className='mr-4'>
-                                    <img
-                                        src={facebook}
-                                        alt=''
-                                        className='w-[39px] md:w-[60px]'
-                                    />
-                                </a>
-                                <a href='#' className='mr-4'>
-                                    <img
-                                        src={twitter}
-                                        alt=''
-                                        className='w-[39px] md:w-[60px]'
-                                    />
-                                </a>
-                                <a href='#' className='mr-4'>
-                                    <img
-                                        src={instagram}
-                                        alt=''
-                                        className='w-[39px] md:w-[60px]'
-                                    />
-                                </a>
-                                <a href='#'>
-                                    <img
-                                        src={linkedin}
-                                        alt=''
-                                        className='w-[39px] md:w-[60px]'
-                                    />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='footer-items md:flex relative lg:flex lg:justify-evenly lg:items-center'>
-                        <div className='about  mb-4 w-fit px-12'>
-                            <h5 className='text-white font-bold'>About Us</h5>
-                            <ul className=' text-[#FAFAFB]'>
-                                <li className='mb-6'>
-
-                                    <Link
-                                        to='/support'
-                                        className=' font-light text-[#FAFAFB]'>
-                                        FAQs
-                                    </Link>
-                                </li>
-                                <li className='mb-6'>
-                                    <a
-                                        href='#'
-                                        className=' font-light text-[#FAFAFB] hover:text-primary-400'>
-                                        Careers
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href='#'
-                                        className=' font-light text-[#FAFAFB] hover:text-primary-400'>
-                                        Blog
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className='products  mb-4  lg:mt-0 px-12 pb-8 '>
-                            <h5 className='text-white lg:text-x font-bold'>
-                                Products
-                            </h5>
-                            <ul className=' text-[#FAFAFB]'>
-                                <li className='mb-6'>
-                                    <a
-                                        href='#'
-                                        className=' font-light text-[#FAFAFB] hover:text-primary-400'>
-                                        For Shopper
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href='#'
-                                        className=' font-light text-[#FAFAFB] hover:text-primary-400'>
-                                        For Vendors
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className='legal  mb-4  px-12'>
-                            {' '}
-                            <h5 className='text-white font-bold'>Legal</h5>
-                            <ul className=' text-[#FAFAFB]'>
-                                <li className='mb-6'>
-                                    <a
-                                        href='#'
-                                        className=' font-light text-[#FAFAFB] hover:text-primary-400'>
-                                        Privacy Policy
-                                    </a>
-                                </li>
-                                <li className='mb-6'>
-                                    <a
-                                        href='#'
-                                        className=' font-light text-[#FAFAFB] hover:text-primary-400'>
-                                        Terms of Service
-                                    </a>
-                                </li>
-                                <li>
-
-                                    <Link
-                                        to='/support'
-                                        className=' font-light text-[#FAFAFB]'>
-                                        FAQs
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className='contact lg:w-fit lg:px-12'>
-                            {' '}
-                            <h5 className='text-white font-bold'>Contact Us</h5>
-                            <ul className=' text-[#FAFAFB]'>
-                                <li className='mb-6'>
-                                    <a
-                                        href='#'
-                                        className=' font-light text-[#FAFAFB] hover:text-primary-400'>
-                                        support@mortz.com
-                                    </a>
-                                </li>
-                                <li className='mb-6'>
-                                    <a
-                                        href='#'
-                                        className=' font-light text-[#FAFAFB] hover:text-primary-400'>
-                                        Lagos, Nigeria
-                                    </a>
-                                </li>
-                                <li className='mb-6'>
-                                    <a
-                                        href='#'
-                                        className=' font-light text-[#FAFAFB] hover:text-primary-400'>
-                                        08123456789
-                                    </a>
-                                </li>
-                                <li className='flex'>
-                                    <a
-                                        href='#hero'
-                                        className=' font-light text-[#FAFAFB] mr-2'>
-                                        <img
-                                            src={upArrow}
-                                            alt='up arrow'
-                                            className='w-[16px]'
-                                        />
-                                    </a>
-                                    <span>back to top</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </footer>
+                <Footer/>
             </div>
         </>
     );

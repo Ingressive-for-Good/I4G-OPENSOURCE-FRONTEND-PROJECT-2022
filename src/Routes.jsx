@@ -21,6 +21,7 @@ import CreateSubAdmin from './pages/CreateSubAdmin';
 import SubAdminProfilePage from './pages/SubAdminProfile';
 import EditProductDetails from './components/molecules/EditProductDetails';
 import ForgotPassword from "./pages/ForgotPassword";
+import TermsOfSevice from './pages/TermsOfSevice';
 
 import UserList from './pages/UserList.jsx';
 import SubAdminList from './pages/SubAdminList';
@@ -36,6 +37,7 @@ import AdminUsersProfileWithProducts from './pages/AdminUsersProfileWithProducts
 import AdminDeleteAccountPopup from './components/molecules/AdminDeleteAccountPopup';
 import AdminDeleteAccountFailPopup from './components/molecules/AdminDeleteAccountFailPopup';
 import AdminDeleteAccountSuccessfullPopup from './components/molecules/AdminDeleteAccountSuccessfullPopup';
+import Policy from './pages/Policy';
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -43,6 +45,8 @@ function Routes() {
         <Switch>
             <Route path='*' element={<PageNotFound />} />
             <Route path='/' element={<Home />} />
+            <Route path='/terms' element={<TermsOfSevice/>} />
+            <Route path='/policy' element={<Policy/>} />
             <Route path='/products' element={<AddNewProductPage1 />} />
             <Route path='/login' element={<Login />} />
             <Route path='/create-account' element={<CreateAccount />} />
