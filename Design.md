@@ -446,6 +446,14 @@ The button also being the only highlighted button seems to encourage an action w
 -----Main Goal -- Improved UI Design
 
 
+## Name: Afolabi Maryam , Olatide Jegede , Tinuade Adelesi , Adewole Abdulazeez 
+
+#Description: Admin user flow
+### Observation/Changes
+- We designed the admin user flow on Figjam after we've conducted our research.
+
+-----Main Goal -- Creation of Admin user flow for improved user experience.
+
 
 ## Name: Toyeeb Amusan
 
@@ -513,3 +521,6 @@ The button also being the only highlighted button seems to encourage an action w
 - I designed the admin user groups for mobile view
 
 -----Main Goal -- Improve the Admin Experience by designing a responsive screen for the mobile view 
+
+
+
