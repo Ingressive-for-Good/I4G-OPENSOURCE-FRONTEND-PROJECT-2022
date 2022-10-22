@@ -31,6 +31,9 @@ import MessagesStart from './pages/MessagesStart';
 import MessagesChat from './pages/MessagesChat';
 
 import AdminUsersProfileWithProducts from './pages/AdminUsersProfileWithProducts';
+import AdminDeleteAccountPopup from './components/molecules/AdminDeleteAccountPopup';
+import AdminDeleteAccountFailPopup from './components/molecules/AdminDeleteAccountFailPopup';
+import AdminDeleteAccountSuccessfullPopup from './components/molecules/AdminDeleteAccountSuccessfullPopup';
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
