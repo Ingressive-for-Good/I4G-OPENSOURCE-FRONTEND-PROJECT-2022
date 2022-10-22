@@ -3,7 +3,7 @@ import closeMenuIcon from '../../assets/icons/close-icon.png';
 import menuIcon from '../../assets/icons/menu-icon.svg';
 
 import { Link } from 'react-router-dom';
-import '../../pages/Home.css';
+import '../../pages/home.css';
 export default function NavHome() {
   const toggleMenu = () => {
     const nav = document.getElementById('nav');
