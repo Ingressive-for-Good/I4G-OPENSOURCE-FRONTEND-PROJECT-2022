@@ -484,3 +484,12 @@ The button also being the only highlighted button seems to encourage an action w
 - I designed the side navigation for the tablet screens for the admin dashboard to ease navigation for the admin
 
 -----Main Goal -- Improved User Experience, UI Design
+
+
+## Name: Afolabi Maryam 
+
+#Description: Design of Admin User groups- Desktop 
+### Observation/Changes
+- I designed the admin user groups for Desktop view
+
+-----Main Goal -- Improve the Admin Experience while navigating through the dashboard
