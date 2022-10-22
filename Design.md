@@ -523,4 +523,12 @@ The button also being the only highlighted button seems to encourage an action w
 -----Main Goal -- Improve the Admin Experience by designing a responsive screen for the mobile view 
 
 
+## Name: Tinuade Adelesi
 
+## Description: Admin dashboard - Desktop View
+### Observation/Changes
+- I designed the desktop view of the admin dashboard
+- The dashboard comprises of the analytics chart, the statistics section( which includes the total user of the platform and the total products uploaded on the platform), the top user section and also the recent uploaded product section
+
+
+-----Main Goal -- Simplify the informations that is being reviewed on the admin dashboard for easy processing
