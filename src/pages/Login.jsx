@@ -9,7 +9,8 @@ import HidePassword from "../assets/icons/Hide.png";
 import ShowPassword from "../assets/icons/show-password.png";
 import { Link } from "react-router-dom";
 import AuthSide from "../components/atoms/AuthSide";
-import NavbarDashboard from "../components/molecules/NavbarDashboard";
+import NavHome from "../components/molecules/NavHome";
+
 
 const PASSWORD_REGEX =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
@@ -76,13 +77,13 @@ const Login = () => {
   };
 
   return (
-    <section className="h-screen font-campton font-[500px]">
-      <div className="md:px-14 md:pt-4 md:w-[550px]">
-        <NavbarDashboard />
+    <section className="h-screen font-campton font-[500px] " id='body'>
+      <div className="absolute top-0 md:left-[55px] w-full">
+        <NavHome/>
       </div>
       <div className="w-full flex">
         <AuthSide Main={Main}/>
-        <div className="bg-white w-full lg:w-[60%] md:pb-[3%] px-[5%] pb-[5%] mt-[-16px]">
+        <div className="bg-white w-full md:pb-[3%] px-[5%] pb-[5%] md:mt-[16px] mt-[70px] pb-[30px]">
           <div className="text-center mt-12 sm:mt-8 lg:mt-0 mb-[41px]">
             <h4 className="text-[30px] text-neutral-900 font-[700]">Log In</h4>
             <img className="mx-auto" src={Arrow} alt="" />
@@ -90,7 +91,7 @@ const Login = () => {
           <p className="font-medium text-neutral-700 lg:mt-2 my-4 lg:mb-0 text-[14px]">
             Nice to see you again! Log In with your details
           </p>
-          <div className="py-4 lg:w-[90%]">
+          <div className="py-4">
             <form onSubmit={formSubmissionHandler}>
               <div className="flex flex-col">
                 <label
@@ -147,9 +148,9 @@ const Login = () => {
                   />
                   <label htmlFor="Remember">Remember me</label>
                 </div>
-                <a className="text-neutral-900 font-bold text-[16px]" href="#">
+                <Link className="text-neutral-900 font-bold text-[16px]" to='/forgotpassword'>
                   Forgot Password?
-                </a>
+                </Link>
               </div>
               <div className="my-6">
                 <PrimaryButton>Log In</PrimaryButton>
@@ -160,7 +161,7 @@ const Login = () => {
               <span className="relative px-2">OR</span>
               <hr className="border w-[45%] border-b-neutral-500" />
             </div>
-            <div className="flex gap-4 sm:gap-8 items-center md:flex-row flex-col">
+            <div className="flex gap-4 lg:gap-8 items-center md:flex-row flex-col">
               <SecondaryButton>
                 <span className="flex items-center justify-center gap-2 ">
                   <img src={Google} alt="" />

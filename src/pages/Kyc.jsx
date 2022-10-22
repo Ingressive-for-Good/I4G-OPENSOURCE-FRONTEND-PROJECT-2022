@@ -6,21 +6,21 @@ import lineSvg from "../assets/icons/line.svg";
 import ham from "../assets/icons/hamburger.svg";
 import PrimaryButton from "../components/atoms/PrimaryButton";
 import { Link } from "react-router-dom";
-import NavbarDashboard from "../components/molecules/NavbarDashboard";
 import AuthSide from "../components/atoms/AuthSide";
+import NavHome from "../components/molecules/NavHome";
 
 const Kyc = () => {
   return (
-    <div className="h-full w-full">
-      <div className="md:px-14 md:pt-4 md:w-[550px]">
-        <NavbarDashboard />
+    <div className="h-full w-full relative" id='body'>
+      <div className="absolute top-0 md:left-[55px] w-full">
+        <NavHome/>
       </div>
-      <div className="flex">
+      <div className="flex flex-row ">
         <AuthSide Main={kycImg}/>
-        <div className="md:w-[60%] w-full mt-[-16px]">
+        <div className="md:w-[60%] w-full md:mt-[16px] mt-[70px] pb-[30px]">
           <div className="verify-container">
             <div className="typography mb-6">
-              <h2 className="text-center font-bold text-3xl responsive">
+              <h2 className="text-center font-bold text-3xl">
                 Know Your Customer (KYC) Form
               </h2>
               <div className="img-box mb-12">

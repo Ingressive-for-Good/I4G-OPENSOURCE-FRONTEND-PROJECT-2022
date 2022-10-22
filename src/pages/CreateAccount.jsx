@@ -7,8 +7,7 @@ import Hide from '../assets/icons/Hide.svg'
 import Google from '../assets/icons/Google.svg'
 import Facebook from '../assets/icons/Facebook.svg'
 import AuthSide from '../components/atoms/AuthSide';
-import NavbarDashboard from "../components/molecules/NavbarDashboard";
-
+import NavHome from '../components/molecules/NavHome';
 
 function CreateAccount() {
     const [show, setShow] = useState(false)
@@ -33,15 +32,15 @@ function CreateAccount() {
 
       };
     return (
-    <div className='bg-neutral-50  text-neutral-900 font-campton'>
-      <div className="md:px-14 md:pt-4 md:w-[550px]">
-        <NavbarDashboard />
-      </div>
+    <div className='bg-neutral-50  text-neutral-900 font-campton'id='body'>
+        <div className="absolute top-0 md:left-[55px] w-full">
+            <NavHome/>
+        </div>
         <main className='flex'>
             <AuthSide Main={Main}/>
-            <section className=' w-full lg:w-[60%] md:pb-[3%] px-[5%] pb-[5%] mt-[-16px]]'>
+            <section className=' w-full md:pb-[3%] px-[5%] pb-[5%] md:mt-[16px] mt-[70px] pb-[30px]'>
                 <div className=''>
-                    <h2 className='font-cabinetGrotesk font-bold text-center text-xl md:text-3xl lg:mt-8 xl:mt-6'>Create An Account</h2>
+                    <h2 className='font-cabinetGrotesk font-bold text-center text-xl md:text-3xl text-center mt-12 sm:mt-8 mb-[41px]'>Create An Account</h2>
                     <img src={Line} alt="Line Icon" className='mx-auto w-12 md:w-auto' />
                     <p className='text-neutral-700 font-medium mt-6 md:text-lg md:text-neutral-900 md:leading-5 md:mt-10 lg:text-neutral-700'>Fill in the correct details below to create an Account.</p>
 
@@ -88,13 +87,13 @@ function CreateAccount() {
                             <hr className='w-5/12 border border-neutral-500' />
                         </div>
 
-                        <div className="flex flex-col md:flex-row md:justify-between lg:justify-around xl:justify-between">
-                            <button className='flex w-full font-medium md:font-semibold font-neutral-800 md:font-neutral-900 py-5 border-2 border-primary-300 rounded-lg md:w-5/12 justify-center lg:px-3'>
+                        <div className="flex flex-col md:flex-row md:justify-between lg:justify-around xl:justify-between gap-4 lg:gap-8">
+                            <button className='flex w-full font-medium md:font-semibold font-neutral-800 md:font-neutral-900 py-5 border-2 border-primary-300 rounded-lg justify-center lg:px-3'>
                                 <img src={Google} alt="Google Icon" className='mr-2.5 lg:mr-0 xl:mr-2.5' />
                                 Continue with Google
                             </button>
 
-                            <button className='flex w-full mt-6 md:mt-0  font-medium md:font-semibold font-neutral-800 md:font-neutral-900 py-5 border-2 border-primary-300 rounded-lg md:w-5/12 justify-center lg:px-3'>
+                            <button className='flex w-full mt-6 md:mt-0  font-medium md:font-semibold font-neutral-800 md:font-neutral-900 py-5 border-2 border-primary-300 rounded-lg justify-center lg:px-3'>
                                 <img src={Facebook} alt="Facebook Icon" className='mr-2 lg:mr-0 xl:mr-2' />
                                 Continue with Facebook
                             </button>

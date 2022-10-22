@@ -8,7 +8,7 @@ import PrimaryButton from "../components/atoms/PrimaryButton";
 import { useState } from "react";
 import Overlay from "../components/molecules/Overlay";
 import { Link } from "react-router-dom";
-import NavbarDashboard from "../components/molecules/NavbarDashboard";
+import NavHome from "../components/molecules/NavHome";
 
 
 const EmailVerify = () => {
@@ -22,7 +22,7 @@ const EmailVerify = () => {
     setPopUp(true)
   }
   return (
-    <div className=" relative font-campton">
+    <div className=" relative font-campton" id='body'>
       {popUp && <><div className=' flex items-center fixed bg-none top-0 left-0 h-full w-screen z-50 overflow-hidden '>
       <div className="bg-white opacity-[1] w-[90%] sm:w-[80%] lg:w-[70%] max-w-[590px] mx-auto p-[30px] sm:p-[47px] mx-auto font-campton rounded-[8px]">
         <div className='flex flex-col items-center justify-center text-center '>
@@ -35,20 +35,18 @@ const EmailVerify = () => {
         </div>
       </div>
     </div><Overlay/></>}
-      <div className="md:px-14 md:pt-4 md:w-[550px]">
-        <NavbarDashboard />
+      <div className="absolute top-0 md:left-[55px] w-full">
+        <NavHome/>
       </div>
       <div
         className='w-full flex'
       >
         <AuthSide Main={girlSvg}/>
-        <div className="bg-white w-full lg:w-[60%] md:py-[3%] md:px-[8%] px-[5%] py-[5%] mt-[-16px]">
+        <div className="bg-white w-full lg:w-[60%] md:py-[3%] md:px-[8%] px-[5%] py-[5%] md:mt-[16px] mt-[70px] pb-[30px]">
           <div className="verify-container p-0">
-            <div className="mb-[15px]">
-              <h2 className="text-center font-bold text-3xl responsive">
-                Verify Your Email
-              </h2>
-              <div className="img-box mb-12">
+            <div className="mt-12 sm:mt-8 lg:mt-0 mb-[41px]">
+              <div className="flex flex-col pt-4 text-center items-center content-center leading-5 mb-[40px]">
+                <h1 className="font-cabinetGrotesk text-center font-bold text-3xl">Verify Your Email</h1>
                 <img src={lineSvg} className="img" alt="curve-line" />
               </div>
               <p className="lg:font-normal typo">

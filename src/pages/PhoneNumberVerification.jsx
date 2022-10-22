@@ -3,9 +3,8 @@ import girlSvg from "../assets/icons/girl-photo.svg";
 import Arrow from "../assets/icons/arrow.png";
 import Overlay from "../components/molecules/Overlay";
 import headAvatar from "../assets/icons/head-avatar.svg";
-import Frame from "../assets/icons/menu-icon.svg";
 import { Link } from 'react-router-dom';
-import NavbarDashboard from "../components/molecules/NavbarDashboard";
+import NavHome from '../components/molecules/NavHome';
 import AuthSide from '../components/atoms/AuthSide';
 
 
@@ -33,7 +32,7 @@ export default function PhoneNumberVerification() {
   }
   
   return (
-    <section className='relative'>
+    <section className='relative'id='body'>
       {popUp && <><div className=' flex items-center fixed bg-none top-0 left-0 h-full w-screen z-50 overflow-hidden '>
       <div className="bg-white opacity-[1] w-[90%] sm:w-[80%] lg:w-[70%] max-w-[590px] mx-auto p-[30px] sm:p-[47px] mx-auto font-campton rounded-[8px]">
         <div className='flex flex-col items-center justify-center text-center '>
@@ -48,17 +47,18 @@ export default function PhoneNumberVerification() {
       </div>
       
     </div><Overlay/></>}
-      <div className="md:px-14 md:pt-4 md:w-[550px]">
-        <NavbarDashboard />
+    
+      <div className="absolute top-0 md:left-[55px] w-full">
+        <NavHome/>
       </div>
       <div className='flex'>
         {/* Inserted the Generic sideview */}
           <AuthSide Main={girlSvg}/>
         {/* Div two Start */}
-          <form onSubmit={handleSubmit} className='md:w-[60%] w-full flex flex-col py-5 px-10 lg:px-20 mt-[-16px]'>
+          <form onSubmit={handleSubmit} className='md:w-[60%] w-full flex flex-col py-5 px-10 lg:px-20 md:mt-[16px] mt-[70px] pb-[30px]'>
             {/* Header Start */}
               <div className='flex flex-col items-center justify-center'>
-                <h1 className=' text-[22px] md:text-[30px] leading-[27.2px] font-bold text-center font-cabinetGrotesk'>Phone Number Verification</h1>
+                <h1 className=' text-[22px] md:text-[30px] leading-[27.2px] font-bold text-center font-cabinetGrotesk mt-12 sm:mt-8 lg:mt-0 mb-[41px]'>Phone Number Verification</h1>
                 <img className='h-[3.9px] md:h-[6.2px] w-[60px] md:w-[80px] ' src={Arrow} alt="" />
               </div>
             {/* Header End */}
@@ -106,7 +106,7 @@ export default function PhoneNumberVerification() {
 
             {/* Already a user Login Start */}
               <div className='mt-[200px] w-full flex justify-center'>
-                <h1 className='text-[16px] leading-[24px] text-neutral-900 font-medium font-campton text-center'>Already have an account? <span className='text-[18px] text-primary-500 font-bold'><a href="#">Log In</a></span></h1>
+                <h1 className='text-[16px] leading-[24px] text-neutral-900 font-medium font-campton text-center'>Already have an account? <span className='text-[18px] text-primary-500 font-bold'><Link to="/login">Log In</Link></span></h1>
               </div>
             {/* Already a user Login End */}
           </form>

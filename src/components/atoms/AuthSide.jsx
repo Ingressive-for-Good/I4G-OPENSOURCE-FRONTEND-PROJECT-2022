@@ -1,7 +1,7 @@
 
 export default function AuthSide({Main}) {
   return (
-    <div className="hidden md:block w-[550px] relative bg-primary-50 h-[110vh] -top-28 md:px-[7%]">
+    <div className="hidden md:block w-[550px] relative bg-primary-50   md:px-[7%]">
       <div className="mt-[200px]">
         <img src={Main} alt="Main Image" className='mt-24' />
       </div>

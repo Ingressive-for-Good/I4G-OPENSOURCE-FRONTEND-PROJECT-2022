@@ -665,11 +665,11 @@ function App() {
                             <h5 className='text-white font-bold'>About Us</h5>
                             <ul className=' text-[#FAFAFB]'>
                                 <li className='mb-6'>
-                                    <a
-                                        href='#'
+                                    <Link
+                                        to='/support'
                                         className=' font-light text-[#FAFAFB]'>
                                         FAQs
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className='mb-6'>
                                     <a
@@ -727,11 +727,11 @@ function App() {
                                     </a>
                                 </li>
                                 <li>
-                                    <a
-                                        href='#'
+                                    <Link
+                                        to='/support'
                                         className=' font-light text-[#FAFAFB]'>
                                         FAQs
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
