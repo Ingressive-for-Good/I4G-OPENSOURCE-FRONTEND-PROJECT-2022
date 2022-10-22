@@ -493,3 +493,13 @@ The button also being the only highlighted button seems to encourage an action w
 - I designed the admin user groups for Desktop view
 
 -----Main Goal -- Improve the Admin Experience while navigating through the dashboard
+
+
+
+## Name: Afolabi Maryam 
+
+#Description: Design of Admin User groups- Tablet 
+### Observation/Changes
+- I designed the admin user groups for Tablet view
+
+-----Main Goal -- Improve the Admin Experience by designing a responsive screen for the tablet view 
