@@ -39,7 +39,7 @@ export default function NavHome() {
             src={closeMenuIcon}
             alt=''
         />
-        <a className='lg:hidden block' href=''>Home</a>
+        <Link className='lg:hidden block' to='/'>Home</Link>
         <a className='lg:hidden block' href='#howitworks'>How it Works</a>
         <a className='lg:hidden block' href='#marketplace'>Market Place</a>
         <a className='lg:hidden block' href='#contactUs'>Contact Us</a>
