@@ -20,11 +20,13 @@ import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
 import CreateSubAdmin from './pages/CreateSubAdmin';
 import SubAdminProfilePage from './pages/SubAdminProfile';
 import EditProductDetails from './components/molecules/EditProductDetails';
+import ForgotPassword from "./pages/ForgotPassword";
 
 import UserList from './pages/UserList.jsx';
 import SubAdminList from './pages/SubAdminList';
 import SuspendedUsersList from './pages/SuspendedUsersList';
 import AdminUsersProfile from './pages/AdminUsersProfile';
+
 
 import MessagesEmpty from './pages/MessagesEmpty';
 import MessagesStart from './pages/MessagesStart';
@@ -105,6 +107,7 @@ function Routes() {
                 <Route path='/admin/profile' element={<h2> profile </h2>} />
             </Route>
             <Route path='/kyc' element={<Kyc />} />
+            <Route path="/forgotpassword" element={<ForgotPassword/>} />
             <Route path='/products' element={<AddNewProductPage1 />} />
             <Route path='/delete-product' element={<DeleteProduct />} />
             {/* <Route path="/view-products" element={<ViewProduct />} /> */}
