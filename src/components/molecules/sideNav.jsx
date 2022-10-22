@@ -1,6 +1,7 @@
 import React from "react";
 import web from "../../assets/icons/web.png";
 import { UseAppContext } from "../../../utils/context";
+import { Link } from "react-router-dom";
 const Sidebar = () => {
   const { nav } = UseAppContext();
   return (
@@ -9,16 +10,21 @@ const Sidebar = () => {
       <p className="mb-8 text-primary-500">MENU</p>
 
       {nav.map((main) => {
-        const { id, image, name } = main;
+        const { id, image, name, link } = main;
         return (
-          <div
+          <nav
             key={id}
-            className="flex gap-2 mb-8 hover:bg-white hover:-mx-8 hover:px-8 hover:py-2 relative last:absolute last:bottom-8 last:text-error-500"
+            className="flex gap-2 mb-8 hover:bg-white hover:-mx-8 hover:px-8 hover:py-2  relative last:absolute last:bottom-8 last:text-error-500"
           >
             <img src={image} alt="" srcset="" />
 
-            <p className=" text-neutral-500 ">{name}</p>
-          </div>
+            <Link
+              to={link}
+              className=" text-neutral-500 hover:text-primary-500 "
+            >
+              {name}
+            </Link>
+          </nav>
         );
       })}
     </div>
