@@ -3,7 +3,7 @@ import { Route, Routes as Switch, Link } from 'react-router-dom';
 import AddNewProductPage1 from './pages/AddNewProductPage1';
 import PhoneNumberVerification from './pages/PhoneNumberVerification';
 import Login from './pages/Login';
-import Help from './pages/Help';
+import Help from './pages/HelpandSupport';
 import DashboardPage from './pages/DashboardPage';
 import Kyc from './pages/Kyc';
 import EmailVerify from './pages/EmailVerify';
@@ -30,7 +30,12 @@ import AdminUsersProfile from './pages/AdminUsersProfile';
 
 import MessagesEmpty from './pages/MessagesEmpty';
 import MessagesStart from './pages/MessagesStart';
+import MessagesChat from './pages/MessagesChat';
+
 import AdminUsersProfileWithProducts from './pages/AdminUsersProfileWithProducts';
+import AdminDeleteAccountPopup from './components/molecules/AdminDeleteAccountPopup';
+import AdminDeleteAccountFailPopup from './components/molecules/AdminDeleteAccountFailPopup';
+import AdminDeleteAccountSuccessfullPopup from './components/molecules/AdminDeleteAccountSuccessfullPopup';
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -66,11 +71,10 @@ function Routes() {
                     path='/admin/products'
                     element={<h1> Admin producet </h1>}
                 />
-                <Route path='/admin/messages' element={<MessagesEmpty />} />
-                <Route
-                    path='/admin/messages/start'
-                    element={<MessagesStart />}
-                />
+
+                <Route path="/admin/messages" element={<MessagesEmpty />} />
+                    <Route path="/admin/messages/start" element={<MessagesStart />} />
+                    <Route path="/admin/messages/chat" element={<MessagesChat />} />
 
                 <Route path='/admin/users' element={<Users />} />
                 <Route path='/admin/users/userlist' element={<UserList />} />

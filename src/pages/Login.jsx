@@ -148,6 +148,7 @@ const Login = () => {
                   />
                   <label htmlFor="Remember">Remember me</label>
                 </div>
+
                 <Link className="text-neutral-900 font-bold text-[16px]" to='/forgotpassword'>
                   Forgot Password?
                 </Link>
@@ -179,6 +180,7 @@ const Login = () => {
           <div className="text-center mt-[100px] lg:mx-[10%] md:mx-[25%]">
             <span>
               Don't have an account?
+
               <Link to='/create-account' className="text-primary-500 font-bold">
                 {" "}
                 Create an account
