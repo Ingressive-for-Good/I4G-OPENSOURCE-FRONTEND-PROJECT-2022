@@ -503,3 +503,13 @@ The button also being the only highlighted button seems to encourage an action w
 - I designed the admin user groups for Tablet view
 
 -----Main Goal -- Improve the Admin Experience by designing a responsive screen for the tablet view 
+
+
+
+## Name: Afolabi Maryam 
+
+#Description: Design of Admin User groups- Mobile 
+### Observation/Changes
+- I designed the admin user groups for mobile view
+
+-----Main Goal -- Improve the Admin Experience by designing a responsive screen for the mobile view 
