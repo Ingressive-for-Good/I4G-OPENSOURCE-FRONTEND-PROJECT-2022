@@ -21,7 +21,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 550px;
+  margin: 0 auto;
 }
 
 .typo {
@@ -130,9 +130,8 @@
     margin-left: 2rem;
     margin-right: 2rem;
     display: flex;
-    max-width: fit-content;
-    align-items: center;
-    justify-content: center;
+
+    
     flex-direction: column;
   }
   .typo {
@@ -179,11 +178,7 @@
   }
 
   .form-control {
-    width: 100% !important;
-    margin-right: 20px !important;
     padding: 4px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     outline: none;
     max-width: fit-content;
   }
@@ -196,9 +191,6 @@
     margin-left: 2rem;
     margin-right: 2rem;
     display: flex;
-    max-width: fit-content;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
   }
   .typo {
@@ -277,8 +269,6 @@
     margin-right: 2rem;
     display: flex;
     max-width: 100%;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
   }
   .typo {

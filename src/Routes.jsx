@@ -3,7 +3,7 @@ import { Route, Routes as Switch, Link } from "react-router-dom";
 import AddNewProductPage1 from "./pages/AddNewProductPage1";
 import PhoneNumberVerification from "./pages/PhoneNumberVerification";
 import Login from "./pages/Login";
-// import Help from "./pages/Help";
+import Help from "./pages/HelpandSupport";
 import DashboardPage from "./pages/DashboardPage";
 import Kyc from "./pages/Kyc";
 import EmailVerify from "./pages/EmailVerify";
@@ -20,6 +20,7 @@ import AdminDashBoardLayout from "./templates/AdminDashBoardLayout";
 import CreateSubAdmin from "./pages/CreateSubAdmin";
 import SubAdminProfilePage from "./pages/SubAdminProfile";
 import EditProductDetails from "./components/molecules/EditProductDetails";
+import ForgotPassword from "./pages/ForgotPassword";
 
 import UserList from "./pages/UserList.jsx";
 import SubAdminList from "./pages/SubAdminList";
@@ -31,6 +32,9 @@ import MessagesStart from "./pages/MessagesStart";
 import MessagesChat from "./pages/MessagesChat";
 
 import AdminUsersProfileWithProducts from "./pages/AdminUsersProfileWithProducts";
+// import AdminDeleteAccountPopup from './components/molecules/AdminDeleteAccountPopup';
+// import AdminDeleteAccountFailPopup from './components/molecules/AdminDeleteAccountFailPopup';
+// import AdminDeleteAccountSuccessfullPopup from './components/molecules/AdminDeleteAccountSuccessfullPopup';
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -90,7 +94,7 @@ function Routes() {
         element={<SubAdminProfilePage />}
       />
 
-      {/* <Route path="/account-recovery" element={<ForgotPassword />}/> */}
+      <Route path="/account-recovery" element={<ForgotPassword />} />
       <Route
         path="/messages"
         element={<h1 className="text-3xl font-bold text-red-600">Messages</h1>}
