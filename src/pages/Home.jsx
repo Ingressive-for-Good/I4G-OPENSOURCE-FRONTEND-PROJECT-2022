@@ -71,16 +71,27 @@ function App() {
               src={closeMenuIcon}
               alt=""
             />
-            <a href="">Home</a>
-            <a href="#howitworks">How it Works</a>
-            <a href="#marketplace">Market Place</a>
-            <a href="#contactUs">Contact Us</a>
+            <a href="" className="hover:text-secondary-500">
+              Home
+            </a>
+            <a href="#howitworks" className="hover:text-primary-500">
+              How it Works
+            </a>
+            <a href="#marketplace" className="hover:text-primary-500">
+              Market Place
+            </a>
+            <a href="#contactUs" className="hover:text-primary-500">
+              Contact Us
+            </a>
             <div className="mx-4 space-x-4">
-              <Link className="text-primary-500 font-medium" to="/login">
+              <Link
+                className="text-primary-500 font-medium hover:text-secondary-500"
+                to="/login"
+              >
                 Log In
               </Link>
               <Link
-                className="text-white text-sm rounded-lg px-5 py-3 bg-primary-500"
+                className="text-white text-sm rounded-lg px-5 py-3 bg-primary-500 border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500"
                 to="/create-account"
               >
                 Create an account
@@ -111,11 +122,11 @@ function App() {
               <div className="sm:w-fit sm:mx-auto sm:flex sm:justify-center sm:items-center md:my-8">
                 <Link
                   to="/create-account"
-                  className="font-cabinetGrotesk bg-primary-500 text-white px-5 py-4 rounded-lg sm:h-fit"
+                  className="font-cabinetGrotesk bg-primary-500 text-white px-5 py-4 rounded-lg sm:h-fit border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500"
                 >
                   Create an account
                 </Link>
-                <div className="w-fit lg:ml-2 md:ml-2 text-center ml-20 px-6 py-3 rounded-lg my-2 hover:bg-primary-100 ml-4 transition-all">
+                <div className="w-fit lg:ml-2 md:ml-2 text-center px-6 py-3 rounded-lg my-2 hover:bg-primary-100 ml-4 transition-all">
                   <a
                     href=""
                     className="font-cabinetGrotesk text-primary-500 font-semibold"
@@ -231,7 +242,7 @@ function App() {
                 </p>
               </div>
             </div>
-            <button className="bg-primary-500 text-white font-medium text-lg px-6 py-5 rounded-lg">
+            <button className="bg-primary-500 text-white font-medium text-lg px-6 py-5 rounded-lg border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500">
               Buy an item now
             </button>
           </section>
@@ -284,7 +295,7 @@ function App() {
                 </p>
               </div>
             </div>
-            <button className="bg-primary-500 text-white font-medium text-lg px-6 py-5 rounded-lg">
+            <button className="bg-primary-500 text-white font-medium text-lg px-6 py-5 rounded-lg border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500">
               List an item now
             </button>
           </section>
@@ -358,7 +369,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <button className="flex my-6 bg-primary-500 rounded-lg px-6 py-4 font-semibold text-white mx-auto w-fit">
+            <button className="flex my-6 bg-primary-500 rounded-lg px-6 py-4 font-semibold text-white mx-auto w-fit border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500">
               See More
             </button>
           </section>
@@ -389,7 +400,7 @@ function App() {
                 placeholder="Enter your email address"
                 required
               />
-              <button className="bg-secondary-500 text-white font-medium text-lg px-6 py-4 rounded-lg mx-auto">
+              <button className="bg-secondary-500 text-white font-medium text-lg px-6 py-4 rounded-lg mx-auto border-2 border-secondary-500 hover:bg-secondary-400 focus:border-2 focus:border-secondary-500 focus:bg-transparent focus:text-secondary-500">
                 Subscribe
               </button>
             </form>
@@ -566,17 +577,23 @@ function App() {
               <h5 className="text-white font-bold">About Us</h5>
               <ul className=" text-[#FAFAFB]">
                 <li className="mb-6">
-                  <a href="#" className=" font-light text-[#FAFAFB]">
+                  <Link to="/support" className=" font-light text-[#FAFAFB]">
                     FAQs
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-6">
-                  <a href="#" className=" font-light text-[#FAFAFB]">
+                  <a
+                    href="#"
+                    className=" font-light text-[#FAFAFB] hover:text-primary-400"
+                  >
                     Careers
                   </a>
                 </li>
                 <li>
-                  <a href="#" className=" font-light text-[#FAFAFB]">
+                  <a
+                    href="#"
+                    className=" font-light text-[#FAFAFB] hover:text-primary-400"
+                  >
                     Blog
                   </a>
                 </li>
@@ -586,12 +603,18 @@ function App() {
               <h5 className="text-white lg:text-x font-bold">Products</h5>
               <ul className=" text-[#FAFAFB]">
                 <li className="mb-6">
-                  <a href="#" className=" font-light text-[#FAFAFB]">
+                  <a
+                    href="#"
+                    className=" font-light text-[#FAFAFB] hover:text-primary-400"
+                  >
                     For Shopper
                   </a>
                 </li>
                 <li>
-                  <a href="#" className=" font-light text-[#FAFAFB]">
+                  <a
+                    href="#"
+                    className=" font-light text-[#FAFAFB] hover:text-primary-400"
+                  >
                     For Vendors
                   </a>
                 </li>
@@ -602,19 +625,25 @@ function App() {
               <h5 className="text-white font-bold">Legal</h5>
               <ul className=" text-[#FAFAFB]">
                 <li className="mb-6">
-                  <a href="#" className=" font-light text-[#FAFAFB]">
+                  <a
+                    href="#"
+                    className=" font-light text-[#FAFAFB] hover:text-primary-400"
+                  >
                     Privacy Policy
                   </a>
                 </li>
                 <li className="mb-6">
-                  <a href="#" className=" font-light text-[#FAFAFB]">
+                  <a
+                    href="#"
+                    className=" font-light text-[#FAFAFB] hover:text-primary-400"
+                  >
                     Terms of Service
                   </a>
                 </li>
                 <li>
-                  <a href="#" className=" font-light text-[#FAFAFB]">
+                  <Link to="/support" className=" font-light text-[#FAFAFB]">
                     FAQs
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -623,17 +652,26 @@ function App() {
               <h5 className="text-white font-bold">Contact Us</h5>
               <ul className=" text-[#FAFAFB]">
                 <li className="mb-6">
-                  <a href="#" className=" font-light text-[#FAFAFB]">
+                  <a
+                    href="#"
+                    className=" font-light text-[#FAFAFB] hover:text-primary-400"
+                  >
                     support@mortz.com
                   </a>
                 </li>
                 <li className="mb-6">
-                  <a href="#" className=" font-light text-[#FAFAFB]">
+                  <a
+                    href="#"
+                    className=" font-light text-[#FAFAFB] hover:text-primary-400"
+                  >
                     Lagos, Nigeria
                   </a>
                 </li>
                 <li className="mb-6">
-                  <a href="#" className=" font-light text-[#FAFAFB]">
+                  <a
+                    href="#"
+                    className=" font-light text-[#FAFAFB] hover:text-primary-400"
+                  >
                     08123456789
                   </a>
                 </li>

@@ -26,7 +26,7 @@
 }
 
 .ProductModal {
-  -webkit-animation: fadein 0.7s ease-in alternate;
-  -moz-animation: fadein 0.7s ease-in alternate;
-  animation: fadein 0.7s ease-in alternate;
+  -webkit-animation: fadein 0.5s ease-in alternate;
+  -moz-animation: fadein 0.5s ease-in alternate;
+  animation: fadein 0.5s ease-in alternate;
 }
