@@ -4,10 +4,24 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily:{
-        "cabinet": ['Cabinet Grotesk', "sans-serif"],
-        "poppins": ['Poppins', "sans-serif"],
+      fontSize: {
+        small: ["14px", "17px"],
+        p: ["16px", "20px"],
+        h4: ["21px", "26px"],
+        button: ["18px, 24px"],
+        mdP: ["20px", "25px"],
+        mdH4: ["28px", "35px"],
       },
+      backgroundColor: { "black-t-50": "rgba(0,0,0,0.5)" },
+      fontFamily: {
+        cabinet: ["Cabinet Grotesk", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+        campton: ["Campton", "sans-serif"],
+        lato: ["Lato", "sans-sarif"],
+      },
+
+      backgroundColor: { "black-t-50": "rgba(0,0,0,0.5)" },
+
       colors: {
         primary: {
           50: "#E7E9F8",
@@ -82,11 +96,11 @@ module.exports = {
           900: "#645F03",
         },
       },
-      fontFamily: {
-        'cabinetGrotesk': ['"Cabinet Grotesk"', '"Segoe UI"', 'sans-serif', ],
-        'campton': ['Campton', '"Segoe UI"', 'sans-serif', ],
+
+      backgroundImage: {
+        "checked-image": "url('/src/assets/Tick.png')",
       },
     },
+    plugins: [],
   },
-  plugins: [],
 };
