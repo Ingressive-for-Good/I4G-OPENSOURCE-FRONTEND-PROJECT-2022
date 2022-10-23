@@ -568,3 +568,16 @@ The button also being the only highlighted button seems to encourage an action w
 I designed a second screen which is an alert screen that confirms that the deletion process is successful
 
 -----Main Goal -- Design a responsive and easy to navigate delete product flow for the admin
+
+
+## Name: Akoja Olamide
+
+## Description: Admin dashboard: Make Product Unavailable - Mobile View
+### Observation/Changes
+- I designed the first screen which is a pop up that displayed the following details:
+- a write up that confirms the action
+- a "yes, proceed" button
+- a "no, cancel action" button
+I designed a second screen which is an alert screen that confirms that the deletion process is successful
+
+-----Main Goal -- Build a responsive and easy to navigate the make product available flow for the admin
