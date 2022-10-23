@@ -522,9 +522,9 @@ function App() {
               </SwiperSlide>
                 {/* footer */}
                 <Footer/>
-            </div>
-          </div>
-        </footer>
+            </Swiper>
+          </section>
+        </main>
       </div>
     </>
   );
