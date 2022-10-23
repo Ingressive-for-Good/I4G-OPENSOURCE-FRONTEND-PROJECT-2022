@@ -13,7 +13,7 @@ import ViewProducts from './components/molecules/Products';
 import EmptyWishlistViewProducts from './pages/EmptyWishlistViewProducts';
 import WishlistViewProducts from './pages/WishlistViewProducts';
 import CreateAccount from './pages/CreateAccount';
-import DeleteProduct from './components/molecules/deleteProduct';
+import DeleteProduct from './pages/deleteProduct';
 import ResetPasswordPage from './pages/PasswordResetPage';
 import Users from './pages/admin/users';
 import PageNotFound from './pages/404';

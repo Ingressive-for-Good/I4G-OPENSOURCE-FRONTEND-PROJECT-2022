@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/bundle';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css';
+// import 'swiper/css/bundle';
+// import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
+// import { Pagination, Navigation } from 'swiper';
 import closeMenuIcon from '../assets/icons/close-icon.png';
 
 import menuIcon from '../assets/icons/menu-icon.svg';
@@ -126,7 +126,7 @@ function App() {
                 >
                   Create an account
                 </Link>
-                <div className="w-fit lg:ml-2 md:ml-2 text-center px-6 py-3 rounded-lg my-2 hover:bg-primary-100 ml-4 transition-all">
+                <div className="w-fit ml-[5rem] lg:ml-2 md:ml-2 text-center ml-20 px-6 py-3 rounded-lg my-2 hover:bg-primary-100 ml-4 transition-all">
                   <a
                     href=""
                     className="font-cabinetGrotesk text-primary-500 font-semibold"
@@ -648,7 +648,6 @@ function App() {
               </ul>
             </div>
             <div className="contact lg:w-fit lg:px-12">
-              {' '}
               <h5 className="text-white font-bold">Contact Us</h5>
               <ul className=" text-[#FAFAFB]">
                 <li className="mb-6">

@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SadFace from '../icons/SadFace.png';
 import ProceedButton from '../../Wishlist-SD/components/atoms/Button/Proceed';
 import DeclineButton from '../../Wishlist-SD/components/atoms/Button/Decline';
 
 function DeleteConfirmation(props) {
+  // const [declined, setDeclined] = useState(false)
+
+  // function cancelDisplay() {
+  //     setDeclined(true);
+  // }
+
   return (
     <div className="fixed bg-neutral-900 bg-opacity-10 w-screen h-screen flex justify-center items-center">
       <div className="w-[335px] h-[597px] bg-neutral-50 rounded-lg flex-col text-center pt-10 md:w-[590px] md:h-[513px]">
