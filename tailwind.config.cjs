@@ -17,6 +17,7 @@ module.exports = {
         cabinet: ["Cabinet Grotesk", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
         campton: ["Campton", "sans-serif"],
+        lato: ["Lato", "sans-sarif"],
       },
 
       backgroundColor: { "black-t-50": "rgba(0,0,0,0.5)" },
@@ -96,11 +97,6 @@ module.exports = {
         },
       },
 
-      fontFamily: {
-        cabinetGrotesk: ['"Cabinet Grotesk"', '"Segoe UI"', "sans-serif"],
-        campton: ["Campton", '"Segoe UI"', "sans-serif"],
-        lato: ["Lato", "sans-sarif"],
-      },
       backgroundImage: {
         "checked-image": "url('/src/assets/Tick.png')",
       },
