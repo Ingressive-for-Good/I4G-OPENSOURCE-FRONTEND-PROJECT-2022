@@ -18,48 +18,44 @@ import ResetPasswordPage from './pages/PasswordResetPage';
 import Users from './pages/admin/users';
 import PageNotFound from './pages/404';
 import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
-import CreateSubAdmin from './pages/CreateSubAdmin';
-import SubAdminProfilePage from './pages/SubAdminProfile';
-import EditProductDetails from './components/molecules/EditProductDetails';
-import ForgotPassword from "./pages/ForgotPassword";
+import CreateSubAdmin from './pages/admin/users/CreateSubAdmin';
+import SubAdminProfilePage from './pages/admin/users/SubAdminProfile';
+import ForgotPassword from './pages/ForgotPassword';
+import UserList from './pages/admin/users/UserList.jsx';
+import SubAdminList from './pages/admin/users/SubAdminList';
+import SuspendedUsersList from './pages/admin/users/SuspendedUsersList';
+import AdminUsersProfile from './pages/admin/users/AdminUsersProfile';
+import MessagesEmpty from './pages/admin/messages/MessagesEmpty';
+import MessagesStart from './pages/admin/messages/MessagesStart';
+import MessagesChat from './pages/admin/messages/MessagesChat';
+import AdminUsersProfileWithProducts from './pages/admin/users/AdminUsersProfileWithProducts';
+import ProductPage from './pages/admin/product';
 import TermsOfSevice from './pages/TermsOfSevice';
-import UserList from './pages/UserList.jsx';
-import SubAdminList from './pages/SubAdminList';
-import SuspendedUsersList from './pages/SuspendedUsersList';
-import AdminUsersProfile from './pages/AdminUsersProfile';
-import MessagesEmpty from './pages/MessagesEmpty';
-import MessagesStart from './pages/MessagesStart';
-import MessagesChat from './pages/MessagesChat';
-import AdminUsersProfileWithProducts from './pages/AdminUsersProfileWithProducts';
-import AdminDeleteAccountPopup from './components/molecules/AdminDeleteAccountPopup';
-import AdminDeleteAccountFailPopup from './components/molecules/AdminDeleteAccountFailPopup';
-import AdminDeleteAccountSuccessfullPopup from './components/molecules/AdminDeleteAccountSuccessfullPopup';
 import Policy from './pages/Policy';
+
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
-    return (
-        <Switch>
-            <Route path='*' element={<PageNotFound />} />
-            <Route path='/' element={<Home />} />
-            <Route path='/terms' element={<TermsOfSevice/>} />
-            <Route path='/policy' element={<Policy/>} />
-            <Route path='/products' element={<AddNewProductPage1 />} />
-            <Route path='/login' element={<Login />} />
-            <Route path='/create-account' element={<CreateAccount />} />
-            <Route
-                path='/view-products'
-                element={
-                    <>
-                        <ViewProducts />
-                    </>
-                }
-            />
-            <Route path='/email-verification' element={<EmailVerify />} />
-            <Route
-                path='/phone-verification'
-                element={<PhoneNumberVerification />}
-            />
+  return (
+    <Switch>
+      <Route path="*" element={<PageNotFound />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/products" element={<AddNewProductPage1 />} />
+      <Route path='/terms' element={<TermsOfSevice/>} />
+      <Route path='/policy' element={<Policy/>} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/create-account" element={<CreateAccount />} />
+      <Route
+        path="/view-products"
+        element={
+          <>
+            <ViewProducts />
+          </>
+        }
+      />
+      <Route path="/email-verification" element={<EmailVerify />} />
+      <Route path="/phone-verification" element={<PhoneNumberVerification />} />
+
       {/* Protected Pages */}
       <Route path="/dashboard" element={<DashboardPage />} />
       <Route element={<AdminDashBoardLayout />}>
