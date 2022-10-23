@@ -19,30 +19,3 @@
   font-family: "Campton";
   src: url("../src/assets/fonts/Campton-LightDEMO.otf");
 }
-
-.notification_clip-path {
-  clip-path: polygon(
-    0 6%,
-    70% 6%,
-    71.5% 0%,
-    73% 6%,
-    100% 6%,
-    100% 100%,
-    0 100%
-  );
-
-  border-radius: 7px;
-}
-@media screen and (max-width: 768px) {
-  .notification_clip-path {
-    clip-path: polygon(
-      0 6%,
-      85% 6%,
-      83.5% 0%,
-      82% 6%,
-      100% 6%,
-      100% 100%,
-      0 100%
-    );
-  }
-} ;

@@ -3,7 +3,7 @@ import DragNDrop from "./DragNDrop";
 
 // Options for each select input goes here. Create more and replace
 
-export default function Input({ handleClick }) {
+export default function Input({ handleClick, buttonText }) {
   // Function handles form submission
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -114,7 +114,7 @@ export default function Input({ handleClick }) {
         </div>
       </div>
       <button className="p-[18px] border border-primary-500 bg-primary-500 text-white hover:text-primary-500 hover:bg-white md:w-[40%] w-full mx-auto mt-[80px] rounded-[8px] transition duration-200">
-        Upload Now
+        {buttonText}
       </button>
     </form>
   );
