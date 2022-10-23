@@ -581,3 +581,19 @@ I designed a second screen which is an alert screen that confirms that the delet
 I designed a second screen which is an alert screen that confirms that the deletion process is successful
 
 -----Main Goal -- Build a responsive and easy to navigate the make product available flow for the admin
+
+## Name: Nnadiukwu Chidiebere Oscar 
+
+## Description: Ux Writing 
+### Observation/Changes
+I observed some Ux writing inconsistencies towards reaching the target audience of the product and also observed 
+issues relating to product tone and worked on a rewrite of the following screens:
+ - Users' Dashboard - Home
+- Users' Dashboard - Messages
+- Users' Dashboard - Product Description Pop Up
+- Users' Dashboard - Product Wishlist Alert
+- Users' Dashboard - Edit Product Details
+- Users' Dashboard - View Uploaded Product Alert
+- Users' Dashboard - Notifications
+- Users' Dashboard - Profile
+-----Main Goal -- Improving user experience and interaction with the product 
