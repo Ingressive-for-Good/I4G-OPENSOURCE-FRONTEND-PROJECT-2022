@@ -31,6 +31,7 @@ import instagram from '../assets/icons/instagram.svg';
 import linkedin from '../assets/icons/linkedin.svg';
 import upArrow from '../assets/icons/up-arrow.svg';
 
+
 function App() {
     const toggleMenu = () => {
         const nav = document.getElementById('nav');

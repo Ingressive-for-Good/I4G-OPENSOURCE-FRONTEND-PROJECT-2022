@@ -5,10 +5,12 @@ import ipad from "../../assets/icons/ipadLogo.png";
 import notification from "../../assets/icons/notification.png";
 import rectangle from "../../assets/icons/person.png";
 import search from "../../assets/icons/search.png";
+import success from "../../assets/icons/success.png";
 import { UseAppContext } from "../../../utils/context";
 
 const Hero = () => {
-  const { value, alert } = UseAppContext();
+  const { value, alert, message, popUp } = UseAppContext();
+
   return (
     <div>
       <div className="logo-container flex justify-between items-center mb-4 lg:py-4">
@@ -34,10 +36,10 @@ const Hero = () => {
             View your Uploaded Products
           </h4>
           <div className="absolute  -translate-y-1/2 md:translate-x-1/2 z-20 top-3 lg:top-8 bg-success-50 rounded-md border-success-500 border">
-            {alert.available && (
-              <div className="flex justify-between items-center py-2 px-6 gap-4">
-                <img src={success} alt="" srcset="" />
-                <p>{alert.msg}</p>
+            {popUp && alert && (
+              <div className="flex px-4 py-2 gap-4 justify-center items-center">
+                <img src={success} alt="" srcSet="" />
+                <p>{message}</p>
               </div>
             )}
           </div>

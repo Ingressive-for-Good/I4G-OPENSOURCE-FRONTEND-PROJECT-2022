@@ -1,15 +1,24 @@
-import { useState } from 'react'
-import Input from '../components/atoms/Input'
-import AddNewProductSucessPopUp from '../components/molecules/AddNewProductSucessPopUp'
+
+import { useState } from "react";
+import Input from "../components/atoms/Input";
+import AddNewProductSucessPopUp from "../components/molecules/AddNewProductSucessPopUp";
+import Navbar from "../components/molecules/Navbar";
+import Overlay from "../components/molecules/Overlay";
+import SideBar from "../components/molecules/SideBar";
+
+import AddProductNavMsg from "../components/atoms/AddProductNavMsg";
+
 import UserSidebar from '../components/molecules/UserSidebar'
 import useScreensizeHook from '../components/molecules/ScreensizeHook'
-import Navbar from '../components/molecules/Navbar'
-import Overlay from '../components/molecules/Overlay'
 
 
+
+
+import { sideNav } from "../assets/data/data";
 
 export default function AddNewProductPage1() {
   // This state controls the success pop up
+
   const [popUp, setPopUp] = useState(false)
   const handleClick = () =>{
     popUp ? setPopUp(false) : setPopUp(true)
@@ -30,6 +39,7 @@ export default function AddNewProductPage1() {
         }
       </div>
 
+
     </div>
-  )
+  );
 }

@@ -1,15 +1,34 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { data, nav } from "../src/assets/data/data";
 
 const AppContext = React.createContext();
 const Context = ({ children }) => {
   const [value, setValue] = useState(data);
-  const [show, setShow] = useState(false);
-  const [alert, setAlert] = useState(false);
 
+  const [alert, setAlert] = useState(false);
+  const [message, setMessage] = useState("");
+  const [popUp, setPopUp] = useState(false);
+  useEffect(() => {
+    const set = setInterval(() => {
+      setPopUp(!popUp);
+    }, 2000);
+    return () => {
+      clearInterval(set);
+    };
+  }, [alert]);
   return (
     <AppContext.Provider
-      value={{ value, setValue, nav, show, setShow, alert, setAlert }}
+      value={{
+        value,
+        setValue,
+        nav,
+        alert,
+        setAlert,
+        message,
+        setMessage,
+        popUp,
+        setPopUp,
+      }}
     >
       {children}
     </AppContext.Provider>
