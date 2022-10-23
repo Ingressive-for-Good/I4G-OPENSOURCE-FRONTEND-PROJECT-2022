@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import SadFace from "../icons/SadFace.png";
-import ProceedButton from "../../Wishlist-SD/components/atoms/Button/Proceed";
-import DeclineButton from "../../Wishlist-SD/components/atoms/Button/Decline";
+import React, { useState } from 'react';
+import SadFace from '../icons/SadFace.png';
+import ProceedButton from '../../Wishlist-SD/components/atoms/Button/Proceed';
+import DeclineButton from '../../Wishlist-SD/components/atoms/Button/Decline';
 
 function DeleteConfirmation(props) {
   // const [declined, setDeclined] = useState(false)

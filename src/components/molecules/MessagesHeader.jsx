@@ -1,11 +1,11 @@
-import MobileNav from "../atoms/MobileNav";
-import Avatar from "../atoms/Avatar";
-import Notification from "../atoms/Notification";
+import MobileNav from '../atoms/MobileNav';
+import Avatar from '../atoms/Avatar';
+import Notification from '../atoms/Notification';
 
-import defaultAvatar from "../../assets/icons/avatar.svg";
-import search from "../../assets/icons/search-icon.svg";
+import defaultAvatar from '../../assets/icons/avatar.svg';
+import search from '../../assets/icons/search-icon.svg';
 
-import techmart from "../../assets/icons/techmart.svg";
+import techmart from '../../assets/icons/techmart.svg';
 
 function MessagesHeader() {
   return (
