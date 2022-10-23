@@ -57,7 +57,7 @@ export default function ForgotPassword() {
         <AuthSide Main={girlSvg} />
         <div className="bg-white w-full lg:w-[60%] md:pb-[3%] px-[5%] md:mt-[16px] mt-[70px] pb-[30px]">
           <div className="verify-container p-0">
-            <div className="text-center mt-12 sm:mt-8 mb-[41px]">
+            <div className=" text-center mt-12 sm:mt-8 mb-[41px]">
               <h2 className="text-center font-bold text-3xl">
                 Forgot Password?
               </h2>

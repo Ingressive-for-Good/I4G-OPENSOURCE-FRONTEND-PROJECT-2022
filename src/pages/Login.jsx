@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import loginImage from "../assets/images/LoginImage.png";
-import webLogo from "../assets/icons/web-logo.png";
 import Arrow from "../assets/icons/arrow.png";
+import Main from '../assets/icons/Main.svg'
 import PrimaryButton from "../components/atoms/PrimaryButton";
 import SecondaryButton from "../components/atoms/SecondaryButton";
 import Facebook from "../assets/icons/logos_facebook.png";
 import Google from "../assets/icons/icons_google.png";
-import iPadLogo from "../assets/icons/iPad-logo.png";
-import Frame from "../assets/icons/Frame 1.png";
-import MobileLogo from "../assets/icons/mobile-logo.png";
 import HidePassword from "../assets/icons/Hide.png";
 import ShowPassword from "../assets/icons/show-password.png";
+import { Link } from "react-router-dom";
+import AuthSide from "../components/atoms/AuthSide";
+import NavHome from "../components/molecules/NavHome";
+
 
 const PASSWORD_REGEX =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
@@ -77,37 +77,21 @@ const Login = () => {
   };
 
   return (
-    <section className="h-screen">
+    <section className="h-screen font-campton font-[500px] " id='body'>
+      <div className="absolute top-0 md:left-[55px] w-full">
+        <NavHome/>
+      </div>
       <div className="w-full flex">
-        <div className="hidden lg:block lg:w-[40%] bg-primary-50 min-h-screen h-full lg:px-[7%]">
-          <img className="pt-[5%] pl-[5%]" src={webLogo} alt="" />
-          <div>
-            <img className="mt-16" src={loginImage} alt="" />
-          </div>
-          <p className="text-neutral-600 text-center leading-8 lg:mt-8">
-            When you verify email address, your email marketing is more
-            effective, fraud prevention is improved and the ability to protect
-            your sender reputation increases.
-          </p>
-        </div>
-        <div className="bg-white w-full lg:w-[60%] md:py-[3%] md:px-[8%] px-[5%] py-[5%]">
-          <div className="lg:hidden md:flex justify-between items-center hidden">
-            <img className="max-w-full" src={iPadLogo} alt="" />
-            <img src={Frame} alt="" />
-          </div>
-          <div className="sm:hidden flex justify-between items-center">
-            <img src={MobileLogo} alt="" />
-            <img src={Frame} alt="" />
-          </div>
-          <div className="text-center mt-12 sm:mt-8 lg:mt-0">
-            <h4>Log In</h4>
+        <AuthSide Main={Main}/>
+        <div className="bg-white w-full md:pb-[3%] px-[5%] pb-[5%] md:mt-[16px] mt-[70px] pb-[30px]">
+          <div className="text-center mt-12 sm:mt-8 lg:mt-0 mb-[41px]">
+            <h4 className="text-[30px] text-neutral-900 font-[700]">Log In</h4>
             <img className="mx-auto" src={Arrow} alt="" />
           </div>
-          <p className="font-medium text-neutral-900 lg:mt-2 my-4 lg:mb-0">
-            Nice to see you again! Log In with details you entered during
-            registration.
+          <p className="font-medium text-neutral-700 lg:mt-2 my-4 lg:mb-0 text-[14px]">
+            Nice to see you again! Log In with your details
           </p>
-          <div className="py-4 lg:w-[90%]">
+          <div className="py-4">
             <form onSubmit={formSubmissionHandler}>
               <div className="flex flex-col">
                 <label
@@ -119,7 +103,7 @@ const Login = () => {
                 <input
                   className={`${
                     emailInvalid && "border-error-500 bg-error-50"
-                  } ${emailValid && "border-success-500 bg-success-50"}`}
+                  } ${emailValid && "border-success-500 bg-success-50"} w-full border-2 mt-2 mb-6 md:mb-5 rounded-lg py-5 px-4 border-neutral-500 bg-neutral-50 placeholder:text-neutral-800 placeholder:leading-5`}
                   type="email"
                   id="Email"
                   placeholder="Enter your Email Address"
@@ -138,7 +122,7 @@ const Login = () => {
                 <input
                   className={`${
                     passwordInvalid && "border-error-500 bg-error-50"
-                  } ${passwordValid && "border-success-500 bg-success-50"}`}
+                  } ${passwordValid && "border-success-500 bg-success-50"} w-full border-2 mt-2 mb-6 md:mb-5 rounded-lg py-5 px-4 border-neutral-500 bg-neutral-50 placeholder:text-neutral-800 placeholder:leading-5`}
                   type={passwordType}
                   id="Email"
                   placeholder="Password"
@@ -147,7 +131,7 @@ const Login = () => {
                   value={enteredPassword}
                 />
                 <img
-                  className="w-6 absolute right-4 cursor-pointer translate-y-[170%]"
+                  className="w-6 absolute right-4 cursor-pointer translate-y-[240%]"
                   src={
                     passwordType === "password" ? HidePassword : ShowPassword
                   }
@@ -164,12 +148,13 @@ const Login = () => {
                   />
                   <label htmlFor="Remember">Remember me</label>
                 </div>
-                <a className="text-neutral-900 font-bold text-[16px]" href="#">
+
+                <Link className="text-neutral-900 font-bold text-[16px]" to='/forgotpassword'>
                   Forgot Password?
-                </a>
+                </Link>
               </div>
               <div className="my-6">
-                <PrimaryButton disabled={!formIsValid}>Log In</PrimaryButton>
+                <PrimaryButton>Log In</PrimaryButton>
               </div>
             </form>
             <div className="my-6 flex items-center justify-between">
@@ -177,7 +162,7 @@ const Login = () => {
               <span className="relative px-2">OR</span>
               <hr className="border w-[45%] border-b-neutral-500" />
             </div>
-            <div className="flex gap-4 sm:gap-8 items-center md:flex-row flex-col">
+            <div className="flex gap-4 lg:gap-8 items-center md:flex-row flex-col">
               <SecondaryButton>
                 <span className="flex items-center justify-center gap-2 ">
                   <img src={Google} alt="" />
@@ -192,13 +177,14 @@ const Login = () => {
               </SecondaryButton>
             </div>
           </div>
-          <div className="md:fixed text-center my-4 sm:my-0 lg:mx-[10%] md:mx-[25%] lg:bottom-4 md:bottom-16">
+          <div className="text-center mt-[100px] lg:mx-[10%] md:mx-[25%]">
             <span>
               Don't have an account?
-              <a href="#" className="text-primary-500 font-bold">
+
+              <Link to='/create-account' className="text-primary-500 font-bold">
                 {" "}
                 Create an account
-              </a>
+              </Link>
             </span>
           </div>
         </div>
