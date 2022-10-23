@@ -5,9 +5,7 @@
 @tailwind utilities;
 @tailwind utilities;
 
-.active{
-    color: #0F27BD;
-}
+
 .side{
     height: calc(100vh - theme(spacing.12))
 }
