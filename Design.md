@@ -621,4 +621,4 @@ issues relating to product tone and worked on a rewrite of the following screens
 - a "no, cancel action" button
 I designed a second screen which is an alert screen that confirms that the deletion process is successful
 
------Main Goal -- Design a responsive and easy to navigate delete product flow for the admin
+-----Main Goal -- Design a responsive and easy to navigate delete product flow for the admin 
