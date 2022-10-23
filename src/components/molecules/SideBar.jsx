@@ -1,9 +1,9 @@
-import chatIcon from "../../assets/icons/Chat.svg";
-import helpIcon from "../../assets/icons/help.svg";
-import wishlistIcon from "../../assets/icons/wishlistIcon.svg";
-import productIcon from "../../assets/icons/box.svg";
-import logoutIcon from "../../assets/icons/logout.svg";
-import { Link, NavLink } from "react-router-dom";
+import chatIcon from '../../assets/icons/Chat.svg';
+import helpIcon from '../../assets/icons/help.svg';
+import wishlistIcon from '../../assets/icons/wishlistIcon.svg';
+import productIcon from '../../assets/icons/box.svg';
+import logoutIcon from '../../assets/icons/logout.svg';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function SideBar({ navData = [] }) {
   return (
@@ -16,13 +16,11 @@ export default function SideBar({ navData = [] }) {
         <ul className="flex flex-col w-full">
           <h2 className="pl-[50px] pb-[15px] text-primary-500">MENU</h2>
 
-          {
-            navData.map(({ id, icon, text, link}) => (
-            <li key={ id } className="pl-[50px] py-[19.5px]">
-              <NavLink className="flex flex-row gap-[10px]" to={ link }>
-                <img src={ icon } alt="" />
-                <span className=' text-gray-400'>{ text }</span>
-
+          {navData.map(({ id, icon, text, link }) => (
+            <li key={id} className="pl-[50px] py-[19.5px]">
+              <NavLink className="flex flex-row gap-[10px]" to={link}>
+                <img src={icon} alt="" />
+                <span className=" text-gray-400">{text}</span>
               </NavLink>
             </li>
           ))}

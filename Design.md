@@ -532,3 +532,25 @@ The button also being the only highlighted button seems to encourage an action w
 
 
 -----Main Goal -- Simplify the informations that is being reviewed on the admin dashboard for easy processing
+
+
+## Name: Akoja Olamide
+
+## Description: Admin dashboard - Mobile View
+### Observation/Changes
+- I designed the mobile view of the admin dashboard
+- The dashboard comprises of the analytics chart, the statistics section( which includes the total user of the platform and the total products uploaded on the platform), the top user section and also the recent uploaded product section
+
+
+-----Main Goal -- Simplify the informations that is being reviewed on the admin dashboard for easy processing
+
+
+## Name: Akoja Olamide
+
+## Description: Admin dashboard: Search Results - Mobile View
+### Observation/Changes
+- I designed the mobile view of the search results of admin dashboard
+- I designed the empty states and filled states of the search results for the admin dashboard
+
+
+-----Main Goal -- Present admins with a quick overview of products and users
