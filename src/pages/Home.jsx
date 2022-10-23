@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/bundle';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css';
+// import 'swiper/css/bundle';
+// import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
+// import { Pagination, Navigation } from 'swiper';
 import closeMenuIcon from '../assets/icons/close-icon.png';
 
 import menuIcon from '../assets/icons/menu-icon.svg';
@@ -34,6 +34,7 @@ import MainNav from '../components/molecules/MainNav';
 import Footer from '../components/molecules/Footer';
 
 function App() {
+
     const toggleMenu = () => {
         const nav = document.getElementById('nav');
         const body = document.getElementById('body');
@@ -168,420 +169,365 @@ function App() {
                             </div>
                         </div>
                     </section>
+          {/* why choose us? */}
+          <section className="w-fit mx-auto px-6 py-3 rounded-lg my-5 text-center">
+            <h1 className="font-cabinetGrotesk text-2xl font-semibold">
+              Why Choose Us?
+            </h1>
+            <img className="mx-auto mb-8" src={wavyUnderline} alt="" />
+            <p className="text-neutral-700">
+              Take control of all your ecommerce transactions
+            </p>
 
-                    {/* buy an item */}
-                    <section
-                        id='howitworks'
-                        className='w-fit mx-auto px-6 py-3 rounded-lg my-5 text-center'>
-                        <h1 className='font-cabinetGrotesk text-2xl font-semibold'>
-                            <span className='text-secondary-500'>
-                                Buy Items
-                            </span>{' '}
-                            in 3 Easy Steps
-                        </h1>
-                        <p className='text-neutral-700 my-2'>
-                            Complete the folowing steps to start selling and
-                            earning on our platform.
-                        </p>
+            {/* reasons to choose us */}
+            <div className="space-y-4 sm:space-y-0 my-8 sm:grid sm:grid-cols-2 sm:gap-5 lg:grid-cols-4 lg:w-5/6 lg:mx-auto">
+              <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto">
+                <img className="mx-auto" src={bestQuality} alt="" />
+                <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
+                  Best Quality
+                </h4>
+                <p className="text-neutral-700 text-sm">
+                  We offer affordable & reliable products with the best quality.
+                </p>
+              </div>
+              <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto">
+                <img className="mx-auto" src={meetnconnect} alt="" />
+                <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
+                  Meet & Connect
+                </h4>
+                <p className="text-neutral-700 text-sm">
+                  Connect with over 20k people on our platform and make sales.
+                </p>
+              </div>
+              <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto">
+                <img className="mx-auto" src={p2p} alt="" />
+                <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
+                  P2P Payment
+                </h4>
+                <p className="text-neutral-700 text-sm">
+                  P2P payments are convenient, fast, secured and easy-to-use.
+                </p>
+              </div>
+              <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto w-full">
+                <img className="mx-auto" src={support} alt="" />
+                <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
+                  24/7 Support
+                </h4>
+                <p className="text-neutral-700 text-sm">
+                  Do you have a complaint? <br />
+                  Fill this <a href=""> form </a>
+                  to get answers ASAP
+                </p>
+              </div>
+            </div>
+          </section>
 
-                        {/* steps to buy item */}
-                        <div className='space-y-4 my-8 mx-auto lg:flex lg:justify-between lg:items-center lg:w-5/6'>
-                            <div className=' max-w-xs mx-auto lg:mr-8'>
-                                <h4 className='font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2'>
-                                    01. Create an Account
-                                </h4>
-                                <p className='text-neutral-700 text-sm'>
-                                    Create an account by completing the
-                                    registration process
-                                </p>
-                            </div>
-                            <img
-                                className='lg:rotate-90 mx-auto'
-                                src={wavyDashed}
-                                alt=''
-                            />
-                            <div className='max-w-xs mx-auto lg:mx-8'>
-                                <h4 className='font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2'>
-                                    02. View Products
-                                </h4>
-                                <p className='text-neutral-700 text-sm'>
-                                    View correct details of the products you
-                                    want to buy
-                                </p>
-                            </div>
-                            <img
-                                className='lg:rotate-90 mx-auto'
-                                src={wavyDashed}
-                                alt=''
-                            />
-                            <div className='max-w-xs mx-auto lg:ml-8'>
-                                <h4 className='font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2'>
-                                    03. Contact Seller
-                                </h4>
-                                <p className='text-neutral-700 text-sm'>
-                                    Contact seller, agree on a price and get
-                                    your products
-                                </p>
-                            </div>
-                        </div>
-                        <button className='bg-primary-500 text-white font-medium text-lg px-6 py-5 rounded-lg border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500'>
-                            Buy an item now
-                        </button>
-                    </section>
+          {/* buy an item */}
+          <section
+            id="howitworks"
+            className="w-fit mx-auto px-6 py-3 rounded-lg my-5 text-center"
+          >
+            <h1 className="font-cabinetGrotesk text-2xl font-semibold">
+              <span className="text-secondary-500">Buy Items</span> in 3 Easy
+              Steps
+            </h1>
+            <p className="text-neutral-700 my-2">
+              Complete the folowing steps to start selling and earning on our
+              platform.
+            </p>
 
-                    {/* list an item */}
-                    <section className='w-fit mx-auto px-6 py-3 rounded-lg my-5 lg:my-12 text-center'>
-                        <h1 className='font-cabinetGrotesk text-2xl font-semibold'>
-                            <span className='text-secondary-500'>
-                                List Items
-                            </span>{' '}
-                            in 3 Easy Steps
-                        </h1>
-                        <p className='text-neutral-700 my-2'>
-                            Complete the folowing steps to start selling and
-                            earning on our platform.
-                        </p>
+            {/* steps to buy item */}
+            <div className="space-y-4 my-8 mx-auto lg:flex lg:justify-between lg:items-center lg:w-5/6">
+              <div className=" max-w-xs mx-auto lg:mr-8">
+                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2">
+                  01. Create an Account
+                </h4>
+                <p className="text-neutral-700 text-sm">
+                  Create an account by completing the registration process
+                </p>
+              </div>
+              <img className="lg:rotate-90 mx-auto" src={wavyDashed} alt="" />
+              <div className="max-w-xs mx-auto lg:mx-8">
+                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2">
+                  02. View Products
+                </h4>
+                <p className="text-neutral-700 text-sm">
+                  View correct details of the products you want to buy
+                </p>
+              </div>
+              <img className="lg:rotate-90 mx-auto" src={wavyDashed} alt="" />
+              <div className="max-w-xs mx-auto lg:ml-8">
+                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2">
+                  03. Contact Seller
+                </h4>
+                <p className="text-neutral-700 text-sm">
+                  Contact seller, agree on a price and get your products
+                </p>
+              </div>
+            </div>
+            <button className="bg-primary-500 text-white font-medium text-lg px-6 py-5 rounded-lg border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500">
+              Buy an item now
+            </button>
+          </section>
 
-                        {/* steps to list item */}
-                        <div className='space-y-4 my-8 lg:flex lg:justify-between lg:items-center lg:w-5/6 mx-auto'>
-                            <div className=' max-w-xs mx-auto'>
-                                <h4 className='font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2'>
-                                    01. Create an Account
-                                </h4>
-                                <p className='text-neutral-700 text-sm'>
-                                    Create an account by completing the
-                                    registration process
-                                </p>
-                            </div>
-                            <img
-                                className='lg:rotate-90 mx-auto lg:mr-8'
-                                src={wavyDashed}
-                                alt=''
-                            />
-                            <div className='max-w-xs mx-auto'>
-                                <h4 className='font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2'>
-                                    02. List Your Products
-                                </h4>
-                                <p className='text-neutral-700 text-sm'>
-                                    Upload correct details of your products you
-                                    want to sell.
-                                </p>
-                            </div>
-                            <img
-                                className='lg:rotate-90 mx-auto lg:mx-8'
-                                src={wavyDashed}
-                                alt=''
-                            />
-                            <div className='max-w-xs mx-auto'>
-                                <h4 className='font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2'>
-                                    03. Get Notified
-                                </h4>
-                                <p className='text-neutral-700 text-sm'>
-                                    Get notified when a buyer views and wants to
-                                    buy your products
-                                </p>
-                            </div>
-                        </div>
-                        <button className='bg-primary-500 text-white font-medium text-lg px-6 py-5 rounded-lg border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500'>
-                            List an item now
-                        </button>
-                    </section>
+          {/* list an item */}
+          <section className="w-fit mx-auto px-6 py-3 rounded-lg my-5 lg:my-12 text-center">
+            <h1 className="font-cabinetGrotesk text-2xl font-semibold">
+              <span className="text-secondary-500">List Items</span> in 3 Easy
+              Steps
+            </h1>
+            <p className="text-neutral-700 my-2">
+              Complete the folowing steps to start selling and earning on our
+              platform.
+            </p>
 
-                    {/* products */}
-                    <section id='marketplace' className='w-5/6 mx-auto'>
-                        <h1 className='text-center text-xl font-semibold font-cabinetGrotesk'>
-                            Popular Products
-                        </h1>
-                        <img
-                            className='mx-auto mb-4'
-                            src={wavyUnderline}
-                            alt=''
-                        />
-                        <p className='text-neutral-700 text-center my-5'>
-                            View a few products from our techies
-                        </p>
+            {/* steps to list item */}
+            <div className="space-y-4 my-8 lg:flex lg:justify-between lg:items-center lg:w-5/6 mx-auto">
+              <div className=" max-w-xs mx-auto">
+                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2">
+                  01. Create an Account
+                </h4>
+                <p className="text-neutral-700 text-sm">
+                  Create an account by completing the registration process
+                </p>
+              </div>
+              <img
+                className="lg:rotate-90 mx-auto lg:mr-8"
+                src={wavyDashed}
+                alt=""
+              />
+              <div className="max-w-xs mx-auto">
+                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2">
+                  02. List Your Products
+                </h4>
+                <p className="text-neutral-700 text-sm">
+                  Upload correct details of your products you want to sell.
+                </p>
+              </div>
+              <img
+                className="lg:rotate-90 mx-auto lg:mx-8"
+                src={wavyDashed}
+                alt=""
+              />
+              <div className="max-w-xs mx-auto">
+                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2">
+                  03. Get Notified
+                </h4>
+                <p className="text-neutral-700 text-sm">
+                  Get notified when a buyer views and wants to buy your products
+                </p>
+              </div>
+            </div>
+            <button className="bg-primary-500 text-white font-medium text-lg px-6 py-5 rounded-lg border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500">
+              List an item now
+            </button>
+          </section>
 
-                        {/* product list */}
-                        <div className='grid gap-6 sm:grid-cols-2 lg:grid-cols-4'>
-                            <div className=' bg-neutral-50 w-fit mx-auto'>
-                                <img src={keyboard} alt='' />
-                                <div className='border-x-2 border-b-2 border-neutral-300 rounded-b-lg flex flex-row justify-between items-center px-6 py-5'>
-                                    <div>
-                                        <h5 className='text-neutral-700 font-medium'>
-                                            Workspace Equipment
-                                        </h5>
-                                        <h3 className='font-cabinetGrotesk font-semibold text-xl'>
-                                            &#8358;25,000.00
-                                        </h3>
-                                    </div>
-                                    <img src={cartIcon} alt='' />
-                                </div>
-                            </div>
-                            <div className='bg-neutral-50 w-fit mx-auto'>
-                                <img src={controller} alt='' />
-                                <div className='border-x-2 border-b-2 border-neutral-300 rounded-b-lg flex flex-row justify-between items-center px-6 py-5'>
-                                    <div>
-                                        <h5 className='text-neutral-700 font-medium'>
-                                            Workspace Equipment
-                                        </h5>
-                                        <h3 className='font-cabinetGrotesk font-semibold text-xl'>
-                                            &#8358;100,000.00
-                                        </h3>
-                                    </div>
-                                    <img src={cartIcon} alt='' />
-                                </div>
-                            </div>
-                            <div className='bg-neutral-50 w-fit mx-auto'>
-                                <img src={controller} alt='' />
-                                <div className='border-x-2 border-b-2 border-neutral-300 rounded-b-lg flex flex-row justify-between items-center px-6 py-5'>
-                                    <div>
-                                        <h5 className='text-neutral-700 font-medium'>
-                                            Workspace Equipment
-                                        </h5>
-                                        <h3 className='font-cabinetGrotesk font-semibold text-xl'>
-                                            &#8358;100,000.00
-                                        </h3>
-                                    </div>
-                                    <img src={cartIcon} alt='' />
-                                </div>
-                            </div>
-                            <div className='bg-neutral-50 w-fit mx-auto'>
-                                <img src={keyboard} alt='' />
-                                <div className='border-x-2 border-b-2 border-neutral-300 rounded-b-lg flex flex-row justify-between items-center px-6 py-5'>
-                                    <div>
-                                        <h5 className='text-neutral-700 font-medium'>
-                                            Workspace Equipment
-                                        </h5>
-                                        <h3 className='font-cabinetGrotesk font-semibold text-xl'>
-                                            &#8358;25,000.00
-                                        </h3>
-                                    </div>
-                                    <img src={cartIcon} alt='' />
-                                </div>
-                            </div>
-                        </div>
-                        <button className='flex my-6 bg-primary-500 rounded-lg px-6 py-4 font-semibold text-white mx-auto w-fit border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500'>
-                            See More
-                        </button>
-                    </section>
+          {/* products */}
+          <section id="marketplace" className="w-5/6 mx-auto">
+            <h1 className="text-center text-xl font-semibold font-cabinetGrotesk">
+              Popular Products
+            </h1>
+            <img className="mx-auto mb-4" src={wavyUnderline} alt="" />
+            <p className="text-neutral-700 text-center my-5">
+              View a few products from our techies
+            </p>
 
-                    {/* newsletter subscription*/}
-                    <section
-                        id='contactUs'
-                        className='bg-primary-500 p-6 w-5/6 mx-auto my-16 rounded-lg'>
-                        <h1 className='text-center text-white text-3xl font-semibold font-cabinetGrotesk'>
-                            Subscribe for Updates
-                        </h1>
-                        <img
-                            className='mx-auto mb-4'
-                            src={wavyUnderline}
-                            alt=''
-                        />
-                        <p className='text-white text-center my-5'>
-                            Subscribe to our newsletter to get the latest
-                            updates on our platform
-                        </p>
-                        <form className='space-y-4 flex flex-col justify-center md:max-w-sm mx-auto'>
-                            <input
-                                className='w-full active:border-2 active:border-neutral-300 rounded-lg px-6 py-4'
-                                type='text'
-                                placeholder='Enter your full name'
-                                required
-                            />
-                            <input
-                                className='w-full active:border-2 active:border-neutral-300 rounded-lg px-6 py-4'
-                                type='email'
-                                placeholder='Enter your email address'
-                                required
-                            />
-                            <button className='bg-secondary-500 text-white font-medium text-lg px-6 py-4 rounded-lg mx-auto border-2 border-secondary-500 hover:bg-secondary-400 focus:border-2 focus:border-secondary-500 focus:bg-transparent focus:text-secondary-500'>
-                                Subscribe
-                            </button>
-                        </form>
-                    </section>
+            {/* product list */}
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              <div className=" bg-neutral-50 w-fit mx-auto">
+                <img src={keyboard} alt="" />
+                <div className="border-x-2 border-b-2 border-neutral-300 rounded-b-lg flex flex-row justify-between items-center px-6 py-5">
+                  <div>
+                    <h5 className="text-neutral-700 font-medium">
+                      Workspace Equipment
+                    </h5>
+                    <h3 className="font-cabinetGrotesk font-semibold text-xl">
+                      &#8358;25,000.00
+                    </h3>
+                  </div>
+                  <img src={cartIcon} alt="" />
+                </div>
+              </div>
+              <div className="bg-neutral-50 w-fit mx-auto">
+                <img src={controller} alt="" />
+                <div className="border-x-2 border-b-2 border-neutral-300 rounded-b-lg flex flex-row justify-between items-center px-6 py-5">
+                  <div>
+                    <h5 className="text-neutral-700 font-medium">
+                      Workspace Equipment
+                    </h5>
+                    <h3 className="font-cabinetGrotesk font-semibold text-xl">
+                      &#8358;100,000.00
+                    </h3>
+                  </div>
+                  <img src={cartIcon} alt="" />
+                </div>
+              </div>
+              <div className="bg-neutral-50 w-fit mx-auto">
+                <img src={controller} alt="" />
+                <div className="border-x-2 border-b-2 border-neutral-300 rounded-b-lg flex flex-row justify-between items-center px-6 py-5">
+                  <div>
+                    <h5 className="text-neutral-700 font-medium">
+                      Workspace Equipment
+                    </h5>
+                    <h3 className="font-cabinetGrotesk font-semibold text-xl">
+                      &#8358;100,000.00
+                    </h3>
+                  </div>
+                  <img src={cartIcon} alt="" />
+                </div>
+              </div>
+              <div className="bg-neutral-50 w-fit mx-auto">
+                <img src={keyboard} alt="" />
+                <div className="border-x-2 border-b-2 border-neutral-300 rounded-b-lg flex flex-row justify-between items-center px-6 py-5">
+                  <div>
+                    <h5 className="text-neutral-700 font-medium">
+                      Workspace Equipment
+                    </h5>
+                    <h3 className="font-cabinetGrotesk font-semibold text-xl">
+                      &#8358;25,000.00
+                    </h3>
+                  </div>
+                  <img src={cartIcon} alt="" />
+                </div>
+              </div>
+            </div>
+            <button className="flex my-6 bg-primary-500 rounded-lg px-6 py-4 font-semibold text-white mx-auto w-fit border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500">
+              See More
+            </button>
+          </section>
 
-                    {/* client reviews */}
-                    <section className='w-5/6 mx-auto mb-12 md:mb-8'>
-                        <h1 className='text-center text-3xl font-cabinetGrotesk font-medium'>
-                            Client Reviews
-                        </h1>
-                        <img className='mx-auto' src={wavyUnderline} alt='' />
-                        <p className='text-center my-3'>
-                            We serve hundreds of thousands of customers and this
-                            is what people are saying about us.
-                        </p>
+          {/* newsletter subscription*/}
+          <section
+            id="contactUs"
+            className="bg-primary-500 p-6 w-5/6 mx-auto my-16 rounded-lg"
+          >
+            <h1 className="text-center text-white text-3xl font-semibold font-cabinetGrotesk">
+              Subscribe for Updates
+            </h1>
+            <img className="mx-auto mb-4" src={wavyUnderline} alt="" />
+            <p className="text-white text-center my-5">
+              Subscribe to our newsletter to get the latest updates on our
+              platform
+            </p>
+            <form className="space-y-4 flex flex-col justify-center md:max-w-sm mx-auto">
+              <input
+                className="w-full active:border-2 active:border-neutral-300 rounded-lg px-6 py-4"
+                type="text"
+                placeholder="Enter your full name"
+                required
+              />
+              <input
+                className="w-full active:border-2 active:border-neutral-300 rounded-lg px-6 py-4"
+                type="email"
+                placeholder="Enter your email address"
+                required
+              />
+              <button className="bg-secondary-500 text-white font-medium text-lg px-6 py-4 rounded-lg mx-auto border-2 border-secondary-500 hover:bg-secondary-400 focus:border-2 focus:border-secondary-500 focus:bg-transparent focus:text-secondary-500">
+                Subscribe
+              </button>
+            </form>
+          </section>
 
-                        {/* review grid */}
+          {/* client reviews */}
+          <section className="w-5/6 mx-auto mb-12 md:mb-8">
+            <h1 className="text-center text-3xl font-cabinetGrotesk font-medium">
+              Client Reviews
+            </h1>
+            <img className="mx-auto" src={wavyUnderline} alt="" />
+            <p className="text-center my-3">
+              We serve hundreds of thousands of customers and this is what
+              people are saying about us.
+            </p>
 
-                        <Swiper
-                            slidesPerView={1}
-                            spaceBetween={100}
-                            slidesPerGroup={1}
-                            loop={true}
-                            loopFillGroupWithBlank={true}
-                            pagination={{
-                                clickable: true,
-                            }}
-                            navigation={true}
-                            centeredSlides={true}
-                            centeredSlidesBounds={true}
-                            modules={[Pagination, Navigation]}
-                            className='mySwiper h-1/4  w-full p-12'
-                            breakpoints={{
-                                768: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 10,
-                                    slidesPerGroup: 2,
-                                },
-                                1024: {
-                                    slidesPerView: 2,
-                                    spaceBetween: 20,
-                                    slidesPerGroup: 2,
-                                },
-                                1445: {
-                                    slidesPerView: 3,
-                                    spaceBetween: 20,
-                                    slidesPerGroup: 3,
-                                },
-                                1536: {
-                                    slidesPerView: 4,
-                                    spaceBetween: 20,
-                                    slidesPerGroup: 4,
-                                },
-                            }}>
-                            <SwiperSlide>
-                                <div className='bg-primary-50 rounded-lg p-7 w-[18rem]'>
-                                    <img
-                                        className='mx-auto my-4'
-                                        src={profileImg}
-                                        alt=''
-                                    />
-                                    <p className='text-neutral-900 text-center leading-relaxed'>
-                                        "techmart is unarguably the best
-                                        eccomerce platform - a great
-                                        transforation to Africa"
-                                    </p>
-                                    <h5 className='text-xl font-semibold text-center mt-5'>
-                                        Aisha Issa
-                                    </h5>
-                                    <p className='text-center w-fit mx-auto'>
-                                        techmart Vendor
-                                    </p>
-                                </div>
-                            </SwiperSlide>
+            {/* review grid */}
 
-                            <SwiperSlide>
-                                <div className='bg-primary-50 rounded-lg p-7 w-[18rem] '>
-                                    <img
-                                        className='mx-auto my-4'
-                                        src={profileImg}
-                                        alt=''
-                                    />
-                                    <p className='text-neutral-900 text-center leading-relaxed'>
-                                        "techmart is unarguably the best
-                                        eccomerce platform - a great
-                                        transforation to Africa"
-                                    </p>
-                                    <h5 className='text-xl font-semibold text-center mt-5'>
-                                        Aisha Issa
-                                    </h5>
-                                    <p className='text-center w-fit mx-auto'>
-                                        techmart Vendor
-                                    </p>
-                                </div>
-                            </SwiperSlide>
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={100}
+              slidesPerGroup={1}
+              loop={true}
+              loopFillGroupWithBlank={true}
+              pagination={{
+                clickable: true,
+              }}
+              navigation={true}
+              centeredSlides={true}
+              centeredSlidesBounds={true}
+              modules={[Pagination, Navigation]}
+              className="mySwiper h-1/4  w-full p-12"
+              breakpoints={{
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                  slidesPerGroup: 2,
+                },
+                1024: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                  slidesPerGroup: 2,
+                },
+                1445: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                  slidesPerGroup: 3,
+                },
+                1536: {
+                  slidesPerView: 4,
+                  spaceBetween: 20,
+                  slidesPerGroup: 4,
+                },
+              }}
+            >
+              <SwiperSlide>
+                <div className="bg-primary-50 rounded-lg p-7 w-[18rem]">
+                  <img className="mx-auto my-4" src={profileImg} alt="" />
+                  <p className="text-neutral-900 text-center leading-relaxed">
+                    "techmart is unarguably the best eccomerce platform - a
+                    great transforation to Africa"
+                  </p>
+                  <h5 className="text-xl font-semibold text-center mt-5">
+                    Aisha Issa
+                  </h5>
+                  <p className="text-center w-fit mx-auto">techmart Vendor</p>
+                </div>
+              </SwiperSlide>
 
-                            <SwiperSlide>
-                                <div className='bg-primary-50 rounded-lg p-7 w-[18rem] '>
-                                    <img
-                                        className='mx-auto my-4'
-                                        src={profileImg}
-                                        alt=''
-                                    />
-                                    <p className='text-neutral-900 text-center leading-relaxed'>
-                                        "techmart is unarguably the best
-                                        eccomerce platform - a great
-                                        transforation to Africa"
-                                    </p>
-                                    <h5 className='text-xl font-semibold text-center mt-5'>
-                                        Aisha Issa
-                                    </h5>
-                                    <p className='text-center w-fit mx-auto'>
-                                        techmart Vendor
-                                    </p>
-                                </div>
-                            </SwiperSlide>
+              <SwiperSlide>
+                <div className="bg-primary-50 rounded-lg p-7 w-[18rem] ">
+                  <img className="mx-auto my-4" src={profileImg} alt="" />
+                  <p className="text-neutral-900 text-center leading-relaxed">
+                    "techmart is unarguably the best eccomerce platform - a
+                    great transforation to Africa"
+                  </p>
+                  <h5 className="text-xl font-semibold text-center mt-5">
+                    Aisha Issa
+                  </h5>
+                  <p className="text-center w-fit mx-auto">techmart Vendor</p>
+                </div>
+              </SwiperSlide>
 
-                            <SwiperSlide>
-                                <div className='bg-primary-50 rounded-lg p-7 w-[18rem] '>
-                                    <img
-                                        className='mx-auto my-4'
-                                        src={profileImg}
-                                        alt=''
-                                    />
-                                    <p className='text-neutral-900 text-center leading-relaxed'>
-                                        "techmart is unarguably the best
-                                        eccomerce platform - a great
-                                        transforation to Africa"
-                                    </p>
-                                    <h5 className='text-xl font-semibold text-center mt-5'>
-                                        Aisha Issa
-                                    </h5>
-                                    <p className='text-center w-fit mx-auto'>
-                                        techmart Vendor
-                                    </p>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div className='bg-primary-50 rounded-lg p-7 w-[18rem] '>
-                                    <img
-                                        className='mx-auto my-4'
-                                        src={profileImg}
-                                        alt=''
-                                    />
-                                    <p className='text-neutral-900 text-center leading-relaxed'>
-                                        "techmart is unarguably the best
-                                        eccomerce platform - a great
-                                        transforation to Africa"
-                                    </p>
-                                    <h5 className='text-xl font-semibold text-center mt-5'>
-                                        Aisha Issa
-                                    </h5>
-                                    <p className='text-center w-fit mx-auto'>
-                                        techmart Vendor
-                                    </p>
-                                </div>
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                                <div className='bg-primary-50 rounded-lg p-7 w-[18rem] '>
-                                    <img
-                                        className='mx-auto my-4'
-                                        src={profileImg}
-                                        alt=''
-                                    />
-                                    <p className='text-neutral-900 text-center leading-relaxed'>
-                                        "techmart is unarguably the best
-                                        eccomerce platform - a great
-                                        transforation to Africa"
-                                    </p>
-                                    <h5 className='text-xl font-semibold text-center mt-5'>
-                                        Aisha Issa
-                                    </h5>
-                                    <p className='text-center w-fit mx-auto'>
-                                        techmart Vendor
-                                    </p>
-                                </div>
-                            </SwiperSlide>
-                        </Swiper>
-                    </section>
-                </main>
-
+              <SwiperSlide>
+                <div className="bg-primary-50 rounded-lg p-7 w-[18rem] ">
+                  <img className="mx-auto my-4" src={profileImg} alt="" />
+                  <p className="text-neutral-900 text-center leading-relaxed">
+                    "techmart is unarguably the best eccomerce platform - a
+                    great transforation to Africa"
+                  </p>
+                  <h5 className="text-xl font-semibold text-center mt-5">
+                    Aisha Issa
+                  </h5>
+                  <p className="text-center w-fit mx-auto">techmart Vendor</p>
+                </div>
+              </SwiperSlide>
                 {/* footer */}
                 <Footer/>
             </div>
-        </>
-    );
+          </div>
+        </footer>
+      </div>
+    </>
+  );
 }
 
 export default App;
