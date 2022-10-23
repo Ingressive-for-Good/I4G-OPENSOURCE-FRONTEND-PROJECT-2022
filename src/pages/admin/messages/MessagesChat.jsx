@@ -1,17 +1,17 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import MessagesHeader from "../components/molecules/MessagesHeader";
-import MessageInput from "../components/molecules/MessageInput";
-import Avatar from "../components/atoms/Avatar";
-import MessagePreview from "../components/molecules/MessagePreview";
-import { Sending, Receiving } from "../components/molecules/MessageView";
+import MessagesHeader from '../../../components/molecules/MessagesHeader';
+import MessageInput from '../../../components/molecules/MessageInput';
+import Avatar from '../../../components/atoms/Avatar';
+import MessagePreview from '../../../components/molecules/MessagePreview';
+import { Sending, Receiving } from '../../../components/molecules/MessageView';
 
-import avatar2 from "../assets/images/avatar2.png";
-import avatar3 from "../assets/images/avatar3.png";
-import avatar4 from "../assets/images/avatar5.png";
-import avatar5 from "../assets/images/avatar6.png";
+import avatar2 from '../../../assets/images/avatar2.png';
+import avatar3 from '../../../assets/images/avatar3.png';
+import avatar4 from '../../../assets/images/avatar5.png';
+import avatar5 from '../../../assets/images/avatar6.png';
 
-import back from "../assets/icons/back.svg";
+import back from '../../../assets/icons/back.svg';
 
 function MessagesChat() {
   const [preview, setPreview] = useState(true);
@@ -34,11 +34,11 @@ function MessagesChat() {
   }
 
   return (
-    <div className="font-cabinetGrotesk lg:pl-72">
+    <div className="font-cabinetGrotesk">
       <MessagesHeader />
 
       <main className="border-[1.2px] mb-20 xl:flex border-neutral-500 rounded-lg mr-2 ml-2 mt-8 md:mx-20 lg:mx-0 lg:mr-16">
-        <div className={`xl:w-2/5 xl:block ${preview ? "block" : "hidden"}`}>
+        <div className={`xl:w-2/5 xl:block ${preview ? 'block' : 'hidden'}`}>
           <h2 className="text-lg font-semibold py-7 pl-8 ">Your Messages</h2>
           <MessagePreview avatar={avatar2} onClick={handleClick} />
           <MessagePreview avatar={avatar3} onClick={handleClick} />
@@ -48,7 +48,7 @@ function MessagesChat() {
 
         <div
           className={`font-campton relative h-[764px] xl:border-l-[1.2px] xl:border-neutral-500 rounded-lg bg-primary-50 xl:w-4/6 xl:block ${
-            chat ? "block" : "hidden"
+            chat ? 'block' : 'hidden'
           } `}
         >
           <div className="flex items-center py-4 pl-7">
