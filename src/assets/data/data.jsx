@@ -1,4 +1,3 @@
-
 import chatIcon from "../icons/Chat.svg";
 import dashboardIcon from "../../assets/icons/dashboard.svg";
 import helpIcon from "../icons/help.svg";
@@ -20,10 +19,8 @@ import wishlist from "../icons/wishlist.png";
 
 import UserAvatar from "../icons/profileAvatar.svg";
 
-
-import usersIcon from '../icons/usersIcon.svg'
-
-
+import usersIcon from "../icons/usersIcon.svg";
+import favorite from "../icons/favorite.png";
 
 export const data = [
   {
@@ -67,36 +64,214 @@ export const data = [
     icon: trash,
   },
 ];
+export const dashboardData = [
+  {
+    id: 1,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 2,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+
+  {
+    id: 3,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 4,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 5,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 6,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 7,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 8,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 9,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 10,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 11,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 12,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 13,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 14,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 15,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+
+  {
+    id: 16,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 17,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 18,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 19,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 20,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 21,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 22,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 23,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+  {
+    id: 24,
+    image: image3,
+    name: "MacBook Pro 14” M1 Chip",
+    price: "₦1,550,000.00",
+    icon: favorite,
+  },
+];
 export const nav = [
   {
     id: 1,
     image: dashboard,
     name: "Dashboard",
+    link: "/delete-product-dashboard",
   },
   {
     id: 2,
     image: chat,
     name: "Messages",
+    link: "/delete-message",
   },
   {
     id: 3,
     image: box,
     name: "Products",
+    link: "/delete-product",
   },
   {
     id: 4,
     image: wishlist,
     name: "Wishlist",
+    link: "/delete-wishlist",
   },
   {
     id: 5,
     image: group,
     name: "Help & Support",
+    link: "/delete-help",
   },
   {
     id: 6,
     image: logOut,
     name: "Log Out",
+    link: "/delete-logOut",
   },
 ];
 export const sideNav = [
@@ -104,31 +279,31 @@ export const sideNav = [
     id: 1,
     icon: dashboardIcon,
     text: "Dashboard",
-    linkName: '/dashboard'
+    linkName: "/dashboard",
   },
   {
     id: 2,
     icon: chatIcon,
     text: "Messages",
-    linkName:'/messages'
+    linkName: "/messages",
   },
   {
     id: 3,
     icon: productIcon,
     text: "Products",
-    linkName:'/view-products'
+    linkName: "/view-products",
   },
   {
     id: 4,
     icon: wishlistIcon,
     text: "Wishlist",
-    linkName:'/wishlist'
+    linkName: "/wishlist",
   },
   {
     id: 5,
     icon: helpIcon,
     text: "Help & Support",
-    linkName: '/support'
+    linkName: "/support",
   },
 ];
 export const adminNav = [
@@ -153,10 +328,10 @@ export const adminNav = [
   {
     id: 323243,
 
-    text: 'Users',
+    text: "Users",
     icon: usersIcon,
-    link: '/admin/users',
-  }, 
+    link: "/admin/users",
+  },
 
   {
     id: 322,

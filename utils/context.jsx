@@ -1,16 +1,25 @@
 import React, { useContext, useState, useEffect } from "react";
-import { data, nav } from "../src/assets/data/data";
+import { data, nav, dashboardData } from "../src/assets/data/data";
 
 const AppContext = React.createContext();
 const Context = ({ children }) => {
   const [value, setValue] = useState(data);
-
+  const [dashboard, setDashboard] = useState(dashboardData);
   const [alert, setAlert] = useState(false);
   const [message, setMessage] = useState("");
   const [popUp, setPopUp] = useState(false);
+  const [deletePopUp, setDeletePopUp] = useState({ show: false, msg: "" });
   useEffect(() => {
     const set = setInterval(() => {
       setPopUp(!popUp);
+    }, 2000);
+    return () => {
+      clearInterval(set);
+    };
+  }, [alert]);
+  useEffect(() => {
+    const set = setInterval(() => {
+      setDeletePopUp(!deletePopUp);
     }, 2000);
     return () => {
       clearInterval(set);
@@ -28,6 +37,9 @@ const Context = ({ children }) => {
         setMessage,
         popUp,
         setPopUp,
+        deletePopUp,
+        setDeletePopUp,
+        dashboard,
       }}
     >
       {children}

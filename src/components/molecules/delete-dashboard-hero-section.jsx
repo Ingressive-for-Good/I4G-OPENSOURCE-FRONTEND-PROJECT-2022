@@ -5,11 +5,11 @@ import ipad from "../../assets/icons/ipadLogo.png";
 import notification from "../../assets/icons/notification.png";
 import rectangle from "../../assets/icons/person.png";
 import search from "../../assets/icons/search.png";
-import success from "../../assets/icons/success.png";
+
 import { UseAppContext } from "../../../utils/context";
 
 const Hero = () => {
-  const { value, alert, message, popUp } = UseAppContext();
+  const { dashboard } = UseAppContext();
 
   return (
     <div>
@@ -29,20 +29,12 @@ const Hero = () => {
 
       <div className="flex justify-between items-center mb-4 relative ">
         <div>
-          <p className="text-p font-medium font-lato text-neutral-800 mb-2 md:text-mdP">
+          <p className="text-p font-medium font-cabinet text-neutral-800 mb-2 md:text-mdP">
             Hey Nora👋🏾
           </p>
-          <h4 className="text-h4 font-bold text-neutral-900 md:text-mdH4">
-            View your Uploaded Products
+          <h4 className="text-h4 font-bold font-cabinet text-neutral-900 md:text-mdH4">
+            Explore Tech Gadgets
           </h4>
-          <div className="absolute  -translate-y-1/2 md:translate-x-1/2 z-20 top-3 lg:top-8 bg-success-50 rounded-md border-success-500 border">
-            {popUp && alert && (
-              <div className="flex px-4 py-2 gap-4 justify-center items-center">
-                <img src={success} alt="" srcSet="" />
-                <p>{message}</p>
-              </div>
-            )}
-          </div>
         </div>
         <div className=" gap-4 items-center relative hidden lg:flex">
           <input
@@ -58,11 +50,11 @@ const Hero = () => {
         </div>
       </div>
       <div className="add-container flex justify-between">
-        <p className="font-medium text-button text-neutral-700">
-          {value.length}
-          {value.length < 2 ? " item" : " item(s)"}
+        <p className="font-medium text-button text-neutral-700 font-campton">
+          {dashboard.length}
+          {dashboard.length < 2 ? " item" : " item(s)"}
         </p>
-        <button className="text-button text-primary-500 font-bold">
+        <button className="text-button text-primary-500 font-bold font-lato">
           + Add New Product
         </button>
       </div>

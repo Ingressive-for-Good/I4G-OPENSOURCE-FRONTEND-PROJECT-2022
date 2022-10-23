@@ -13,6 +13,7 @@ import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
 import WishlistViewProducts from "./pages/WishlistViewProducts";
 import CreateAccount from "./pages/CreateAccount";
 import DeleteProduct from "./pages/deleteProduct";
+import DeleteProductSearch from "./pages/deleteProductSearch";
 import ResetPasswordPage from "./pages/PasswordResetPage";
 import Users from "./pages/Users";
 import PageNotFound from "./pages/404";
@@ -78,6 +79,10 @@ function Routes() {
       <Route path="/kyc" element={<Kyc />} />
       <Route path="/products" element={<AddNewProductPage1 />} />
       <Route path="/delete-product" element={<DeleteProduct />} />
+      <Route
+        path="/delete-product-dashboard"
+        element={<DeleteProductSearch />}
+      />
       {/* <Route path="/view-products" element={<ViewProduct />} /> */}
       <Route path="/wishlist" element={<WishlistViewProducts />} />
       <Route path="/add-to-wishlist" element={<EmptyWishlistViewProducts />} />

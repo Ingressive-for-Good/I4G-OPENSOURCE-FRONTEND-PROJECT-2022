@@ -7,11 +7,16 @@ import Modal from "./modal";
 function Delete() {
   const [alertDelete, setAlertDelete] = useState(false);
 
-  const { value, setValue, alert } = UseAppContext();
+  const { value, setValue, alert, setDeletePopUp, setMessage } =
+    UseAppContext();
   const removeItem = (id) => {
     const newValue = value.filter((info) => info.id !== id);
     setValue(newValue);
     setAlertDelete(false);
+    setDeletePopUp({
+      show: true,
+      msg: " Item has been deleted from your uploaded products",
+    });
   };
 
   return (
@@ -44,12 +49,14 @@ function Delete() {
 
             <div className="flex justify-between items-center bg-white p-5">
               <div>
-                <p className="text-button font-semibold text-neutral-700">
+                <p className="text-button font-semibold text-neutral-700 font-campton">
                   {discription}
                 </p>
-                <p>{category}</p>
-                <h4 className="text-h4 font-bold text-neutral-900">{price}</h4>
-                <p className="text-button font-semibold text-secondary-700">
+                <p className="font-campton">{category}</p>
+                <h4 className="text-h4 font-bold text-neutral-900 font-cabinet">
+                  {price}
+                </h4>
+                <p className="text-button font-semibold text-secondary-700 font-campton">
                   {alert ? "available" : `${available}`}
                 </p>
               </div>
