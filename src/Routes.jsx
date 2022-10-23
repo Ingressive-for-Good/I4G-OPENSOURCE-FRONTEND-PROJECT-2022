@@ -15,20 +15,20 @@ import WishlistViewProducts from './pages/WishlistViewProducts';
 import CreateAccount from './pages/CreateAccount';
 import DeleteProduct from './components/molecules/deleteProduct';
 import ResetPasswordPage from './pages/PasswordResetPage';
-import Users from './pages/Users';
+import Users from './pages/admin/users';
 import PageNotFound from './pages/404';
 import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
-import CreateSubAdmin from './pages/CreateSubAdmin';
-import SubAdminProfilePage from './pages/SubAdminProfile';
+import CreateSubAdmin from './pages/admin/users/CreateSubAdmin';
+import SubAdminProfilePage from './pages/admin/users/SubAdminProfile';
 import ForgotPassword from './pages/ForgotPassword';
-import UserList from './pages/UserList.jsx';
-import SubAdminList from './pages/SubAdminList';
-import SuspendedUsersList from './pages/SuspendedUsersList';
-import AdminUsersProfile from './pages/AdminUsersProfile';
+import UserList from './pages/admin/users/UserList.jsx';
+import SubAdminList from './pages/admin/users/SubAdminList';
+import SuspendedUsersList from './pages/admin/users/SuspendedUsersList';
+import AdminUsersProfile from './pages/admin/users/AdminUsersProfile';
 import MessagesEmpty from './pages/admin/messages/MessagesEmpty';
 import MessagesStart from './pages/admin/messages/MessagesStart';
 import MessagesChat from './pages/admin/messages/MessagesChat';
-import AdminUsersProfileWithProducts from './pages/AdminUsersProfileWithProducts';
+import AdminUsersProfileWithProducts from './pages/admin/users/AdminUsersProfileWithProducts';
 import ProductPage from './pages/admin/product';
 
 // Routes Component Containing Routes For All Base Pages.
