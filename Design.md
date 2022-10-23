@@ -597,3 +597,14 @@ issues relating to product tone and worked on a rewrite of the following screens
 - Users' Dashboard - Notifications
 - Users' Dashboard - Profile
 -----Main Goal -- Improving user experience and interaction with the product 
+
+
+## Name: Tinuade Adelesi
+
+## Description: Admin dashboard: Search Results - Desktop View
+### Observation/Changes
+- I designed the Desktop view of the search results of admin dashboard
+- I designed the empty states and filled states of the search results for the admin dashboard whereby the admin can navigate easily between "users" and "products" results
+
+
+-----Main Goal -- Present admins with a quick overview of products and users results that was searched
