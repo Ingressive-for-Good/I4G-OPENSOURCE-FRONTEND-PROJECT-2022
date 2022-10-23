@@ -25,9 +25,9 @@ import UserList from './pages/UserList.jsx';
 import SubAdminList from './pages/SubAdminList';
 import SuspendedUsersList from './pages/SuspendedUsersList';
 import AdminUsersProfile from './pages/AdminUsersProfile';
-import MessagesEmpty from './pages/MessagesEmpty';
-import MessagesStart from './pages/MessagesStart';
-import MessagesChat from './pages/MessagesChat';
+import MessagesEmpty from './pages/admin/messages/MessagesEmpty';
+import MessagesStart from './pages/admin/messages/MessagesStart';
+import MessagesChat from './pages/admin/messages/MessagesChat';
 import AdminUsersProfileWithProducts from './pages/AdminUsersProfileWithProducts';
 import ProductPage from './pages/admin/product';
 
