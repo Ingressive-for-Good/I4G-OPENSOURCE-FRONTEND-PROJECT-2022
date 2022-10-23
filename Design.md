@@ -622,3 +622,17 @@ issues relating to product tone and worked on a rewrite of the following screens
 I designed a second screen which is an alert screen that confirms that the deletion process is successful
 
 -----Main Goal -- Design a responsive and easy to navigate delete product flow for the admin 
+
+
+
+## Name: Tinuade Adelesi
+
+## Description: Admin dashboard: Make Product Unavailable - Desktop View
+### Observation/Changes
+- I designed the first screen which is a pop up that displayed the following details:
+- a write up that confirms the action
+- a "yes, proceed" button
+- a "no, cancel action" button
+I designed a second screen which is an alert screen that confirms that the deletion process is successful
+
+-----Main Goal -- Build a responsive and easy to navigate the make product available flow for the admin
