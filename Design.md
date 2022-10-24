@@ -662,3 +662,19 @@ I designed a second screen which is an alert screen that confirms that the delet
 - I rearranged the authentication screens after going through the design flow
 
 -----Main Goal -- To design a responsive and easy to navigate the authentication screens flow for the admin
+
+
+## Name: Motunrayo Agoro
+
+## Description: Admin design: Authentication screen (Log in) - Tablet view
+### Observation/Changes
+- I created the admin authentication screen (Tablet view)
+- I designed the 6 screens of the login flow using the style guide
+- Admin can login or reset password
+- I ensured that the design followed the design style guide provided by the design lead
+- I made sure the ipad screen followed the design flow from login to reset password, to password reset succesful
+- Admin can receive reset pin email when admin forgets password
+- I rearranged the screens and rename so such that it can be easily accessed 
+ 
+
+-----Main Goal -- To design a responsive and easy to navigate the authentication screens flow of the ipad screen for the admin
