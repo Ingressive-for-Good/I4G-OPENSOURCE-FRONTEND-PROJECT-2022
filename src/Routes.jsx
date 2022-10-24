@@ -30,6 +30,9 @@ import MessagesStart from './pages/admin/messages/MessagesStart';
 import MessagesChat from './pages/admin/messages/MessagesChat';
 import AdminUsersProfileWithProducts from './pages/admin/users/AdminUsersProfileWithProducts';
 import ProductPage from './pages/admin/product';
+import TermsOfSevice from './pages/TermsOfSevice';
+import Policy from './pages/Policy';
+
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -38,6 +41,8 @@ function Routes() {
       <Route path="*" element={<PageNotFound />} />
       <Route path="/" element={<Home />} />
       <Route path="/products" element={<AddNewProductPage1 />} />
+      <Route path='/terms' element={<TermsOfSevice/>} />
+      <Route path='/policy' element={<Policy/>} />
       <Route path="/login" element={<Login />} />
       <Route path="/create-account" element={<CreateAccount />} />
       <Route
