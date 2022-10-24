@@ -520,11 +520,11 @@ function App() {
                   <p className="text-center w-fit mx-auto">techmart Vendor</p>
                 </div>
               </SwiperSlide>
-                {/* footer */}
-                <Footer/>
             </Swiper>
           </section>
         </main>
+        {/* footer */}
+        <Footer/>
       </div>
     </>
   );
