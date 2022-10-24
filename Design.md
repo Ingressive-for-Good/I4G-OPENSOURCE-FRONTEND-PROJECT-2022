@@ -650,3 +650,15 @@ I designed a second screen which is an alert screen that confirms that the delet
 
 
 -----Main Goal -- To make viewing and searching for uploaded products easy and to give admin access to to "delete" or "make products unavailable/available"
+
+
+## Name: Motunrayo Agoro
+
+## Description: Admin design: Authentication screen (Log in) - Desktop view
+### Observation/Changes
+- I designed the admin authentication screen (desktop view)
+- Admin can login or reset password
+- I ensured that the design followed the design style guide provided by the design lead
+- I rearranged the authentication screens after going through the design flow
+
+-----Main Goal -- To design a responsive and easy to navigate the authentication screens flow for the admin
