@@ -523,4 +523,116 @@ The button also being the only highlighted button seems to encourage an action w
 -----Main Goal -- Improve the Admin Experience by designing a responsive screen for the mobile view 
 
 
+## Name: Tinuade Adelesi
 
+## Description: Admin dashboard - Desktop View
+### Observation/Changes
+- I designed the desktop view of the admin dashboard
+- The dashboard comprises of the analytics chart, the statistics section( which includes the total user of the platform and the total products uploaded on the platform), the top user section and also the recent uploaded product section
+
+
+-----Main Goal -- Simplify the informations that is being reviewed on the admin dashboard for easy processing
+
+
+## Name: Akoja Olamide
+
+## Description: Admin dashboard - Mobile View
+### Observation/Changes
+- I designed the mobile view of the admin dashboard
+- The dashboard comprises of the analytics chart, the statistics section( which includes the total user of the platform and the total products uploaded on the platform), the top user section and also the recent uploaded product section
+
+
+-----Main Goal -- Simplify the informations that is being reviewed on the admin dashboard for easy processing
+
+
+## Name: Akoja Olamide
+
+## Description: Admin dashboard: Search Results - Mobile View
+### Observation/Changes
+- I designed the mobile view of the search results of admin dashboard
+- I designed the empty states and filled states of the search results for the admin dashboard
+
+
+-----Main Goal -- Present admins with a quick overview of products and users
+
+
+## Name: Akoja Olamide
+
+## Description: Admin dashboard: Delete Products - Mobile View
+### Observation/Changes
+- I designed the mobile view of the delete products of admin dashboard
+- I designed the first screen, which is a pop up screen displaying the following details:
+- a write up that confirms the action
+- a "yes, proceed" button
+- a "no, cancel action" button
+I designed a second screen which is an alert screen that confirms that the deletion process is successful
+
+-----Main Goal -- Design a responsive and easy to navigate delete product flow for the admin
+
+
+## Name: Akoja Olamide
+
+## Description: Admin dashboard: Make Product Unavailable - Mobile View
+### Observation/Changes
+- I designed the first screen which is a pop up that displayed the following details:
+- a write up that confirms the action
+- a "yes, proceed" button
+- a "no, cancel action" button
+I designed a second screen which is an alert screen that confirms that the deletion process is successful
+
+-----Main Goal -- Build a responsive and easy to navigate the make product available flow for the admin
+
+## Name: Nnadiukwu Chidiebere Oscar 
+
+## Description: Ux Writing 
+### Observation/Changes
+I observed some Ux writing inconsistencies towards reaching the target audience of the product and also observed 
+issues relating to product tone and worked on a rewrite of the following screens:
+ - Users' Dashboard - Home
+- Users' Dashboard - Messages
+- Users' Dashboard - Product Description Pop Up
+- Users' Dashboard - Product Wishlist Alert
+- Users' Dashboard - Edit Product Details
+- Users' Dashboard - View Uploaded Product Alert
+- Users' Dashboard - Notifications
+- Users' Dashboard - Profile
+-----Main Goal -- Improving user experience and interaction with the product 
+
+
+## Name: Tinuade Adelesi
+
+## Description: Admin dashboard: Search Results - Desktop View
+### Observation/Changes
+- I designed the Desktop view of the search results of admin dashboard
+- I designed the empty states and filled states of the search results for the admin dashboard whereby the admin can navigate easily between "users" and "products" results
+
+
+-----Main Goal -- Present admins with a quick overview of products and users results that was searched
+
+
+## Name: Tinuade Adelesi
+
+## Description: Admin Dashboard: Delete Product - (Desktop view)
+### Observation/Changes
+- I designed the desktop view of the delete products of admin dashboard
+- I designed the first screen, which is a pop up screen displaying the following details:
+- a write up that confirms the action
+- a "yes, proceed" button
+- a "no, cancel action" button
+I designed a second screen which is an alert screen that confirms that the deletion process is successful
+
+-----Main Goal -- Design a responsive and easy to navigate delete product flow for the admin 
+
+
+
+## Name: Tinuade Adelesi
+
+## Description: Admin dashboard: Make Product Unavailable - Desktop View
+### Observation/Changes
+- I designed the first screen which is a pop up that displayed the following details:
+- a write up that confirms the action
+- a "yes, proceed" button
+- a "no, cancel action" button
+I designed a second screen which is an alert screen that confirms that the deletion process is successful
+
+-----Main Goal -- Build a responsive and easy to navigate the make product available flow for the admin
