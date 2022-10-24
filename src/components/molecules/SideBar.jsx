@@ -7,8 +7,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 export default function SideBar({ navData = [] }) {
   return (
-    // If the sidebar is not fixed, it will move as you scroll. Give a padding left(270px) to your component that will be making use of the sidebar.
-    <aside className=" fixed font-campton top-0 left-0 h-screen bg-primary-50 w-[230px] pt-[50px] hidden lg:block">
+    <aside className=" font-campton h-screen bg-primary-50 w-[230px] pt-[50px] hidden lg:block">
       <h1 className="font-cabinetGrotesk text-[32px] font-[700]  pl-[50px] pb-[38px] text-primary-500">
         tech<span className="text-secondary-500">mart</span>
       </h1>
