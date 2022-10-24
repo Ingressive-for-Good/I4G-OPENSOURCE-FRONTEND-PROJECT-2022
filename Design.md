@@ -647,4 +647,6 @@ I designed a second screen which is an alert screen that confirms that the delet
 - I created the empty state for the products page and search page
 - I created the search page for the products page
 - I designed more option button with three options: "view details" , "mark as unavailable" and "delete product"
+
+
 -----Main Goal -- To make viewing and searching for uploaded products easy and to give admin access to to "delete" or "make products unavailable/available"
