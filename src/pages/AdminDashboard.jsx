@@ -1,8 +1,19 @@
 import React from "react";
 import NavbarAdmin from "../components/molecules/NavbarAdmin";
-import totalProductsIcon from "../assets/icons/total-products.svg"
-import totalUsersIcon from "../assets/icons/total-users.svg"
-import userAvatar from "../assets/icons/avatar.png"
+import totalProductsIcon from "../assets/icons/total-products.svg";
+import totalUsersIcon from "../assets/icons/total-users.svg";
+import userAvatar from "../assets/icons/avatar.png";
+
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+
+const data = [
+    { name: "5-10", Products: "500"},
+    { name: "11-15", Products: "1500"},
+    { name: "16-20", Products: "3000"},
+    { name: "21-25", Products: "750"},
+    { name: "26-31", Products: "3800"},
+];
+
 
 function AdminDashboard() {
     return (
@@ -124,6 +135,28 @@ function AdminDashboard() {
                         <path d="M6 9L12 15L18 9" stroke="#131418" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </p>
+            </div>
+            <div className="mt-10 font-cabinetGrotesk font-semibold w-[50%]">
+                {/* <ResponsiveContainer width="65%" aspect={2}> */}
+                    <LineChart className=" bg-blue-100 rounded-md"
+                    width={700}
+                    height={300}
+                    data={data}
+                    margin={{
+                        top: 50,
+                        right: 30,
+                        left: 20,
+                        bottom: 35,
+                    }}
+                    >
+                    <CartesianGrid strokeDasharray="5" horizontal="true" vertical=""/>
+                    <XAxis dataKey="name" tickLine={false} padding={{ top: 50, bottom: 50 }}/>
+                    <YAxis tickCount={6} axisLine={false} tickLine={false} type="number" domain={[0, 'dataMax + 3250']}/>
+                    <Tooltip contentStyle={{ width: 200, backgroundColor: '#1434A4', color: "#fff" }} itemStyle={{ color: "#fff"}} cursor={{ strokeWidth: "2" , stroke: "blue", strokeDasharray:"5" }}  />
+                    {/* <Legend /> */}
+                    <Line type="monotone" dataKey="Products" stroke="#8884d8" strokeWidth={3} dot={false} activeDot={{ r : 8}}/>
+                    </LineChart>
+                {/* </ResponsiveContainer> */}
             </div>
         </div>
     )

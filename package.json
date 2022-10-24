@@ -26,6 +26,7 @@
     "react-redux": "^8.0.4",
     "react-router-dom": "^6.3.0",
     "react-select": "^5.4.0",
+    "recharts": "^2.1.15",
     "redux": "^4.2.0",
     "styled-components": "^5.3.5",
     "swiper": "^8.4.4",
