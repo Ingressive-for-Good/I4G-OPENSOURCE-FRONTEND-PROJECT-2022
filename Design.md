@@ -694,3 +694,18 @@ I designed a second screen which is an alert screen that confirms that the delet
  
 
 -----Main Goal -- To design a responsive and easy to navigate the authentication screens flow of the mobile screen for the admin
+
+
+## Name: Motunrayo Agoro
+
+## Description: Admin design: Authentication screen (Email notification) - desktop view
+### Observation/Changes
+- I created the admin authentication email notification screen (desktop view)
+- I designed the 2 screens of the email notification flow using the style guide
+- Admin can receive email pop up notification 
+- I ensured that the design followed the design style guide provided by the design lead
+- Admin can receive reset pin email when admin forgets password
+- I rearranged the screens and rename so such that it can be easily accessed 
+ 
+ 
+ -----Main Goal -- To design a responsive and easy to navigate the authentication email notification screens of the desktop screen for the admin
