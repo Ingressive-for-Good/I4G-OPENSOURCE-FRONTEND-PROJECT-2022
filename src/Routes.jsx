@@ -36,6 +36,7 @@ import AdminUsersProfileWithProducts from './pages/AdminUsersProfileWithProducts
 import AdminDeleteAccountPopup from './components/molecules/AdminDeleteAccountPopup';
 import AdminDeleteAccountFailPopup from './components/molecules/AdminDeleteAccountFailPopup';
 import AdminDeleteAccountSuccessfullPopup from './components/molecules/AdminDeleteAccountSuccessfullPopup';
+import AdminDashboard from './pages/AdminDashboard';
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -65,7 +66,7 @@ function Routes() {
             <Route element={<AdminDashBoardLayout />}>
                 <Route
                     path='/admin/dashboard'
-                    element={<h1> create dashboard</h1>}
+                    element={<AdminDashboard/>}
                 />
                 <Route
                     path='/admin/products'
