@@ -840,5 +840,13 @@ I designed a second screen which is an alert screen that confirms that the delet
 
 -----Main Goal -- Improved User experience of Admin Authentication screens.
 
+## Name:  Lateefat Salami
+
+## Description: Admin Design - Improved UX writing on Authentication Screen (Email notification)
+### Observations/Changes
+- Improved the UX Writing for the Admin authentication screens.
+- Improved UX Writing for Email notification. 
+
+-----Main Goal -- Improved User experience of Admin Authentication screens
 
 
