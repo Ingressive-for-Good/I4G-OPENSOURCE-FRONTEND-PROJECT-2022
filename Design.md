@@ -804,4 +804,4 @@ I designed a second screen which is an alert screen that confirms that the delet
 - Created buttons for the Admin to suspend or delete a users account.
 - The Admin can see the user details on this page.
 
------Main Goal -- Allow Admin to keep track of the users on the platform.
+-----Main Goal -- Allow Admin to keep track of the users on the platform
