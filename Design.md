@@ -715,8 +715,8 @@ I designed a second screen which is an alert screen that confirms that the delet
 
 ## Description: Improved Ux Writing on product details pop-up screen
 ### Observation/Changes
-I observed some Ux writing inconsistencies on the product details and also observed 
-issues relating to product tone and worked on a rewrite.
+-I observed some Ux writing inconsistencies on the product details and also observed 
+ issues relating to product tone and worked on a rewrite.
 - Improved ux writing
 - Users' Dashboard - Product Description Pop Up
 
@@ -727,11 +727,24 @@ issues relating to product tone and worked on a rewrite.
 
 ## Description: Improved UX writing on Delete Product Flow Screens
 ### Observation/Changes
-I observed some Ux writing inconsistencies on the delete product screens and also observed 
-issues relating to product tone and worked on a rewrite.
+-I observed some Ux writing inconsistencies on the delete product screens and also observed 
+ issues relating to product tone and worked on a rewrite.
 - Improved ux writing
 - Users' Dashboard - Delete Product Flow Screens
 
 -----Main Goal -- Improving user experience and interaction with the product
 
+
+
+## Name: Oluwatosin Alabi
+
+## Description: Improved UX writing on Make Product Unavailable Flow Screens
+### Observation/Changes
+- I observed some Ux writing inconsistencies on the delete product screens and also observed 
+  issues relating to product tone and worked on a rewrite.
+- I improved UX writing on the "make product unavailable product" flow screens.
+- I ensured the improvement was done on all screens (desktop, tablet and mobile)
+- I ensured the use the colors and typography on the style guide to ensure consistency
+
+-----Main Goal -- Improving user experience and interaction with the product
 
