@@ -756,3 +756,13 @@ I designed a second screen which is an alert screen that confirms that the delet
 - Product details include: name, category, price, seller, seller's email, product availability tag and product description 
 
 -----Main Goal -- Allow admins view product details at a glance
+
+
+## Name: Anees Adeyinka
+
+## Description: Admin Design - Products Search Results (Desktop View)
+### Observation/Changes
+- Created the search page for products on the platform.
+- Created the empty search page for no result on a particular item or faulty internet connection. 
+
+-----Main Goal -- Allow admins to search for products with ease
