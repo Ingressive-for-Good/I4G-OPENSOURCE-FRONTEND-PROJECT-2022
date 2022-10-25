@@ -709,3 +709,17 @@ I designed a second screen which is an alert screen that confirms that the delet
  
  
  -----Main Goal -- To design a responsive and easy to navigate the authentication email notification screens of the desktop screen for the admin
+
+
+## Name: Oluwatosin Alabi
+
+## Description: Improved Ux Writing on product details pop-up screen
+### Observation/Changes
+I observed some Ux writing inconsistencies on the product details and also observed 
+issues relating to product tone and worked on a rewrite.
+- Improved ux writing
+- Users' Dashboard - Product Description Pop Up
+
+-----Main Goal -- Improving user experience and interaction with the product 
+
+
