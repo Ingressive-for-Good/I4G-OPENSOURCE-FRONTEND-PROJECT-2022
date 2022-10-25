@@ -850,3 +850,6 @@ I designed a second screen which is an alert screen that confirms that the delet
 -----Main Goal -- Improved User experience of Admin Authentication screens
 
 
+## Name: OLAWALE AYOOLA
+## Description: Designed admin Message page
+### Observations/Changes: I researched and came up with a design for the mobile , tablet and desktop view 
