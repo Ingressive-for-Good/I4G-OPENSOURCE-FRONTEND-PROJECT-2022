@@ -723,3 +723,15 @@ issues relating to product tone and worked on a rewrite.
 -----Main Goal -- Improving user experience and interaction with the product 
 
 
+## Name: Oluwatosin Alabi
+
+## Description: Improved UX writing on Delete Product Flow Screens
+### Observation/Changes
+I observed some Ux writing inconsistencies on the delete product screens and also observed 
+issues relating to product tone and worked on a rewrite.
+- Improved ux writing
+- Users' Dashboard - Delete Product Flow Screens
+
+-----Main Goal -- Improving user experience and interaction with the product 
+
+
