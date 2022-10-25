@@ -136,9 +136,24 @@ function AdminDashboard() {
                     </svg>
                 </p>
             </div>
-            <div className="mt-10 font-cabinetGrotesk font-semibold w-[50%]">
-                {/* <ResponsiveContainer width="65%" aspect={2}> */}
-                    <LineChart className=" bg-blue-100 rounded-md"
+            {/* CONTAINER FOR THE CHART */}
+            <div className="mt-10 font-cabinetGrotesk font-semibold w-[100%] h-[500px] md:w-[69%] py-6 bg-blue-100 rounded-md">
+                <div className="flex justify-between items-center px-3 text-small text-blue-700">
+                    <p className="flex items-center gap-1">
+                        October 2022
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L12 15L18 9" stroke="#131418" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </p>
+                    <p className="flex items-center gap-1">
+                        All days
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 9L12 15L18 9" stroke="#131418" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </p>
+                </div>
+                <ResponsiveContainer width="100%" height="100%">
+                    <LineChart 
                     width={700}
                     height={300}
                     data={data}
@@ -156,7 +171,43 @@ function AdminDashboard() {
                     {/* <Legend /> */}
                     <Line type="monotone" dataKey="Products" stroke="#8884d8" strokeWidth={3} dot={false} activeDot={{ r : 8}}/>
                     </LineChart>
-                {/* </ResponsiveContainer> */}
+                </ResponsiveContainer>
+            </div>
+            {/* RECENT UPLOADED PRODUCTS */}
+            <div className="mt-6">
+                <p>Recent Uploaded Products</p>
+                <table className="w-[240px] md:w-[300px]">
+                        <tr>
+                            <th className="bg-blue-50 border text-left px-2 py-4">Top Users</th>
+                        </tr>
+                        <tr>
+                            <td className="border px-2 py-4 flex gap-2 items-center">
+                                <img src={userAvatar} alt="avatar" />
+                                <div>
+                                <p>Alfreds Futterkiste</p>
+                                <p>1000 products</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className="border px-2 py-4 flex gap-2 items-center">
+                                <img src={userAvatar} alt="avatar" />
+                                <div>
+                                <p>Alfreds Futterkiste</p>
+                                <p>1000 products</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className="border px-2 py-4 flex gap-2 items-center">
+                                <img src={userAvatar} alt="avatar" />
+                                <div>
+                                <p>Alfreds Futterkiste</p>
+                                <p>1000 products</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
             </div>
         </div>
     )
