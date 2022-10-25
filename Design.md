@@ -777,3 +777,21 @@ I designed a second screen which is an alert screen that confirms that the delet
 - Designed the alert screens for the actions taken above
 
 -----Main Goal -- Allow admins to make products available/unavailable or delete a product permanently
+
+
+## Name:  Ohurogu Ukachukwu
+
+## Description: Mobile Admin Nav Bar
+### Observations/Changes
+- Following the style guide created by Nora and Ayomide, I designed the Admin Nav Bar for Moblie device using the flow chart.
+- The Nav Bar consists of the following sections:
+   - A search field.
+   - Dashboard.
+   - Messages.  
+   - Peoducts. 
+   - Users.
+   - Profile. 
+   - Notification. 
+   - Log Out button.
+ 
+-----Main Goal -- Mobile Navigtion Bar for Admin.
