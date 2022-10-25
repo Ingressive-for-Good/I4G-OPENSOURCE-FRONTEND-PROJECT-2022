@@ -3,16 +3,11 @@ import NavbarAdmin from "../components/molecules/NavbarAdmin";
 import totalProductsIcon from "../assets/icons/total-products.svg";
 import totalUsersIcon from "../assets/icons/total-users.svg";
 import userAvatar from "../assets/icons/avatar.png";
+import { productData } from "../assets/data/AdminDashboardData";
+import { chart } from "../assets/data/AdminDashboardData";
+import optionsIcon from "../assets/icons/optionsIcon.svg"
 
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-
-const data = [
-    { name: "5-10", Products: "500"},
-    { name: "11-15", Products: "1500"},
-    { name: "16-20", Products: "3000"},
-    { name: "21-25", Products: "750"},
-    { name: "26-31", Products: "3800"},
-];
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 
 function AdminDashboard() {
@@ -92,13 +87,13 @@ function AdminDashboard() {
                     </div>
                 </div>
                     {/* TABLE */}
-                <div className="lg:absolute md:right-8 mt-6 sm:mt-0">
+                <div className="lg:absolute md:right-8 mt-8 sm:mt-0 border-2 rounded-lg border-collapse">
                     <table className="w-[240px] md:w-[300px]">
                         <tr>
-                            <th className="bg-blue-50 border text-left px-2 py-4">Top Users</th>
+                            <th className="bg-blue-50 border-b rounded-t-lg text-left px-2 py-4">Top Users</th>
                         </tr>
                         <tr>
-                            <td className="border px-2 py-4 flex gap-2 items-center">
+                            <td className="border-b px-2 py-4 flex gap-2 items-center">
                                 <img src={userAvatar} alt="avatar" />
                                 <div>
                                 <p>Alfreds Futterkiste</p>
@@ -107,7 +102,7 @@ function AdminDashboard() {
                             </td>
                         </tr>
                         <tr>
-                            <td className="border px-2 py-4 flex gap-2 items-center">
+                            <td className="border-b px-2 py-4 flex gap-2 items-center">
                                 <img src={userAvatar} alt="avatar" />
                                 <div>
                                 <p>Alfreds Futterkiste</p>
@@ -116,7 +111,7 @@ function AdminDashboard() {
                             </td>
                         </tr>
                         <tr>
-                            <td className="border px-2 py-4 flex gap-2 items-center">
+                            <td className="border-b px-2 py-4 flex gap-2 items-center">
                                 <img src={userAvatar} alt="avatar" />
                                 <div>
                                 <p>Alfreds Futterkiste</p>
@@ -127,7 +122,7 @@ function AdminDashboard() {
                     </table>
                 </div>
             </div>
-            <div className="flex gap-3 items-center">
+            <div className="flex gap-3 items-center px-6 md:px-0">
                 <p className=" font-cabinetGrotesk text-[18px] font-semibold">Analytics:</p>
                 <p className="flex items-center gap-2 text-small text-blue-700">
                     Products
@@ -137,7 +132,7 @@ function AdminDashboard() {
                 </p>
             </div>
             {/* CONTAINER FOR THE CHART */}
-            <div className="mt-10 font-cabinetGrotesk font-semibold w-[100%] h-[500px] md:w-[69%] py-6 bg-blue-100 rounded-md">
+            <div className="mt-10 font-cabinetGrotesk font-semibold w-[90%] mx-auto md:mx-0 h-[500px] md:w-[69%] py-6 bg-blue-100 rounded-md">
                 <div className="flex justify-between items-center px-3 text-small text-blue-700">
                     <p className="flex items-center gap-1">
                         October 2022
@@ -156,7 +151,7 @@ function AdminDashboard() {
                     <LineChart 
                     width={700}
                     height={300}
-                    data={data}
+                    data={chart}
                     margin={{
                         top: 50,
                         right: 30,
@@ -174,40 +169,59 @@ function AdminDashboard() {
                 </ResponsiveContainer>
             </div>
             {/* RECENT UPLOADED PRODUCTS */}
-            <div className="mt-6">
-                <p>Recent Uploaded Products</p>
-                <table className="w-[240px] md:w-[300px]">
-                        <tr>
-                            <th className="bg-blue-50 border text-left px-2 py-4">Top Users</th>
-                        </tr>
-                        <tr>
-                            <td className="border px-2 py-4 flex gap-2 items-center">
-                                <img src={userAvatar} alt="avatar" />
-                                <div>
-                                <p>Alfreds Futterkiste</p>
-                                <p>1000 products</p>
+            <div className="mt-6 font-cabinetGrotesk mb-36">
+                <p className="font-semibold px-6 md:px-0 py-6">Recent Uploaded Products</p>
+                <div className="border-2 border-collapse rounded-lg w-[90%] md:w-[100%] mx-auto md:mx-0 text-center">
+                    <table className="w-[100%]">
+                            <tr className="border-b-2 bg-blue-50 rounded-t-lg">
+                                <th className="text-left px-2 py-4">Item(s)</th>
+                                <div className="hidden md:contents">
+                                    <th className="px-2 py-4">Price</th>
+                                    <th className="px-2 py-4">Category</th>
                                 </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="border px-2 py-4 flex gap-2 items-center">
-                                <img src={userAvatar} alt="avatar" />
-                                <div>
-                                <p>Alfreds Futterkiste</p>
-                                <p>1000 products</p>
+                                <div className="hidden lg:contents">
+                                    <th className="px-2 py-4">User</th>
+                                    <th className="px-2 py-4">Date Uploaded</th>
                                 </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="border px-2 py-4 flex gap-2 items-center">
-                                <img src={userAvatar} alt="avatar" />
-                                <div>
-                                <p>Alfreds Futterkiste</p>
-                                <p>1000 products</p>
-                                </div>
-                            </td>
-                        </tr>
+                            </tr>
+                            {productData.map((products, index)=>{
+                                return (
+                                    <tr className="border-b-2 items-center">
+                                        <td className="border-b px-2 py-4 flex gap-6 items-center">
+                                            <img src={products.image} alt="avatar" />
+                                            <div className="flex items-center gap-2  w-[100%] justify-between mr-6">
+                                                <p>{products.discription}</p>
+                                                <img className=" md:hidden" src={optionsIcon} alt="icon" />
+                                            </div>
+                                        </td>
+                                        <div className="hidden md:contents">
+                                            <td className="px-2 relative bottom-5">
+                                                <p className="text-gray-600">{products.price}</p>
+                                            </td>
+                                            <td className="px-2 relative bottom-5">
+                                                <p className="text-gray-600">{products.category}</p>
+                                            </td>
+                                        </div>
+                                        <div className="hidden lg:contents">
+                                            <td className="px-2 relative bottom-5">
+                                                <p className="text-gray-600">{products.user}</p>
+                                            </td>
+                                            <td className="px-2 relative bottom-5">
+                                                <div className="flex items-center justify-between mr-4">
+                                                    <p className="text-gray-600">{products.uploaded}</p>
+                                                    <img src={optionsIcon} alt="icon" />
+                                                </div>
+                                            </td>
+                                        </div>
+                                    </tr>
+                                )
+                            })}
                     </table>
+                </div>
+            </div>
+            <div className="hidden fixed top-[180px] left-0 md:flex gap-3 bg-white p-4 items-center w-[230px]">
+                <img className="ml-9" src="" alt="icon" />
+                <p className=" font-cabinetGrotesk text-blue-700 font-semibold text-[18px]">Dashboard</p>
             </div>
         </div>
     )
