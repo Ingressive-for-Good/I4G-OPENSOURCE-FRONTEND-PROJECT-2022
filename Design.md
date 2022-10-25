@@ -662,3 +662,107 @@ I designed a second screen which is an alert screen that confirms that the delet
 - I rearranged the authentication screens after going through the design flow
 
 -----Main Goal -- To design a responsive and easy to navigate the authentication screens flow for the admin
+
+
+## Name: Motunrayo Agoro
+
+## Description: Admin design: Authentication screen (Log in) - Tablet view
+### Observation/Changes
+- I created the admin authentication screen (Tablet view)
+- I designed the 6 screens of the login flow using the style guide
+- Admin can login or reset password
+- I ensured that the design followed the design style guide provided by the design lead
+- I made sure the ipad screen followed the design flow from login to reset password, to password reset succesful
+- Admin can receive reset pin email when admin forgets password
+- I rearranged the screens and rename so such that it can be easily accessed 
+ 
+
+-----Main Goal -- To design a responsive and easy to navigate the authentication screens flow of the ipad screen for the admin
+
+
+## Name: Motunrayo Agoro
+
+## Description: Admin design: Authentication screen (Log in) - mobile view
+### Observation/Changes
+- I created the admin authentication screen (mobile view)
+- I designed the 6 screens of the login flow using the style guide
+- Admin can login or reset password
+- I ensured that the design followed the design style guide provided by the design lead
+- I made sure the mobile screen followed the design flow from login to reset password, to password reset succesful
+- Admin can receive reset pin email when admin forgets password
+- I rearranged the screens and rename so such that it can be easily accessed 
+ 
+
+-----Main Goal -- To design a responsive and easy to navigate the authentication screens flow of the mobile screen for the admin
+
+
+## Name: Motunrayo Agoro
+
+## Description: Admin design: Authentication screen (Email notification) - desktop view
+### Observation/Changes
+- I created the admin authentication email notification screen (desktop view)
+- I designed the 2 screens of the email notification flow using the style guide
+- Admin can receive email pop up notification 
+- I ensured that the design followed the design style guide provided by the design lead
+- Admin can receive reset pin email when admin forgets password
+- I rearranged the screens and rename so such that it can be easily accessed 
+ 
+ 
+ -----Main Goal -- To design a responsive and easy to navigate the authentication email notification screens of the desktop screen for the admin
+
+
+## Name: Oluwatosin Alabi
+
+## Description: Improved Ux Writing on product details pop-up screen
+### Observation/Changes
+-I observed some Ux writing inconsistencies on the product details and also observed 
+ issues relating to product tone and worked on a rewrite.
+- Improved ux writing
+- Users' Dashboard - Product Description Pop Up
+
+-----Main Goal -- Improving user experience and interaction with the product 
+
+
+## Name: Oluwatosin Alabi
+
+## Description: Improved UX writing on Delete Product Flow Screens
+### Observation/Changes
+-I observed some Ux writing inconsistencies on the delete product screens and also observed 
+ issues relating to product tone and worked on a rewrite.
+- Improved ux writing
+- Users' Dashboard - Delete Product Flow Screens
+
+-----Main Goal -- Improving user experience and interaction with the product
+
+
+
+## Name: Oluwatosin Alabi
+
+## Description: Improved UX writing on Make Product Unavailable Flow Screens
+### Observation/Changes
+- I observed some Ux writing inconsistencies on the delete product screens and also observed 
+  issues relating to product tone and worked on a rewrite.
+- I improved UX writing on the "make product unavailable product" flow screens.
+- I ensured the improvement was done on all screens (desktop, tablet and mobile)
+- I ensured the use the colors and typography on the style guide to ensure consistency
+
+-----Main Goal -- Improving user experience and interaction with the product
+
+## Name: Anees Adeyinka
+
+## Description: Admin Design - Products Details Pop-Up (Desktop View)
+### Observation/Changes
+- Created a popup to show product details from admin product page
+- Product details include: name, category, price, seller, seller's email, product availability tag and product description 
+
+-----Main Goal -- Allow admins view product details at a glance
+
+
+## Name: Anees Adeyinka
+
+## Description: Admin Design - Products Search Results (Desktop View)
+### Observation/Changes
+- Created the search page for products on the platform.
+- Created the empty search page for no result on a particular item or faulty internet connection. 
+
+-----Main Goal -- Allow admins to search for products with ease
