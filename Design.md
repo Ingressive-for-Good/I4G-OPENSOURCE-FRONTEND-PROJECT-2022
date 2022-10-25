@@ -748,3 +748,11 @@ I designed a second screen which is an alert screen that confirms that the delet
 
 -----Main Goal -- Improving user experience and interaction with the product
 
+## Name: Anees Adeyinka
+
+## Description: Admin Design - Products Details Pop-Up (Desktop View)
+### Observation/Changes
+- Created a popup to show product details from admin product page
+- Product details include: name, category, price, seller, seller's email, product availability tag and product description 
+
+-----Main Goal -- Allow admins view product details at a glance
