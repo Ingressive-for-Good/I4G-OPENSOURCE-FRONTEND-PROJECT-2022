@@ -805,3 +805,15 @@ I designed a second screen which is an alert screen that confirms that the delet
 - The Admin can see the user details on this page.
 
 -----Main Goal -- Allow Admin to keep track of the users on the platform
+
+
+## Name:  Ohurogu Ukachukwu
+
+## Description: Admin Design - Delete Account Pop Up (Desktop View)
+### Observations/Changes
+- Designed Pop Up page for Admin for Desktop view, for the following messages;
+  - Delete Account Permanently
+  - Account Deletion Successful
+  - Account Deletion Unsuccessful
+
+-----Main Goal -- Pop Up Messages for Admin.
