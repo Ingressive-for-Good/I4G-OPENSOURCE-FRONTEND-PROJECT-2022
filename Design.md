@@ -732,6 +732,6 @@ issues relating to product tone and worked on a rewrite.
 - Improved ux writing
 - Users' Dashboard - Delete Product Flow Screens
 
------Main Goal -- Improving user experience and interaction with the product 
+-----Main Goal -- Improving user experience and interaction with the product
 
 
