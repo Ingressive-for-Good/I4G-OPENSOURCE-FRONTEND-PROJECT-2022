@@ -829,3 +829,12 @@ I designed a second screen which is an alert screen that confirms that the delet
   - Account Deletion Unsuccessful
 
 -----Main Goal -- Pop Up Messages for Admin for Tablet.
+
+## Name: Admin Design - Improved UX writing on Authentication Screen (Log In)
+### Observations/Changes
+- Improved the UX Writing for the Admin authentication screens
+- Improved UX Writing for Creation of Sub-admin 
+- Improved UX Writing for Error screens and pop-ups.
+- Improved UX Writing for Account suspension and deletion.
+
+-----Main Goal -- Improved User experience of Admin Authentication screens.
