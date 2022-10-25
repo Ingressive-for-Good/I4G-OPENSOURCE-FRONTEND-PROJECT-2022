@@ -817,3 +817,15 @@ I designed a second screen which is an alert screen that confirms that the delet
   - Account Deletion Unsuccessful
 
 -----Main Goal -- Pop Up Messages for Admin.
+
+
+## Name:  Ohurogu Ukachukwu
+
+## Description: Admin Design - Delete Account Pop Up (Tablet View)
+### Observations/Changes
+- Designed Pop Up page for Admin for Tablet view, for the following messages;
+  - Delete Account Permanently
+  - Account Deletion Successful
+  - Account Deletion Unsuccessful
+
+-----Main Goal -- Pop Up Messages for Admin for Tablet.
