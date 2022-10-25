@@ -12,10 +12,10 @@
   width: calc(100vw - theme(width.80));
 }
 @font-face {
-  font-family: 'CabinetGrotesk';
-  src: url('../src/assets/fonts/CabinetGrotesk-Regular.otf');
+  font-family: "CabinetGrotesk";
+  src: url("../src/assets/fonts/CabinetGrotesk-Regular.otf");
 }
 @font-face {
-  font-family: 'Campton';
-  src: url('../src/assets/fonts/Campton-LightDEMO.otf');
-}
+  font-family: "Campton";
+  src: url("../src/assets/fonts/Campton-LightDEMO.otf");
+ 
