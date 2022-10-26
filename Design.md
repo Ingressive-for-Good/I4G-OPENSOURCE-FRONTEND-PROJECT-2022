@@ -748,3 +748,105 @@ I designed a second screen which is an alert screen that confirms that the delet
 
 -----Main Goal -- Improving user experience and interaction with the product
 
+## Name: Anees Adeyinka
+
+## Description: Admin Design - Products Details Pop-Up (Desktop View)
+### Observation/Changes
+- Created a popup to show product details from admin product page
+- Product details include: name, category, price, seller, seller's email, product availability tag and product description 
+
+-----Main Goal -- Allow admins view product details at a glance
+
+
+## Name: Anees Adeyinka
+
+## Description: Admin Design - Products Search Results (Desktop View)
+### Observation/Changes
+- Created the search page for products on the platform.
+- Created the empty search page for no result on a particular item or faulty internet connection. 
+
+-----Main Goal -- Allow admins to search for products with ease
+
+
+## Name: Anees Adeyinka
+
+## Description: Admin Design - Product Page: Make Product Unavailable & Delete Product (Desktop View)
+### Observation/Changes
+- Designed the popup to make products unavailable/available or "delete product permanently"
+- Designed the confirmation popup for the actions described above
+- Designed the alert screens for the actions taken above
+
+-----Main Goal -- Allow admins to make products available/unavailable or delete a product permanently
+
+
+## Name:  Ohurogu Ukachukwu
+
+## Description: Mobile Admin Nav Bar
+### Observations/Changes
+- Following the style guide created by Nora and Ayomide, I designed the Admin Nav Bar for Moblie device using the flow chart.
+- The Nav Bar consists of the following sections:
+   - A search field.
+   - Dashboard.
+   - Messages.  
+   - Peoducts. 
+   - Users.
+   - Profile. 
+   - Notification. 
+   - Log Out button.
+ 
+-----Main Goal -- Mobile Navigtion Bar for Admin.
+
+
+## Name:  Ohurogu Ukachukwu
+
+## Description: Admin Design - User Profile (Mobile view)
+### Observations/Changes
+- Created buttons for the Admin to suspend or delete a users account.
+- The Admin can see the user details on this page.
+
+-----Main Goal -- Allow Admin to keep track of the users on the platform
+
+
+## Name:  Ohurogu Ukachukwu
+
+## Description: Admin Design - Delete Account Pop Up (Desktop View)
+### Observations/Changes
+- Designed Pop Up page for Admin for Desktop view, for the following messages;
+  - Delete Account Permanently
+  - Account Deletion Successful
+  - Account Deletion Unsuccessful
+
+-----Main Goal -- Pop Up Messages for Admin.
+
+
+## Name:  Ohurogu Ukachukwu
+
+## Description: Admin Design - Delete Account Pop Up (Tablet View)
+### Observations/Changes
+- Designed Pop Up page for Admin for Tablet view, for the following messages;
+  - Delete Account Permanently
+  - Account Deletion Successful
+  - Account Deletion Unsuccessful
+
+-----Main Goal -- Pop Up Messages for Admin for Tablet.
+
+
+## Name:  Lateefat Salami
+
+## Description: Admin Design - Improved UX writing on Authentication Screen (Log In)
+### Observations/Changes
+- Improved the UX Writing for the Admin authentication screens.
+- Improved UX Writing for Login screens.
+
+-----Main Goal -- Improved User experience of Admin Authentication screens.
+
+## Name:  Lateefat Salami
+
+## Description: Admin Design - Improved UX writing on Authentication Screen (Email notification)
+### Observations/Changes
+- Improved the UX Writing for the Admin authentication screens.
+- Improved UX Writing for Email notification. 
+
+-----Main Goal -- Improved User experience of Admin Authentication screens
+
+
