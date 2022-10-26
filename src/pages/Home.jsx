@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -32,144 +32,130 @@ import linkedin from '../assets/icons/linkedin.svg';
 import upArrow from '../assets/icons/up-arrow.svg';
 import MainNav from '../components/molecules/MainNav';
 import Footer from '../components/molecules/Footer';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 function App() {
+    useEffect(() => {
+        AOS.init();
+      }, []);
+    
+  const toggleMenu = () => {
+    const nav = document.getElementById('nav');
+    const body = document.getElementById('body');
+    // var navItems = document.querySelectorAll("nav a")
+    body.style.overflowY = 'hidden';
+    nav.classList.toggle('hidden');
+  };
+  return (
+    <>
+      <div id="body" className="text-neutral-900 font-campton scroll-smooth">
+        {/* header and navigation */}
+        <header
+          id="hero"
+          className="relative bg-primary-50 px-8 py-9 flex items-center justify-between"
+        >
+          <h1 className="font-cabinetGrotesk text-primary-500 font-bold text-2xl">
+            tech
+            <span className="text-secondary-500">mart</span>
+          </h1>
+          <div className="border-primary-500 border rounded-xl p-3 lg:hidden">
+            <img
+              className=""
+              onClick={toggleMenu}
+              id="hamburger"
+              src={menuIcon}
+              alt=""
+            />
+          </div>
+          <nav
+            id="nav"
+            className="h-screen lg:h-fit w-screen lg:w-fit flex hidden absolute lg:relative z-100 top-0 lg:top-unset left-0 lg:left-unset bg-white lg:bg-transparent lg:flex flex-col lg:flex-row space-y-8 lg:space-y-0 justify-center items-center lg:space-x-5 text-neutral-700"
+          >
+            <img
+              className="lg:hidden absolute top-12 right-16"
+              onClick={toggleMenu}
+              id="hamburger"
+              src={closeMenuIcon}
+              alt=""
+            />
+            <a href="" className="hover:text-secondary-500">
+              Home
+            </a>
+            <a href="#howitworks" className="hover:text-primary-500">
+              How it Works
+            </a>
+            <a href="#marketplace" className="hover:text-primary-500">
+              Market Place
+            </a>
+            <a href="#contactUs" className="hover:text-primary-500">
+              Contact Us
+            </a>
+            <div className="mx-4 space-x-4">
+              <Link
+                className="text-primary-500 font-medium hover:text-secondary-500"
+                to="/login"
+              >
+                Log In
+              </Link>
+              <Link
+                className="text-white text-sm rounded-lg px-5 py-3 bg-primary-500 border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500"
+                to="/create-account"
+              >
+                Create an account
+              </Link>
+            </div>
+          </nav>
+        </header>
+        <main>
+          {/* hero section */}
+          <section className="px-[10%] py-4 text-center flex items-center justify-between bg-primary-50">
+            <div className="clipart-left" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="1000">
+              <img
+                src={heroClipArtLeft}
+                alt=""
+                className="w-[350px] lg:w-[180px] -rotate-12 hidden lg:block md:block md:w-[150px] lg:mt-6"
+              />
+            </div>
+            <div className="main-txt">
+              <h1 className="font-cabinetGrotesk font-bold text-xl sm:text-4xl lg:text-[2.5rem] lg:leading-[1.2] my-3 sm:max-w-md md:max-w-lg sm:mx-auto" data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="1000">
+                <span className="text-secondary-500"> One-stop shop</span> for
+                all things tech - buy, Sell & Swap Quality Items.
+              </h1>
+              <p className="text-neutral-700 font-campton my-5 md:max-w-xl mx-auto" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
+                An online marketplace for techies to buy, sell, and swap items
+                they don't use, as well as connect with other creatives around
+                the world.
+              </p>
+              <div className="sm:w-fit sm:mx-auto sm:flex sm:justify-center sm:items-center md:my-8" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
+                <Link
+                  to="/create-account"
+                  className="font-cabinetGrotesk bg-primary-500 text-white px-5 py-4 rounded-lg sm:h-fit border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500"
+                >
+                  Create an account
+                </Link>
+                <div className="w-fit ml-[5rem] lg:ml-2 md:ml-2 text-center ml-20 px-6 py-3 rounded-lg my-2 hover:bg-primary-100 ml-4 transition-all">
+                  <a
+                    href=""
+                    className="font-cabinetGrotesk text-primary-500 font-semibold"
+                  >
+                    Learn More
+                  </a>
+                  <img className="mx-auto" src={wavyArrow} alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="clipart-right" data-aos="zoom-in-left" data-aos-delay="100" data-aos-duration="1000">
+              <img
+                src={heroClipArtRight}
+                alt=""
+                className="w-[150px] hidden lg:block md:block rotate-12 lg:w-[180px] md:w-[150px] lg:mt-6"
+              />
+            </div>
+          </section>
 
-    const toggleMenu = () => {
-        const nav = document.getElementById('nav');
-        const body = document.getElementById('body');
-        // var navItems = document.querySelectorAll("nav a")
-        body.style.overflowY = 'hidden';
-        nav.classList.toggle('hidden');
-    };
-    return (
-        <>
-            <div
-                id='body'
-                className='text-neutral-900 font-campton scroll-smooth'>
-                {/* header and navigation */}
-                <MainNav/>
-                <main>
-                    {/* hero section */}
-                    <section className='px-[10%] py-4 text-center flex items-center justify-between bg-primary-50'>
-                        <div className='clipart-left'>
-                            <img
-                                src={heroClipArtLeft}
-                                alt=''
-                                className='w-[350px] lg:w-[180px] -rotate-12 hidden lg:block md:block md:w-[150px] lg:mt-6'
-                            />
-                        </div>
-                        <div className='main-txt'>
-                            <h1 className='font-cabinetGrotesk font-bold text-xl sm:text-4xl lg:text-[2.5rem] lg:leading-[1.2] my-3 sm:max-w-md md:max-w-lg sm:mx-auto'>
-                                <span className='text-secondary-500'>
-                                    {' '}
-                                    One-stop shop
-                                </span>{' '}
-                                for all things tech - buy, Sell & Swap Quality
-                                Items.
-                            </h1>
-                            <p className='text-neutral-700 font-campton my-5 md:max-w-xl mx-auto'>
-                                An online marketplace for techies to buy, sell,
-                                and swap items they don't use, as well as
-                                connect with other creatives around the world.
-                            </p>
-                            <div className='sm:w-fit sm:mx-auto sm:flex sm:justify-center sm:items-center md:my-8'>
-                                <Link
-                                    to='/create-account'
-                                    className='font-cabinetGrotesk bg-primary-500 text-white px-5 py-4 rounded-lg sm:h-fit border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500'>
-                                    Create an account
-                                </Link>
-                                <div className='w-fit ml-[5rem] lg:ml-2 md:ml-2 text-center ml-20 px-6 py-3 rounded-lg my-2 hover:bg-primary-100 ml-4 transition-all'>
-                                    <a
-                                        href=''
-                                        className='font-cabinetGrotesk text-primary-500 font-semibold'>
-                                        Learn More
-                                    </a>
-                                    <img
-                                        className='mx-auto'
-                                        src={wavyArrow}
-                                        alt=''
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div className='clipart-right'>
-                            <img
-                                src={heroClipArtRight}
-                                alt=''
-                                className='w-[150px] hidden lg:block md:block rotate-12 lg:w-[180px] md:w-[150px] lg:mt-6'
-                            />
-                        </div>
-                    </section>
-
+                    
                     {/* why choose us? */}
-                    <section className='w-fit mx-auto px-6 py-3 rounded-lg my-5 text-center'>
-                        <h1 className='font-cabinetGrotesk text-2xl font-semibold'>
-                            Why Choose Us?
-                        </h1>
-                        <img
-                            className='mx-auto mb-8'
-                            src={wavyUnderline}
-                            alt=''
-                        />
-                        <p className='text-neutral-700'>
-                            Take control of all your ecommerce transactions
-                        </p>
-
-                        {/* reasons to choose us */}
-                        <div className='space-y-4 sm:space-y-0 my-8 sm:grid sm:grid-cols-2 sm:gap-5 lg:grid-cols-4 lg:w-5/6 lg:mx-auto'>
-                            <div className='bg-primary-50 rounded-lg p-6 max-w-xs mx-auto'>
-                                <img
-                                    className='mx-auto'
-                                    src={bestQuality}
-                                    alt=''
-                                />
-                                <h4 className='font-cabinetGrotesk font-semibold text-xl my-2'>
-                                    Best Quality
-                                </h4>
-                                <p className='text-neutral-700 text-sm'>
-                                    We offer affordable & reliable products with
-                                    the best quality.
-                                </p>
-                            </div>
-                            <div className='bg-primary-50 rounded-lg p-6 max-w-xs mx-auto'>
-                                <img
-                                    className='mx-auto'
-                                    src={meetnconnect}
-                                    alt=''
-                                />
-                                <h4 className='font-cabinetGrotesk font-semibold text-xl my-2'>
-                                    Meet & Connect
-                                </h4>
-                                <p className='text-neutral-700 text-sm'>
-                                    Connect with over 20k people on our platform
-                                    and make sales.
-                                </p>
-                            </div>
-                            <div className='bg-primary-50 rounded-lg p-6 max-w-xs mx-auto'>
-                                <img className='mx-auto' src={p2p} alt='' />
-                                <h4 className='font-cabinetGrotesk font-semibold text-xl my-2'>
-                                    P2P Payment
-                                </h4>
-                                <p className='text-neutral-700 text-sm'>
-                                    P2P payments are convenient, fast, secured
-                                    and easy-to-use.
-                                </p>
-                            </div>
-                            <div className='bg-primary-50 rounded-lg p-6 max-w-xs mx-auto w-full'>
-                                <img className='mx-auto' src={support} alt='' />
-                                <h4 className='font-cabinetGrotesk font-semibold text-xl my-2'>
-                                    24/7 Support
-                                </h4>
-                                <p className='text-neutral-700 text-sm'>
-                                    Do you have a complaint? <br />
-                                    Fill this <a href=''> form </a>
-                                    to get answers ASAP
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-          {/* why choose us? */}
           <section className="w-fit mx-auto px-6 py-3 rounded-lg my-5 text-center">
             <h1 className="font-cabinetGrotesk text-2xl font-semibold">
               Why Choose Us?
@@ -181,7 +167,7 @@ function App() {
 
             {/* reasons to choose us */}
             <div className="space-y-4 sm:space-y-0 my-8 sm:grid sm:grid-cols-2 sm:gap-5 lg:grid-cols-4 lg:w-5/6 lg:mx-auto">
-              <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto">
+              <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
                 <img className="mx-auto" src={bestQuality} alt="" />
                 <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
                   Best Quality
@@ -190,7 +176,7 @@ function App() {
                   We offer affordable & reliable products with the best quality.
                 </p>
               </div>
-              <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto">
+              <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1000">
                 <img className="mx-auto" src={meetnconnect} alt="" />
                 <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
                   Meet & Connect
@@ -199,7 +185,7 @@ function App() {
                   Connect with over 20k people on our platform and make sales.
                 </p>
               </div>
-              <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto">
+              <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto" data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="1000">
                 <img className="mx-auto" src={p2p} alt="" />
                 <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
                   P2P Payment
@@ -208,7 +194,7 @@ function App() {
                   P2P payments are convenient, fast, secured and easy-to-use.
                 </p>
               </div>
-              <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto w-full">
+              <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto w-full" data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="1000">
                 <img className="mx-auto" src={support} alt="" />
                 <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
                   24/7 Support
@@ -239,33 +225,33 @@ function App() {
             {/* steps to buy item */}
             <div className="space-y-4 my-8 mx-auto lg:flex lg:justify-between lg:items-center lg:w-5/6">
               <div className=" max-w-xs mx-auto lg:mr-8">
-                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2">
+                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2" data-aos="zoom-in-right"  data-aos-duration="1000">
                   01. Create an Account
                 </h4>
-                <p className="text-neutral-700 text-sm">
+                <p className="text-neutral-700 text-sm" data-aos="zoom-in-left" data-aos-delay="100"  data-aos-duration="1000">
                   Create an account by completing the registration process
                 </p>
               </div>
               <img className="lg:rotate-90 mx-auto" src={wavyDashed} alt="" />
               <div className="max-w-xs mx-auto lg:mx-8">
-                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2">
+                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2" data-aos="zoom-in-right" data-aos-delay="300" data-aos-duration="1000">
                   02. View Products
                 </h4>
-                <p className="text-neutral-700 text-sm">
+                <p className="text-neutral-700 text-sm" data-aos="zoom-in-left" data-aos-delay="400" data-aos-duration="1000">
                   View correct details of the products you want to buy
                 </p>
               </div>
               <img className="lg:rotate-90 mx-auto" src={wavyDashed} alt="" />
               <div className="max-w-xs mx-auto lg:ml-8">
-                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2">
+                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2" data-aos="zoom-in-right" data-aos-delay="600" data-aos-duration="1000">
                   03. Contact Seller
                 </h4>
-                <p className="text-neutral-700 text-sm">
+                <p className="text-neutral-700 text-sm" data-aos="zoom-in-left" data-aos-delay="700" data-aos-duration="1000">
                   Contact seller, agree on a price and get your products
                 </p>
               </div>
             </div>
-            <button className="bg-primary-500 text-white font-medium text-lg px-6 py-5 rounded-lg border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500">
+            <button className="bg-primary-500 text-white font-medium text-lg px-6 py-5 rounded-lg border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
               Buy an item now
             </button>
           </section>
@@ -284,10 +270,10 @@ function App() {
             {/* steps to list item */}
             <div className="space-y-4 my-8 lg:flex lg:justify-between lg:items-center lg:w-5/6 mx-auto">
               <div className=" max-w-xs mx-auto">
-                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2">
+                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2" data-aos="zoom-in-right" data-aos-duration="1000">
                   01. Create an Account
                 </h4>
-                <p className="text-neutral-700 text-sm">
+                <p className="text-neutral-700 text-sm" data-aos="zoom-in-left" data-aos-delay="100" data-aos-duration="1000">
                   Create an account by completing the registration process
                 </p>
               </div>
@@ -297,10 +283,10 @@ function App() {
                 alt=""
               />
               <div className="max-w-xs mx-auto">
-                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2">
+                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2" data-aos="zoom-in-right" data-aos-delay="300" data-aos-duration="1000">
                   02. List Your Products
                 </h4>
-                <p className="text-neutral-700 text-sm">
+                <p className="text-neutral-700 text-sm" data-aos="zoom-in-left" data-aos-delay="400" data-aos-duration="1000">
                   Upload correct details of your products you want to sell.
                 </p>
               </div>
@@ -310,15 +296,15 @@ function App() {
                 alt=""
               />
               <div className="max-w-xs mx-auto">
-                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2">
+                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2" data-aos="zoom-in-right" data-aos-delay="600" data-aos-duration="1000">
                   03. Get Notified
                 </h4>
-                <p className="text-neutral-700 text-sm">
+                <p className="text-neutral-700 text-sm" data-aos="zoom-in-left" data-aos-delay="700" data-aos-duration="1000">
                   Get notified when a buyer views and wants to buy your products
                 </p>
               </div>
             </div>
-            <button className="bg-primary-500 text-white font-medium text-lg px-6 py-5 rounded-lg border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500">
+            <button className="bg-primary-500 text-white font-medium text-lg px-6 py-5 rounded-lg border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
               List an item now
             </button>
           </section>
@@ -392,7 +378,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <button className="flex my-6 bg-primary-500 rounded-lg px-6 py-4 font-semibold text-white mx-auto w-fit border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500">
+            <button className="flex my-6 bg-primary-500 rounded-lg px-6 py-4 font-semibold text-white mx-auto w-fit border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
               See More
             </button>
           </section>
