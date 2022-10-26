@@ -446,6 +446,14 @@ The button also being the only highlighted button seems to encourage an action w
 -----Main Goal -- Improved UI Design
 
 
+## Name: Afolabi Maryam , Olatide Jegede , Tinuade Adelesi , Adewole Abdulazeez 
+
+#Description: Admin user flow
+### Observation/Changes
+- We designed the admin user flow on Figjam after we've conducted our research.
+
+-----Main Goal -- Creation of Admin user flow for improved user experience.
+
 
 ## Name: Toyeeb Amusan
 
@@ -484,3 +492,361 @@ The button also being the only highlighted button seems to encourage an action w
 - I designed the side navigation for the tablet screens for the admin dashboard to ease navigation for the admin
 
 -----Main Goal -- Improved User Experience, UI Design
+
+
+## Name: Afolabi Maryam 
+
+#Description: Design of Admin User groups- Desktop 
+### Observation/Changes
+- I designed the admin user groups for Desktop view
+
+-----Main Goal -- Improve the Admin Experience while navigating through the dashboard
+
+
+
+## Name: Afolabi Maryam 
+
+#Description: Design of Admin User groups- Tablet 
+### Observation/Changes
+- I designed the admin user groups for Tablet view
+
+-----Main Goal -- Improve the Admin Experience by designing a responsive screen for the tablet view 
+
+
+
+## Name: Afolabi Maryam 
+
+#Description: Design of Admin User groups- Mobile 
+### Observation/Changes
+- I designed the admin user groups for mobile view
+
+-----Main Goal -- Improve the Admin Experience by designing a responsive screen for the mobile view 
+
+
+## Name: Tinuade Adelesi
+
+## Description: Admin dashboard - Desktop View
+### Observation/Changes
+- I designed the desktop view of the admin dashboard
+- The dashboard comprises of the analytics chart, the statistics section( which includes the total user of the platform and the total products uploaded on the platform), the top user section and also the recent uploaded product section
+
+
+-----Main Goal -- Simplify the informations that is being reviewed on the admin dashboard for easy processing
+
+
+## Name: Akoja Olamide
+
+## Description: Admin dashboard - Mobile View
+### Observation/Changes
+- I designed the mobile view of the admin dashboard
+- The dashboard comprises of the analytics chart, the statistics section( which includes the total user of the platform and the total products uploaded on the platform), the top user section and also the recent uploaded product section
+
+
+-----Main Goal -- Simplify the informations that is being reviewed on the admin dashboard for easy processing
+
+
+## Name: Akoja Olamide
+
+## Description: Admin dashboard: Search Results - Mobile View
+### Observation/Changes
+- I designed the mobile view of the search results of admin dashboard
+- I designed the empty states and filled states of the search results for the admin dashboard
+
+
+-----Main Goal -- Present admins with a quick overview of products and users
+
+
+## Name: Akoja Olamide
+
+## Description: Admin dashboard: Delete Products - Mobile View
+### Observation/Changes
+- I designed the mobile view of the delete products of admin dashboard
+- I designed the first screen, which is a pop up screen displaying the following details:
+- a write up that confirms the action
+- a "yes, proceed" button
+- a "no, cancel action" button
+I designed a second screen which is an alert screen that confirms that the deletion process is successful
+
+-----Main Goal -- Design a responsive and easy to navigate delete product flow for the admin
+
+
+## Name: Akoja Olamide
+
+## Description: Admin dashboard: Make Product Unavailable - Mobile View
+### Observation/Changes
+- I designed the first screen which is a pop up that displayed the following details:
+- a write up that confirms the action
+- a "yes, proceed" button
+- a "no, cancel action" button
+I designed a second screen which is an alert screen that confirms that the deletion process is successful
+
+-----Main Goal -- Build a responsive and easy to navigate the make product available flow for the admin
+
+## Name: Nnadiukwu Chidiebere Oscar 
+
+## Description: Ux Writing 
+### Observation/Changes
+I observed some Ux writing inconsistencies towards reaching the target audience of the product and also observed 
+issues relating to product tone and worked on a rewrite of the following screens:
+ - Users' Dashboard - Home
+- Users' Dashboard - Messages
+- Users' Dashboard - Product Description Pop Up
+- Users' Dashboard - Product Wishlist Alert
+- Users' Dashboard - Edit Product Details
+- Users' Dashboard - View Uploaded Product Alert
+- Users' Dashboard - Notifications
+- Users' Dashboard - Profile
+-----Main Goal -- Improving user experience and interaction with the product 
+
+
+## Name: Tinuade Adelesi
+
+## Description: Admin dashboard: Search Results - Desktop View
+### Observation/Changes
+- I designed the Desktop view of the search results of admin dashboard
+- I designed the empty states and filled states of the search results for the admin dashboard whereby the admin can navigate easily between "users" and "products" results
+
+
+-----Main Goal -- Present admins with a quick overview of products and users results that was searched
+
+
+## Name: Tinuade Adelesi
+
+## Description: Admin Dashboard: Delete Product - (Desktop view)
+### Observation/Changes
+- I designed the desktop view of the delete products of admin dashboard
+- I designed the first screen, which is a pop up screen displaying the following details:
+- a write up that confirms the action
+- a "yes, proceed" button
+- a "no, cancel action" button
+I designed a second screen which is an alert screen that confirms that the deletion process is successful
+
+-----Main Goal -- Design a responsive and easy to navigate delete product flow for the admin 
+
+
+
+## Name: Tinuade Adelesi
+
+## Description: Admin dashboard: Make Product Unavailable - Desktop View
+### Observation/Changes
+- I designed the first screen which is a pop up that displayed the following details:
+- a write up that confirms the action
+- a "yes, proceed" button
+- a "no, cancel action" button
+I designed a second screen which is an alert screen that confirms that the deletion process is successful
+
+-----Main Goal -- Build a responsive and easy to navigate the make product available flow for the admin
+
+
+## Name: Anees Adeyinka
+
+## Description: Admin design: Products Page
+### Observation/Changes
+- I designed the admin product page (desktop view)
+- Admin can sort products based on name, category and latest
+- I created the empty state for the products page and search page
+- I created the search page for the products page
+- I designed more option button with three options: "view details" , "mark as unavailable" and "delete product"
+
+
+-----Main Goal -- To make viewing and searching for uploaded products easy and to give admin access to to "delete" or "make products unavailable/available"
+
+
+## Name: Motunrayo Agoro
+
+## Description: Admin design: Authentication screen (Log in) - Desktop view
+### Observation/Changes
+- I designed the admin authentication screen (desktop view)
+- Admin can login or reset password
+- I ensured that the design followed the design style guide provided by the design lead
+- I rearranged the authentication screens after going through the design flow
+
+-----Main Goal -- To design a responsive and easy to navigate the authentication screens flow for the admin
+
+
+## Name: Motunrayo Agoro
+
+## Description: Admin design: Authentication screen (Log in) - Tablet view
+### Observation/Changes
+- I created the admin authentication screen (Tablet view)
+- I designed the 6 screens of the login flow using the style guide
+- Admin can login or reset password
+- I ensured that the design followed the design style guide provided by the design lead
+- I made sure the ipad screen followed the design flow from login to reset password, to password reset succesful
+- Admin can receive reset pin email when admin forgets password
+- I rearranged the screens and rename so such that it can be easily accessed 
+ 
+
+-----Main Goal -- To design a responsive and easy to navigate the authentication screens flow of the ipad screen for the admin
+
+
+## Name: Motunrayo Agoro
+
+## Description: Admin design: Authentication screen (Log in) - mobile view
+### Observation/Changes
+- I created the admin authentication screen (mobile view)
+- I designed the 6 screens of the login flow using the style guide
+- Admin can login or reset password
+- I ensured that the design followed the design style guide provided by the design lead
+- I made sure the mobile screen followed the design flow from login to reset password, to password reset succesful
+- Admin can receive reset pin email when admin forgets password
+- I rearranged the screens and rename so such that it can be easily accessed 
+ 
+
+-----Main Goal -- To design a responsive and easy to navigate the authentication screens flow of the mobile screen for the admin
+
+
+## Name: Motunrayo Agoro
+
+## Description: Admin design: Authentication screen (Email notification) - desktop view
+### Observation/Changes
+- I created the admin authentication email notification screen (desktop view)
+- I designed the 2 screens of the email notification flow using the style guide
+- Admin can receive email pop up notification 
+- I ensured that the design followed the design style guide provided by the design lead
+- Admin can receive reset pin email when admin forgets password
+- I rearranged the screens and rename so such that it can be easily accessed 
+ 
+ 
+ -----Main Goal -- To design a responsive and easy to navigate the authentication email notification screens of the desktop screen for the admin
+
+
+## Name: Oluwatosin Alabi
+
+## Description: Improved Ux Writing on product details pop-up screen
+### Observation/Changes
+-I observed some Ux writing inconsistencies on the product details and also observed 
+ issues relating to product tone and worked on a rewrite.
+- Improved ux writing
+- Users' Dashboard - Product Description Pop Up
+
+-----Main Goal -- Improving user experience and interaction with the product 
+
+
+## Name: Oluwatosin Alabi
+
+## Description: Improved UX writing on Delete Product Flow Screens
+### Observation/Changes
+-I observed some Ux writing inconsistencies on the delete product screens and also observed 
+ issues relating to product tone and worked on a rewrite.
+- Improved ux writing
+- Users' Dashboard - Delete Product Flow Screens
+
+-----Main Goal -- Improving user experience and interaction with the product
+
+
+
+## Name: Oluwatosin Alabi
+
+## Description: Improved UX writing on Make Product Unavailable Flow Screens
+### Observation/Changes
+- I observed some Ux writing inconsistencies on the delete product screens and also observed 
+  issues relating to product tone and worked on a rewrite.
+- I improved UX writing on the "make product unavailable product" flow screens.
+- I ensured the improvement was done on all screens (desktop, tablet and mobile)
+- I ensured the use the colors and typography on the style guide to ensure consistency
+
+-----Main Goal -- Improving user experience and interaction with the product
+
+## Name: Anees Adeyinka
+
+## Description: Admin Design - Products Details Pop-Up (Desktop View)
+### Observation/Changes
+- Created a popup to show product details from admin product page
+- Product details include: name, category, price, seller, seller's email, product availability tag and product description 
+
+-----Main Goal -- Allow admins view product details at a glance
+
+
+## Name: Anees Adeyinka
+
+## Description: Admin Design - Products Search Results (Desktop View)
+### Observation/Changes
+- Created the search page for products on the platform.
+- Created the empty search page for no result on a particular item or faulty internet connection. 
+
+-----Main Goal -- Allow admins to search for products with ease
+
+
+## Name: Anees Adeyinka
+
+## Description: Admin Design - Product Page: Make Product Unavailable & Delete Product (Desktop View)
+### Observation/Changes
+- Designed the popup to make products unavailable/available or "delete product permanently"
+- Designed the confirmation popup for the actions described above
+- Designed the alert screens for the actions taken above
+
+-----Main Goal -- Allow admins to make products available/unavailable or delete a product permanently
+
+
+## Name:  Ohurogu Ukachukwu
+
+## Description: Mobile Admin Nav Bar
+### Observations/Changes
+- Following the style guide created by Nora and Ayomide, I designed the Admin Nav Bar for Moblie device using the flow chart.
+- The Nav Bar consists of the following sections:
+   - A search field.
+   - Dashboard.
+   - Messages.  
+   - Peoducts. 
+   - Users.
+   - Profile. 
+   - Notification. 
+   - Log Out button.
+ 
+-----Main Goal -- Mobile Navigtion Bar for Admin.
+
+
+## Name:  Ohurogu Ukachukwu
+
+## Description: Admin Design - User Profile (Mobile view)
+### Observations/Changes
+- Created buttons for the Admin to suspend or delete a users account.
+- The Admin can see the user details on this page.
+
+-----Main Goal -- Allow Admin to keep track of the users on the platform
+
+
+## Name:  Ohurogu Ukachukwu
+
+## Description: Admin Design - Delete Account Pop Up (Desktop View)
+### Observations/Changes
+- Designed Pop Up page for Admin for Desktop view, for the following messages;
+  - Delete Account Permanently
+  - Account Deletion Successful
+  - Account Deletion Unsuccessful
+
+-----Main Goal -- Pop Up Messages for Admin.
+
+
+## Name:  Ohurogu Ukachukwu
+
+## Description: Admin Design - Delete Account Pop Up (Tablet View)
+### Observations/Changes
+- Designed Pop Up page for Admin for Tablet view, for the following messages;
+  - Delete Account Permanently
+  - Account Deletion Successful
+  - Account Deletion Unsuccessful
+
+-----Main Goal -- Pop Up Messages for Admin for Tablet.
+
+
+## Name:  Lateefat Salami
+
+## Description: Admin Design - Improved UX writing on Authentication Screen (Log In)
+### Observations/Changes
+- Improved the UX Writing for the Admin authentication screens.
+- Improved UX Writing for Login screens.
+
+-----Main Goal -- Improved User experience of Admin Authentication screens.
+
+## Name:  Lateefat Salami
+
+## Description: Admin Design - Improved UX writing on Authentication Screen (Email notification)
+### Observations/Changes
+- Improved the UX Writing for the Admin authentication screens.
+- Improved UX Writing for Email notification. 
+
+-----Main Goal -- Improved User experience of Admin Authentication screens
+
+

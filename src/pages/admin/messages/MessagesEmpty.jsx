@@ -1,10 +1,10 @@
-import noMessages from "../assets/images/no-messages.png";
-import MessagesHeader from "../components/molecules/MessagesHeader";
-import { Link } from "react-router-dom";
+import noMessages from '../../../assets/images/no-messages.png';
+import MessagesHeader from '../../../components/molecules/MessagesHeader';
+import { Link } from 'react-router-dom';
 
 function MessagesEmpty() {
   return (
-    <div className="font-cabinetGrotesk lg:pl-72">
+    <div className="font-cabinetGrotesk">
       <MessagesHeader />
 
       <main>

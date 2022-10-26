@@ -1,5 +1,5 @@
-import React from "react";
-import image from "../../assets/icons/33.png";
+import React from 'react';
+import image from '../../assets/icons/SadFace.png';
 
 const Modal = ({ removeItem, id }) => {
   return (

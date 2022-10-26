@@ -1,23 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @tailwind utilities;
 
-
-.side{
-    height: calc(100vh - theme(spacing.12))
+.side {
+  height: calc(100vh - theme(spacing.12));
 }
-.tab{
-    width: calc(100vw - theme(width.80))
-}
-@font-face {
-    font-family: "CabinetGrotesk";
-    src: url("../src/assets/fonts/CabinetGrotesk-Regular.otf");
+.tab {
+  width: calc(100vw - theme(width.80));
 }
 @font-face {
-    font-family: "Campton";
-    src: url("../src/assets/fonts/Campton-LightDEMO.otf");
+  font-family: 'CabinetGrotesk';
+  src: url('../src/assets/fonts/CabinetGrotesk-Regular.otf');
 }
-
+@font-face {
+  font-family: 'Campton';
+  src: url('../src/assets/fonts/Campton-LightDEMO.otf');
+}
