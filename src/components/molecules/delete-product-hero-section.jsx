@@ -13,7 +13,7 @@ const Hero = () => {
   const { value, alert, message, popUp, deletePopUp } = UseAppContext();
 
   return (
-    <div>
+    <div className="w-screen">
       <div className="logo-container flex justify-between items-center mb-4 lg:py-4">
         <img src={logo} alt="" srcset="" className="block md:hidden" />
         <img
