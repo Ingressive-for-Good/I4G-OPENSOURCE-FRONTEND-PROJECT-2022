@@ -5,7 +5,8 @@ import totalUsersIcon from "../assets/icons/total-users.svg";
 import userAvatar from "../assets/icons/avatar.png";
 import { productData } from "../assets/data/AdminDashboardData";
 import { chart } from "../assets/data/AdminDashboardData";
-import optionsIcon from "../assets/icons/optionsIcon.svg"
+import optionsIcon from "../assets/icons/optionsIcon.svg";
+import chevronDown from "../assets/icons/chevron-down.svg";
 
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
@@ -125,26 +126,17 @@ function AdminDashboard() {
             <div className="flex gap-3 items-center px-6 md:px-0">
                 <p className=" font-cabinetGrotesk text-[18px] font-semibold">Analytics:</p>
                 <p className="flex items-center gap-2 text-small text-blue-700">
-                    Products
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 9L12 15L18 9" stroke="#131418" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    Products <img src={chevronDown} alt="" />
                 </p>
             </div>
             {/* CONTAINER FOR THE CHART */}
             <div className="mt-10 font-cabinetGrotesk font-semibold w-[90%] mx-auto md:mx-0 h-[500px] md:w-[69%] py-6 bg-blue-100 rounded-md">
                 <div className="flex justify-between items-center px-3 text-small text-blue-700">
                     <p className="flex items-center gap-1">
-                        October 2022
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 9L12 15L18 9" stroke="#131418" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        October 2022 <img src={chevronDown} alt="" />
                     </p>
                     <p className="flex items-center gap-1">
-                        All days
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6 9L12 15L18 9" stroke="#131418" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        All days <img src={chevronDown} alt="" />
                     </p>
                 </div>
                 <ResponsiveContainer width="100%" height="100%">
@@ -184,9 +176,9 @@ function AdminDashboard() {
                                     <th className="px-2 py-4">Date Uploaded</th>
                                 </div>
                             </tr>
-                            {productData.map((products, index)=>{
+                            {productData.map((products)=>{
                                 return (
-                                    <tr className="border-b-2 items-center">
+                                    <tr key={products.id} className="border-b-2 items-center">
                                         <td className="border-b px-2 py-4 flex gap-6 items-center">
                                             <img src={products.image} alt="avatar" />
                                             <div className="flex items-center gap-2  w-[100%] justify-between mr-6">
