@@ -42,7 +42,7 @@ const Hero = () => {
             src={search}
             alt=""
             srcset=""
-            className="absolute left-2 top-2 md:top-4 md:left-8 lg:left-2 lg:top-5"
+            className="absolute left-2 top-2 md:top-4 md:left-8 lg:left-2 lg:top-4"
           />
           <div className="hidden lg:flex gap-2">
             <img src={notification} alt="" srcset="" />
