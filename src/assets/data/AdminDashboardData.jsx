@@ -2,6 +2,7 @@ import item1 from "../images/item1.png"
 import item2 from "../images/item2.png"
 import item3 from "../images/item3.png"
 import item4 from "../images/item4.png"
+import avatar from "../images/avatar7.png"
 
 export const chart = [
     { name: "5-10", Products: "500"},
@@ -47,5 +48,56 @@ export const productData = [
         category: "Laptops",
         user: "Anees Adeyinka",
         uploaded: "10/10/2022",
+    },
+];
+
+export const userData = [
+    {
+        id: 1,
+        image: avatar,
+        name: "Nora Eboesomi",
+        email: "abgctewr@gmail.com",
+        phone: "+234 812 345 6789",
+        registered: "10/10/2022",
+    },
+    {
+        id: 2,
+        image: avatar,
+        name: "Nora Eboesomi",
+        email: "abgctewr@gmail.com",
+        phone: "+234 812 345 6789",
+        registered: "10/10/2022",
+    },
+    {
+        id: 3,
+        image: avatar,
+        name: "Nora Eboesomi",
+        email: "abgctewr@gmail.com",
+        phone: "+234 812 345 6789",
+        registered: "10/10/2022",
+    },
+    {
+        id: 4,
+        image: avatar,
+        name: "Nora Eboesomi",
+        email: "abgctewr@gmail.com",
+        phone: "+234 812 345 6789",
+        registered: "10/10/2022",
+    },
+    {
+        id: 5,
+        image: avatar,
+        name: "Nora Eboesomi",
+        email: "abgctewr@gmail.com",
+        phone: "+234 812 345 6789",
+        registered: "10/10/2022",
+    },
+    {
+        id: 6,
+        image: avatar,
+        name: "Nora Eboesomi",
+        email: "abgctewr@gmail.com",
+        phone: "+234 812 345 6789",
+        registered: "10/10/2022",
     },
 ];

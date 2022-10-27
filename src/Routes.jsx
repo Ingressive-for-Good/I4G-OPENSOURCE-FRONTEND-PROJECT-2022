@@ -38,6 +38,8 @@ import AdminDeleteAccountFailPopup from './components/molecules/AdminDeleteAccou
 import AdminDeleteAccountSuccessfullPopup from './components/molecules/AdminDeleteAccountSuccessfullPopup';
 import AdminDashboard from './pages/AdminDashboard';
 import ProductSearchResults from './pages/ProductSearchReslts';
+import UserSearchResults from './pages/UserSearchResults';
+import AdminEmptySearchResults from './pages/AdminEmptySearchResult';
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -72,6 +74,14 @@ function Routes() {
                 <Route
                     path='/admin/product-search-results'
                     element={<ProductSearchResults/>}
+                />
+                <Route
+                    path='/admin/empty-search-results'
+                    element={<AdminEmptySearchResults/>}
+                />
+                <Route
+                    path='/admin/user-search-results'
+                    element={<UserSearchResults/>}
                 />
                 <Route
                     path='/admin/products'

@@ -1,21 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import NavbarAdmin from "../components/molecules/NavbarAdmin";
 import userAvatar from "../assets/icons/avatar.png";
-import { productData } from "../assets/data/AdminDashboardData";
+import { userData } from "../assets/data/AdminDashboardData";
 import optionsIcon from "../assets/icons/optionsIcon.svg";
 import chevronDown from "../assets/icons/chevron-down.svg";
-import AdminMoreOptions from "../components/molecules/AdminMoreOptions";
 
 
-function ProductSearchResults() {
-
-    const [showMore, setShowMore] = useState(false)
-
-    let more
-
-    if(showMore){
-        more = <AdminMoreOptions />
-    }
+function UserSearchResults() {
 
     return(
         <div className="md:ml-[230px] md:mt-[40px]">
@@ -60,43 +51,38 @@ function ProductSearchResults() {
                 </div>
                 <table className="w-[100%]">
                         <tr className="border-b-2 rounded-t-lg">
-                            <th className="text-left px-2 py-4">Item(s)</th>
+                            <th className="text-left px-2 py-4">Name</th>
                             <div className="hidden md:contents">
-                                <th className="px-2 py-4">Price</th>
-                                <th className="px-2 py-4">Category</th>
+                                <th className="px-2 py-4">Email Address</th>
+                                <th className="px-2 py-4">Phone Number</th>
                             </div>
                             <div className="hidden lg:contents">
-                                <th className="px-2 py-4">User</th>
-                                <th className="px-2 py-4">Date Uploaded</th>
+                                <th className="px-2 py-4">Date Registered</th>
                             </div>
                         </tr>
-                        {productData.map((products)=>{
+                        {userData.map((user)=>{
                             return (
-                                <tr key={products.id} className="border-b-2 items-center">
+                                <tr key={user.id} className="border-b-2 items-center">
                                     <td className="border-b px-2 py-4 flex gap-6 items-center">
-                                        <img src={products.image} alt="avatar" />
+                                        <img src={user.image} alt="avatar" />
                                         <div className="flex items-center gap-2  w-[100%] justify-between mr-6">
-                                            <p>{products.discription}</p>
-                                            <img onClick={() => setShowMore(!showMore)} className="md:hidden" src={optionsIcon} alt="icon" />
-                                            {more}
+                                            <p>{user.name}</p>
+                                            <img className="md:hidden" src={optionsIcon} alt="icon" />
                                         </div>
                                     </td>
                                     <div className="hidden md:contents">
                                         <td className="px-2 relative bottom-5">
-                                            <p className="text-gray-600">{products.price}</p>
+                                            <p className="text-gray-600">{user.email}</p>
                                         </td>
                                         <td className="px-2 relative bottom-5">
-                                            <p className="text-gray-600">{products.category}</p>
+                                            <p className="text-gray-600">{user.phone}</p>
                                         </td>
                                     </div>
                                     <div className="hidden lg:contents">
                                         <td className="px-2 relative bottom-5">
-                                            <p className="text-gray-600">{products.user}</p>
-                                        </td>
-                                        <td className="px-2 relative bottom-5">
                                             <div className="flex items-center justify-between mr-4">
-                                                <p className="text-gray-600">{products.uploaded}</p>
-                                                <img onClick={() => setShowMore(!showMore)} src={optionsIcon} alt="icon" />
+                                                <p className="text-gray-600">{user.registered}</p>
+                                                <img src={optionsIcon} alt="icon" />
                                             </div>
                                         </td>
                                     </div>
@@ -127,4 +113,4 @@ function ProductSearchResults() {
     )
 }
 
-export default ProductSearchResults;
+export default UserSearchResults;
