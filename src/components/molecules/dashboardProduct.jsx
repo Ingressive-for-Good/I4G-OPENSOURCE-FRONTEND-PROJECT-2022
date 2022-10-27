@@ -23,10 +23,10 @@ export const NoItem = () => {
     return (
       <div className="flex justify-center items-center flex-col text-center">
         <img src={noItem} alt="" srcset="" />
-        <h3 className="font-cabinet font-bold text-xl md:text-2xl">
+        <h3 className="font-cabinet font-bold text-xl md:text-2xl text-neutral-900">
           No items found
         </h3>
-        <p className="font-medium font-campton text-base md:text-xls">
+        <p className="font-medium font-campton text-base md:text-xls text-neutral-600">
           We couldn’t find what you searched for Try a different keyword
         </p>
       </div>
