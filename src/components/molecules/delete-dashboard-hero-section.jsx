@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../../assets/icons/web.png";
 import vector from "../../assets/icons/bar.png";
 
@@ -9,7 +9,16 @@ import search from "../../assets/icons/search.png";
 import { UseAppContext } from "../../../utils/context";
 
 const Hero = () => {
-  const { dashboard } = UseAppContext();
+  const { dashboard, setDashboard } = UseAppContext();
+
+  const [input, setInput] = useState("");
+
+  useEffect(() => {
+    const newDashboard = dashboard.filter(
+      (value) => value.name.toLowerCase().indexOf(input.toLowerCase()) > -1
+    );
+    setDashboard(newDashboard);
+  }, [input]);
 
   return (
     <div>
@@ -33,16 +42,18 @@ const Hero = () => {
         <div className=" gap-4 items-center relative block lg:flex my-3 lg:my-0 lg:w-1/2">
           <input
             type="text"
-            name=""
-            id=""
+            name="input"
+            id="input"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
             placeholder="Search for gadgets"
             className="border-2 border-neutral-500 rounded-md p-2 md:py-3 px-8 md:px-14 lg:px-8 lg:py-2 placeholder:text-neutral-500 placeholder:text-small w-full lg:w-9/12"
           />
           <img
             src={search}
             alt=""
-            srcset=""
-            className="absolute left-2 top-2 md:top-4 md:left-8 lg:left-2 lg:top-4"
+            srcSet=""
+            className="absolute left-2 top-3 md:top-4 md:left-8 lg:left-2 lg:top-5 "
           />
           <div className="hidden lg:flex gap-2">
             <img src={notification} alt="" srcset="" />

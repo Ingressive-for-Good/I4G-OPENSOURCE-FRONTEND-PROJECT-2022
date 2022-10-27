@@ -3,6 +3,7 @@ import { UseAppContext } from "../../../utils/context";
 import chat from "../../assets/icons/Chat.png";
 import left from "../../assets/icons/left.png";
 import right from "../../assets/icons/right.png";
+import noItem from "../../assets/icons/noItem.png";
 
 export const Chat = () => {
   return (
@@ -15,6 +16,22 @@ export const Chat = () => {
       />
     </div>
   );
+};
+export const NoItem = () => {
+  const { dashboard } = UseAppContext();
+  if (dashboard.length === 0) {
+    return (
+      <div className="flex justify-center items-center flex-col text-center">
+        <img src={noItem} alt="" srcset="" />
+        <h3 className="font-cabinet font-bold text-xl md:text-2xl">
+          No items found
+        </h3>
+        <p className="font-medium font-campton text-base md:text-xls">
+          We couldn’t find what you searched for Try a different keyword
+        </p>
+      </div>
+    );
+  }
 };
 
 const DashboardProduct = () => {
@@ -76,25 +93,23 @@ const DashboardProduct = () => {
           );
         })}
       </div>
-      <div className="flex justify-between items-center w-full">
-        <p className="text-neutral-700 font-normal md:text-sm">
-          Showing {end} of {dashboard.length}{" "}
-          {dashboard.length < 2 ? "result" : "result(s)"}
-        </p>
-        <div className="flex justify-center items-center gap-3">
-          <img src={left} alt="" srcset="" onClick={decrease} />
-          <p className="text-neutral-50 bg-primary-500 text-sText p-1 rounded-sm md:text-sm md:px-2 md:rounded">
-            {count}
+      {dashboard.length > 1 && (
+        <div className="flex justify-between items-center w-full">
+          <p className="text-neutral-700 font-normal md:text-sm">
+            Showing {end} of {dashboard.length}{" "}
+            {dashboard.length < 2 ? "result" : "result(s)"}
           </p>
-          <img
-            src={right}
-            alt=""
-            srcset=""
-            onClick={increase}
-            classname="w-96"
-          />
+          <div className="flex justify-center items-center gap-3">
+            <img src={left} alt="" srcSet="" onClick={decrease} />
+            <p className="text-neutral-50 bg-primary-500 text-sText p-1 rounded-sm md:text-sm md:px-2 md:rounded">
+              {count}
+            </p>
+            <img src={right} alt="" srcSet="" onClick={increase} />
+          </div>
         </div>
-      </div>
+      )}
+
+      <NoItem />
     </div>
   );
 };
