@@ -40,6 +40,7 @@ import AdminDashboard from './pages/AdminDashboard';
 import ProductSearchResults from './pages/ProductSearchReslts';
 import UserSearchResults from './pages/UserSearchResults';
 import AdminEmptySearchResults from './pages/AdminEmptySearchResult';
+import SearchProductsByUser from './pages/SearchProductsByUser';
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -82,6 +83,10 @@ function Routes() {
                 <Route
                     path='/admin/user-search-results'
                     element={<UserSearchResults/>}
+                />
+                <Route
+                    path='/admin/search-product-by-users'
+                    element={<SearchProductsByUser />}
                 />
                 <Route
                     path='/admin/products'
