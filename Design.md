@@ -957,3 +957,12 @@ a "no, cancel action" button
 
 -----Main Goal -- Improve the Admin Experience for editing their information.
 
+
+## Name: Michael Aniefiok
+
+#Description: Admin Design - Profile - Mobile 
+### Observation/Changes
+- I designed the admin profile page for editing Admin information.
+
+-----Main Goal -- Improve the Admin Experience for editing their information.
+
