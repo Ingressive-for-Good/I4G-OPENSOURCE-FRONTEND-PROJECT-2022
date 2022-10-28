@@ -862,3 +862,13 @@ I designed a second screen which is an alert screen that confirms that the delet
 ## Name: OLAWALE AYOOLA
 ## Description: Designed admin Message page
 ### Observations/Changes: I researched and came up with a design for the mobile , tablet and desktop view 
+
+
+## Name:  Egbo-Egbo Prosper
+
+## Description: Admin Design - Improved UX writing on Side Navigation 
+### Observations/Changes
+- Improved the UX Writing for the side navigation
+
+-----Main Goal -- Improved UX writing on Side Navigation 
+
