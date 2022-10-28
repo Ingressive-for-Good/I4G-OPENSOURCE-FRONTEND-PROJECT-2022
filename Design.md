@@ -897,3 +897,18 @@ I designed a second screen which is an alert screen that confirms that the delet
 - I designed a filled state page - a page that shows the list of uploaded products by users of the platform.
 
 -----Main Goal -- Admin Design -  I created an easily accessible flow for the admin design page.
+
+## Name:  Ekezie Victor
+
+## Description: Admin Design - Products Details Pop-up (Tablet view)
+### Observations/Changes 
+- I designed the tablet view of the product description pop-up screen.
+- The product details pop up screen comprised of;
+Product name
+Product category
+Seller details
+Product price
+A description of the product
+Available and Unavailable tag feature
+
+-----Main Goal -- Admin Design -  I created a functional product description page for the admin screen.
