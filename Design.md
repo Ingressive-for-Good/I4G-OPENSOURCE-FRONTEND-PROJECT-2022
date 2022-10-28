@@ -966,3 +966,13 @@ a "no, cancel action" button
 
 -----Main Goal -- Improve the Admin Experience for editing their information.
 
+
+## Name: Michael Aniefiok
+
+#Description: User Design - Profile - Desktop 
+### Observation/Changes
+- I designed the user profile page for editing user information.
+
+-----Main Goal -- Improve the User Experience for editing their information and saving it easily.
+
+
