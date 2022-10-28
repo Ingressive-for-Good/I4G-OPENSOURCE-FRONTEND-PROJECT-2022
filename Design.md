@@ -923,3 +923,17 @@ Available and Unavailable tag feature
 - I made sure to use the colors, typography, icons and side navigation on the style guide to ensure consistency
 
 -----Main Goal -- Admin Design - I created an intuitive search page that covers for a range of results.
+
+## Name:  Ekezie Victor
+
+## Description: Admin Design - Products page: Make product unavailable & Delete product (Tablet view)
+### Observations/Changes 
+- I designed the tablet view of the "make product unavailable" flow on the admin home dashboard.
+- I designed a first screen which is a pop up and it should display the following details:
+a write up that confirms the action
+a "yes, proceed" button
+a "no, cancel action" button
+- I designed a second screen which is an alert screen that confirms that the deletion process is successful.
+- I ensured you use the colors, typography, icons and side navigation on the style guide to ensure consistency
+
+-----Main Goal -- Admin Design - I created a user friendly page that makes it easy to navigate the tasks of making a product unavailable or deleting a product.
