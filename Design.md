@@ -872,3 +872,12 @@ I designed a second screen which is an alert screen that confirms that the delet
 
 -----Main Goal -- Improved UX writing on Side Navigation 
 
+
+## Name:  Egbo-Egbo Prosper
+
+## Description: Admin Design - Improved UX writing on Admin Dashboard
+### Observations/Changes
+- Improved the UX Writing for the Admin Dashboard
+
+-----Main Goal -- Admin Design - Improved UX writing on Admin Dashboard
+
