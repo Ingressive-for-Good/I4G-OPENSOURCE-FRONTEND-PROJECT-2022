@@ -881,3 +881,10 @@ I designed a second screen which is an alert screen that confirms that the delet
 
 -----Main Goal -- Admin Design - Improved UX writing on Admin Dashboard
 
+## Name:  Egbo-Egbo Prosper
+
+## Description: Admin Design -  Improved UX writing on Admin Dashboard: Messages
+### Observations/Changes
+- Improved the UX Writing for the Admin Dashboard: Messages
+-----Main Goal -- Admin Design -  Improved UX writing on Admin Dashboard: Messages
+
