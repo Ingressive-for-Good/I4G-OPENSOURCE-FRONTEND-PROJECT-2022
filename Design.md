@@ -912,3 +912,14 @@ A description of the product
 Available and Unavailable tag feature
 
 -----Main Goal -- Admin Design -  I created a functional product description page for the admin screen.
+
+## Name:  Ekezie Victor
+
+## Description: Admin Design - Products search results (Tablet view)
+### Observations/Changes 
+- I designed the tablet view of the product search results page.
+- I designed an empty state screen - when the search input cannot be found or the internet connection is faulty
+- I designed a filled state screen - showing the search result
+- I made sure to use the colors, typography, icons and side navigation on the style guide to ensure consistency
+
+-----Main Goal -- Admin Design - I created an intuitive search page that covers for a range of results.
