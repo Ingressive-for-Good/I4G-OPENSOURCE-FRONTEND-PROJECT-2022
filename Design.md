@@ -888,3 +888,13 @@ I designed a second screen which is an alert screen that confirms that the delet
 - Improved the UX Writing for the Admin Dashboard: Messages
 -----Main Goal -- Admin Design -  Improved UX writing on Admin Dashboard: Messages
 
+## Name:  Ekezie Victor
+
+## Description: Admin Design - Products page (Tablet view)
+### Observations/Changes
+- I designed the tablet view that enables the admin to be able to see the products uploaded for sale by the users pf the platform.
+- I designed an empty state page - a page that indicates that no user have uploaded any product.
+- I designed a filled state page - a page that shows the list of uploaded products by users of the platform.
+
+-----Main Goal -- Admin Design -  I created an easily accessible flow for the admin design page.
+
