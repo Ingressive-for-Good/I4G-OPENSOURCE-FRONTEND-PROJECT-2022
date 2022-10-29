@@ -74,6 +74,26 @@
   */
 }
 
+/* Dashboard notification dialog style */
+.notification_clip-path {
+  clip-path: polygon(0 6%, 72% 6%, 74% 0%, 76% 6%, 100% 6%, 100% 100%, 0 100%);
+
+  border-radius: 7px;
+}
+@media screen and (max-width: 768px) {
+  .notification_clip-path {
+    clip-path: polygon(
+      0 6%,
+      72% 6%,
+      74% 0%,
+      76% 6%,
+      100% 6%,
+      100% 100%,
+      0 100%
+    );
+  }
+}
+
 /* notification modal style */
 .notification-modal {
   /* display: none; */
@@ -131,7 +151,6 @@
     margin-right: 2rem;
     display: flex;
 
-    
     flex-direction: column;
   }
   .typo {

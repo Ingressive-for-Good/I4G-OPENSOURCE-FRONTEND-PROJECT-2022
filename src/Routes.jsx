@@ -1,37 +1,5 @@
-import React from 'react';
+import React from "react";
 
-import { Route, Routes as Switch } from 'react-router-dom';
-import AddNewProductPage1 from './pages/AddNewProductPage1';
-import PhoneNumberVerification from './pages/PhoneNumberVerification';
-import Login from './pages/Login';
-import Help from './pages/HelpandSupport';
-import DashboardPage from './pages/DashboardPage';
-import Kyc from './pages/Kyc';
-import EmailVerify from './pages/EmailVerify';
-import Home from './pages/Home';
-import ViewProducts from './components/molecules/Products';
-import EmptyWishlistViewProducts from './pages/EmptyWishlistViewProducts';
-import WishlistViewProducts from './pages/WishlistViewProducts';
-import CreateAccount from './pages/CreateAccount';
-import DeleteProduct from './pages/deleteProduct';
-import ResetPasswordPage from './pages/PasswordResetPage';
-import Users from './pages/admin/users';
-import PageNotFound from './pages/404';
-import AdminDashBoardLayout from './templates/AdminDashBoardLayout';
-import CreateSubAdmin from './pages/admin/users/CreateSubAdmin';
-import SubAdminProfilePage from './pages/admin/users/SubAdminProfile';
-import ForgotPassword from './pages/ForgotPassword';
-import UserList from './pages/admin/users/UserList.jsx';
-import SubAdminList from './pages/admin/users/SubAdminList';
-import SuspendedUsersList from './pages/admin/users/SuspendedUsersList';
-import AdminUsersProfile from './pages/admin/users/AdminUsersProfile';
-import MessagesEmpty from './pages/admin/messages/MessagesEmpty';
-import MessagesStart from './pages/admin/messages/MessagesStart';
-import MessagesChat from './pages/admin/messages/MessagesChat';
-import AdminUsersProfileWithProducts from './pages/admin/users/AdminUsersProfileWithProducts';
-import ProductPage from './pages/admin/product';
-import TermsOfSevice from './pages/TermsOfSevice';
-import Policy from './pages/Policy';
 
 // import AdminDeleteAccountPopup from './components/molecules/AdminDeleteAccountPopup';
 // import AdminDeleteAccountFailPopup from './components/molecules/AdminDeleteAccountFailPopup';
@@ -41,6 +9,39 @@ import ProductSearchResults from './pages/ProductSearchReslts';
 import UserSearchResults from './pages/UserSearchResults';
 import AdminEmptySearchResults from './pages/AdminEmptySearchResult';
 import SearchProductsByUser from './pages/SearchProductsByUser';
+import { Route, Routes as Switch } from "react-router-dom";
+import AddNewProductPage1 from "./pages/AddNewProductPage1";
+import PhoneNumberVerification from "./pages/PhoneNumberVerification";
+import Login from "./pages/Login";
+import Help from "./pages/HelpandSupport";
+import DashboardPage from "./pages/DashboardPage";
+import Kyc from "./pages/Kyc";
+import EmailVerify from "./pages/EmailVerify";
+import Home from "./pages/Home";
+import ViewProducts from "./components/molecules/Products";
+import EmptyWishlistViewProducts from "./pages/EmptyWishlistViewProducts";
+import WishlistViewProducts from "./pages/WishlistViewProducts";
+import CreateAccount from "./pages/CreateAccount";
+import DeleteProduct from "./pages/deleteProduct";
+import DeleteProductSearch from "./pages/deleteProductSearch";
+import ResetPasswordPage from "./pages/PasswordResetPage";
+import Users from "./pages/admin/users";
+import PageNotFound from "./pages/404";
+import AdminDashBoardLayout from "./templates/AdminDashBoardLayout";
+import CreateSubAdmin from "./pages/admin/users/CreateSubAdmin";
+import SubAdminProfilePage from "./pages/admin/users/SubAdminProfile";
+import ForgotPassword from "./pages/ForgotPassword";
+import UserList from "./pages/admin/users/UserList.jsx";
+import SubAdminList from "./pages/admin/users/SubAdminList";
+import SuspendedUsersList from "./pages/admin/users/SuspendedUsersList";
+import AdminUsersProfile from "./pages/admin/users/AdminUsersProfile";
+import MessagesEmpty from "./pages/admin/messages/MessagesEmpty";
+import MessagesStart from "./pages/admin/messages/MessagesStart";
+import MessagesChat from "./pages/admin/messages/MessagesChat";
+import AdminUsersProfileWithProducts from "./pages/admin/users/AdminUsersProfileWithProducts";
+import ProductPage from "./pages/admin/product";
+import TermsOfSevice from "./pages/TermsOfSevice";
+import Policy from "./pages/Policy";
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
@@ -49,8 +50,8 @@ function Routes() {
       <Route path="*" element={<PageNotFound />} />
       <Route path="/" element={<Home />} />
       <Route path="/products" element={<AddNewProductPage1 />} />
-      <Route path='/terms' element={<TermsOfSevice/>} />
-      <Route path='/policy' element={<Policy/>} />
+      <Route path="/terms" element={<TermsOfSevice />} />
+      <Route path="/policy" element={<Policy />} />
       <Route path="/login" element={<Login />} />
       <Route path="/create-account" element={<CreateAccount />} />
       <Route
@@ -119,6 +120,10 @@ function Routes() {
       <Route path="/forgotpassword" element={<ForgotPassword />} />
       <Route path="/products" element={<AddNewProductPage1 />} />
       <Route path="/delete-product" element={<DeleteProduct />} />
+      <Route
+        path="/delete-product-dashboard"
+        element={<DeleteProductSearch />}
+      />
       {/* <Route path="/view-products" element={<ViewProduct />} /> */}
       <Route path="/wishlist" element={<WishlistViewProducts />} />
       <Route path="/add-to-wishlist" element={<EmptyWishlistViewProducts />} />
