@@ -1,18 +1,16 @@
-import { Outlet } from "react-router-dom";
-import { adminNav } from "../assets/data/data";
-import SideBar from "../components/molecules/SideBar";
+import { Outlet } from 'react-router-dom';
+import { adminNav } from '../assets/data/data';
+import SideBar from '../components/molecules/SideBar';
 
-const AdminDashBoardLayout =  () => { 
-    return (
-        <div className="flex flex-row">
-            <SideBar navData={adminNav} />
-            <main className="w-full lg:px-[35px] px-[10px]">
-            <Outlet>
-                <p> hello </p>
-            </Outlet>
-            </main>
-        </div>
-    )
+const AdminDashBoardLayout = () => {
+  return (
+    <div className="grid grid-cols-3">
+      <SideBar navData={adminNav} />
+      <main className="col-span-5 md:col-span-3">
+        <Outlet />
+      </main>
+    </div>
+  );
 };
 
 export default AdminDashBoardLayout;

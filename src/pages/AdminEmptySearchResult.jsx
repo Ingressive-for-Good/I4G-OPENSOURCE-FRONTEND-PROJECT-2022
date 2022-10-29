@@ -16,7 +16,7 @@ function AdminEmptySearchResults() {
     }
 
     return(
-        <div className="md:ml-[230px] md:mt-[40px]">
+        <div className="md:ml-[270px] md:mt-[40px] md:mr-6">
             <NavbarAdmin/>
             <AdminTopGreeting/>
             <div className="flex items-center justify-between px-6 md:px-0 py-4 border-b">

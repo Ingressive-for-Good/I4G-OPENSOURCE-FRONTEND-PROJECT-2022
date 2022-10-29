@@ -1,9 +1,23 @@
+import { info } from "autoprefixer";
 import React, { useState } from "react";
+import HandleButton from "./handleButton";
 import { UseAppContext } from "../../../utils/context";
+import Modal from "./modal";
 
 function Delete() {
-  const { value, setValue, alert, setAlert, alertDelete, setAlertDelete } =
+  const [alertDelete, setAlertDelete] = useState(false);
+
+  const { value, setValue, alert, setDeletePopUp, setMessage } =
     UseAppContext();
+  const removeItem = (id) => {
+    const newValue = value.filter((info) => info.id !== id);
+    setValue(newValue);
+    setAlertDelete(false);
+    setDeletePopUp({
+      show: true,
+      msg: " Item has been deleted from your uploaded products",
+    });
+  };
 
   return (
     <div className="w-full md:grid md:grid-cols-2 md:gap-6 lg:grid-cols-3  ">
@@ -11,14 +25,14 @@ function Delete() {
         const {
           id,
           image,
-          nav,
+
           discription,
           icon,
           available,
           price,
           category,
         } = info;
-        const [show, setShow] = useState(false);
+
         return (
           <div
             key={id}
@@ -30,50 +44,20 @@ function Delete() {
               srcset=""
               className="w-full object-contain "
             />
-            <img
-              src={nav}
-              alt=""
-              srcSet=""
-              onClick={() => setShow(!show)}
-              className="absolute top-4 right-6 bg-primary-50 h-10 w-10 object-contain p-2 rounded-full"
-            />
 
-            {show ? (
-              <>
-                <div
-                  className={
-                    " absolute bg-neutral-50 top-16 right-2 p-2 rounded-md text-small text-center leading-5 " +
-                    (show ? "block" : "hidden")
-                  }
-                >
-                  <ul>
-                    <li className="p-2">Edit Details</li>
-                    <li
-                      onClick={() =>
-                        setAlert({
-                          available: true,
-                          msg: "Success! An item has been marked as available",
-                        })
-                      }
-                    >
-                      Mark as Available
-                    </li>
-                  </ul>
-                </div>
-              </>
-            ) : (
-              ""
-            )}
+            <HandleButton />
 
             <div className="flex justify-between items-center bg-white p-5">
               <div>
-                <p className="text-button font-semibold text-neutral-700">
+                <p className="text-button font-semibold text-neutral-700 font-campton">
                   {discription}
                 </p>
-                <p>{category}</p>
-                <h4 className="text-h4 font-bold text-neutral-900">{price}</h4>
-                <p className="text-button font-semibold text-secondary-700">
-                  {show && alert.available ? "available" : `${available}`}
+                <p className="font-campton">{category}</p>
+                <h4 className="text-h4 font-bold text-neutral-900 font-cabinet">
+                  {price}
+                </h4>
+                <p className="text-button font-semibold text-secondary-700 font-campton">
+                  {alert ? "available" : `${available}`}
                 </p>
               </div>
               <div>
@@ -81,11 +65,12 @@ function Delete() {
                   src={icon}
                   alt=""
                   srcSet=""
-                  // onClick={() => {
-                  //   setAlertDelete(!alertDelete);
-                  // }}
+                  onClick={() => {
+                    setAlertDelete(!alertDelete);
+                  }}
                 />
               </div>
+              {alertDelete && <Modal removeItem={removeItem} {...info} />}
             </div>
           </div>
         );

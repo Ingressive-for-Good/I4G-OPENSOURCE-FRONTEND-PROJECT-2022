@@ -1,7 +1,7 @@
-import searchIcon from '../../assets/icons/Search.svg'
-import notificatin from '../../assets/icons/notification.svg'
-import avatar from '../../assets/icons/avatar.svg'
-import toggle from '../../assets/icons/toggle.svg'
+import searchIcon from "../../assets/icons/Search.svg";
+import notificatin from "../../assets/icons/notification.svg";
+import avatar from "../../assets/icons/avatar.svg";
+import toggle from "../../assets/icons/toggle.svg";
 
 export default function Navbar({text}) {
   return (

@@ -41,7 +41,7 @@ function SearchProductsByUser() {
                                 Sort by: <span className=" text-blue-700">Latest</span><img onClick={() => setShowSort(!showSort)} src={chevronDown} alt="" />
                             </p>
                         </div>
-                        <div className="absolute right-10 top-[350px]">
+                        <div className="absolute right-10 top-[240px]">
                             {sort}
                         </div>
                         <div className="flex items-center border-t-2 border-b-2">
@@ -104,8 +104,8 @@ function SearchProductsByUser() {
                             Sort by: <span className=" text-blue-700">Latest</span><img onClick={() => setShowSort(!showSort)} src={chevronDown} alt="" />
                         </p>
                     </div>
-                    <div className="absolute right-10 top-[350px]">
-                            {sort}
+                    <div className="absolute right-10 top-[240px]">
+                        {sort}
                     </div>
                     <div className="flex items-center border-t-2 border-b-2">
                         <p onClick={() => clickFunctionTwo()} className="p-4 border-r-2 cursor-pointer">Product(s) by Nora</p>
@@ -158,7 +158,7 @@ function SearchProductsByUser() {
 
 
     return(
-        <div className="md:ml-[230px] md:mt-[40px]">
+        <div className="md:ml-[270px] md:mt-[40px] md:mr-6">
             <NavbarAdmin/>
             <AdminTopGreeting/>
             {/* PRODUCTS TABLE */}

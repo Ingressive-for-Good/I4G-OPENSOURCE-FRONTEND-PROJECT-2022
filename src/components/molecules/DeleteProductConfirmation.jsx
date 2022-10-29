@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../atoms/PrimaryButton";
-import errorAvatar from "../../assets/icons/33.png";
+import errorAvatar from "../../assets/icons/SadFace.png";
 
 function DeleteProductConfirmation() {
     return(

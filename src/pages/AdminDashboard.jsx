@@ -49,7 +49,7 @@ function AdminDashboard() {
     }
 
     return (
-        <div className="md:ml-[230px] md:mt-[40px]">
+        <div className="md:ml-[270px] md:mt-[40px] md:mr-6">
             <NavbarAdmin/>
             <AdminTopGreeting/>
             <div className="flex justify-between items-center px-6 md:px-0 my-8">
