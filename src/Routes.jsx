@@ -1,6 +1,6 @@
 import React from "react";
 
-<<<<<<< HEAD
+
 // import AdminDeleteAccountPopup from './components/molecules/AdminDeleteAccountPopup';
 // import AdminDeleteAccountFailPopup from './components/molecules/AdminDeleteAccountFailPopup';
 // import AdminDeleteAccountSuccessfullPopup from './components/molecules/AdminDeleteAccountSuccessfullPopup';
@@ -9,7 +9,6 @@ import ProductSearchResults from './pages/ProductSearchReslts';
 import UserSearchResults from './pages/UserSearchResults';
 import AdminEmptySearchResults from './pages/AdminEmptySearchResult';
 import SearchProductsByUser from './pages/SearchProductsByUser';
-=======
 import { Route, Routes as Switch } from "react-router-dom";
 import AddNewProductPage1 from "./pages/AddNewProductPage1";
 import PhoneNumberVerification from "./pages/PhoneNumberVerification";
@@ -43,7 +42,6 @@ import AdminUsersProfileWithProducts from "./pages/admin/users/AdminUsersProfile
 import ProductPage from "./pages/admin/product";
 import TermsOfSevice from "./pages/TermsOfSevice";
 import Policy from "./pages/Policy";
->>>>>>> 48548f6ff4f188f459f455898f06ef80e9ff3580
 
 // Routes Component Containing Routes For All Base Pages.
 function Routes() {
