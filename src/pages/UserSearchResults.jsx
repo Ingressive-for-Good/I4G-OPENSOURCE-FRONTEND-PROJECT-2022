@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import NavbarAdmin from "../components/molecules/NavbarAdmin";
 import { userData } from "../assets/data/AdminDashboardData";
 import optionsIcon from "../assets/icons/optionsIcon.svg";
 import chevronDown from "../assets/icons/chevron-down.svg";
 import dashboardIcon from "../assets/icons/dashboard-blue.svg"
 import AdminTopGreeting from "../components/molecules/AdminTopGreeting";
+import AdminSortByDropdown from "../components/molecules/AdminSortByDropdown";
 
 
 function UserSearchResults() {
+    
+    const [showSort, setShowSort] = useState(false)
+
+    let sort
+
+    if(showSort){
+        sort = <AdminSortByDropdown/>
+    }
+
+    function showMores() {
+        var el = document.getElementById("more");
+        if (el.style.display === "none"){
+            el.style.display = "block"
+        } else {
+            el.style.display = "none"
+        }
+    }
 
     return(
         <div className="md:ml-[230px] md:mt-[40px]">
@@ -18,8 +36,11 @@ function UserSearchResults() {
                 <div className="flex items-center justify-between px-6 py-4 bg-blue-50">
                     <p className=" font-bold text-[18px]">24 Result(s)</p>
                     <p className="flex items-center gap-2">
-                        Sort by: <span className=" text-blue-700">Latest</span><img src={chevronDown} alt="" />
+                        Sort by: <span className=" text-blue-700">Latest</span><img onClick={() => setShowSort(!showSort)} src={chevronDown} alt="" />
                     </p>
+                </div>
+                <div className="absolute right-6 top-[350px] md:top-[230px]">
+                    {sort}
                 </div>
                 <table className="w-[100%]">
                         <tr className="border-b-2 rounded-t-lg">
@@ -39,7 +60,7 @@ function UserSearchResults() {
                                         <img src={user.image} alt="avatar" />
                                         <div className="flex items-center gap-2  w-[100%] justify-between mr-6">
                                             <p>{user.name}</p>
-                                            <img className="md:hidden" src={optionsIcon} alt="icon" />
+                                            <img onClick={() => showMores()} className="md:hidden" src={optionsIcon} alt="icon" />
                                         </div>
                                     </td>
                                     <div className="hidden md:contents">
@@ -54,7 +75,12 @@ function UserSearchResults() {
                                         <td className="px-2 relative bottom-5">
                                             <div className="flex items-center justify-between mr-4">
                                                 <p className="text-gray-600">{user.registered}</p>
-                                                <img src={optionsIcon} alt="icon" />
+                                                <img onClick={() => showMores()} src={optionsIcon} alt="icon" />
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div id="more" className="hidden absolute right-20 mt-6">
+                                                <p className="bg-white p-4 border rounded-md">View Profile</p>
                                             </div>
                                         </td>
                                     </div>

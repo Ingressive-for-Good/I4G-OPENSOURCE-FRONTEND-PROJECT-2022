@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import NavbarAdmin from "../components/molecules/NavbarAdmin";
 import totalProductsIcon from "../assets/icons/total-products.svg";
 import totalUsersIcon from "../assets/icons/total-users.svg";
@@ -7,13 +7,47 @@ import { productData } from "../assets/data/AdminDashboardData";
 import { chart } from "../assets/data/AdminDashboardData";
 import optionsIcon from "../assets/icons/optionsIcon.svg";
 import chevronDown from "../assets/icons/chevron-down.svg";
-import dashboardIcon from "../assets/icons/dashboard-blue.svg"
+import dashboardIcon from "../assets/icons/dashboard-blue.svg";
+import AdminMoreOptions from "../components/molecules/AdminMoreOptions";
 
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import AdminTopGreeting from "../components/molecules/AdminTopGreeting";
+import AdminDaysDropdown from "../components/molecules/AdminDaysDropdown";
+import AdminMonthsDropdown from "../components/molecules/AdminMonthsDropdown";
+import AdminAnalyticsDropdown from "../components/molecules/AdminAnalyticsDropdown";
 
 
 function AdminDashboard() {
+
+    const [showDays, setShowDays] = useState(false)
+    const [showMonths, setShowMonths] = useState(false)
+    const [showAnalytics, setShowAnalytics] = useState(false)
+
+    let daysDropdown
+    let monthsDropdown
+    let analytics
+
+    if(showDays){
+        daysDropdown = <AdminDaysDropdown/>
+    }
+
+    if(showMonths){
+        monthsDropdown = <AdminMonthsDropdown/>
+    }
+
+    if(showAnalytics){
+        analytics = <AdminAnalyticsDropdown/>
+    }
+
+    function showMores() {
+        var el = document.getElementById("more");
+        if (el.style.display === "none"){
+            el.style.display = "block"
+        } else {
+            el.style.display = "none"
+        }
+    }
+
     return (
         <div className="md:ml-[230px] md:mt-[40px]">
             <NavbarAdmin/>
@@ -99,18 +133,27 @@ function AdminDashboard() {
             <div className="flex gap-3 items-center px-6 md:px-0">
                 <p className=" font-cabinetGrotesk text-[18px] font-semibold">Analytics:</p>
                 <p className="flex items-center gap-2 text-small text-blue-700">
-                    Products <img src={chevronDown} alt="" />
+                    Products <img onClick={() => setShowAnalytics(!showAnalytics)} src={chevronDown} alt="" />
                 </p>
+            </div>
+            <div className="absolute left-28 md:left-[340px] top-[990px] z-10 md:top-[380px]">
+                {analytics}
             </div>
             {/* CONTAINER FOR THE CHART */}
             <div className="mt-10 font-cabinetGrotesk font-semibold w-[90%] mx-auto md:mx-0 h-[500px] md:w-[69%] py-6 bg-blue-100 rounded-md">
                 <div className="flex justify-between items-center px-3 text-small text-blue-700">
                     <p className="flex items-center gap-1">
-                        October 2022 <img src={chevronDown} alt="" />
+                        October 2022 <img onClick={() => setShowMonths(!showMonths)} src={chevronDown} alt="" />
                     </p>
                     <p className="flex items-center gap-1">
-                        All days <img src={chevronDown} alt="" />
+                        All days <img onClick={() => setShowDays(!showDays)} src={chevronDown} alt="" />
                     </p>
+                </div>
+                <div className="absolute right-10 md:right-[370px] top-[1080px] z-10 md:top-[470px]">
+                    {daysDropdown}
+                </div>
+                <div className="absolute top-[1080px] z-10 md:top-[470px]">
+                    {monthsDropdown}
                 </div>
                 <ResponsiveContainer width="100%" height="100%">
                     <LineChart 
@@ -156,7 +199,7 @@ function AdminDashboard() {
                                             <img src={products.image} alt="avatar" />
                                             <div className="flex items-center gap-2  w-[100%] justify-between mr-6">
                                                 <p>{products.discription}</p>
-                                                <img className=" md:hidden" src={optionsIcon} alt="icon" />
+                                                <img onClick={() => showMores()} className=" md:hidden" src={optionsIcon} alt="icon" />
                                             </div>
                                         </td>
                                         <div className="hidden md:contents">
@@ -174,8 +217,11 @@ function AdminDashboard() {
                                             <td className="px-2 relative bottom-5">
                                                 <div className="flex items-center justify-between mr-4">
                                                     <p className="text-gray-600">{products.uploaded}</p>
-                                                    <img src={optionsIcon} alt="icon" />
+                                                    <img onClick={() => showMores()} src={optionsIcon} alt="icon" />
                                                 </div>
+                                            </td>
+                                            <td>
+                                                <div id="more" className="hidden absolute right-20 z-20"><AdminMoreOptions /></div>
                                             </td>
                                         </div>
                                     </tr>

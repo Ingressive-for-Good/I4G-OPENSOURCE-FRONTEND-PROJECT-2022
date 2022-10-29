@@ -6,16 +6,26 @@ import chevronDown from "../assets/icons/chevron-down.svg";
 import AdminMoreOptions from "../components/molecules/AdminMoreOptions";
 import dashboardIcon from "../assets/icons/dashboard-blue.svg"
 import AdminTopGreeting from "../components/molecules/AdminTopGreeting";
+import AdminSortByDropdown from "../components/molecules/AdminSortByDropdown";
 
 
 function ProductSearchResults() {
 
-    const [showMore, setShowMore] = useState(false)
+    const [showSort, setShowSort] = useState(false)
 
-    let more
+    let sort
 
-    if(showMore){
-        more = <AdminMoreOptions />
+    if(showSort){
+        sort = <AdminSortByDropdown/>
+    }
+
+    function showMores() {
+        var el = document.getElementById("more");
+        if (el.style.display === "none"){
+            el.style.display = "block"
+        } else {
+            el.style.display = "none"
+        }
     }
 
     return(
@@ -27,8 +37,11 @@ function ProductSearchResults() {
                 <div className="flex items-center justify-between px-6 py-4 bg-blue-50">
                     <p className=" font-bold text-[18px]">24 Result(s)</p>
                     <p className="flex items-center gap-2">
-                        Sort by: <span className=" text-blue-700">Latest</span><img src={chevronDown} alt="" />
+                        Sort by: <span className=" text-blue-700">Latest</span><img onClick={() => setShowSort(!showSort)} src={chevronDown} alt="" />
                     </p>
+                </div>
+                <div className="absolute right-6 top-[350px] md:top-[230px]">
+                    {sort}
                 </div>
                 <table className="w-[100%]">
                         <tr className="border-b-2 rounded-t-lg">
@@ -49,8 +62,7 @@ function ProductSearchResults() {
                                         <img src={products.image} alt="avatar" />
                                         <div className="flex items-center gap-2  w-[100%] justify-between mr-6">
                                             <p>{products.discription}</p>
-                                            <img onClick={() => setShowMore(!showMore)} className="md:hidden" src={optionsIcon} alt="icon" />
-                                            {more}
+                                            <img onClick={() => showMores()} className="md:hidden" src={optionsIcon} alt="icon" />
                                         </div>
                                     </td>
                                     <div className="hidden md:contents">
@@ -68,10 +80,13 @@ function ProductSearchResults() {
                                         <td className="px-2 relative bottom-5">
                                             <div className="flex items-center justify-between mr-4">
                                                 <p className="text-gray-600">{products.uploaded}</p>
-                                                <img onClick={() => setShowMore(!showMore)} src={optionsIcon} alt="icon" />
+                                                <img onClick={() => showMores()} src={optionsIcon} alt="icon" />
                                             </div>
                                         </td>
                                     </div>
+                                    <td>
+                                        <div id="more" className="hidden absolute right-20 z-20"><AdminMoreOptions /></div>
+                                    </td>
                                 </tr>
                             )
                         })}
@@ -79,7 +94,7 @@ function ProductSearchResults() {
                 </table>
             </div>
             
-            <div className="flex items-center justify-between px-6 md:px-0 mt-10 mb-10">
+            <div className="flex font-cabinetGrotesk items-center justify-between px-6 md:px-0 mt-10 mb-10">
                 <p>Showing 7 of 24 results</p>
                 <p className="flex items-center gap-3">
                     <svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">

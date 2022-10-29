@@ -5,7 +5,7 @@ import productImg from "../../assets/images/image-2macbook.png"
 
 function ProductDetailsPopup() {
     return(
-        <div className="fixed top-[8%] md:top-[5%]  md:right-[28%] bg-gray-100 border p-6 m-6 font-cabinetGrotesk md:w-[500px] align-middle">
+        <div className="fixed top-[8%] right-[2%] md:top-[5%]  md:right-[28%] bg-gray-100 border p-6 m-6 font-cabinetGrotesk md:w-[500px] align-middle">
             <img className="absolute top-2 right-4 md:right-2 m-2 md:left-[410px] pb-2" src="../src/assets/icons/CloseSquare.svg" alt="" width={30}/>
             <div className="bg-gray-50 border-2 rounded-md flex items-center p-3 mt-8">
                 <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
