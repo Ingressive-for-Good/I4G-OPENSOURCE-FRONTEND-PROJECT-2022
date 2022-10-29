@@ -1,51 +1,51 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/bundle';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper';
-import closeMenuIcon from '../assets/icons/close-icon.png';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/bundle";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper";
+import closeMenuIcon from "../assets/icons/close-icon.png";
 
-import menuIcon from '../assets/icons/menu-icon.svg';
-import './home.css';
-import wavyArrow from '../assets/icons/landingpage__wavy-arrow.svg';
-import wavyUnderline from '../assets/icons/landingpage__wavy-underline.svg';
-import bestQuality from '../assets/icons/landingpage__best-quality.svg';
-import meetnconnect from '../assets/icons/landingpage__meetnconnect.svg';
-import support from '../assets/icons/landingpage__support.svg';
-import wavyDashed from '../assets/icons/landingpage__wavy-dashed.svg';
-import keyboard from '../assets/images/product-keyboard.png';
-import controller from '../assets/images/product-controller.png';
-import cartIcon from '../assets/icons/cart-icon.svg';
-import profileImg from '../assets/images/landingpage__client-profile-img.svg';
-import p2p from '../assets/icons/landingpage__p2p.svg';
-import heroClipArtLeft from '../assets/images/landingpage-hero-clipart-left.svg';
-import heroClipArtRight from '../assets/images/landingpage-hero-clipart-right.svg';
-import logo from '../assets/icons/logo.svg';
-import facebook from '../assets/icons/footer-fb.svg';
-import twitter from '../assets/icons/twitter.svg';
-import instagram from '../assets/icons/instagram.svg';
-import linkedin from '../assets/icons/linkedin.svg';
-import upArrow from '../assets/icons/up-arrow.svg';
-import MainNav from '../components/molecules/MainNav';
-import Footer from '../components/molecules/Footer';
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import menuIcon from "../assets/icons/menu-icon.svg";
+import "./home.css";
+import wavyArrow from "../assets/icons/landingpage__wavy-arrow.svg";
+import wavyUnderline from "../assets/icons/landingpage__wavy-underline.svg";
+import bestQuality from "../assets/icons/landingpage__best-quality.svg";
+import meetnconnect from "../assets/icons/landingpage__meetnconnect.svg";
+import support from "../assets/icons/landingpage__support.svg";
+import wavyDashed from "../assets/icons/landingpage__wavy-dashed.svg";
+import keyboard from "../assets/images/product-keyboard.png";
+import controller from "../assets/images/product-controller.png";
+import cartIcon from "../assets/icons/cart-icon.svg";
+import profileImg from "../assets/images/landingpage__client-profile-img.svg";
+import p2p from "../assets/icons/landingpage__p2p.svg";
+import heroClipArtLeft from "../assets/images/landingpage-hero-clipart-left.svg";
+import heroClipArtRight from "../assets/images/landingpage-hero-clipart-right.svg";
+import logo from "../assets/icons/logo.svg";
+import facebook from "../assets/icons/footer-fb.svg";
+import twitter from "../assets/icons/twitter.svg";
+import instagram from "../assets/icons/instagram.svg";
+import linkedin from "../assets/icons/linkedin.svg";
+import upArrow from "../assets/icons/up-arrow.svg";
+import MainNav from "../components/molecules/MainNav";
+import Footer from "../components/molecules/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
-    useEffect(() => {
-        AOS.init();
-      }, []);
-    
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const toggleMenu = () => {
-    const nav = document.getElementById('nav');
-    const body = document.getElementById('body');
+    const nav = document.getElementById("nav");
+    const body = document.getElementById("body");
     // var navItems = document.querySelectorAll("nav a")
-    body.style.overflowY = 'hidden';
-    nav.classList.toggle('hidden');
+    body.style.overflowY = "hidden";
+    nav.classList.toggle("hidden");
   };
   return (
     <>
@@ -110,7 +110,12 @@ function App() {
         <main>
           {/* hero section */}
           <section className="px-[10%] py-4 text-center flex items-center justify-between bg-primary-50">
-            <div className="clipart-left" data-aos="zoom-in-right" data-aos-delay="100" data-aos-duration="1000">
+            <div
+              className="clipart-left"
+              data-aos="zoom-in-right"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
               <img
                 src={heroClipArtLeft}
                 alt=""
@@ -118,16 +123,31 @@ function App() {
               />
             </div>
             <div className="main-txt">
-              <h1 className="font-cabinetGrotesk font-bold text-xl sm:text-4xl lg:text-[2.5rem] lg:leading-[1.2] my-3 sm:max-w-md md:max-w-lg sm:mx-auto" data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="1000">
+              <h1
+                className="font-cabinetGrotesk font-bold text-xl sm:text-4xl lg:text-[2.5rem] lg:leading-[1.2] my-3 sm:max-w-md md:max-w-lg sm:mx-auto"
+                data-aos="zoom-in-down"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+              >
                 <span className="text-secondary-500"> One-stop shop</span> for
                 all things tech - buy, Sell & Swap Quality Items.
               </h1>
-              <p className="text-neutral-700 font-campton my-5 md:max-w-xl mx-auto" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
+              <p
+                className="text-neutral-700 font-campton my-5 md:max-w-xl mx-auto"
+                data-aos="zoom-in-up"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+              >
                 An online marketplace for techies to buy, sell, and swap items
                 they don't use, as well as connect with other creatives around
                 the world.
               </p>
-              <div className="sm:w-fit sm:mx-auto sm:flex sm:justify-center sm:items-center md:my-8" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
+              <div
+                className="sm:w-fit sm:mx-auto sm:flex sm:justify-center sm:items-center md:my-8"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+              >
                 <Link
                   to="/create-account"
                   className="font-cabinetGrotesk bg-primary-500 text-white px-5 py-4 rounded-lg sm:h-fit border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500"
@@ -145,7 +165,12 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="clipart-right" data-aos="zoom-in-left" data-aos-delay="100" data-aos-duration="1000">
+            <div
+              className="clipart-right"
+              data-aos="zoom-in-left"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
               <img
                 src={heroClipArtRight}
                 alt=""
@@ -154,8 +179,7 @@ function App() {
             </div>
           </section>
 
-                    
-                    {/* why choose us? */}
+          {/* why choose us? */}
           <section className="w-fit mx-auto px-6 py-3 rounded-lg my-5 text-center">
             <h1 className="font-cabinetGrotesk text-2xl font-semibold">
               Why Choose Us?
@@ -167,7 +191,12 @@ function App() {
 
             {/* reasons to choose us */}
             <div className="space-y-4 sm:space-y-0 my-8 sm:grid sm:grid-cols-2 sm:gap-5 lg:grid-cols-4 lg:w-5/6 lg:mx-auto">
-              <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
+              <div
+                className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto"
+                data-aos="zoom-in-up"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+              >
                 <img className="mx-auto" src={bestQuality} alt="" />
                 <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
                   Best Quality
@@ -176,7 +205,12 @@ function App() {
                   We offer affordable & reliable products with the best quality.
                 </p>
               </div>
-              <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="1000">
+              <div
+                className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto"
+                data-aos="zoom-in-up"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+              >
                 <img className="mx-auto" src={meetnconnect} alt="" />
                 <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
                   Meet & Connect
@@ -185,7 +219,12 @@ function App() {
                   Connect with over 20k people on our platform and make sales.
                 </p>
               </div>
-              <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto" data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="1000">
+              <div
+                className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto"
+                data-aos="zoom-in-up"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+              >
                 <img className="mx-auto" src={p2p} alt="" />
                 <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
                   P2P Payment
@@ -194,7 +233,12 @@ function App() {
                   P2P payments are convenient, fast, secured and easy-to-use.
                 </p>
               </div>
-              <div className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto w-full" data-aos="zoom-in-up" data-aos-delay="400" data-aos-duration="1000">
+              <div
+                className="bg-primary-50 rounded-lg p-6 max-w-xs mx-auto w-full"
+                data-aos="zoom-in-up"
+                data-aos-delay="400"
+                data-aos-duration="1000"
+              >
                 <img className="mx-auto" src={support} alt="" />
                 <h4 className="font-cabinetGrotesk font-semibold text-xl my-2">
                   24/7 Support
@@ -225,33 +269,67 @@ function App() {
             {/* steps to buy item */}
             <div className="space-y-4 my-8 mx-auto lg:flex lg:justify-between lg:items-center lg:w-5/6">
               <div className=" max-w-xs mx-auto lg:mr-8">
-                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2" data-aos="zoom-in-right"  data-aos-duration="1000">
+                <h4
+                  className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2"
+                  data-aos="zoom-in-right"
+                  data-aos-duration="1000"
+                >
                   01. Create an Account
                 </h4>
-                <p className="text-neutral-700 text-sm" data-aos="zoom-in-left" data-aos-delay="100"  data-aos-duration="1000">
+                <p
+                  className="text-neutral-700 text-sm"
+                  data-aos="zoom-in-left"
+                  data-aos-delay="100"
+                  data-aos-duration="1000"
+                >
                   Create an account by completing the registration process
                 </p>
               </div>
               <img className="lg:rotate-90 mx-auto" src={wavyDashed} alt="" />
               <div className="max-w-xs mx-auto lg:mx-8">
-                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2" data-aos="zoom-in-right" data-aos-delay="300" data-aos-duration="1000">
+                <h4
+                  className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="300"
+                  data-aos-duration="1000"
+                >
                   02. View Products
                 </h4>
-                <p className="text-neutral-700 text-sm" data-aos="zoom-in-left" data-aos-delay="400" data-aos-duration="1000">
+                <p
+                  className="text-neutral-700 text-sm"
+                  data-aos="zoom-in-left"
+                  data-aos-delay="400"
+                  data-aos-duration="1000"
+                >
                   View correct details of the products you want to buy
                 </p>
               </div>
               <img className="lg:rotate-90 mx-auto" src={wavyDashed} alt="" />
               <div className="max-w-xs mx-auto lg:ml-8">
-                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2" data-aos="zoom-in-right" data-aos-delay="600" data-aos-duration="1000">
+                <h4
+                  className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="600"
+                  data-aos-duration="1000"
+                >
                   03. Contact Seller
                 </h4>
-                <p className="text-neutral-700 text-sm" data-aos="zoom-in-left" data-aos-delay="700" data-aos-duration="1000">
+                <p
+                  className="text-neutral-700 text-sm"
+                  data-aos="zoom-in-left"
+                  data-aos-delay="700"
+                  data-aos-duration="1000"
+                >
                   Contact seller, agree on a price and get your products
                 </p>
               </div>
             </div>
-            <button className="bg-primary-500 text-white font-medium text-lg px-6 py-5 rounded-lg border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+            <button
+              className="bg-primary-500 text-white font-medium text-lg px-6 py-5 rounded-lg border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
               Buy an item now
             </button>
           </section>
@@ -270,10 +348,19 @@ function App() {
             {/* steps to list item */}
             <div className="space-y-4 my-8 lg:flex lg:justify-between lg:items-center lg:w-5/6 mx-auto">
               <div className=" max-w-xs mx-auto">
-                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2" data-aos="zoom-in-right" data-aos-duration="1000">
+                <h4
+                  className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2"
+                  data-aos="zoom-in-right"
+                  data-aos-duration="1000"
+                >
                   01. Create an Account
                 </h4>
-                <p className="text-neutral-700 text-sm" data-aos="zoom-in-left" data-aos-delay="100" data-aos-duration="1000">
+                <p
+                  className="text-neutral-700 text-sm"
+                  data-aos="zoom-in-left"
+                  data-aos-delay="100"
+                  data-aos-duration="1000"
+                >
                   Create an account by completing the registration process
                 </p>
               </div>
@@ -283,10 +370,20 @@ function App() {
                 alt=""
               />
               <div className="max-w-xs mx-auto">
-                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2" data-aos="zoom-in-right" data-aos-delay="300" data-aos-duration="1000">
+                <h4
+                  className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="300"
+                  data-aos-duration="1000"
+                >
                   02. List Your Products
                 </h4>
-                <p className="text-neutral-700 text-sm" data-aos="zoom-in-left" data-aos-delay="400" data-aos-duration="1000">
+                <p
+                  className="text-neutral-700 text-sm"
+                  data-aos="zoom-in-left"
+                  data-aos-delay="400"
+                  data-aos-duration="1000"
+                >
                   Upload correct details of your products you want to sell.
                 </p>
               </div>
@@ -296,15 +393,30 @@ function App() {
                 alt=""
               />
               <div className="max-w-xs mx-auto">
-                <h4 className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2" data-aos="zoom-in-right" data-aos-delay="600" data-aos-duration="1000">
+                <h4
+                  className="font-cabinetGrotesk text-primary-500 font-semibold text-xl my-2"
+                  data-aos="zoom-in-right"
+                  data-aos-delay="600"
+                  data-aos-duration="1000"
+                >
                   03. Get Notified
                 </h4>
-                <p className="text-neutral-700 text-sm" data-aos="zoom-in-left" data-aos-delay="700" data-aos-duration="1000">
+                <p
+                  className="text-neutral-700 text-sm"
+                  data-aos="zoom-in-left"
+                  data-aos-delay="700"
+                  data-aos-duration="1000"
+                >
                   Get notified when a buyer views and wants to buy your products
                 </p>
               </div>
             </div>
-            <button className="bg-primary-500 text-white font-medium text-lg px-6 py-5 rounded-lg border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1000">
+            <button
+              className="bg-primary-500 text-white font-medium text-lg px-6 py-5 rounded-lg border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              data-aos-duration="1000"
+            >
               List an item now
             </button>
           </section>
@@ -378,7 +490,12 @@ function App() {
                 </div>
               </div>
             </div>
-            <button className="flex my-6 bg-primary-500 rounded-lg px-6 py-4 font-semibold text-white mx-auto w-fit border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">
+            <button
+              className="flex my-6 bg-primary-500 rounded-lg px-6 py-4 font-semibold text-white mx-auto w-fit border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
               See More
             </button>
           </section>
@@ -510,7 +627,7 @@ function App() {
           </section>
         </main>
         {/* footer */}
-        <Footer/>
+        <Footer />
       </div>
     </>
   );

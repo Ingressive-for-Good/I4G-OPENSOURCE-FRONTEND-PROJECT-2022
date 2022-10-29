@@ -11,6 +11,7 @@ module.exports = {
         button: ["18px, 24px"],
         mdP: ["20px", "25px"],
         mdH4: ["28px", "35px"],
+        sText: ["7px", "8px"],
       },
       backgroundColor: { "black-t-50": "rgba(0,0,0,0.5)" },
       fontFamily: {

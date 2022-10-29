@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "../../assets/icons/logo.png";
+
 import vector from "../../assets/icons/bar.png";
-import ipad from "../../assets/icons/ipadLogo.png";
+import logo from "../../assets/icons/web.png";
 import notification from "../../assets/icons/notification.png";
 import rectangle from "../../assets/icons/person.png";
 import search from "../../assets/icons/search.png";
@@ -15,13 +15,7 @@ const Hero = () => {
   return (
     <div>
       <div className="logo-container flex justify-between items-center mb-4 lg:py-4">
-        <img src={logo} alt="" srcset="" className="block md:hidden" />
-        <img
-          src={ipad}
-          alt=""
-          srcset=""
-          className="hidden md:block lg:hidden"
-        />
+        <img src={logo} alt="" srcset="" className="hidden" />
 
         <button className=" border border-solid border-primary-500 p-2 rounded-md lg:hidden">
           <img src={vector} alt="" srcset="" />

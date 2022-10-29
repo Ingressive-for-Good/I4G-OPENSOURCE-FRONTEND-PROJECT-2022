@@ -110,14 +110,14 @@ export const dashboardData = [
   },
   {
     id: 7,
-    image: image3,
+    image: image4,
     name: "MacBook Pro 14” M1 Chip",
     price: "₦1,550,000.00",
     icon: favorite,
   },
   {
     id: 8,
-    image: image3,
+    image: image4,
     name: "MacBook Pro 14” M1 Chip",
     price: "₦1,550,000.00",
     icon: favorite,
