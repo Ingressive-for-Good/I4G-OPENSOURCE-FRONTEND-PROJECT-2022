@@ -40,6 +40,7 @@ const Context = ({ children }) => {
         deletePopUp,
         setDeletePopUp,
         dashboard,
+        setDashboard,
       }}
     >
       {children}
