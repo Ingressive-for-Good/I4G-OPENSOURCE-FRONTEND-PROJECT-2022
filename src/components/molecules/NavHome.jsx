@@ -17,10 +17,12 @@ export default function NavHome() {
       id="hero"
       className="relative px-8 py-9 flex items-center justify-between z-10"
     >
-      <h1 className="font-cabinetGrotesk text-primary-500 font-bold text-2xl">
-        tech
-        <span className="text-secondary-500">mart</span>
-      </h1>
+      <Link to="/">
+        <h1 className="font-cabinetGrotesk text-primary-500 font-bold text-2xl hover:cursor-pointer">
+          tech
+          <span className="text-secondary-500">mart</span>
+        </h1>
+      </Link>
       <div className="border-primary-500 border rounded-xl p-3 md:hidden">
         <img
           className=""
