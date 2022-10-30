@@ -1041,3 +1041,14 @@ a "no, cancel action" button
 - I designed the admin reset password page.
 
 -----Main Goal -- To design the reset password page for admin.
+
+
+## Name: Adewole Abdulazeez
+
+## Description: Admin Design - Authentication (Reset password) - mobile view
+### Observation/Changes
+- I designed the admin reset password page for mobile view.
+
+-----Main Goal -- To design the reset password page for admin mobile view.
+
+
