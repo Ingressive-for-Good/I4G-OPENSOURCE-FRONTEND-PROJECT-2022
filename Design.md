@@ -1004,3 +1004,14 @@ a "no, cancel action" button
 - I ensured that the design followed the design style guide provided.
 
 -----Main Goal -- To design a screen the admin can access accounts that are suspended.
+
+
+## Name: Kenechukwu Anyaeche
+
+## Description: Admin Design: Sub Admin Profile Page - Tablet View
+### Observation/Changes
+- I designed the screen for the sub-admin profile page (tablet view).
+- I ensured that the design followed the design style guide provided.
+
+-----Main Goal -- To design the profile page for sub-admin accounts.
+
