@@ -976,3 +976,11 @@ a "no, cancel action" button
 -----Main Goal -- Improve the User Experience for editing their information and saving it easily.
 
 
+## Name: Kenechukwu Anyaeche
+
+## Description: Admin design: Suspended Accounts - Desktop view
+### Observation/Changes
+- I designed the screen for the list of suspended accounts screen (desktop view).
+- I ensured that the design followed the design style guide provided.
+
+-----Main Goal -- To design a screen the admin can access accounts that are suspended.
