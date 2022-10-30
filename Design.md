@@ -1015,3 +1015,11 @@ a "no, cancel action" button
 
 -----Main Goal -- To design the profile page for sub-admin accounts.
 
+## Name: Adewole Abdulazeez
+
+## Description: Admin Design: Admin Login Page: Forget password flow
+### Observation/Changes
+- I designed the admin login page and forget password.
+- I ensured that the design followed the design style guide provided.
+
+-----Main Goal -- To design the Login page for admin and forget password.
