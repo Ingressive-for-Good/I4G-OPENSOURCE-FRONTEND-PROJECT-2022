@@ -994,3 +994,13 @@ a "no, cancel action" button
 - I ensured that the design followed the design style guide provided.
 
 -----Main Goal -- To design a screen the admin can access accounts that are suspended.
+
+
+## Name: Kenechukwu Anyaeche
+
+## Description: Admin design: Suspended Accounts - Mobile view
+### Observation/Changes
+- I designed the screen for the list of suspended accounts screen (mobile view).
+- I ensured that the design followed the design style guide provided.
+
+-----Main Goal -- To design a screen the admin can access accounts that are suspended.
