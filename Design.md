@@ -1023,3 +1023,12 @@ a "no, cancel action" button
 - I ensured that the design followed the design style guide provided.
 
 -----Main Goal -- To design the Login page for admin and forget password.
+
+
+## Name: Adewole Abdulazeez
+
+## Description: Admin Design - Authentication (Reset password) - desktop view
+### Observation/Changes
+- I designed the admin reset password page.
+
+-----Main Goal -- To design the reset password page for admin.
