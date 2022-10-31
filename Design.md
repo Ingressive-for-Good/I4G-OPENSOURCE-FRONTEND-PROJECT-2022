@@ -1066,3 +1066,11 @@ a "no, cancel action" button
 - I designed the 404 error landing page for the user dashboard.
 
 -----Main Goal -- To design the 404 error for user dashboard.
+
+## Name: Umeh Chinonye Lydia
+
+## Description: Admin Design - User Search Result (Tablet View)
+### Observation/Changes
+- I designed the Admin Design - User Search Result (Tablet View).
+
+-----Main Goal -- To design the Admin Design - User Search Result (Tablet View).
