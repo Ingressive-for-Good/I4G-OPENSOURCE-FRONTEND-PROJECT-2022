@@ -1,39 +1,39 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/bundle";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Pagination, Navigation } from "swiper";
-import closeMenuIcon from "../assets/icons/close-icon.png";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/bundle';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper';
+import closeMenuIcon from '../assets/icons/close-icon.png';
 
-import menuIcon from "../assets/icons/menu-icon.svg";
-import "./home.css";
-import wavyArrow from "../assets/icons/landingpage__wavy-arrow.svg";
-import wavyUnderline from "../assets/icons/landingpage__wavy-underline.svg";
-import bestQuality from "../assets/icons/landingpage__best-quality.svg";
-import meetnconnect from "../assets/icons/landingpage__meetnconnect.svg";
-import support from "../assets/icons/landingpage__support.svg";
-import wavyDashed from "../assets/icons/landingpage__wavy-dashed.svg";
-import keyboard from "../assets/images/product-keyboard.png";
-import controller from "../assets/images/product-controller.png";
-import cartIcon from "../assets/icons/cart-icon.svg";
-import profileImg from "../assets/images/landingpage__client-profile-img.svg";
-import p2p from "../assets/icons/landingpage__p2p.svg";
-import heroClipArtLeft from "../assets/images/landingpage-hero-clipart-left.svg";
-import heroClipArtRight from "../assets/images/landingpage-hero-clipart-right.svg";
-import logo from "../assets/icons/logo.svg";
-import facebook from "../assets/icons/footer-fb.svg";
-import twitter from "../assets/icons/twitter.svg";
-import instagram from "../assets/icons/instagram.svg";
-import linkedin from "../assets/icons/linkedin.svg";
-import upArrow from "../assets/icons/up-arrow.svg";
-import MainNav from "../components/molecules/MainNav";
-import Footer from "../components/molecules/Footer";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import menuIcon from '../assets/icons/menu-icon.svg';
+import './home.css';
+import wavyArrow from '../assets/icons/landingpage__wavy-arrow.svg';
+import wavyUnderline from '../assets/icons/landingpage__wavy-underline.svg';
+import bestQuality from '../assets/icons/landingpage__best-quality.svg';
+import meetnconnect from '../assets/icons/landingpage__meetnconnect.svg';
+import support from '../assets/icons/landingpage__support.svg';
+import wavyDashed from '../assets/icons/landingpage__wavy-dashed.svg';
+import keyboard from '../assets/images/product-keyboard.png';
+import controller from '../assets/images/product-controller.png';
+import cartIcon from '../assets/icons/cart-icon.svg';
+import profileImg from '../assets/images/landingpage__client-profile-img.svg';
+import p2p from '../assets/icons/landingpage__p2p.svg';
+import heroClipArtLeft from '../assets/images/landingpage-hero-clipart-left.svg';
+import heroClipArtRight from '../assets/images/landingpage-hero-clipart-right.svg';
+import logo from '../assets/icons/logo.svg';
+import facebook from '../assets/icons/footer-fb.svg';
+import twitter from '../assets/icons/twitter.svg';
+import instagram from '../assets/icons/instagram.svg';
+import linkedin from '../assets/icons/linkedin.svg';
+import upArrow from '../assets/icons/up-arrow.svg';
+import MainNav from '../components/molecules/MainNav';
+import Footer from '../components/molecules/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
   useEffect(() => {
@@ -41,11 +41,11 @@ function App() {
   }, []);
 
   const toggleMenu = () => {
-    const nav = document.getElementById("nav");
-    const body = document.getElementById("body");
+    const nav = document.getElementById('nav');
+    const body = document.getElementById('body');
     // var navItems = document.querySelectorAll("nav a")
-    body.style.overflowY = "hidden";
-    nav.classList.toggle("hidden");
+    body.style.overflowY = 'hidden';
+    nav.classList.toggle('hidden');
   };
   return (
     <>
@@ -55,10 +55,12 @@ function App() {
           id="hero"
           className="relative bg-primary-50 px-8 py-9 flex items-center justify-between"
         >
-          <h1 className="font-cabinetGrotesk text-primary-500 font-bold text-2xl">
-            tech
-            <span className="text-secondary-500">mart</span>
-          </h1>
+          <Link to="/">
+            <h1 className="font-cabinetGrotesk text-primary-500 font-bold text-2xl hover:cursor-pointer">
+              tech
+              <span className="text-secondary-500">mart</span>
+            </h1>
+          </Link>
           <div className="border-primary-500 border rounded-xl p-3 lg:hidden">
             <img
               className=""
