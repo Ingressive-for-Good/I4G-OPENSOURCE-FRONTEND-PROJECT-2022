@@ -1074,3 +1074,11 @@ a "no, cancel action" button
 - I designed the Admin Design - User Search Result (Tablet View).
 
 -----Main Goal -- To design the Admin Design - User Search Result (Tablet View).
+
+## Name: Umeh Chinonye Lydia
+
+## Description: Admin Design - User Search Result (Mobile View)
+### Observation/Changes
+- I designed the Admin Design - User Search Result (Mobile View).
+
+-----Main Goal -- To design the Admin Design - User Search Result (Mobile View).
