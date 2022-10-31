@@ -1051,4 +1051,11 @@ a "no, cancel action" button
 
 -----Main Goal -- To design the reset password page for admin mobile view.
 
+## Name: Umeh Chinonye Lydia
+
+## Description: Design of 404 Error Page for Landing Page
+### Observation/Changes
+- I designed the 404 error landing page for the desktop view, mobile view and tablet view.
+
+-----Main Goal -- To design the 404 error landing page for all views.
 
