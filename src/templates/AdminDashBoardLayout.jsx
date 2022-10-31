@@ -4,9 +4,9 @@ import SideBar from '../components/molecules/SideBar';
 
 const AdminDashBoardLayout = () => {
   return (
-    <div className="grid grid-cols-[230px_auto]">
+    <div className="grid grid-cols-3">
       <SideBar navData={adminNav} />
-      <main className="px-4 md:px-8">
+      <main className="col-span-5 md:col-span-3">
         <Outlet />
       </main>
     </div>

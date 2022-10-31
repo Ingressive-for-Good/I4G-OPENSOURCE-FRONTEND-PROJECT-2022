@@ -1,5 +1,14 @@
 import React from "react";
 
+
+// import AdminDeleteAccountPopup from './components/molecules/AdminDeleteAccountPopup';
+// import AdminDeleteAccountFailPopup from './components/molecules/AdminDeleteAccountFailPopup';
+// import AdminDeleteAccountSuccessfullPopup from './components/molecules/AdminDeleteAccountSuccessfullPopup';
+import AdminDashboard from './pages/AdminDashboard';
+import ProductSearchResults from './pages/ProductSearchReslts';
+import UserSearchResults from './pages/UserSearchResults';
+import AdminEmptySearchResults from './pages/AdminEmptySearchResult';
+import SearchProductsByUser from './pages/SearchProductsByUser';
 import { Route, Routes as Switch } from "react-router-dom";
 import AddNewProductPage1 from "./pages/AddNewProductPage1";
 import PhoneNumberVerification from "./pages/PhoneNumberVerification";
@@ -59,9 +68,29 @@ function Routes() {
       {/* Protected Pages */}
       <Route path="/dashboard" element={<DashboardPage />} />
       <Route element={<AdminDashBoardLayout />}>
-        <Route path="/admin/dashboard" element={<h1> create dashboard</h1>} />
+        <Route path="/admin/dashboard" element={<AdminDashboard/>} />
         <Route path="/admin/products" element={<ProductPage />} />
 
+        <Route
+            path='/admin/product-search-results'
+            element={<ProductSearchResults/>}
+        />
+        <Route
+            path='/admin/empty-search-results'
+            element={<AdminEmptySearchResults/>}
+        />
+        <Route
+            path='/admin/user-search-results'
+            element={<UserSearchResults/>}
+        />
+        <Route
+            path='/admin/search-product-by-users'
+            element={<SearchProductsByUser />}
+        />
+        <Route
+            path='/admin/products'
+            element={<h1> Admin producet </h1>}
+        />
         <Route path="/admin/messages" element={<MessagesEmpty />} />
         <Route path="/admin/messages/start" element={<MessagesStart />} />
         <Route path="/admin/messages/chat" element={<MessagesChat />} />
