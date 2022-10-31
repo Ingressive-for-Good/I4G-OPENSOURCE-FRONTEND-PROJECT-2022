@@ -97,7 +97,7 @@ function DashboardPage() {
               <img src={userAvatar} alt="user avatar" width={50} />
             </div>
           </div>
-          <div className="z-100">
+          <div className=" absolute top-[40px] z-100">
             <DashboardNotificationDialog
               open={open}
               setNotificationDialog={setNotificationDialog}
