@@ -6,6 +6,7 @@ import bannerImage from "../assets/images/dashboard-banner.png";
 import userAvatar from "../assets/icons/avatar.png";
 import wishlistIcon from "../assets/icons/wishlist.png";
 import { DashboardNotificationDialog } from "../components/molecules/DashboardNotificationModal";
+import UserSidebar from "../components/molecules/UserSidebar";
 
 function DashboardPage() {
   // the below handles the product details popup on click of the submit button
@@ -29,12 +30,12 @@ function DashboardPage() {
 
   return (
     <div className=" md:bg-gray-50 overflow-x-hidden">
-      <NavbarDashboard />
+      
       {/* sidebar */}
       <div className="hidden md:block">
-        <SidebarDashboard />
+        <UserSidebar />
       </div>
-      <div className="flex px-6 justify-between md:relative bottom-4">
+      <div className="flex px-6 justify-between mt-10 ml-10 md:relative bottom-4">
         {/* Intro text */}
         <div className="font-cabinetGrotesk md:ml-64">
           <p className="font-medium text-[20px]">Hey Nora👋🏾</p>
@@ -108,7 +109,7 @@ function DashboardPage() {
 
       {/* main content */}
       <div className="md:ml-64">
-        <div className="flex px-6 gap-8">
+        <div className="flex px-6 gap-8 ml-10">
           <img src={bannerImage} alt="banner" />
           <div className="hidden md:flex bg-[url('../src/assets/images/Rectangle-14GamePad.png')] bg-contain bg-no-repeat">
             <div className="flex flex-col w-[340px] text-white">
@@ -165,7 +166,7 @@ function DashboardPage() {
             />
           </form>
         </div>
-        <div className="flex justify-between px-6 pt-6 pb-3 items-center">
+        <div className="flex justify-between px-6 pt-6 pb-3 items-center ml-10">
           <p className=" font-cabinetGrotesk font-semibold text-[20px]">
             Categories
           </p>
@@ -191,7 +192,7 @@ function DashboardPage() {
           </p>
         </div>
         {/* Categories */}
-        <div className="flex gap-4 px-6 font-campton">
+        <div className="flex gap-4 px-6 font-campton ml-10">
           <p className="flex flex-nowrap border-2 rounded-md px-6 py-3 items-center min-w-max bg-primary-500 text-white">
             All
           </p>
@@ -215,7 +216,7 @@ function DashboardPage() {
           </p>
         </div>
         {/* Products */}
-        <div className="flex flex-wrap gap-12 px-6 py-6">
+        <div className="flex flex-wrap gap-12 px-6 py-6 ml-10">
           {/* Product 1 */}
           <div
             onClick={() => setShowProductDetails(!showProductDetails)}

@@ -10,7 +10,7 @@ import chevronDown from "../assets/icons/chevron-down.svg";
 import dashboardIcon from "../assets/icons/dashboard-blue.svg";
 import AdminMoreOptions from "../components/molecules/AdminMoreOptions";
 
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+//import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import AdminTopGreeting from "../components/molecules/AdminTopGreeting";
 import AdminDaysDropdown from "../components/molecules/AdminDaysDropdown";
 import AdminMonthsDropdown from "../components/molecules/AdminMonthsDropdown";
@@ -155,26 +155,7 @@ function AdminDashboard() {
                 <div className="absolute top-[1080px] z-10 md:top-[470px]">
                     {monthsDropdown}
                 </div>
-                <ResponsiveContainer width="100%" height="100%">
-                    <LineChart 
-                    width={700}
-                    height={300}
-                    data={chart}
-                    margin={{
-                        top: 50,
-                        right: 30,
-                        left: 20,
-                        bottom: 35,
-                    }}
-                    >
-                    <CartesianGrid strokeDasharray="5" horizontal="true" vertical=""/>
-                    <XAxis dataKey="name" tickLine={false} padding={{ top: 50, bottom: 50 }}/>
-                    <YAxis tickCount={6} axisLine={false} tickLine={false} type="number" domain={[0, 'dataMax + 3250']}/>
-                    <Tooltip contentStyle={{ width: 200, backgroundColor: '#1434A4', color: "#fff" }} itemStyle={{ color: "#fff"}} cursor={{ strokeWidth: "2" , stroke: "blue", strokeDasharray:"5" }}  />
-                    {/* <Legend /> */}
-                    <Line type="monotone" dataKey="Products" stroke="#8884d8" strokeWidth={3} dot={false} activeDot={{ r : 8}}/>
-                    </LineChart>
-                </ResponsiveContainer>
+                
             </div>
             {/* RECENT UPLOADED PRODUCTS */}
             <div className="mt-6 font-cabinetGrotesk mb-36">
