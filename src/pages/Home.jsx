@@ -1,3 +1,8 @@
+/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -7,6 +12,7 @@ import 'swiper/css/bundle';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper';
+import AOS from 'aos';
 import closeMenuIcon from '../assets/icons/close-icon.png';
 
 import menuIcon from '../assets/icons/menu-icon.svg';
@@ -24,15 +30,7 @@ import profileImg from '../assets/images/landingpage__client-profile-img.svg';
 import p2p from '../assets/icons/landingpage__p2p.svg';
 import heroClipArtLeft from '../assets/images/landingpage-hero-clipart-left.svg';
 import heroClipArtRight from '../assets/images/landingpage-hero-clipart-right.svg';
-import logo from '../assets/icons/logo.svg';
-import facebook from '../assets/icons/footer-fb.svg';
-import twitter from '../assets/icons/twitter.svg';
-import instagram from '../assets/icons/instagram.svg';
-import linkedin from '../assets/icons/linkedin.svg';
-import upArrow from '../assets/icons/up-arrow.svg';
-import MainNav from '../components/molecules/MainNav';
 import Footer from '../components/molecules/Footer';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 function App() {
@@ -81,7 +79,7 @@ function App() {
               src={closeMenuIcon}
               alt=""
             />
-            <a href="" className="hover:text-secondary-500">
+            <a href="/" className="hover:text-secondary-500">
               Home
             </a>
             <a href="#howitworks" className="hover:text-primary-500">
@@ -145,7 +143,7 @@ function App() {
                 the world.
               </p>
               <div
-                className="sm:w-fit sm:mx-auto sm:flex sm:justify-center sm:items-center md:my-8"
+                className="w-fit mx-auto flex flex-col items-center justify-center md:flex-row lg:flex-row  md:my-8"
                 data-aos="zoom-in"
                 data-aos-delay="300"
                 data-aos-duration="1000"
@@ -156,7 +154,7 @@ function App() {
                 >
                   Create an account
                 </Link>
-                <div className="w-fit ml-[5rem] lg:ml-2 md:ml-2 text-center ml-20 px-6 py-3 rounded-lg my-2 hover:bg-primary-100 ml-4 transition-all">
+                <div className="w-fit lg:ml-2 md:ml-2 text-center ml-20 px-6 py-3 rounded-lg my-2 hover:bg-primary-100 ml-4 transition-all">
                   <a
                     href=""
                     className="font-cabinetGrotesk text-primary-500 font-semibold"
@@ -327,6 +325,7 @@ function App() {
               </div>
             </div>
             <button
+              type="submit"
               className="bg-primary-500 text-white font-medium text-lg px-6 py-5 rounded-lg border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500"
               data-aos="zoom-in"
               data-aos-delay="200"
@@ -414,6 +413,7 @@ function App() {
               </div>
             </div>
             <button
+              type="submit"
               className="bg-primary-500 text-white font-medium text-lg px-6 py-5 rounded-lg border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500"
               data-aos="zoom-in"
               data-aos-delay="200"
@@ -493,6 +493,7 @@ function App() {
               </div>
             </div>
             <button
+              type="submit"
               className="flex my-6 bg-primary-500 rounded-lg px-6 py-4 font-semibold text-white mx-auto w-fit border-2 border-transparent hover:bg-primary-400 focus:border-2 focus:border-primary-500 focus:bg-transparent focus:text-primary-500"
               data-aos="zoom-in"
               data-aos-delay="100"
@@ -502,7 +503,7 @@ function App() {
             </button>
           </section>
 
-          {/* newsletter subscription*/}
+          {/* newsletter subscription */}
           <section
             id="contactUs"
             className="bg-primary-500 p-6 w-5/6 mx-auto my-16 rounded-lg"
@@ -528,7 +529,10 @@ function App() {
                 placeholder="Enter your email address"
                 required
               />
-              <button className="bg-secondary-500 text-white font-medium text-lg px-6 py-4 rounded-lg mx-auto border-2 border-secondary-500 hover:bg-secondary-400 focus:border-2 focus:border-secondary-500 focus:bg-transparent focus:text-secondary-500">
+              <button
+                type="submit"
+                className="bg-secondary-500 text-white font-medium text-lg px-6 py-4 rounded-lg mx-auto border-2 border-secondary-500 hover:bg-secondary-400 focus:border-2 focus:border-secondary-500 focus:bg-transparent focus:text-secondary-500"
+              >
                 Subscribe
               </button>
             </form>
@@ -551,14 +555,14 @@ function App() {
               slidesPerView={1}
               spaceBetween={100}
               slidesPerGroup={1}
-              loop={true}
-              loopFillGroupWithBlank={true}
+              loop
+              loopFillGroupWithBlank
               pagination={{
                 clickable: true,
               }}
-              navigation={true}
-              centeredSlides={true}
-              centeredSlidesBounds={true}
+              navigation
+              centeredSlides
+              centeredSlidesBounds
               modules={[Pagination, Navigation]}
               className="mySwiper h-1/4  w-full p-12"
               breakpoints={{
