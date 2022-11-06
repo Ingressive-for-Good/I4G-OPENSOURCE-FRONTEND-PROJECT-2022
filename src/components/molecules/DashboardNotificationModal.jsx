@@ -6,7 +6,7 @@ export const DashboardNotificationDialog = ({
 }) => {
   return (
     <div
-      className={`hidden   z-10 md:ml-[90px] md:mr-1 lg:ml-0 lg:mr-3 z-[99] ${
+      className={`hidden   md:ml-[90px] md:mr-1 lg:ml-0 lg:mr-3 ${
         open ? " md:block " : " md:hidden"
       }`}
       aria-labelledby="modal-title"
@@ -14,14 +14,14 @@ export const DashboardNotificationDialog = ({
       aria-modal="true"
     >
       <div
-        className="fixed inset-0 bg-gray-500 bg-opacity-75 transition transition-opacity duration-300 "
+        className="fixed inset-0 z-50 bg-gray-500 bg-opacity-75 transition transition-opacity duration-300 "
         onClick={() => {
           setNotificationDialog(!open);
         }}
       ></div>
 
       <div className="flex transition  duration-250 items-end  justify-end text-center sm:items-center sm:p-0 ">
-        <div className="px-2 pb-2 pt-6 bg-white z-10 notification_clip-path">
+        <div className="px-2 pb-2 pt-6 bg-white z-50 notification_clip-path">
           <div className="relative h-[250px] border-gray-200 border-solid border-[2.5px]  transform overflow-hidden rounded-lg bg-white text-left   transition-all   sm:w-full sm:max-w-lg">
             <div className=" py-1 ">
               <div className=" sm:flex sm:items-start">
