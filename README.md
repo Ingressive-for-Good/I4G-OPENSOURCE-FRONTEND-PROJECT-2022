@@ -37,6 +37,12 @@ yarn
 ```
 git checkout -b your-branch-name
 ```
+<small>or use the switch command highly recommended</small>
+
+```
+git switch -c branch-name
+```
+
 
 <p>5. start development</p>
 
