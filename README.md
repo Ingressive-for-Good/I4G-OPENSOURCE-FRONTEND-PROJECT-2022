@@ -20,13 +20,13 @@ Here're some of the project's best features:
   
 <h2>🛠️ Installation Steps:</h2>
 
-<p>2. clone the repo</p>
+<p>2. clone the repo.</p>
 
 ```
 git clone your forked url && cd dir
 ```
 
-<p>3. install dependencies</p>
+<p>3. install dependencies.</p>
 
 ```
 yarn
@@ -38,7 +38,7 @@ yarn
 git checkout -b your-branch-name
 ```
 
-<p>5. start development</p>
+<p>5. start development.</p>
 
 ```
 yarn dev
@@ -54,5 +54,7 @@ Technologies used in the project:
 
 <h2>🛠️ Contributions </h2>
 
-Information about contributing to this project can be found in the [CONTRIBUTING](https://github.com/Ingressive-for-Good/I4G-OPENSOURCE-FRONTEND-PROJECT-2022/blob/develop/CONTRIBUTING.md) guide
+Information about contributing to this project can be found in the [CONTRIBUTING](https://github.com/Ingressive-for-Good/I4G-OPENSOURCE-FRONTEND-PROJECT-2022/blob/develop/CONTRIBUTING.md) guide.
+
+Goodluck as you contribute!
 
